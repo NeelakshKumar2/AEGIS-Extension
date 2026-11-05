@@ -1,0 +1,296 @@
+id,type,name,qualname,path,lineno,end_lineno,is_test_file,is_method,is_async,decorators,ext_bases,body_hash,fan_in,fan_out,doc
+requests/__init__.py,file,__init__.py,,requests/__init__.py,1,183,False,,,,,632acfbd53c8,0,26,
+requests/__init__.py::_check_cryptography,function,_check_cryptography,_check_cryptography,requests/__init__.py,93,104,False,False,False,,,7fa3fbda3d99,1,1,
+requests/__init__.py::check_compatibility,function,check_compatibility,check_compatibility,requests/__init__.py,58,90,False,False,False,,,90f59b07a023,1,1,
+requests/__version__.py,file,__version__.py,,requests/__version__.py,1,14,False,,,,,6c4b1b543588,0,0,
+requests/_internal_utils.py,file,_internal_utils.py,,requests/_internal_utils.py,1,51,False,,,,,f2709c7f2569,0,0,
+requests/_internal_utils.py::to_native_string,function,to_native_string,to_native_string,requests/_internal_utils.py,26,36,False,False,False,,,34decf2e2a64,12,0,"Given a string object, regardless of type, returns a representation of"
+requests/_internal_utils.py::unicode_is_ascii,function,unicode_is_ascii,unicode_is_ascii,requests/_internal_utils.py,39,51,False,False,False,,,8eb11b7283a0,2,0,Determine if unicode string only contains ASCII characters.
+requests/adapters.py,file,adapters.py,,requests/adapters.py,1,697,False,,,,,28000e7c8d27,0,20,
+requests/adapters.py::BaseAdapter,class,BaseAdapter,BaseAdapter,requests/adapters.py,114,141,False,,,,,730c143bcf64,2,0,The Base Transport Adapter
+requests/adapters.py::BaseAdapter.__init__,function,__init__,BaseAdapter.__init__,requests/adapters.py,117,118,False,True,False,,,8f30f073a00d,1,0,
+requests/adapters.py::BaseAdapter.close,function,close,BaseAdapter.close,requests/adapters.py,139,141,False,True,False,,,a89039ad5b47,0,0,Cleans up adapter specific items.
+requests/adapters.py::BaseAdapter.send,function,send,BaseAdapter.send,requests/adapters.py,120,137,False,True,False,,,f0abc63c7a4e,0,0,Sends PreparedRequest object. Returns Response object.
+requests/adapters.py::HTTPAdapter,class,HTTPAdapter,HTTPAdapter,requests/adapters.py,144,697,False,,,,,8cd024d3508d,2,2,The built-in HTTP Adapter for urllib3.
+requests/adapters.py::HTTPAdapter.__getstate__,function,__getstate__,HTTPAdapter.__getstate__,requests/adapters.py,201,202,False,True,False,,,013a6c92034f,0,0,
+requests/adapters.py::HTTPAdapter.__init__,function,__init__,HTTPAdapter.__init__,requests/adapters.py,179,199,False,True,False,,,ad821fd718a5,1,2,
+requests/adapters.py::HTTPAdapter.__setstate__,function,__setstate__,HTTPAdapter.__setstate__,requests/adapters.py,204,215,False,True,False,,,2281bd6a5571,0,1,
+requests/adapters.py::HTTPAdapter.add_headers,function,add_headers,HTTPAdapter.add_headers,requests/adapters.py,556,568,False,True,False,,,c4bb5358eaa6,1,0,Add any headers needed by the connection. As of v2.0 this does
+requests/adapters.py::HTTPAdapter.build_connection_pool_key_attributes,function,build_connection_pool_key_attributes,HTTPAdapter.build_connection_pool_key_attributes,requests/adapters.py,374,422,False,True,False,,,abd5d47b8c67,1,1,Build the PoolKey attributes used by urllib3 to return a connection.
+requests/adapters.py::HTTPAdapter.build_response,function,build_response,HTTPAdapter.build_response,requests/adapters.py,337,372,False,True,False,,,351b335623d3,1,6,Builds a :class:`Response <requests.Response>` object from a urllib3
+requests/adapters.py::HTTPAdapter.cert_verify,function,cert_verify,HTTPAdapter.cert_verify,requests/adapters.py,281,335,False,True,False,,,2d1ab9f05d99,1,0,Verify a SSL certificate. This method should not be called from user
+requests/adapters.py::HTTPAdapter.close,function,close,HTTPAdapter.close,requests/adapters.py,514,522,False,True,False,,,2c2e4d6b21dc,0,0,Disposes of any internal state.
+requests/adapters.py::HTTPAdapter.get_connection,function,get_connection,HTTPAdapter.get_connection,requests/adapters.py,473,512,False,True,False,,,54fe10f4c98f,0,5,DEPRECATED: Users should move to `get_connection_with_tls_context`
+requests/adapters.py::HTTPAdapter.get_connection_with_tls_context,function,get_connection_with_tls_context,HTTPAdapter.get_connection_with_tls_context,requests/adapters.py,424,471,False,True,False,,,e3b0e971493c,1,7,Returns a urllib3 connection for the given request and TLS settings.
+requests/adapters.py::HTTPAdapter.init_poolmanager,function,init_poolmanager,HTTPAdapter.init_poolmanager,requests/adapters.py,217,241,False,True,False,,,c5eb7ead3516,2,0,Initializes a urllib3 PoolManager.
+requests/adapters.py::HTTPAdapter.proxy_headers,function,proxy_headers,HTTPAdapter.proxy_headers,requests/adapters.py,570,589,False,True,False,,,77b3e47b55e0,1,2,Returns a dictionary of the headers to add to any request sent
+requests/adapters.py::HTTPAdapter.proxy_manager_for,function,proxy_manager_for,HTTPAdapter.proxy_manager_for,requests/adapters.py,243,279,False,True,False,,,3071552a6b52,2,3,Return urllib3 ProxyManager for the given proxy.
+requests/adapters.py::HTTPAdapter.request_url,function,request_url,HTTPAdapter.request_url,requests/adapters.py,524,554,False,True,False,,,a52c340c39a7,1,2,Obtain the url to use when making the final request.
+requests/adapters.py::HTTPAdapter.send,function,send,HTTPAdapter.send,requests/adapters.py,591,697,False,True,False,,,232cb3bc2f35,0,14,Sends PreparedRequest object. Returns Response object.
+requests/adapters.py::SOCKSProxyManager,function,SOCKSProxyManager,SOCKSProxyManager,requests/adapters.py,63,64,False,False,False,,,77de84b6c186,1,2,
+requests/adapters.py::_urllib3_request_context,function,_urllib3_request_context,_urllib3_request_context,requests/adapters.py,77,111,False,False,False,,,dbad55a477d6,1,1,
+requests/api.py,file,api.py,,requests/api.py,1,157,False,,,,,e2acc6d4ace7,0,0,
+requests/api.py::delete,function,delete,delete,requests/api.py,148,157,False,False,False,,,d592ec14f4fd,1,1,Sends a DELETE request.
+requests/api.py::get,function,get,get,requests/api.py,62,73,False,False,False,,,11cc3f33c618,1,1,Sends a GET request.
+requests/api.py::head,function,head,head,requests/api.py,88,100,False,False,False,,,e20f5395e91b,1,1,Sends a HEAD request.
+requests/api.py::options,function,options,options,requests/api.py,76,85,False,False,False,,,2786c749fad0,1,1,Sends an OPTIONS request.
+requests/api.py::patch,function,patch,patch,requests/api.py,133,145,False,False,False,,,5a9fc5ce8b89,1,1,Sends a PATCH request.
+requests/api.py::post,function,post,post,requests/api.py,103,115,False,False,False,,,653b0165b061,1,1,Sends a POST request.
+requests/api.py::put,function,put,put,requests/api.py,118,130,False,False,False,,,37f5a43ea1ef,1,1,Sends a PUT request.
+requests/api.py::request,function,request,request,requests/api.py,14,59,False,False,False,,,790313d3e8c1,8,5,Constructs and sends a :class:`Request <Request>`.
+requests/auth.py,file,auth.py,,requests/auth.py,1,314,False,,,,,ab1a9a63274d,0,3,
+requests/auth.py::AuthBase,class,AuthBase,AuthBase,requests/auth.py,69,73,False,,,,,3ec4ce0c41f2,4,0,Base class that all auth implementations derive from
+requests/auth.py::AuthBase.__call__,function,__call__,AuthBase.__call__,requests/auth.py,72,73,False,True,False,,,1186afec7fea,0,0,
+requests/auth.py::HTTPBasicAuth,class,HTTPBasicAuth,HTTPBasicAuth,requests/auth.py,76,96,False,,,,,73415da22fdc,4,2,Attaches HTTP Basic Authentication to the given Request object.
+requests/auth.py::HTTPBasicAuth.__call__,function,__call__,HTTPBasicAuth.__call__,requests/auth.py,94,96,False,True,False,,,3c19f12dcccd,0,1,
+requests/auth.py::HTTPBasicAuth.__eq__,function,__eq__,HTTPBasicAuth.__eq__,requests/auth.py,83,89,False,True,False,,,e678f155acc5,0,0,
+requests/auth.py::HTTPBasicAuth.__init__,function,__init__,HTTPBasicAuth.__init__,requests/auth.py,79,81,False,True,False,,,014c7401f364,1,0,
+requests/auth.py::HTTPBasicAuth.__ne__,function,__ne__,HTTPBasicAuth.__ne__,requests/auth.py,91,92,False,True,False,,,318699ed857e,0,0,
+requests/auth.py::HTTPDigestAuth,class,HTTPDigestAuth,HTTPDigestAuth,requests/auth.py,107,314,False,,,,,b006a9cffbd3,0,2,Attaches HTTP Digest Authentication to the given Request object.
+requests/auth.py::HTTPDigestAuth.__call__,function,__call__,HTTPDigestAuth.__call__,requests/auth.py,285,303,False,True,False,,,61dd80ae6447,0,4,
+requests/auth.py::HTTPDigestAuth.__eq__,function,__eq__,HTTPDigestAuth.__eq__,requests/auth.py,305,311,False,True,False,,,e678f155acc5,0,0,
+requests/auth.py::HTTPDigestAuth.__init__,function,__init__,HTTPDigestAuth.__init__,requests/auth.py,110,114,False,True,False,,,d0c21410d6f1,0,0,
+requests/auth.py::HTTPDigestAuth.__ne__,function,__ne__,HTTPDigestAuth.__ne__,requests/auth.py,313,314,False,True,False,,,318699ed857e,0,0,
+requests/auth.py::HTTPDigestAuth.build_digest_header,function,build_digest_header,HTTPDigestAuth.build_digest_header,requests/auth.py,126,234,False,True,False,,,cb6556ddce58,2,0,:rtype: str
+requests/auth.py::HTTPDigestAuth.handle_401,function,handle_401,HTTPDigestAuth.handle_401,requests/auth.py,241,283,False,True,False,,,0a7ee96b0c16,1,3,"Takes the given response and tries digest-auth, if needed."
+requests/auth.py::HTTPDigestAuth.handle_redirect,function,handle_redirect,HTTPDigestAuth.handle_redirect,requests/auth.py,236,239,False,True,False,,,54cf35c68636,1,0,Reset num_401_calls counter on redirects.
+requests/auth.py::HTTPDigestAuth.init_per_thread_state,function,init_per_thread_state,HTTPDigestAuth.init_per_thread_state,requests/auth.py,116,124,False,True,False,,,518d6e39bb41,1,0,
+requests/auth.py::HTTPProxyAuth,class,HTTPProxyAuth,HTTPProxyAuth,requests/auth.py,99,104,False,,,,,d9db19677cb2,0,2,Attaches HTTP Proxy Authentication to a given Request object.
+requests/auth.py::HTTPProxyAuth.__call__,function,__call__,HTTPProxyAuth.__call__,requests/auth.py,102,104,False,True,False,,,de65765e4943,0,1,
+requests/auth.py::_basic_auth_str,function,_basic_auth_str,_basic_auth_str,requests/auth.py,25,66,False,False,False,,,39d20bae054c,6,1,Returns a Basic Auth string.
+requests/certs.py,file,certs.py,,requests/certs.py,1,18,False,,,,,b6f014ba7ef6,0,0,
+requests/compat.py,file,compat.py,,requests/compat.py,1,106,False,,,,,c84392363790,0,1,
+requests/compat.py::_resolve_char_detection,function,_resolve_char_detection,_resolve_char_detection,requests/compat.py,30,39,False,False,False,,,63a697a2d3c6,1,0,Find supported character detection libraries.
+requests/cookies.py,file,cookies.py,,requests/cookies.py,1,561,False,,,,,904a118f4c9b,0,1,
+requests/cookies.py::CookieConflictError,class,CookieConflictError,CookieConflictError,requests/cookies.py,170,173,False,,,,RuntimeError,e68287aef405,2,0,There are two cookies that meet the criteria specified in the cookie jar.
+requests/cookies.py::MockRequest,class,MockRequest,MockRequest,requests/cookies.py,23,100,False,,,,,1e2e38f414b4,2,0,Wraps a `requests.Request` to mimic a `urllib2.Request`.
+requests/cookies.py::MockRequest.__init__,function,__init__,MockRequest.__init__,requests/cookies.py,35,38,False,True,False,,,3eb971824b38,2,0,
+requests/cookies.py::MockRequest.add_header,function,add_header,MockRequest.add_header,requests/cookies.py,78,82,False,True,False,,,0ac7f2bd2e4e,0,0,cookiejar has no legitimate use for this method; add it back if you find one.
+requests/cookies.py::MockRequest.add_unredirected_header,function,add_unredirected_header,MockRequest.add_unredirected_header,requests/cookies.py,84,85,False,True,False,,,2f266641ccea,0,0,
+requests/cookies.py::MockRequest.get_full_url,function,get_full_url,MockRequest.get_full_url,requests/cookies.py,49,67,False,True,False,,,116ca512e252,0,1,
+requests/cookies.py::MockRequest.get_header,function,get_header,MockRequest.get_header,requests/cookies.py,75,76,False,True,False,,,3fb760d4e68c,0,0,
+requests/cookies.py::MockRequest.get_host,function,get_host,MockRequest.get_host,requests/cookies.py,43,44,False,True,False,,,9b0299a83011,2,0,
+requests/cookies.py::MockRequest.get_new_headers,function,get_new_headers,MockRequest.get_new_headers,requests/cookies.py,87,88,False,True,False,,,1157253f6cea,1,0,
+requests/cookies.py::MockRequest.get_origin_req_host,function,get_origin_req_host,MockRequest.get_origin_req_host,requests/cookies.py,46,47,False,True,False,,,db29492d77ab,1,1,
+requests/cookies.py::MockRequest.get_type,function,get_type,MockRequest.get_type,requests/cookies.py,40,41,False,True,False,,,ba7c7ede6756,0,0,
+requests/cookies.py::MockRequest.has_header,function,has_header,MockRequest.has_header,requests/cookies.py,72,73,False,True,False,,,574e39f603af,0,0,
+requests/cookies.py::MockRequest.host,function,host,MockRequest.host,requests/cookies.py,99,100,False,True,False,property,,3004f8e6caf0,0,1,
+requests/cookies.py::MockRequest.is_unverifiable,function,is_unverifiable,MockRequest.is_unverifiable,requests/cookies.py,69,70,False,True,False,,,24ad4b109b87,1,0,
+requests/cookies.py::MockRequest.origin_req_host,function,origin_req_host,MockRequest.origin_req_host,requests/cookies.py,95,96,False,True,False,property,,f75260ff4616,0,1,
+requests/cookies.py::MockRequest.unverifiable,function,unverifiable,MockRequest.unverifiable,requests/cookies.py,91,92,False,True,False,property,,56fe37c2f48d,0,1,
+requests/cookies.py::MockResponse,class,MockResponse,MockResponse,requests/cookies.py,103,121,False,,,,,4a883f2055bd,1,0,Wraps a `httplib.HTTPMessage` to mimic a `urllib.addinfourl`.
+requests/cookies.py::MockResponse.__init__,function,__init__,MockResponse.__init__,requests/cookies.py,110,115,False,True,False,,,99957d74bd9e,1,0,Make a MockResponse for `cookiejar` to read.
+requests/cookies.py::MockResponse.getheaders,function,getheaders,MockResponse.getheaders,requests/cookies.py,120,121,False,True,False,,,40786d6fe755,0,0,
+requests/cookies.py::MockResponse.info,function,info,MockResponse.info,requests/cookies.py,117,118,False,True,False,,,b1a04224c999,0,0,
+requests/cookies.py::RequestsCookieJar,class,RequestsCookieJar,RequestsCookieJar,requests/cookies.py,176,437,False,,,,cookielib.CookieJar;MutableMapping,c4d570faebb1,4,0,"Compatibility class; is a http.cookiejar.CookieJar, but exposes a dict"
+requests/cookies.py::RequestsCookieJar.__contains__,function,__contains__,RequestsCookieJar.__contains__,requests/cookies.py,321,325,False,True,False,,,7f3facb09e2b,0,1,
+requests/cookies.py::RequestsCookieJar.__delitem__,function,__delitem__,RequestsCookieJar.__delitem__,requests/cookies.py,343,347,False,True,False,,,bdc27f560c69,0,1,Deletes a cookie given a name. Wraps ``http.cookiejar.CookieJar``'s
+requests/cookies.py::RequestsCookieJar.__getitem__,function,__getitem__,RequestsCookieJar.__getitem__,requests/cookies.py,327,334,False,True,False,,,764397c38b0e,0,1,Dict-like __getitem__() for compatibility with client code. Throws
+requests/cookies.py::RequestsCookieJar.__getstate__,function,__getstate__,RequestsCookieJar.__getstate__,requests/cookies.py,415,420,False,True,False,,,d8cec5d76c3b,0,0,"Unlike a normal CookieJar, this class is pickleable."
+requests/cookies.py::RequestsCookieJar.__setitem__,function,__setitem__,RequestsCookieJar.__setitem__,requests/cookies.py,336,341,False,True,False,,,92f837d7c344,0,1,Dict-like __setitem__ for compatibility with client code. Throws
+requests/cookies.py::RequestsCookieJar.__setstate__,function,__setstate__,RequestsCookieJar.__setstate__,requests/cookies.py,422,426,False,True,False,,,3628d19c3f56,0,0,"Unlike a normal CookieJar, this class is pickleable."
+requests/cookies.py::RequestsCookieJar._find,function,_find,RequestsCookieJar._find,requests/cookies.py,366,384,False,True,False,,,f33e855a9944,0,0,Requests uses this method internally to get cookie values.
+requests/cookies.py::RequestsCookieJar._find_no_duplicates,function,_find_no_duplicates,RequestsCookieJar._find_no_duplicates,requests/cookies.py,386,413,False,True,False,,,20ae97ad3dc3,2,1,Both ``__get_item__`` and ``get`` call this function: it's never
+requests/cookies.py::RequestsCookieJar.copy,function,copy,RequestsCookieJar.copy,requests/cookies.py,428,433,False,True,False,,,8ab736926458,0,3,Return a copy of this RequestsCookieJar.
+requests/cookies.py::RequestsCookieJar.get,function,get,RequestsCookieJar.get,requests/cookies.py,194,204,False,True,False,,,d34e6c853b3d,0,1,Dict-like get() that also supports optional domain and path args in
+requests/cookies.py::RequestsCookieJar.get_dict,function,get_dict,RequestsCookieJar.get_dict,requests/cookies.py,306,319,False,True,False,,,7c399a229a5c,0,0,Takes as an argument an optional domain and path and returns a plain
+requests/cookies.py::RequestsCookieJar.get_policy,function,get_policy,RequestsCookieJar.get_policy,requests/cookies.py,435,437,False,True,False,,,e28e6684fa4e,1,0,Return the CookiePolicy instance used.
+requests/cookies.py::RequestsCookieJar.items,function,items,RequestsCookieJar.items,requests/cookies.py,268,275,False,True,False,,,fe4d38b2464d,0,1,Dict-like items() that returns a list of name-value tuples from the
+requests/cookies.py::RequestsCookieJar.iteritems,function,iteritems,RequestsCookieJar.iteritems,requests/cookies.py,259,266,False,True,False,,,46a4cd92a0d6,1,0,Dict-like iteritems() that returns an iterator of name-value tuples
+requests/cookies.py::RequestsCookieJar.iterkeys,function,iterkeys,RequestsCookieJar.iterkeys,requests/cookies.py,225,232,False,True,False,,,1ab938bb479a,1,0,Dict-like iterkeys() that returns an iterator of names of cookies
+requests/cookies.py::RequestsCookieJar.itervalues,function,itervalues,RequestsCookieJar.itervalues,requests/cookies.py,242,249,False,True,False,,,88fa6169aacd,1,0,Dict-like itervalues() that returns an iterator of values of cookies
+requests/cookies.py::RequestsCookieJar.keys,function,keys,RequestsCookieJar.keys,requests/cookies.py,234,240,False,True,False,,,65a9ae86e72c,0,1,Dict-like keys() that returns a list of names of cookies from the
+requests/cookies.py::RequestsCookieJar.list_domains,function,list_domains,RequestsCookieJar.list_domains,requests/cookies.py,277,283,False,True,False,,,cdd83ef381e0,0,0,Utility method to list all the domains in the jar.
+requests/cookies.py::RequestsCookieJar.list_paths,function,list_paths,RequestsCookieJar.list_paths,requests/cookies.py,285,291,False,True,False,,,ba7b332be661,0,0,Utility method to list all the paths in the jar.
+requests/cookies.py::RequestsCookieJar.multiple_domains,function,multiple_domains,RequestsCookieJar.multiple_domains,requests/cookies.py,293,304,False,True,False,,,53db42cb03f4,0,0,Returns True if there are multiple domains in the jar.
+requests/cookies.py::RequestsCookieJar.set,function,set,RequestsCookieJar.set,requests/cookies.py,206,223,False,True,False,,,ab25ea40caed,1,4,Dict-like set() that also supports optional domain and path args in
+requests/cookies.py::RequestsCookieJar.set_cookie,function,set_cookie,RequestsCookieJar.set_cookie,requests/cookies.py,349,356,False,True,False,,,6c2cea08379d,2,0,
+requests/cookies.py::RequestsCookieJar.update,function,update,RequestsCookieJar.update,requests/cookies.py,358,364,False,True,False,,,fa01e9b51a08,1,1,Updates this jar with cookies from another CookieJar or dict-like
+requests/cookies.py::RequestsCookieJar.values,function,values,RequestsCookieJar.values,requests/cookies.py,251,257,False,True,False,,,60f7488f13be,0,1,Dict-like values() that returns a list of values of cookies from the
+requests/cookies.py::_copy_cookie_jar,function,_copy_cookie_jar,_copy_cookie_jar,requests/cookies.py,440,452,False,False,False,,,d3b9247da03b,2,0,
+requests/cookies.py::cookiejar_from_dict,function,cookiejar_from_dict,cookiejar_from_dict,requests/cookies.py,521,539,False,False,False,,,d7da48f1dee6,9,2,Returns a CookieJar from a key/value dictionary.
+requests/cookies.py::create_cookie,function,create_cookie,create_cookie,requests/cookies.py,455,489,False,False,False,,,2d24dee3e10e,3,0,Make a cookie from underspecified parameters.
+requests/cookies.py::extract_cookies_to_jar,function,extract_cookies_to_jar,extract_cookies_to_jar,requests/cookies.py,124,137,False,False,False,,,71daf7aa455d,7,4,Extract the cookies from the response into a CookieJar.
+requests/cookies.py::get_cookie_header,function,get_cookie_header,get_cookie_header,requests/cookies.py,140,148,False,False,False,,,db4ebb52308b,2,3,"Produce an appropriate Cookie header string to be sent with `request`, or None."
+requests/cookies.py::merge_cookies,function,merge_cookies,merge_cookies,requests/cookies.py,542,561,False,False,False,,,2fb38d1e9715,3,1,Add cookies to cookiejar and returns a merged CookieJar.
+requests/cookies.py::morsel_to_cookie,function,morsel_to_cookie,morsel_to_cookie,requests/cookies.py,492,518,False,False,False,,,7f5a0bb8e644,1,1,Convert a Morsel object into a Cookie containing the one k/v pair.
+requests/cookies.py::remove_cookie_by_name,function,remove_cookie_by_name,remove_cookie_by_name,requests/cookies.py,151,167,False,False,False,,,7e199e36ccdc,2,0,"Unsets a cookie by name, by default over all domains and paths."
+requests/exceptions.py,file,exceptions.py,,requests/exceptions.py,1,152,False,,,,,c08a17ed3ac7,0,0,
+requests/exceptions.py::ChunkedEncodingError,class,ChunkedEncodingError,ChunkedEncodingError,requests/exceptions.py,120,121,False,,,,,062576ffdc68,4,2,The server declared chunked encoding but sent an invalid chunk.
+requests/exceptions.py::ConnectTimeout,class,ConnectTimeout,ConnectTimeout,requests/exceptions.py,81,85,False,,,,,fb9e31202f20,3,4,The request timed out while trying to connect to the remote server.
+requests/exceptions.py::ConnectionError,class,ConnectionError,ConnectionError,requests/exceptions.py,60,61,False,,,,,40ae1306b51a,11,2,A Connection error occurred.
+requests/exceptions.py::ContentDecodingError,class,ContentDecodingError,ContentDecodingError,requests/exceptions.py,124,125,False,,,,BaseHTTPError,6532dd20251e,4,2,Failed to decode response content.
+requests/exceptions.py::FileModeWarning,class,FileModeWarning,FileModeWarning,requests/exceptions.py,147,148,False,,,,DeprecationWarning,b605fccd909c,3,2,"A file was opened in text mode, but Requests determined its binary length."
+requests/exceptions.py::HTTPError,class,HTTPError,HTTPError,requests/exceptions.py,56,57,False,,,,,c5244b7ffecc,4,2,An HTTP error occurred.
+requests/exceptions.py::InvalidHeader,class,InvalidHeader,InvalidHeader,requests/exceptions.py,112,113,False,,,,ValueError,e02fa1c0e316,4,2,The header value provided was somehow invalid.
+requests/exceptions.py::InvalidJSONError,class,InvalidJSONError,InvalidJSONError,requests/exceptions.py,28,29,False,,,,,4640b5e62139,4,2,A JSON error occurred.
+requests/exceptions.py::InvalidProxyURL,class,InvalidProxyURL,InvalidProxyURL,requests/exceptions.py,116,117,False,,,,,666baefcef00,3,2,The proxy URL provided is invalid.
+requests/exceptions.py::InvalidSchema,class,InvalidSchema,InvalidSchema,requests/exceptions.py,104,105,False,,,,ValueError,4f38c93a007d,4,2,The URL scheme provided is either invalid or unsupported.
+requests/exceptions.py::InvalidURL,class,InvalidURL,InvalidURL,requests/exceptions.py,108,109,False,,,,ValueError,2dee03bcdcbd,10,2,The URL provided was somehow invalid.
+requests/exceptions.py::JSONDecodeError,class,JSONDecodeError,JSONDecodeError,requests/exceptions.py,32,53,False,,,,CompatJSONDecodeError,9df261a447b1,3,2,Couldn't decode the text into json
+requests/exceptions.py::JSONDecodeError.__init__,function,__init__,JSONDecodeError.__init__,requests/exceptions.py,35,43,False,True,False,,,9ce400f20e87,1,1,Construct the JSONDecodeError instance first with all
+requests/exceptions.py::JSONDecodeError.__reduce__,function,__reduce__,JSONDecodeError.__reduce__,requests/exceptions.py,45,53,False,True,False,,,4c8d622b840f,0,0,The __reduce__ method called when pickling the object must
+requests/exceptions.py::MissingSchema,class,MissingSchema,MissingSchema,requests/exceptions.py,100,101,False,,,,ValueError,d99e9147eab0,2,2,The URL scheme (e.g. http or https) is missing.
+requests/exceptions.py::ProxyError,class,ProxyError,ProxyError,requests/exceptions.py,64,65,False,,,,,468837a819ac,2,2,A proxy error occurred.
+requests/exceptions.py::ReadTimeout,class,ReadTimeout,ReadTimeout,requests/exceptions.py,88,89,False,,,,,ebe8be570f49,3,2,The server did not send any data in the allotted amount of time.
+requests/exceptions.py::RequestException,class,RequestException,RequestException,requests/exceptions.py,13,25,False,,,,IOError,6d0cfeff685c,31,0,There was an ambiguous exception that occurred while handling your
+requests/exceptions.py::RequestException.__init__,function,__init__,RequestException.__init__,requests/exceptions.py,18,25,False,True,False,,,528ecfad4de5,14,0,Initialize RequestException with `request` and `response` objects.
+requests/exceptions.py::RequestsDependencyWarning,class,RequestsDependencyWarning,RequestsDependencyWarning,requests/exceptions.py,151,152,False,,,,,0f2e3f3f5d32,3,2,An imported dependency doesn't match the expected version range.
+requests/exceptions.py::RequestsWarning,class,RequestsWarning,RequestsWarning,requests/exceptions.py,143,144,False,,,,Warning,d393eb084d20,4,0,Base warning for Requests.
+requests/exceptions.py::RetryError,class,RetryError,RetryError,requests/exceptions.py,132,133,False,,,,,358ea0697287,2,2,Custom retries logic failed
+requests/exceptions.py::SSLError,class,SSLError,SSLError,requests/exceptions.py,68,69,False,,,,,96732c6b6fbe,4,2,An SSL error occurred.
+requests/exceptions.py::StreamConsumedError,class,StreamConsumedError,StreamConsumedError,requests/exceptions.py,128,129,False,,,,TypeError,15a114be9a35,2,2,The content for this response was already consumed.
+requests/exceptions.py::Timeout,class,Timeout,Timeout,requests/exceptions.py,72,78,False,,,,,4cb57340fd2f,5,2,The request timed out.
+requests/exceptions.py::TooManyRedirects,class,TooManyRedirects,TooManyRedirects,requests/exceptions.py,96,97,False,,,,,90675664492b,3,2,Too many redirects.
+requests/exceptions.py::URLRequired,class,URLRequired,URLRequired,requests/exceptions.py,92,93,False,,,,,7a05b536e0ad,1,2,A valid URL is required to make a request.
+requests/exceptions.py::UnrewindableBodyError,class,UnrewindableBodyError,UnrewindableBodyError,requests/exceptions.py,136,137,False,,,,,22d3de1ac151,2,2,Requests encountered an error when trying to rewind a body.
+requests/help.py,file,help.py,,requests/help.py,1,131,False,,,,,a82fc30d2414,0,1,
+requests/help.py::_implementation,function,_implementation,_implementation,requests/help.py,34,63,False,False,False,,,15c6b4aaa15b,1,0,Return a dict with the Python implementation and version.
+requests/help.py::info,function,info,info,requests/help.py,66,122,False,False,False,,,73f959a08a48,1,1,Generate information for a bug report.
+requests/help.py::main,function,main,main,requests/help.py,125,127,False,False,False,,,d593a20c62c5,1,1,Pretty-print the bug information as JSON.
+requests/hooks.py,file,hooks.py,,requests/hooks.py,1,34,False,,,,,ac53cbb93a6d,0,0,
+requests/hooks.py::default_hooks,function,default_hooks,default_hooks,requests/hooks.py,16,17,False,False,False,,,f4273f6bd55f,5,0,
+requests/hooks.py::dispatch_hook,function,dispatch_hook,dispatch_hook,requests/hooks.py,23,34,False,False,False,,,d890de689a59,2,0,Dispatches a hook dictionary on a given piece of data.
+requests/models.py,file,models.py,,requests/models.py,1,1041,False,,,,,acc92d4bc5fa,0,28,
+requests/models.py::PreparedRequest,class,PreparedRequest,PreparedRequest,requests/models.py,315,639,False,,,,,80143069ca40,7,4,"The fully mutable :class:`PreparedRequest <PreparedRequest>` object,"
+requests/models.py::PreparedRequest.__init__,function,__init__,PreparedRequest.__init__,requests/models.py,336,351,False,True,False,,,4d2d4232aa74,3,1,
+requests/models.py::PreparedRequest.__repr__,function,__repr__,PreparedRequest.__repr__,requests/models.py,381,382,False,True,False,,,136fcabffae4,0,0,
+requests/models.py::PreparedRequest._get_idna_encoded_host,function,_get_idna_encoded_host,PreparedRequest._get_idna_encoded_host,requests/models.py,402,409,False,True,False,staticmethod,,ed831523b541,1,0,
+requests/models.py::PreparedRequest.copy,function,copy,PreparedRequest.copy,requests/models.py,384,393,False,True,False,,,3ea3c4151ed3,0,4,
+requests/models.py::PreparedRequest.prepare,function,prepare,PreparedRequest.prepare,requests/models.py,353,379,False,True,False,,,e06b8f5252e7,2,7,Prepares the entire request with the given parameters.
+requests/models.py::PreparedRequest.prepare_auth,function,prepare_auth,PreparedRequest.prepare_auth,requests/models.py,590,610,False,True,False,,,1f2dab49b71b,1,4,Prepares the given HTTP auth data.
+requests/models.py::PreparedRequest.prepare_body,function,prepare_body,PreparedRequest.prepare_body,requests/models.py,496,572,False,True,False,,,c6e7df57fb21,1,7,Prepares the given HTTP body data.
+requests/models.py::PreparedRequest.prepare_content_length,function,prepare_content_length,PreparedRequest.prepare_content_length,requests/models.py,574,588,False,True,False,,,e45d9263f362,2,2,Prepare Content-Length header based on request method and body
+requests/models.py::PreparedRequest.prepare_cookies,function,prepare_cookies,PreparedRequest.prepare_cookies,requests/models.py,612,630,False,True,False,,,4198f1ec9c95,1,3,Prepares the given HTTP cookie data.
+requests/models.py::PreparedRequest.prepare_headers,function,prepare_headers,PreparedRequest.prepare_headers,requests/models.py,485,494,False,True,False,,,daeed09974cb,1,5,Prepares the given HTTP headers.
+requests/models.py::PreparedRequest.prepare_hooks,function,prepare_hooks,PreparedRequest.prepare_hooks,requests/models.py,632,639,False,True,False,,,f6138a267a74,1,1,Prepares the given hooks.
+requests/models.py::PreparedRequest.prepare_method,function,prepare_method,PreparedRequest.prepare_method,requests/models.py,395,399,False,True,False,,,d649928f0ac0,1,1,Prepares the given HTTP method.
+requests/models.py::PreparedRequest.prepare_url,function,prepare_url,PreparedRequest.prepare_url,requests/models.py,411,483,False,True,False,,,b777d756155f,1,8,Prepares the given HTTP URL.
+requests/models.py::Request,class,Request,Request,requests/models.py,232,312,False,,,,,95cbfe9ebbd3,4,2,A user-created :class:`Request <Request>` object.
+requests/models.py::Request.__init__,function,__init__,Request.__init__,requests/models.py,260,292,False,True,False,,,23763358799f,1,2,
+requests/models.py::Request.__repr__,function,__repr__,Request.__repr__,requests/models.py,294,295,False,True,False,,,5406873c2f26,0,0,
+requests/models.py::Request.prepare,function,prepare,Request.prepare,requests/models.py,297,312,False,True,False,,,c646d687d917,0,3,Constructs a :class:`PreparedRequest <PreparedRequest>` for transmission and returns it.
+requests/models.py::RequestEncodingMixin,class,RequestEncodingMixin,RequestEncodingMixin,requests/models.py,86,205,False,,,,,b4024cb8393b,2,0,
+requests/models.py::RequestEncodingMixin._encode_files,function,_encode_files,RequestEncodingMixin._encode_files,requests/models.py,139,205,False,True,False,staticmethod,,3366a9666e64,1,2,Build the body for a multipart/form-data request.
+requests/models.py::RequestEncodingMixin._encode_params,function,_encode_params,RequestEncodingMixin._encode_params,requests/models.py,109,136,False,True,False,staticmethod,,23b7e469b580,2,1,Encode parameters in a piece of data.
+requests/models.py::RequestEncodingMixin.path_url,function,path_url,RequestEncodingMixin.path_url,requests/models.py,88,106,False,True,False,property,,c8261a2d0b78,0,0,Build the path URL to use.
+requests/models.py::RequestHooksMixin,class,RequestHooksMixin,RequestHooksMixin,requests/models.py,208,229,False,,,,,81b200747eb3,4,0,
+requests/models.py::RequestHooksMixin.deregister_hook,function,deregister_hook,RequestHooksMixin.deregister_hook,requests/models.py,220,229,False,True,False,,,bd2e616618f7,0,0,Deregister a previously registered hook.
+requests/models.py::RequestHooksMixin.register_hook,function,register_hook,RequestHooksMixin.register_hook,requests/models.py,209,218,False,True,False,,,356de47bef0e,2,0,Properly register a hook.
+requests/models.py::Response,class,Response,Response,requests/models.py,642,1041,False,,,,,ccb8a4cc0c9b,3,0,"The :class:`Response <Response>` object, which contains a"
+requests/models.py::Response.__bool__,function,__bool__,Response.__bool__,requests/models.py,732,740,False,True,False,,,ebc40bb350d3,0,1,Returns True if :attr:`status_code` is less than 400.
+requests/models.py::Response.__enter__,function,__enter__,Response.__enter__,requests/models.py,707,708,False,True,False,,,e2128204fee9,0,0,
+requests/models.py::Response.__exit__,function,__exit__,Response.__exit__,requests/models.py,710,711,False,True,False,,,421af6b8529a,0,1,
+requests/models.py::Response.__getstate__,function,__getstate__,Response.__getstate__,requests/models.py,713,719,False,True,False,,,ae7eaa8205a9,0,1,
+requests/models.py::Response.__init__,function,__init__,Response.__init__,requests/models.py,660,705,False,True,False,,,2091af13715a,1,3,
+requests/models.py::Response.__iter__,function,__iter__,Response.__iter__,requests/models.py,752,754,False,True,False,,,d4cc7287b9c8,0,1,Allows you to use a response as an iterator.
+requests/models.py::Response.__nonzero__,function,__nonzero__,Response.__nonzero__,requests/models.py,742,750,False,True,False,,,72a316e7f3a3,0,1,Returns True if :attr:`status_code` is less than 400.
+requests/models.py::Response.__repr__,function,__repr__,Response.__repr__,requests/models.py,729,730,False,True,False,,,31f2b3243f69,0,0,
+requests/models.py::Response.__setstate__,function,__setstate__,Response.__setstate__,requests/models.py,721,727,False,True,False,,,8733223d1176,0,0,
+requests/models.py::Response.apparent_encoding,function,apparent_encoding,Response.apparent_encoding,requests/models.py,792,799,False,True,False,property,,ba3fc698d240,1,1,"The apparent encoding, provided by the charset_normalizer or chardet libraries."
+requests/models.py::Response.close,function,close,Response.close,requests/models.py,1030,1041,False,True,False,,,3732f177efa6,1,0,Releases the connection back to the pool. Once this method has been
+requests/models.py::Response.content,function,content,Response.content,requests/models.py,893,909,False,True,False,property,,9acd3e302ac7,4,1,"Content of the response, in bytes."
+requests/models.py::Response.is_permanent_redirect,function,is_permanent_redirect,Response.is_permanent_redirect,requests/models.py,779,784,False,True,False,property,,4e9e73843e2d,0,0,True if this Response one of the permanent versions of redirect.
+requests/models.py::Response.is_redirect,function,is_redirect,Response.is_redirect,requests/models.py,772,776,False,True,False,property,,ebb47f63e0e3,0,0,True if this Response is a well-formed HTTP redirect that could have
+requests/models.py::Response.iter_content,function,iter_content,Response.iter_content,requests/models.py,801,857,False,True,False,,,5d0ada6688e8,3,8,Iterates over the response data.  When stream=True is set on the
+requests/models.py::Response.iter_lines,function,iter_lines,Response.iter_lines,requests/models.py,859,890,False,True,False,,,bf1f7b4bbf80,0,1,"Iterates over the response data, one line at a time.  When"
+requests/models.py::Response.json,function,json,Response.json,requests/models.py,949,982,False,True,False,,,b1b1c8d403d4,0,5,Decodes the JSON response body (if any) as a Python object.
+requests/models.py::Response.links,function,links,Response.links,requests/models.py,985,999,False,True,False,property,,1c81e87fdc79,0,1,"Returns the parsed header links of the response, if any."
+requests/models.py::Response.next,function,next,Response.next,requests/models.py,787,789,False,True,False,property,,db2a439992f6,0,0,"Returns a PreparedRequest for the next request in a redirect chain, if there is one."
+requests/models.py::Response.ok,function,ok,Response.ok,requests/models.py,757,769,False,True,False,property,,948930533812,2,2,"Returns True if :attr:`status_code` is less than 400, False if not."
+requests/models.py::Response.raise_for_status,function,raise_for_status,Response.raise_for_status,requests/models.py,1001,1028,False,True,False,,,ae99fe7ab0b6,1,2,"Raises :class:`HTTPError`, if one occurred."
+requests/models.py::Response.text,function,text,Response.text,requests/models.py,912,947,False,True,False,property,,63ef9058a2df,1,2,"Content of the response, in unicode."
+requests/packages.py,file,packages.py,,requests/packages.py,1,23,False,,,,,285b7a8c218f,0,0,
+requests/sessions.py,file,sessions.py,,requests/sessions.py,1,834,False,,,,,ef7c8d948c2b,0,25,
+requests/sessions.py::Session,class,Session,Session,requests/sessions.py,357,819,False,,,,,4a15c6988fd7,3,2,A Requests session.
+requests/sessions.py::Session.__enter__,function,__enter__,Session.__enter__,requests/sessions.py,454,455,False,True,False,,,e2128204fee9,1,0,
+requests/sessions.py::Session.__exit__,function,__exit__,Session.__exit__,requests/sessions.py,457,458,False,True,False,,,421af6b8529a,1,1,
+requests/sessions.py::Session.__getstate__,function,__getstate__,Session.__getstate__,requests/sessions.py,813,815,False,True,False,,,975bb6082493,0,0,
+requests/sessions.py::Session.__init__,function,__init__,Session.__init__,requests/sessions.py,391,452,False,True,False,,,7c46f0ddb243,2,6,
+requests/sessions.py::Session.__setstate__,function,__setstate__,Session.__setstate__,requests/sessions.py,817,819,False,True,False,,,87df4542a4a0,0,0,
+requests/sessions.py::Session.close,function,close,Session.close,requests/sessions.py,797,800,False,True,False,,,0878927d0dbd,1,0,Closes all adapters and as such the session
+requests/sessions.py::Session.delete,function,delete,Session.delete,requests/sessions.py,666,674,False,True,False,,,9caeed7eaf39,0,1,Sends a DELETE request. Returns :class:`Response` object.
+requests/sessions.py::Session.get,function,get,Session.get,requests/sessions.py,596,605,False,True,False,,,35ebcc5c3a76,0,1,Sends a GET request. Returns :class:`Response` object.
+requests/sessions.py::Session.get_adapter,function,get_adapter,Session.get_adapter,requests/sessions.py,784,795,False,True,False,,,812ec486d346,1,2,Returns the appropriate connection adapter for the given URL.
+requests/sessions.py::Session.head,function,head,Session.head,requests/sessions.py,618,627,False,True,False,,,328f2f1a90b4,0,1,Sends a HEAD request. Returns :class:`Response` object.
+requests/sessions.py::Session.merge_environment_settings,function,merge_environment_settings,Session.merge_environment_settings,requests/sessions.py,753,782,False,True,False,,,5361ccc84400,1,2,Check the environment and merge it with some settings.
+requests/sessions.py::Session.mount,function,mount,Session.mount,requests/sessions.py,802,811,False,True,False,,,f0c71159f090,1,0,Registers a connection adapter to a prefix.
+requests/sessions.py::Session.options,function,options,Session.options,requests/sessions.py,607,616,False,True,False,,,40246156e7ef,0,1,Sends a OPTIONS request. Returns :class:`Response` object.
+requests/sessions.py::Session.patch,function,patch,Session.patch,requests/sessions.py,654,664,False,True,False,,,7ffd6a5a1467,0,1,Sends a PATCH request. Returns :class:`Response` object.
+requests/sessions.py::Session.post,function,post,Session.post,requests/sessions.py,629,640,False,True,False,,,24fa3ff018bf,0,1,Sends a POST request. Returns :class:`Response` object.
+requests/sessions.py::Session.prepare_request,function,prepare_request,Session.prepare_request,requests/sessions.py,460,501,False,True,False,,,a8207d6e1524,1,10,Constructs a :class:`PreparedRequest <PreparedRequest>` for
+requests/sessions.py::Session.put,function,put,Session.put,requests/sessions.py,642,652,False,True,False,,,dbf0ad8d09d0,0,1,Sends a PUT request. Returns :class:`Response` object.
+requests/sessions.py::Session.request,function,request,Session.request,requests/sessions.py,503,594,False,True,False,,,00015997633c,8,5,"Constructs a :class:`Request <Request>`, prepares it and sends it."
+requests/sessions.py::Session.send,function,send,Session.send,requests/sessions.py,676,751,False,True,False,,,4f43c36c7a40,1,6,Send a given PreparedRequest.
+requests/sessions.py::SessionRedirectMixin,class,SessionRedirectMixin,SessionRedirectMixin,requests/sessions.py,107,354,False,,,,,fc00f0d1aa45,2,0,
+requests/sessions.py::SessionRedirectMixin.get_redirect_target,function,get_redirect_target,SessionRedirectMixin.get_redirect_target,requests/sessions.py,108,126,False,True,False,,,33ae5a2b4bd8,1,1,Receives a Response. Returns a redirect URI or ``None``
+requests/sessions.py::SessionRedirectMixin.rebuild_auth,function,rebuild_auth,SessionRedirectMixin.rebuild_auth,requests/sessions.py,283,301,False,True,False,,,e734820a19e4,1,2,When being redirected we may want to strip authentication from the
+requests/sessions.py::SessionRedirectMixin.rebuild_method,function,rebuild_method,SessionRedirectMixin.rebuild_method,requests/sessions.py,334,354,False,True,False,,,9e6388249997,1,0,When being redirected we may want to change the method of the request
+requests/sessions.py::SessionRedirectMixin.rebuild_proxies,function,rebuild_proxies,SessionRedirectMixin.rebuild_proxies,requests/sessions.py,303,332,False,True,False,,,49ab6e2c8a03,1,3,This method re-evaluates the proxy configuration by considering the
+requests/sessions.py::SessionRedirectMixin.resolve_redirects,function,resolve_redirects,SessionRedirectMixin.resolve_redirects,requests/sessions.py,160,281,False,True,False,,,efd1282272bc,1,13,Receives a Response. Returns a generator of Responses or Requests.
+requests/sessions.py::SessionRedirectMixin.should_strip_auth,function,should_strip_auth,SessionRedirectMixin.should_strip_auth,requests/sessions.py,128,158,False,True,False,,,bfba4828325c,1,0,Decide whether Authorization header should be removed when redirecting
+requests/sessions.py::merge_hooks,function,merge_hooks,merge_hooks,requests/sessions.py,92,104,False,False,False,,,6fb4c1cd32af,1,1,Properly merges both requests and session hooks.
+requests/sessions.py::merge_setting,function,merge_setting,merge_setting,requests/sessions.py,62,89,False,False,False,,,de4152fd0f6e,3,1,"Determines appropriate setting for a given request, taking into account"
+requests/sessions.py::session,function,session,session,requests/sessions.py,822,834,False,False,False,,,d091c04f6e40,1,2,Returns a :class:`Session` for context-management.
+requests/status_codes.py,file,status_codes.py,,requests/status_codes.py,1,128,False,,,,,cf59c07d2dfa,0,4,
+requests/status_codes.py::_init,function,_init,_init,requests/status_codes.py,109,125,False,False,False,,,c06a9fb4bb5f,1,0,
+requests/structures.py,file,structures.py,,requests/structures.py,1,99,False,,,,,b5c2c740b9ff,0,0,
+requests/structures.py::CaseInsensitiveDict,class,CaseInsensitiveDict,CaseInsensitiveDict,requests/structures.py,13,80,False,,,,MutableMapping,c802e4749824,11,0,A case-insensitive ``dict``-like object.
+requests/structures.py::CaseInsensitiveDict.__delitem__,function,__delitem__,CaseInsensitiveDict.__delitem__,requests/structures.py,54,55,False,True,False,,,11a37cddae45,0,0,
+requests/structures.py::CaseInsensitiveDict.__eq__,function,__eq__,CaseInsensitiveDict.__eq__,requests/structures.py,67,73,False,True,False,,,33fa373ce22f,0,3,
+requests/structures.py::CaseInsensitiveDict.__getitem__,function,__getitem__,CaseInsensitiveDict.__getitem__,requests/structures.py,51,52,False,True,False,,,6ed882a1fced,0,0,
+requests/structures.py::CaseInsensitiveDict.__init__,function,__init__,CaseInsensitiveDict.__init__,requests/structures.py,40,44,False,True,False,,,6b5eff203eca,6,0,
+requests/structures.py::CaseInsensitiveDict.__iter__,function,__iter__,CaseInsensitiveDict.__iter__,requests/structures.py,57,58,False,True,False,,,d03174d45a07,0,0,
+requests/structures.py::CaseInsensitiveDict.__len__,function,__len__,CaseInsensitiveDict.__len__,requests/structures.py,60,61,False,True,False,,,525dfea73758,0,0,
+requests/structures.py::CaseInsensitiveDict.__repr__,function,__repr__,CaseInsensitiveDict.__repr__,requests/structures.py,79,80,False,True,False,,,e71b66ea5ed1,0,0,
+requests/structures.py::CaseInsensitiveDict.__setitem__,function,__setitem__,CaseInsensitiveDict.__setitem__,requests/structures.py,46,49,False,True,False,,,9a5933c915b8,4,0,
+requests/structures.py::CaseInsensitiveDict.copy,function,copy,CaseInsensitiveDict.copy,requests/structures.py,76,77,False,True,False,,,82400e05318a,1,2,
+requests/structures.py::CaseInsensitiveDict.lower_items,function,lower_items,CaseInsensitiveDict.lower_items,requests/structures.py,63,65,False,True,False,,,b680db11e200,1,0,"Like iteritems(), but with all lowercase keys."
+requests/structures.py::LookupDict,class,LookupDict,LookupDict,requests/structures.py,83,99,False,,,,dict,1dc89251bb4b,2,0,Dictionary lookup object.
+requests/structures.py::LookupDict.__getitem__,function,__getitem__,LookupDict.__getitem__,requests/structures.py,93,96,False,True,False,,,2ee34e972cb5,0,0,
+requests/structures.py::LookupDict.__init__,function,__init__,LookupDict.__init__,requests/structures.py,86,88,False,True,False,,,4988e144b3fa,1,0,
+requests/structures.py::LookupDict.__repr__,function,__repr__,LookupDict.__repr__,requests/structures.py,90,91,False,True,False,,,7da1b2c8e08a,0,0,
+requests/structures.py::LookupDict.get,function,get,LookupDict.get,requests/structures.py,98,99,False,True,False,,,a744de62bda4,0,0,
+requests/utils.py,file,utils.py,,requests/utils.py,1,1083,False,,,,,4b2973e501bb,0,7,
+requests/utils.py::_parse_content_type_header,function,_parse_content_type_header,_parse_content_type_header,requests/utils.py,504,523,False,False,False,,,de71745d6739,1,0,Returns content type and parameters from given header.
+requests/utils.py::_validate_header_part,function,_validate_header_part,_validate_header_part,requests/utils.py,1032,1048,False,False,False,,,d32f118a0477,1,2,
+requests/utils.py::add_dict_to_cookiejar,function,add_dict_to_cookiejar,add_dict_to_cookiejar,requests/utils.py,468,476,False,False,False,,,0db4d9aa2bf3,0,1,Returns a CookieJar from a key/value dictionary.
+requests/utils.py::address_in_network,function,address_in_network,address_in_network,requests/utils.py,669,681,False,False,False,,,8bdc186d079e,1,1,This function allows you to check if an IP belongs to a network subnet
+requests/utils.py::atomic_open,function,atomic_open,atomic_open,requests/utils.py,296,305,False,False,False,contextlib.contextmanager,,3a6eddce77cc,0,0,Write a file to the disk in an atomic fashion
+requests/utils.py::check_header_validity,function,check_header_validity,check_header_validity,requests/utils.py,1021,1029,False,False,False,,,b3ddb633d41d,2,1,Verifies that header parts don't contain leading whitespace
+requests/utils.py::default_headers,function,default_headers,default_headers,requests/utils.py,887,898,False,False,False,,,21289a6840de,2,3,:rtype: requests.structures.CaseInsensitiveDict
+requests/utils.py::default_user_agent,function,default_user_agent,default_user_agent,requests/utils.py,878,884,False,False,False,,,e7ba6a5b0c9d,1,0,Return a string representing the default user agent.
+requests/utils.py::dict_from_cookiejar,function,dict_from_cookiejar,dict_from_cookiejar,requests/utils.py,457,465,False,False,False,,,39de5229ed9e,0,0,Returns a key/value dictionary from a CookieJar.
+requests/utils.py::dict_to_sequence,function,dict_to_sequence,dict_to_sequence,requests/utils.py,126,132,False,False,False,,,681c1a596019,0,0,Returns an internal sequence dictionary update.
+requests/utils.py::dotted_netmask,function,dotted_netmask,dotted_netmask,requests/utils.py,684,692,False,False,False,,,4215f0e6dfb5,1,0,Converts mask from /xx format to xxx.xxx.xxx.xxx
+requests/utils.py::extract_zipped_paths,function,extract_zipped_paths,extract_zipped_paths,requests/utils.py,257,292,False,False,False,,,025f88eff1fd,0,0,Replace nonexistent paths that look like they refer to a member of a zip
+requests/utils.py::from_key_val_list,function,from_key_val_list,from_key_val_list,requests/utils.py,308,332,False,False,False,,,c197f211f5af,0,0,Take an object and test to see if it can be represented as a
+requests/utils.py::get_auth_from_url,function,get_auth_from_url,get_auth_from_url,requests/utils.py,1005,1018,False,False,False,,,090305316dba,7,0,"Given a url with authentication components, extract them into a tuple of"
+requests/utils.py::get_encoding_from_headers,function,get_encoding_from_headers,get_encoding_from_headers,requests/utils.py,526,548,False,False,False,,,3938cccc0a2e,3,1,Returns encodings from given HTTP Header Dict.
+requests/utils.py::get_encodings_from_content,function,get_encodings_from_content,get_encodings_from_content,requests/utils.py,479,501,False,False,False,,,79f2e98654d8,0,0,Returns encodings from given content string.
+requests/utils.py::get_environ_proxies,function,get_environ_proxies,get_environ_proxies,requests/utils.py,813,822,False,False,False,,,b372d243a756,3,1,Return a dict of environment proxies.
+requests/utils.py::get_netrc_auth,function,get_netrc_auth,get_netrc_auth,requests/utils.py,206,247,False,False,False,,,c282cbaae042,3,0,Returns the Requests tuple auth for a given url from netrc.
+requests/utils.py::get_unicode_from_response,function,get_unicode_from_response,get_unicode_from_response,requests/utils.py,578,614,False,False,False,,,367bb35052c0,0,1,Returns the requested content back in unicode.
+requests/utils.py::guess_filename,function,guess_filename,guess_filename,requests/utils.py,250,254,False,False,False,,,c2d13442ba4d,2,0,Tries to guess the filename of the given object.
+requests/utils.py::guess_json_utf,function,guess_json_utf,guess_json_utf,requests/utils.py,944,973,False,False,False,,,99c5fff4157f,2,0,:rtype: str
+requests/utils.py::is_ipv4_address,function,is_ipv4_address,is_ipv4_address,requests/utils.py,695,703,False,False,False,,,d19ff09e4b82,1,0,:rtype: bool
+requests/utils.py::is_valid_cidr,function,is_valid_cidr,is_valid_cidr,requests/utils.py,706,727,False,False,False,,,c1e66091760b,1,0,Very simple check of the cidr format in no_proxy variable.
+requests/utils.py::iter_slices,function,iter_slices,iter_slices,requests/utils.py,568,575,False,False,False,,,03bacbfe2600,2,0,Iterate over slices of a string.
+requests/utils.py::parse_dict_header,function,parse_dict_header,parse_dict_header,requests/utils.py,397,428,False,False,False,,,fae224ac0081,2,1,"Parse lists of key, value pairs as described by RFC 2068 Section 2 and"
+requests/utils.py::parse_header_links,function,parse_header_links,parse_header_links,requests/utils.py,901,935,False,False,False,,,332330b7c1cf,2,0,Return a list of parsed link headers proxies.
+requests/utils.py::parse_list_header,function,parse_list_header,parse_list_header,requests/utils.py,365,393,False,False,False,,,fb5b93704049,0,1,Parse lists as described by RFC 2068 Section 2.
+requests/utils.py::prepend_scheme_if_needed,function,prepend_scheme_if_needed,prepend_scheme_if_needed,requests/utils.py,976,1002,False,False,False,,,a2468c7fe94c,3,0,"Given a URL that may or may not have a scheme, prepend the given scheme."
+requests/utils.py::proxy_bypass,function,proxy_bypass,proxy_bypass,requests/utils.py,114,123,False,False,False,,,f8c96c1c4264,1,1,"Return True, if the host should be bypassed."
+requests/utils.py::proxy_bypass_registry,function,proxy_bypass_registry,proxy_bypass_registry,requests/utils.py,76,112,False,False,False,,,630e6717fbe4,1,0,
+requests/utils.py::requote_uri,function,requote_uri,requote_uri,requests/utils.py,647,666,False,False,False,,,367cdae168f1,4,2,Re-quote the given URI.
+requests/utils.py::resolve_proxies,function,resolve_proxies,resolve_proxies,requests/utils.py,851,875,False,False,False,,,1f89589bde59,3,2,This method takes proxy information from a request and configuration
+requests/utils.py::rewind_body,function,rewind_body,rewind_body,requests/utils.py,1068,1083,False,False,False,,,387ca99076d1,2,2,Move file pointer back to its recorded starting position
+requests/utils.py::select_proxy,function,select_proxy,select_proxy,requests/utils.py,825,848,False,False,False,,,b0d5be885fb7,4,0,"Select a proxy for the url, if applicable."
+requests/utils.py::set_environ,function,set_environ,set_environ,requests/utils.py,731,749,False,False,False,contextlib.contextmanager,,669886150b1b,1,0,Set the environment variable 'env_name' to 'value'
+requests/utils.py::should_bypass_proxies,function,should_bypass_proxies,should_bypass_proxies,requests/utils.py,752,810,False,False,False,,,2934fb3b3511,3,5,Returns whether we should bypass proxies or not.
+requests/utils.py::stream_decode_response_unicode,function,stream_decode_response_unicode,stream_decode_response_unicode,requests/utils.py,551,565,False,False,False,,,51a64cb1a141,2,0,Stream decodes an iterator.
+requests/utils.py::super_len,function,super_len,super_len,requests/utils.py,135,203,False,False,False,,,0fd652ae69f1,3,1,
+requests/utils.py::to_key_val_list,function,to_key_val_list,to_key_val_list,requests/utils.py,335,361,False,False,False,,,5be7cdf00ea7,5,0,Take an object and test to see if it can be represented as a
+requests/utils.py::unquote_header_value,function,unquote_header_value,unquote_header_value,requests/utils.py,432,454,False,False,False,,,c8ddbe1e07c7,2,0,Unquotes a header value.  (Reversal of :func:`quote_header_value`).
+requests/utils.py::unquote_unreserved,function,unquote_unreserved,unquote_unreserved,requests/utils.py,623,644,False,False,False,,,897e1cad2dc6,1,2,Un-escape any percent-escape sequences in a URI that are unreserved
+requests/utils.py::urldefragauth,function,urldefragauth,urldefragauth,requests/utils.py,1051,1065,False,False,False,,,bf05f3a027d9,2,0,Given a url remove the fragment and the authentication part.

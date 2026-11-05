@@ -1,0 +1,44 @@
+{
+ "requests": {
+  "calls_total": 938,
+  "unresolved_pct": 38.272921108742004,
+  "resolved_pct": 25.479744136460553,
+  "seconds": 0.1
+ },
+ "click": {
+  "calls_total": 1832,
+  "unresolved_pct": 37.77292576419214,
+  "resolved_pct": 23.362445414847162,
+  "seconds": 0.1
+ },
+ "flask": {
+  "calls_total": 1170,
+  "unresolved_pct": 42.82051282051282,
+  "resolved_pct": 14.786324786324787,
+  "seconds": 0.1
+ },
+ "jinja2": {
+  "calls_total": 3044,
+  "unresolved_pct": 35.31537450722733,
+  "resolved_pct": 34.95400788436268,
+  "seconds": 0.2
+ },
+ "markdown": {
+  "calls_total": 2148,
+  "unresolved_pct": 60.52141527001862,
+  "resolved_pct": 17.5512104283054,
+  "seconds": 0.1
+ },
+ "werkzeug": {
+  "calls_total": 3892,
+  "unresolved_pct": 40.056526207605344,
+  "resolved_pct": 24.820143884892087,
+  "seconds": 0.3
+ },
+ "networkx": {
+  "calls_total": 50423,
+  "unresolved_pct": 62.84037046585883,
+  "resolved_pct": 6.877813696130734,
+  "seconds": 4.0
+ }
+}

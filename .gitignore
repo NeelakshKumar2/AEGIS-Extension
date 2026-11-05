@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# AEGIS specific build/output folders
+aegis_out/
+outputs/
+
+# CONFIDENTIAL RESEARCH DATA (DO NOT UPLOAD)
+results/
+
+# CLONED REPOSITORIES (DO NOT UPLOAD)
+data/repos/

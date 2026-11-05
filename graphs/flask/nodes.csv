@@ -1,0 +1,397 @@
+id,type,name,qualname,path,lineno,end_lineno,is_test_file,is_method,is_async,decorators,ext_bases,body_hash,fan_in,fan_out,doc
+flask/__init__.py,file,__init__.py,,flask/__init__.py,1,61,False,,,,,1fdca1fcb870,0,24,
+flask/__init__.py::__getattr__,function,__getattr__,__getattr__,flask/__init__.py,47,61,False,False,False,,,5d4a67f09624,0,0,
+flask/__main__.py,file,__main__.py,,flask/__main__.py,1,3,False,,,,,235727669d23,0,2,
+flask/app.py,file,app.py,,flask/app.py,1,1536,False,,,,,f591bf0eb243,0,16,
+flask/app.py::Flask,class,Flask,Flask,flask/app.py,81,1536,False,,,,,8b9c85a37d52,36,6,The flask object implements a WSGI application and acts as the central
+flask/app.py::Flask.__call__,function,__call__,Flask.__call__,flask/app.py,1529,1536,False,True,False,,,a31727fc2811,0,1,The WSGI server calls the Flask application object as the
+flask/app.py::Flask.__init__,function,__init__,Flask.__init__,flask/app.py,226,279,False,True,False,,,a801943a6a1f,0,6,
+flask/app.py::Flask.app_context,function,app_context,Flask.app_context,flask/app.py,1386,1405,False,True,False,,,a497052eeb64,1,3,Create an :class:`~flask.ctx.AppContext`. Use as a ``with``
+flask/app.py::Flask.async_to_sync,function,async_to_sync,Flask.async_to_sync,flask/app.py,980,1001,False,True,False,,,707f4e3f6042,1,0,Return a sync function that will run the coroutine function.
+flask/app.py::Flask.create_jinja_environment,function,create_jinja_environment,Flask.create_jinja_environment,flask/app.py,385,423,False,True,False,,,736c8c438396,0,7,Create the Jinja environment based on :attr:`jinja_options`
+flask/app.py::Flask.create_url_adapter,function,create_url_adapter,Flask.create_url_adapter,flask/app.py,425,476,False,True,False,,,63a9f61f851f,3,1,Creates a URL adapter for the given request. The URL adapter
+flask/app.py::Flask.dispatch_request,function,dispatch_request,Flask.dispatch_request,flask/app.py,879,902,False,True,False,,,40f80000d2f2,1,3,Does the request dispatching.  Matches the URL and returns the
+flask/app.py::Flask.do_teardown_appcontext,function,do_teardown_appcontext,Flask.do_teardown_appcontext,flask/app.py,1360,1384,False,True,False,,,eab5b560cd61,1,2,Called right before the application context is popped.
+flask/app.py::Flask.do_teardown_request,function,do_teardown_request,Flask.do_teardown_request,flask/app.py,1326,1358,False,True,False,,,8475b427652d,1,3,Called after the request is dispatched and the response is
+flask/app.py::Flask.ensure_sync,function,ensure_sync,Flask.ensure_sync,flask/app.py,966,978,False,True,False,,,6437acba5517,20,1,Ensure that the function is synchronous for WSGI workers.
+flask/app.py::Flask.finalize_request,function,finalize_request,Flask.finalize_request,flask/app.py,922,951,False,True,False,,,1f543adefa0f,2,5,Given the return value from a view function this finalizes
+flask/app.py::Flask.full_dispatch_request,function,full_dispatch_request,Flask.full_dispatch_request,flask/app.py,904,920,False,True,False,,,515afdceaabe,1,6,Dispatches the request and on top of that performs request
+flask/app.py::Flask.get_send_file_max_age,function,get_send_file_max_age,Flask.get_send_file_max_age,flask/app.py,281,306,False,True,False,,,001737549769,2,0,Used by :func:`send_file` to determine the ``max_age`` cache
+flask/app.py::Flask.handle_exception,function,handle_exception,Flask.handle_exception,flask/app.py,811,862,False,True,False,,,87af046afbaa,1,7,Handle an exception that did not have an error handler
+flask/app.py::Flask.handle_http_exception,function,handle_http_exception,Flask.handle_http_exception,flask/app.py,744,777,False,True,False,,,2d56fe3b84cb,1,3,Handles an HTTP exception.  By default this will invoke the
+flask/app.py::Flask.handle_user_exception,function,handle_user_exception,Flask.handle_user_exception,flask/app.py,779,809,False,True,False,,,885529a35485,1,5,This method is called whenever an exception occurs that
+flask/app.py::Flask.log_exception,function,log_exception,Flask.log_exception,flask/app.py,864,877,False,True,False,,,52e75b32940a,1,1,Logs an exception.  This is called by :meth:`handle_exception`
+flask/app.py::Flask.make_default_options_response,function,make_default_options_response,Flask.make_default_options_response,flask/app.py,953,964,False,True,False,,,c86d6dde4d46,1,2,This method is called to create the default ``OPTIONS`` response.
+flask/app.py::Flask.make_response,function,make_response,Flask.make_response,flask/app.py,1129,1269,False,True,False,,,645e249ad504,2,4,Convert the return value from a view function to an instance of
+flask/app.py::Flask.make_shell_context,function,make_shell_context,Flask.make_shell_context,flask/app.py,534,544,False,True,False,,,9169c6526cb7,1,0,Returns the shell context for an interactive shell for this
+flask/app.py::Flask.open_instance_resource,function,open_instance_resource,Flask.open_instance_resource,flask/app.py,363,383,False,True,False,,,69102dbd663c,0,0,Open a resource file relative to the application's instance folder
+flask/app.py::Flask.open_resource,function,open_resource,Flask.open_resource,flask/app.py,330,361,False,True,False,,,011c6f0e6df8,0,0,Open a resource file relative to :attr:`root_path` for reading.
+flask/app.py::Flask.preprocess_request,function,preprocess_request,Flask.preprocess_request,flask/app.py,1271,1296,False,True,False,,,a1bc00dbdecc,1,3,Called before the request is dispatched. Calls
+flask/app.py::Flask.process_response,function,process_response,Flask.process_response,flask/app.py,1298,1324,False,True,False,,,8393e951b133,1,5,Can be overridden in order to modify the response object
+flask/app.py::Flask.raise_routing_exception,function,raise_routing_exception,Flask.raise_routing_exception,flask/app.py,478,504,False,True,False,,,772e92327d73,1,3,Intercept routing exceptions and possibly do something else.
+flask/app.py::Flask.request_context,function,request_context,Flask.request_context,flask/app.py,1407,1421,False,True,False,,,e54203ef68c7,2,3,Create a :class:`~flask.ctx.RequestContext` representing a
+flask/app.py::Flask.run,function,run,Flask.run,flask/app.py,546,667,False,True,False,,,4cddb88211c8,0,5,Runs the application on a local development server.
+flask/app.py::Flask.send_static_file,function,send_static_file,Flask.send_static_file,flask/app.py,308,328,False,True,False,,,42902d8ad926,0,5,The view function used to serve files from
+flask/app.py::Flask.test_cli_runner,function,test_cli_runner,Flask.test_cli_runner,flask/app.py,727,742,False,True,False,,,c14f1a489a52,0,3,Create a CLI runner for testing CLI commands.
+flask/app.py::Flask.test_client,function,test_client,Flask.test_client,flask/app.py,669,725,False,True,False,,,370d8b71d53c,0,4,Creates a test client for this application.  For information
+flask/app.py::Flask.test_request_context,function,test_request_context,Flask.test_request_context,flask/app.py,1423,1477,False,True,False,,,4717e1536665,1,4,Create a :class:`~flask.ctx.RequestContext` for a WSGI
+flask/app.py::Flask.update_template_context,function,update_template_context,Flask.update_template_context,flask/app.py,506,532,False,True,False,,,3bf9b8519bfc,2,2,Update the template context with some commonly used variables.
+flask/app.py::Flask.url_for,function,url_for,Flask.url_for,flask/app.py,1003,1127,False,True,False,,,5ffcaef0fc75,2,3,Generate a URL to the given endpoint with the given values.
+flask/app.py::Flask.wsgi_app,function,wsgi_app,Flask.wsgi_app,flask/app.py,1479,1527,False,True,False,,,f02ef43dbf94,1,6,The actual WSGI application. This is not implemented in
+flask/app.py::_make_timedelta,function,_make_timedelta,_make_timedelta,flask/app.py,74,78,False,False,False,,,ec42b3d4b38e,0,0,
+flask/blueprints.py,file,blueprints.py,,flask/blueprints.py,1,128,False,,,,,9ec3c242801f,0,5,
+flask/blueprints.py::Blueprint,class,Blueprint,Blueprint,flask/blueprints.py,18,128,False,,,,,b00c5b106581,3,2,
+flask/blueprints.py::Blueprint.__init__,function,__init__,Blueprint.__init__,flask/blueprints.py,19,53,False,True,False,,,cd404dcc1828,0,2,
+flask/blueprints.py::Blueprint.get_send_file_max_age,function,get_send_file_max_age,Blueprint.get_send_file_max_age,flask/blueprints.py,55,80,False,True,False,,,001737549769,1,0,Used by :func:`send_file` to determine the ``max_age`` cache
+flask/blueprints.py::Blueprint.open_resource,function,open_resource,Blueprint.open_resource,flask/blueprints.py,104,128,False,True,False,,,d68b8b5e244d,0,0,Open a resource file relative to :attr:`root_path` for reading. The
+flask/blueprints.py::Blueprint.send_static_file,function,send_static_file,Blueprint.send_static_file,flask/blueprints.py,82,102,False,True,False,,,42902d8ad926,0,5,The view function used to serve files from
+flask/cli.py,file,cli.py,,flask/cli.py,1,1135,False,,,,,9a94e72e3718,0,11,
+flask/cli.py::AppGroup,class,AppGroup,AppGroup,flask/cli.py,405,437,False,,,,click.Group,9342612202b3,7,0,This works similar to a regular click :class:`~click.Group` but it
+flask/cli.py::AppGroup.command,function,command,AppGroup.command,flask/cli.py,413,427,False,True,False,,,8560ee4124c4,0,2,This works exactly like the method of the same name on a regular
+flask/cli.py::AppGroup.group,function,group,AppGroup.group,flask/cli.py,429,437,False,True,False,,,35cf9254df13,0,1,This works exactly like the method of the same name on a regular
+flask/cli.py::CertParamType,class,CertParamType,CertParamType,flask/cli.py,788,833,False,,,,click.ParamType,c37faaf231ad,1,0,Click option type for the ``--cert`` option. Allows either an
+flask/cli.py::CertParamType.__init__,function,__init__,CertParamType.__init__,flask/cli.py,796,797,False,True,False,,,938e8dc2e2de,1,0,
+flask/cli.py::CertParamType.convert,function,convert,CertParamType.convert,flask/cli.py,799,833,False,True,False,,,dc1d667e524b,0,0,
+flask/cli.py::FlaskGroup,class,FlaskGroup,FlaskGroup,flask/cli.py,531,696,False,,,,,5c8cf9481980,1,2,Special subclass of the :class:`AppGroup` group that supports
+flask/cli.py::FlaskGroup.__init__,function,__init__,FlaskGroup.__init__,flask/cli.py,563,598,False,True,False,,,f8fcc58ef802,1,4,
+flask/cli.py::FlaskGroup._load_plugin_commands,function,_load_plugin_commands,FlaskGroup._load_plugin_commands,flask/cli.py,600,615,False,True,False,,,ce079c36cdf9,2,0,
+flask/cli.py::FlaskGroup.get_command,function,get_command,FlaskGroup.get_command,flask/cli.py,617,642,False,True,False,,,d4e7e0c49eac,0,3,
+flask/cli.py::FlaskGroup.list_commands,function,list_commands,FlaskGroup.list_commands,flask/cli.py,644,663,False,True,False,,,8135ea83f104,0,3,
+flask/cli.py::FlaskGroup.make_context,function,make_context,FlaskGroup.make_context,flask/cli.py,665,684,False,True,False,,,4a67edab9c1e,0,2,
+flask/cli.py::FlaskGroup.parse_args,function,parse_args,FlaskGroup.parse_args,flask/cli.py,686,696,False,True,False,,,badd63cd098d,0,0,
+flask/cli.py::NoAppException,class,NoAppException,NoAppException,flask/cli.py,37,38,False,,,,click.UsageError,1988d9fb0ef4,6,0,Raised if an application cannot be found or loaded.
+flask/cli.py::ScriptInfo,class,ScriptInfo,ScriptInfo,flask/cli.py,293,372,False,,,,,2101bdfd2167,9,0,Helper object to deal with Flask applications.  This is usually not
+flask/cli.py::ScriptInfo.__init__,function,__init__,ScriptInfo.__init__,flask/cli.py,305,331,False,True,False,,,ce80fa6e68bc,2,2,
+flask/cli.py::ScriptInfo.load_app,function,load_app,ScriptInfo.load_app,flask/cli.py,333,372,False,True,False,,,8736433cf347,1,5,Loads the Flask app (if not yet loaded) and returns it.  Calling
+flask/cli.py::SeparatedPathType,class,SeparatedPathType,SeparatedPathType,flask/cli.py,875,887,False,,,,click.Path,f2f9cd6e28a9,1,0,Click option type that accepts a list of values separated by the
+flask/cli.py::SeparatedPathType.convert,function,convert,SeparatedPathType.convert,flask/cli.py,881,887,False,True,False,,,f89d76e08865,0,0,
+flask/cli.py::_called_with_wrong_args,function,_called_with_wrong_args,_called_with_wrong_args,flask/cli.py,94,117,False,False,False,,,b9b6283c787a,2,1,Check whether calling a function raised a ``TypeError`` because
+flask/cli.py::_env_file_callback,function,_env_file_callback,_env_file_callback,flask/cli.py,493,512,False,False,False,,,3ccae72e3137,1,1,
+flask/cli.py::_path_is_ancestor,function,_path_is_ancestor,_path_is_ancestor,flask/cli.py,699,703,False,False,False,,,c33e141235bc,0,0,Take ``other`` and remove the length of ``path`` from it. Then join it
+flask/cli.py::_set_app,function,_set_app,_set_app,flask/cli.py,440,446,False,False,False,,,15bbf105abce,1,1,
+flask/cli.py::_set_debug,function,_set_debug,_set_debug,flask/cli.py,468,482,False,False,False,,,35dab530a215,1,0,
+flask/cli.py::_validate_key,function,_validate_key,_validate_key,flask/cli.py,836,872,False,False,False,,,54c5ab30a597,1,0,The ``--key`` option must be specified when ``--cert`` is a file.
+flask/cli.py::find_app_by_string,function,find_app_by_string,find_app_by_string,flask/cli.py,120,197,False,False,False,,,c6fa24456df2,1,3,Check if the given string is a variable name or a function. Call
+flask/cli.py::find_best_app,function,find_best_app,find_best_app,flask/cli.py,41,91,False,False,False,,,33b778494917,1,3,Given a module instance this tries to find the best possible
+flask/cli.py::get_version,function,get_version,get_version,flask/cli.py,267,280,False,False,False,,,303bc27c21c8,1,0,
+flask/cli.py::load_dotenv,function,load_dotenv,load_dotenv,flask/cli.py,706,771,False,False,False,,,f44dfae0f725,2,0,"Load ""dotenv"" files to set environment variables. A given path takes"
+flask/cli.py::locate_app,function,locate_app,locate_app,flask/cli.py,230,264,False,False,False,t.overload,,006c20e52253,1,4,
+flask/cli.py::main,function,main,main,flask/cli.py,1130,1131,False,False,False,,,cd609cd05d14,3,0,
+flask/cli.py::prepare_import,function,prepare_import,prepare_import,flask/cli.py,200,226,False,False,False,,,13bac56c6f11,1,0,"Given a filename this will try to calculate the python path, add it"
+flask/cli.py::routes_command,function,routes_command,routes_command,flask/cli.py,1069,1115,False,False,False,click.command;click.option;click.option;with_appcontext,,e8e28684beac,1,1,Show all registered routes with endpoints and methods.
+flask/cli.py::run_command,function,run_command,run_command,flask/cli.py,943,1001,False,False,False,click.command;click.option;click.option;click.option;click.option;click.option;click.option;click.option;click.option;click.option;pass_script_info,,6af4ea4bc444,1,8,Run a local development server.
+flask/cli.py::shell_command,function,shell_command,shell_command,flask/cli.py,1009,1053,False,False,False,click.command;with_appcontext,,6b19fe71910d,1,2,Run an interactive Python shell in the context of a given
+flask/cli.py::show_server_banner,function,show_server_banner,show_server_banner,flask/cli.py,774,785,False,False,False,,,fd83cc8ad2d9,2,0,"Show extra startup messages the first time the server is run,"
+flask/cli.py::with_appcontext,function,with_appcontext,with_appcontext,flask/cli.py,380,402,False,False,False,,,a2dd1b00a14f,3,1,Wraps a callback so that it's guaranteed to be executed with the
+flask/config.py,file,config.py,,flask/config.py,1,367,False,,,,,09a720058d28,0,1,
+flask/config.py::Config,class,Config,Config,flask/config.py,50,367,False,,,,dict,5aebdcdecb9e,5,0,Works exactly like a dict but provides ways to fill it from files
+flask/config.py::Config.__init__,function,__init__,Config.__init__,flask/config.py,94,100,False,True,False,,,700693d5e536,1,0,
+flask/config.py::Config.__repr__,function,__repr__,Config.__repr__,flask/config.py,366,367,False,True,False,,,9d11cb4f227d,0,0,
+flask/config.py::Config.from_envvar,function,from_envvar,Config.from_envvar,flask/config.py,102,124,False,True,False,,,5a93f28f1680,0,1,Loads a configuration from an environment variable pointing to
+flask/config.py::Config.from_file,function,from_file,Config.from_file,flask/config.py,256,302,False,True,False,,,be21581315f5,0,1,Update the values in the config from a file that is loaded
+flask/config.py::Config.from_mapping,function,from_mapping,Config.from_mapping,flask/config.py,304,321,False,True,False,,,6ae823ada070,1,0,Updates the config like :meth:`update` ignoring items with
+flask/config.py::Config.from_object,function,from_object,Config.from_object,flask/config.py,218,254,False,True,False,,,e258ea9b16b2,1,0,Updates the values from the given object.  An object can be of one
+flask/config.py::Config.from_prefixed_env,function,from_prefixed_env,Config.from_prefixed_env,flask/config.py,126,185,False,True,False,,,792f5e62d218,0,0,"Load any environment variables that start with ``FLASK_``,"
+flask/config.py::Config.from_pyfile,function,from_pyfile,Config.from_pyfile,flask/config.py,187,216,False,True,False,,,9e701b4588f4,1,1,Updates the values in the config from a Python file.  This function
+flask/config.py::Config.get_namespace,function,get_namespace,Config.get_namespace,flask/config.py,323,364,False,True,False,,,407d0b1b3fb5,0,0,Returns a dictionary containing a subset of configuration options
+flask/config.py::ConfigAttribute,class,ConfigAttribute,ConfigAttribute,flask/config.py,20,47,False,,,,t.Generic,25b9d2120004,2,0,Makes an attribute forward to the config
+flask/config.py::ConfigAttribute.__get__,function,__get__,ConfigAttribute.__get__,flask/config.py,30,44,False,True,False,t.overload,,f0e0f918f561,0,1,
+flask/config.py::ConfigAttribute.__init__,function,__init__,ConfigAttribute.__init__,flask/config.py,23,27,False,True,False,,,8d7b32439255,0,0,
+flask/config.py::ConfigAttribute.__set__,function,__set__,ConfigAttribute.__set__,flask/config.py,46,47,False,True,False,,,13d1e0803f50,0,1,
+flask/ctx.py,file,ctx.py,,flask/ctx.py,1,459,False,,,,,7442aa8c9120,0,3,
+flask/ctx.py::AppContext,class,AppContext,AppContext,flask/ctx.py,238,284,False,,,,,282c037d04f2,7,0,The app context contains application-specific information. An app
+flask/ctx.py::AppContext.__enter__,function,__enter__,AppContext.__enter__,flask/ctx.py,274,276,False,True,False,,,e00c2a5c4e2f,0,2,
+flask/ctx.py::AppContext.__exit__,function,__exit__,AppContext.__exit__,flask/ctx.py,278,284,False,True,False,,,01150b5870f8,0,1,
+flask/ctx.py::AppContext.__init__,function,__init__,AppContext.__init__,flask/ctx.py,245,249,False,True,False,,,ae3d78a0269b,1,5,
+flask/ctx.py::AppContext.pop,function,pop,AppContext.pop,flask/ctx.py,256,272,False,True,False,,,e4a4fc21689d,1,2,Pops the app context.
+flask/ctx.py::AppContext.push,function,push,AppContext.push,flask/ctx.py,251,254,False,True,False,,,85b9bcc79deb,1,1,Binds the app context to the current context.
+flask/ctx.py::RequestContext,class,RequestContext,RequestContext,flask/ctx.py,287,459,False,,,,,dcadf3a4b9ef,9,0,The request context contains per-request information. The Flask
+flask/ctx.py::RequestContext.__enter__,function,__enter__,RequestContext.__enter__,flask/ctx.py,443,445,False,True,False,,,b5dea158035e,1,2,
+flask/ctx.py::RequestContext.__exit__,function,__exit__,RequestContext.__exit__,flask/ctx.py,447,453,False,True,False,,,01150b5870f8,1,1,
+flask/ctx.py::RequestContext.__init__,function,__init__,RequestContext.__init__,flask/ctx.py,309,335,False,True,False,,,544f6df40944,2,7,
+flask/ctx.py::RequestContext.__repr__,function,__repr__,RequestContext.__repr__,flask/ctx.py,455,459,False,True,False,,,3b6d96c96be3,0,1,
+flask/ctx.py::RequestContext.copy,function,copy,RequestContext.copy,flask/ctx.py,337,355,False,True,False,,,e0f87809bbde,0,3,Creates a copy of this request context with the same request object.
+flask/ctx.py::RequestContext.match_request,function,match_request,RequestContext.match_request,flask/ctx.py,357,365,False,True,False,,,5334baebfe8b,1,0,Can be overridden by a subclass to hook into the matching
+flask/ctx.py::RequestContext.pop,function,pop,RequestContext.pop,flask/ctx.py,406,441,False,True,False,,,77bab60ec727,2,1,Pops the request context and unbinds it by doing that.  This will
+flask/ctx.py::RequestContext.push,function,push,RequestContext.push,flask/ctx.py,377,404,False,True,False,,,e7bc1c840933,2,4,
+flask/ctx.py::RequestContext.session,function,session,RequestContext.session,flask/ctx.py,368,375,False,True,False,property,,963f4288a7cb,0,1,The session data associated with this request. Not available until
+flask/ctx.py::_AppCtxGlobals,class,_AppCtxGlobals,_AppCtxGlobals,flask/ctx.py,29,114,False,,,,,3b1cfe5ec7dd,5,0,A plain object. Used as a namespace for storing data during an
+flask/ctx.py::_AppCtxGlobals.__contains__,function,__contains__,_AppCtxGlobals.__contains__,flask/ctx.py,104,105,False,True,False,,,d49c71d2f40c,0,0,
+flask/ctx.py::_AppCtxGlobals.__delattr__,function,__delattr__,_AppCtxGlobals.__delattr__,flask/ctx.py,61,65,False,True,False,,,a33add2a5f3e,0,0,
+flask/ctx.py::_AppCtxGlobals.__getattr__,function,__getattr__,_AppCtxGlobals.__getattr__,flask/ctx.py,52,56,False,True,False,,,d65b97984aed,0,0,
+flask/ctx.py::_AppCtxGlobals.__iter__,function,__iter__,_AppCtxGlobals.__iter__,flask/ctx.py,107,108,False,True,False,,,cc9d5c75ccfc,0,0,
+flask/ctx.py::_AppCtxGlobals.__repr__,function,__repr__,_AppCtxGlobals.__repr__,flask/ctx.py,110,114,False,True,False,,,6f55fb0b13d1,0,0,
+flask/ctx.py::_AppCtxGlobals.__setattr__,function,__setattr__,_AppCtxGlobals.__setattr__,flask/ctx.py,58,59,False,True,False,,,8fafd16c84c7,0,0,
+flask/ctx.py::_AppCtxGlobals.get,function,get,_AppCtxGlobals.get,flask/ctx.py,67,76,False,True,False,,,4517b74d521b,0,0,"Get an attribute by name, or a default value. Like"
+flask/ctx.py::_AppCtxGlobals.pop,function,pop,_AppCtxGlobals.pop,flask/ctx.py,78,90,False,True,False,,,a5b398cd1067,0,0,Get and remove an attribute by name. Like :meth:`dict.pop`.
+flask/ctx.py::_AppCtxGlobals.setdefault,function,setdefault,_AppCtxGlobals.setdefault,flask/ctx.py,92,102,False,True,False,,,3c12f1a2eda5,0,0,"Get the value of an attribute if it is present, otherwise"
+flask/ctx.py::after_this_request,function,after_this_request,after_this_request,flask/ctx.py,117,149,False,False,False,,,629ea0a1c0b2,1,0,Executes a function after this request.  This is useful to modify
+flask/ctx.py::copy_current_request_context,function,copy_current_request_context,copy_current_request_context,flask/ctx.py,155,193,False,False,False,,,3b72aa0eff3e,1,0,A helper function that decorates a function to retain the current
+flask/ctx.py::has_app_context,function,has_app_context,has_app_context,flask/ctx.py,228,235,False,False,False,,,8a707d7ac6d4,1,0,Works like :func:`has_request_context` but for the application
+flask/ctx.py::has_request_context,function,has_request_context,has_request_context,flask/ctx.py,196,225,False,False,False,,,df21a84babd5,1,0,If you have code that wants to test if a request context is there or
+flask/debughelpers.py,file,debughelpers.py,,flask/debughelpers.py,1,178,False,,,,,a04e5a2ebdd2,0,4,
+flask/debughelpers.py::DebugFilesKeyError,class,DebugFilesKeyError,DebugFilesKeyError,flask/debughelpers.py,23,47,False,,,,KeyError;AssertionError,aa377d507e46,1,0,Raised from request.files during debugging.  The idea is that it can
+flask/debughelpers.py::DebugFilesKeyError.__init__,function,__init__,DebugFilesKeyError.__init__,flask/debughelpers.py,28,44,False,True,False,,,bacb865f105c,1,1,
+flask/debughelpers.py::DebugFilesKeyError.__str__,function,__str__,DebugFilesKeyError.__str__,flask/debughelpers.py,46,47,False,True,False,,,2f88bec598c2,0,0,
+flask/debughelpers.py::FormDataRoutingRedirect,class,FormDataRoutingRedirect,FormDataRoutingRedirect,flask/debughelpers.py,50,78,False,,,,AssertionError,ee1ce76b8e1b,2,0,This exception is raised in debug mode if a routing redirect
+flask/debughelpers.py::FormDataRoutingRedirect.__init__,function,__init__,FormDataRoutingRedirect.__init__,flask/debughelpers.py,57,78,False,True,False,,,3404929e9c54,1,1,
+flask/debughelpers.py::UnexpectedUnicodeError,class,UnexpectedUnicodeError,UnexpectedUnicodeError,flask/debughelpers.py,17,20,False,,,,AssertionError;UnicodeError,432df7355708,0,0,Raised in places where we want some better error reporting for
+flask/debughelpers.py::_dump_loader_info,function,_dump_loader_info,_dump_loader_info,flask/debughelpers.py,107,121,False,False,False,,,6ca4979d46e8,1,0,
+flask/debughelpers.py::attach_enctype_error_multidict,function,attach_enctype_error_multidict,attach_enctype_error_multidict,flask/debughelpers.py,81,104,False,False,False,,,7f4d841003e4,2,3,Patch ``request.files.__getitem__`` to raise a descriptive error
+flask/debughelpers.py::explain_template_loading_attempts,function,explain_template_loading_attempts,explain_template_loading_attempts,flask/debughelpers.py,124,178,False,False,False,,,01ec8896f5b4,2,5,This should help developers understand what failed
+flask/globals.py,file,globals.py,,flask/globals.py,1,51,False,,,,,a0c723e6e39c,0,6,
+flask/helpers.py,file,helpers.py,,flask/helpers.py,1,641,False,,,,,d516b3a433af,0,1,
+flask/helpers.py::_prepare_send_file_kwargs,function,_prepare_send_file_kwargs,_prepare_send_file_kwargs,flask/helpers.py,394,404,False,False,False,,,624004cd75a0,2,2,
+flask/helpers.py::_split_blueprint_path,function,_split_blueprint_path,_split_blueprint_path,flask/helpers.py,635,641,False,False,False,cache,,c50dff7e02eb,4,0,
+flask/helpers.py::abort,function,abort,abort,flask/helpers.py,273,293,False,False,False,,,68a301c9522f,1,0,Raise an :exc:`~werkzeug.exceptions.HTTPException` for the given
+flask/helpers.py::flash,function,flash,flash,flask/helpers.py,318,349,False,False,False,,,377442811b56,1,0,Flashes a message to the next request.  In order to remove the
+flask/helpers.py::get_debug_flag,function,get_debug_flag,get_debug_flag,flask/helpers.py,28,33,False,False,False,,,a3570cf0411c,7,0,"Get whether debug mode should be enabled for the app, indicated by the"
+flask/helpers.py::get_flashed_messages,function,get_flashed_messages,get_flashed_messages,flask/helpers.py,352,391,False,False,False,,,57bd839c8b3c,3,0,Pulls all flashed messages from the session and returns them.
+flask/helpers.py::get_load_dotenv,function,get_load_dotenv,get_load_dotenv,flask/helpers.py,36,48,False,False,False,,,e61ad3e71be6,4,0,Get whether the user has disabled loading default dotenv files by
+flask/helpers.py::get_root_path,function,get_root_path,get_root_path,flask/helpers.py,577,631,False,False,False,,,812b4c1391b8,2,0,"Find the root path of a package, or the path that contains a"
+flask/helpers.py::get_template_attribute,function,get_template_attribute,get_template_attribute,flask/helpers.py,296,315,False,False,False,,,ce3e7e78d59b,1,1,Loads a macro (or variable) a template exports.  This can be used to
+flask/helpers.py::make_response,function,make_response,make_response,flask/helpers.py,146,192,False,False,False,,,71d27c6eab1d,1,3,Sometimes it is necessary to set additional headers in a view.  Because
+flask/helpers.py::redirect,function,redirect,redirect,flask/helpers.py,249,270,False,False,False,,,b59edff2d736,1,1,Create a redirect response object.
+flask/helpers.py::send_file,function,send_file,send_file,flask/helpers.py,407,530,False,False,False,,,39ce3850d13c,1,2,Send the contents of a file to the client.
+flask/helpers.py::send_from_directory,function,send_from_directory,send_from_directory,flask/helpers.py,533,574,False,False,False,,,3ef1621f2f79,5,2,Send a file from within a directory using :func:`send_file`.
+flask/helpers.py::stream_with_context,function,stream_with_context,stream_with_context,flask/helpers.py,52,143,False,False,False,t.overload,,343f906065d9,3,0,
+flask/helpers.py::url_for,function,url_for,url_for,flask/helpers.py,195,246,False,False,False,,,e2d24fdd4de5,1,1,Generate a URL to the given endpoint with the given values.
+flask/json/__init__.py,file,__init__.py,,flask/json/__init__.py,1,170,False,,,,,b015d9e69100,0,2,
+flask/json/__init__.py::dump,function,dump,dump,flask/json/__init__.py,47,74,False,False,False,,,de23b61ded55,0,2,Serialize data as JSON and write to a file.
+flask/json/__init__.py::dumps,function,dumps,dumps,flask/json/__init__.py,13,44,False,False,False,,,1244eaebff1b,2,2,Serialize data as JSON.
+flask/json/__init__.py::jsonify,function,jsonify,jsonify,flask/json/__init__.py,138,170,False,False,False,,,daa51fdef1b8,1,2,"Serialize the given arguments as JSON, and return a"
+flask/json/__init__.py::load,function,load,load,flask/json/__init__.py,108,135,False,False,False,,,bf2decd383c6,0,1,Deserialize data as JSON read from a file.
+flask/json/__init__.py::loads,function,loads,loads,flask/json/__init__.py,77,105,False,False,False,,,2e16c9b85ff4,2,1,Deserialize data as JSON.
+flask/json/provider.py,file,provider.py,,flask/json/provider.py,1,215,False,,,,,78e222a34c36,0,1,
+flask/json/provider.py::DefaultJSONProvider,class,DefaultJSONProvider,DefaultJSONProvider,flask/json/provider.py,124,215,False,,,,,44e0dc8f48d2,2,3,Provide JSON operations using Python's built-in :mod:`json`
+flask/json/provider.py::DefaultJSONProvider.dumps,function,dumps,DefaultJSONProvider.dumps,flask/json/provider.py,166,179,False,True,False,,,485ecc969c83,1,0,Serialize data as JSON to a string.
+flask/json/provider.py::DefaultJSONProvider.loads,function,loads,DefaultJSONProvider.loads,flask/json/provider.py,181,187,False,True,False,,,a799b0790f56,0,0,Deserialize data as JSON from a string or bytes.
+flask/json/provider.py::DefaultJSONProvider.response,function,response,DefaultJSONProvider.response,flask/json/provider.py,189,215,False,True,False,,,48655ac8aa54,0,3,"Serialize the given arguments as JSON, and return a"
+flask/json/provider.py::JSONProvider,class,JSONProvider,JSONProvider,flask/json/provider.py,19,105,False,,,,,ba0006f37669,6,0,A standard set of JSON operations for an application. Subclasses
+flask/json/provider.py::JSONProvider.__init__,function,__init__,JSONProvider.__init__,flask/json/provider.py,38,39,False,True,False,,,eb64abafb8b0,1,1,
+flask/json/provider.py::JSONProvider._prepare_response_obj,function,_prepare_response_obj,JSONProvider._prepare_response_obj,flask/json/provider.py,75,87,False,True,False,,,88fc8f7a32f2,2,0,
+flask/json/provider.py::JSONProvider.dump,function,dump,JSONProvider.dump,flask/json/provider.py,49,57,False,True,False,,,9e3c1432a1cf,1,1,Serialize data as JSON and write to a file.
+flask/json/provider.py::JSONProvider.dumps,function,dumps,JSONProvider.dumps,flask/json/provider.py,41,47,False,True,False,,,db2574e0c938,5,0,Serialize data as JSON.
+flask/json/provider.py::JSONProvider.load,function,load,JSONProvider.load,flask/json/provider.py,67,73,False,True,False,,,8b3780793dc6,1,1,Deserialize data as JSON read from a file.
+flask/json/provider.py::JSONProvider.loads,function,loads,JSONProvider.loads,flask/json/provider.py,59,65,False,True,False,,,13d715d598c7,2,0,Deserialize data as JSON.
+flask/json/provider.py::JSONProvider.response,function,response,JSONProvider.response,flask/json/provider.py,89,105,False,True,False,,,ce89e38a2d65,2,2,"Serialize the given arguments as JSON, and return a"
+flask/json/provider.py::_default,function,_default,_default,flask/json/provider.py,108,121,False,False,False,,,7d2dad2ef5d1,4,0,
+flask/json/tag.py,file,tag.py,,flask/json/tag.py,1,327,False,,,,,e2e644a394e8,0,2,
+flask/json/tag.py::JSONTag,class,JSONTag,JSONTag,flask/json/tag.py,60,90,False,,,,,fd03b8f2e8fc,19,0,Base class for defining type tags for :class:`TaggedJSONSerializer`.
+flask/json/tag.py::JSONTag.__init__,function,__init__,JSONTag.__init__,flask/json/tag.py,69,71,False,True,False,,,693a1842ac9c,1,1,Create a tagger for the given serializer.
+flask/json/tag.py::JSONTag.check,function,check,JSONTag.check,flask/json/tag.py,73,75,False,True,False,,,9149e0c90421,1,0,Check if the given value should be tagged by this tag.
+flask/json/tag.py::JSONTag.tag,function,tag,JSONTag.tag,flask/json/tag.py,87,90,False,True,False,,,29952f0766a7,1,1,Convert the value to a valid JSON type and add the tag structure
+flask/json/tag.py::JSONTag.to_json,function,to_json,JSONTag.to_json,flask/json/tag.py,77,80,False,True,False,,,e08a99732da6,1,0,Convert the Python object to an object that is a valid JSON type.
+flask/json/tag.py::JSONTag.to_python,function,to_python,JSONTag.to_python,flask/json/tag.py,82,85,False,True,False,,,46041e0d4eae,1,0,Convert the JSON representation back to the correct type. The tag
+flask/json/tag.py::PassDict,class,PassDict,PassDict,flask/json/tag.py,119,130,False,,,,,d7aa99594761,1,3,
+flask/json/tag.py::PassDict.check,function,check,PassDict.check,flask/json/tag.py,122,123,False,True,False,,,5abc27b7a473,0,0,
+flask/json/tag.py::PassDict.to_json,function,to_json,PassDict.to_json,flask/json/tag.py,125,128,False,True,False,,,a735201560dd,1,1,
+flask/json/tag.py::PassList,class,PassList,PassList,flask/json/tag.py,147,156,False,,,,,9ab98b38f872,1,3,
+flask/json/tag.py::PassList.check,function,check,PassList.check,flask/json/tag.py,150,151,False,True,False,,,81b39c43e124,0,0,
+flask/json/tag.py::PassList.to_json,function,to_json,PassList.to_json,flask/json/tag.py,153,154,False,True,False,,,b4388192b2b7,1,1,
+flask/json/tag.py::TagBytes,class,TagBytes,TagBytes,flask/json/tag.py,159,170,False,,,,,bdf6590e243c,1,2,
+flask/json/tag.py::TagBytes.check,function,check,TagBytes.check,flask/json/tag.py,163,164,False,True,False,,,93a0945060ce,0,0,
+flask/json/tag.py::TagBytes.to_json,function,to_json,TagBytes.to_json,flask/json/tag.py,166,167,False,True,False,,,07f29383063d,0,0,
+flask/json/tag.py::TagBytes.to_python,function,to_python,TagBytes.to_python,flask/json/tag.py,169,170,False,True,False,,,61e8b7aa1172,0,0,
+flask/json/tag.py::TagDateTime,class,TagDateTime,TagDateTime,flask/json/tag.py,205,216,False,,,,,352c00baf497,1,2,
+flask/json/tag.py::TagDateTime.check,function,check,TagDateTime.check,flask/json/tag.py,209,210,False,True,False,,,f5f1dd78a4ad,0,0,
+flask/json/tag.py::TagDateTime.to_json,function,to_json,TagDateTime.to_json,flask/json/tag.py,212,213,False,True,False,,,846f4ad27410,0,0,
+flask/json/tag.py::TagDateTime.to_python,function,to_python,TagDateTime.to_python,flask/json/tag.py,215,216,False,True,False,,,613f24e5ce20,0,0,
+flask/json/tag.py::TagDict,class,TagDict,TagDict,flask/json/tag.py,93,116,False,,,,,b550aceef86e,1,2,Tag for 1-item dicts whose only key matches a registered tag.
+flask/json/tag.py::TagDict.check,function,check,TagDict.check,flask/json/tag.py,103,108,False,True,False,,,e1a713a4a5d3,0,0,
+flask/json/tag.py::TagDict.to_json,function,to_json,TagDict.to_json,flask/json/tag.py,110,112,False,True,False,,,381bdaa9c3fd,0,1,
+flask/json/tag.py::TagDict.to_python,function,to_python,TagDict.to_python,flask/json/tag.py,114,116,False,True,False,,,5a24a3d06b64,0,0,
+flask/json/tag.py::TagMarkup,class,TagMarkup,TagMarkup,flask/json/tag.py,173,188,False,,,,,934dd72005c7,1,2,Serialize anything matching the :class:`~markupsafe.Markup` API by
+flask/json/tag.py::TagMarkup.check,function,check,TagMarkup.check,flask/json/tag.py,181,182,False,True,False,,,4f773edff7c7,0,0,
+flask/json/tag.py::TagMarkup.to_json,function,to_json,TagMarkup.to_json,flask/json/tag.py,184,185,False,True,False,,,a8911afa199e,0,0,
+flask/json/tag.py::TagMarkup.to_python,function,to_python,TagMarkup.to_python,flask/json/tag.py,187,188,False,True,False,,,d340d85cf1ef,0,0,
+flask/json/tag.py::TagTuple,class,TagTuple,TagTuple,flask/json/tag.py,133,144,False,,,,,34de75d268c1,1,2,
+flask/json/tag.py::TagTuple.check,function,check,TagTuple.check,flask/json/tag.py,137,138,False,True,False,,,525f371e38e9,0,0,
+flask/json/tag.py::TagTuple.to_json,function,to_json,TagTuple.to_json,flask/json/tag.py,140,141,False,True,False,,,b4388192b2b7,0,1,
+flask/json/tag.py::TagTuple.to_python,function,to_python,TagTuple.to_python,flask/json/tag.py,143,144,False,True,False,,,23705079035a,0,0,
+flask/json/tag.py::TagUUID,class,TagUUID,TagUUID,flask/json/tag.py,191,202,False,,,,,c0c0bf54bcbc,1,2,
+flask/json/tag.py::TagUUID.check,function,check,TagUUID.check,flask/json/tag.py,195,196,False,True,False,,,ae0986c8940a,0,0,
+flask/json/tag.py::TagUUID.to_json,function,to_json,TagUUID.to_json,flask/json/tag.py,198,199,False,True,False,,,9dbcb99df3c1,0,0,
+flask/json/tag.py::TagUUID.to_python,function,to_python,TagUUID.to_python,flask/json/tag.py,201,202,False,True,False,,,1dfcd7d46a26,0,0,
+flask/json/tag.py::TaggedJSONSerializer,class,TaggedJSONSerializer,TaggedJSONSerializer,flask/json/tag.py,219,327,False,,,,,4a5368f819b1,3,8,Serializer that uses a tag system to compactly represent objects that
+flask/json/tag.py::TaggedJSONSerializer.__init__,function,__init__,TaggedJSONSerializer.__init__,flask/json/tag.py,249,254,False,True,False,,,c3f6c60a4bda,1,2,
+flask/json/tag.py::TaggedJSONSerializer._untag_scan,function,_untag_scan,TaggedJSONSerializer._untag_scan,flask/json/tag.py,309,319,False,True,False,,,7db640cf2298,1,1,
+flask/json/tag.py::TaggedJSONSerializer.dumps,function,dumps,TaggedJSONSerializer.dumps,flask/json/tag.py,321,323,False,True,False,,,04f9d6533d7b,0,2,Tag the value and dump it to a compact JSON string.
+flask/json/tag.py::TaggedJSONSerializer.loads,function,loads,TaggedJSONSerializer.loads,flask/json/tag.py,325,327,False,True,False,,,8e2948f37f84,0,2,Load data from a JSON string and deserialized any tagged objects.
+flask/json/tag.py::TaggedJSONSerializer.register,function,register,TaggedJSONSerializer.register,flask/json/tag.py,256,287,False,True,False,,,e8dc5680fe27,1,3,Register a new tag with this serializer.
+flask/json/tag.py::TaggedJSONSerializer.tag,function,tag,TaggedJSONSerializer.tag,flask/json/tag.py,289,295,False,True,False,,,20b92b6b20f8,5,2,Convert a value to a tagged representation if necessary.
+flask/json/tag.py::TaggedJSONSerializer.untag,function,untag,TaggedJSONSerializer.untag,flask/json/tag.py,297,307,False,True,False,,,8312e6d1b545,1,1,Convert a tagged representation back to the original type.
+flask/logging.py,file,logging.py,,flask/logging.py,1,79,False,,,,,6d8f21ab856f,0,2,
+flask/logging.py::create_logger,function,create_logger,create_logger,flask/logging.py,58,79,False,False,False,,,7d279d42ecb6,2,4,Get the Flask app's logger and configure it if needed.
+flask/logging.py::has_level_handler,function,has_level_handler,has_level_handler,flask/logging.py,31,47,False,False,False,,,57625637b3b9,1,0,Check if there is a handler in the logging chain that will handle the
+flask/logging.py::wsgi_errors_stream,function,wsgi_errors_stream,wsgi_errors_stream,flask/logging.py,16,28,False,False,False,LocalProxy,,afece7a0b835,1,0,Find the most appropriate error stream for the application. If a request
+flask/sansio/app.py,file,app.py,,flask/sansio/app.py,1,964,False,,,,,16b119e2e05a,0,17,
+flask/sansio/app.py::App,class,App,App,flask/sansio/app.py,59,964,False,,,,,e538702769d2,20,11,The flask object implements a WSGI application and acts as the central
+flask/sansio/app.py::App.__init__,function,__init__,App.__init__,flask/sansio/app.py,282,411,False,True,False,,,467771ebeea8,1,8,
+flask/sansio/app.py::App._check_setup_finished,function,_check_setup_finished,App._check_setup_finished,flask/sansio/app.py,413,423,False,True,False,,,84a63ee90059,0,0,
+flask/sansio/app.py::App._find_error_handler,function,_find_error_handler,App._find_error_handler,flask/sansio/app.py,823,846,False,True,False,,,534120ff69fc,3,1,Return a registered error handler for an exception in this order:
+flask/sansio/app.py::App.add_template_filter,function,add_template_filter,App.add_template_filter,flask/sansio/app.py,686,695,False,True,False,setupmethod,,922d44796739,1,2,Register a custom template filter.  Works exactly like the
+flask/sansio/app.py::App.add_template_global,function,add_template_global,App.add_template_global,flask/sansio/app.py,765,776,False,True,False,setupmethod,,1224ef9b47f1,1,2,Register a custom template global function. Works exactly like the
+flask/sansio/app.py::App.add_template_test,function,add_template_test,App.add_template_test,flask/sansio/app.py,727,738,False,True,False,setupmethod,,88c3cf08ffe1,1,2,Register a custom template test.  Works exactly like the
+flask/sansio/app.py::App.add_url_rule,function,add_url_rule,App.add_url_rule,flask/sansio/app.py,605,661,False,True,False,setupmethod,,ea8769312890,2,2,
+flask/sansio/app.py::App.auto_find_instance_path,function,auto_find_instance_path,App.auto_find_instance_path,flask/sansio/app.py,510,521,False,True,False,,,d1e5ca954ec9,1,2,Tries to locate the instance path if it was not provided to the
+flask/sansio/app.py::App.create_global_jinja_loader,function,create_global_jinja_loader,App.create_global_jinja_loader,flask/sansio/app.py,523,534,False,True,False,,,0ac237c49fae,1,3,Creates the loader for the Jinja environment.  Can be used to
+flask/sansio/app.py::App.create_jinja_environment,function,create_jinja_environment,App.create_jinja_environment,flask/sansio/app.py,479,480,False,True,False,,,684548f1b42c,1,1,
+flask/sansio/app.py::App.debug,function,debug,App.debug,flask/sansio/app.py,550,567,False,True,False,debug.setter;property,,4e9c8107fa18,3,1,Whether debug mode is enabled. When using ``flask run`` to start the
+flask/sansio/app.py::App.handle_url_build_error,function,handle_url_build_error,App.handle_url_build_error,flask/sansio/app.py,932,964,False,True,False,,,2ea6b290d699,1,0,Called by :meth:`.url_for` if a
+flask/sansio/app.py::App.inject_url_defaults,function,inject_url_defaults,App.inject_url_defaults,flask/sansio/app.py,911,930,False,True,False,,,080fb018c5da,1,1,Injects the URL defaults for the given endpoint directly into
+flask/sansio/app.py::App.iter_blueprints,function,iter_blueprints,App.iter_blueprints,flask/sansio/app.py,597,602,False,True,False,,,b7d4adfd3c7f,2,1,Iterates over all blueprints by the order they were registered.
+flask/sansio/app.py::App.jinja_env,function,jinja_env,App.jinja_env,flask/sansio/app.py,470,477,False,True,False,cached_property,,16551b0cb455,5,2,The Jinja environment used to load templates.
+flask/sansio/app.py::App.logger,function,logger,App.logger,flask/sansio/app.py,443,467,False,True,False,cached_property,,1038f6c367d2,3,1,"A standard Python :class:`~logging.Logger` for the app, with"
+flask/sansio/app.py::App.make_aborter,function,make_aborter,App.make_aborter,flask/sansio/app.py,498,508,False,True,False,,,6345316e6674,1,0,Create the object to assign to :attr:`aborter`. That object
+flask/sansio/app.py::App.make_config,function,make_config,App.make_config,flask/sansio/app.py,482,496,False,True,False,,,dc4f9b56ff6e,1,4,Used to create the config attribute by the Flask constructor.
+flask/sansio/app.py::App.name,function,name,App.name,flask/sansio/app.py,426,440,False,True,False,cached_property,,110247659bbe,5,0,The name of the application.  This is usually the import name
+flask/sansio/app.py::App.redirect,function,redirect,App.redirect,flask/sansio/app.py,893,909,False,True,False,,,a62b7934dd52,1,0,Create a redirect response object.
+flask/sansio/app.py::App.register_blueprint,function,register_blueprint,App.register_blueprint,flask/sansio/app.py,570,595,False,True,False,setupmethod,,cb7f4aff6e04,0,3,Register a :class:`~flask.Blueprint` on the application. Keyword
+flask/sansio/app.py::App.select_jinja_autoescape,function,select_jinja_autoescape,App.select_jinja_autoescape,flask/sansio/app.py,536,547,False,True,False,,,b1ffc0ad129a,1,0,Returns ``True`` if autoescaping should be active for the given
+flask/sansio/app.py::App.shell_context_processor,function,shell_context_processor,App.shell_context_processor,flask/sansio/app.py,813,821,False,True,False,setupmethod,,bd76e91ca0ac,0,1,Registers a shell context processor function.
+flask/sansio/app.py::App.should_ignore_error,function,should_ignore_error,App.should_ignore_error,flask/sansio/app.py,883,891,False,True,False,,,33c82f51b14e,1,0,This is called to figure out if an error should be ignored
+flask/sansio/app.py::App.teardown_appcontext,function,teardown_appcontext,App.teardown_appcontext,flask/sansio/app.py,779,810,False,True,False,setupmethod,,289727e8465a,0,1,Registers a function to be called when the application
+flask/sansio/app.py::App.template_filter,function,template_filter,App.template_filter,flask/sansio/app.py,664,683,False,True,False,setupmethod,,d9d60ad7cc48,0,2,A decorator that is used to register custom template filter.
+flask/sansio/app.py::App.template_global,function,template_global,App.template_global,flask/sansio/app.py,741,762,False,True,False,setupmethod,,d0359143f5a3,0,2,A decorator that is used to register a custom template global function.
+flask/sansio/app.py::App.template_test,function,template_test,App.template_test,flask/sansio/app.py,698,724,False,True,False,setupmethod,,504bbfbbb08b,0,2,A decorator that is used to register custom template test.
+flask/sansio/app.py::App.trap_http_exception,function,trap_http_exception,App.trap_http_exception,flask/sansio/app.py,848,881,False,True,False,,,40ca3109f511,1,1,Checks if an HTTP exception should be trapped or not.  By default
+flask/sansio/app.py::_make_timedelta,function,_make_timedelta,_make_timedelta,flask/sansio/app.py,52,56,False,False,False,,,ec42b3d4b38e,1,0,
+flask/sansio/blueprints.py,file,blueprints.py,,flask/sansio/blueprints.py,1,632,False,,,,,8fa1083cf91f,0,4,
+flask/sansio/blueprints.py::Blueprint,class,Blueprint,Blueprint,flask/sansio/blueprints.py,119,632,False,,,,,aed8f50bb895,10,2,"Represents a blueprint, a collection of routes and other"
+flask/sansio/blueprints.py::Blueprint.__init__,function,__init__,Blueprint.__init__,flask/sansio/blueprints.py,174,211,False,True,False,,,0f37af4fec6d,1,2,
+flask/sansio/blueprints.py::Blueprint._check_setup_finished,function,_check_setup_finished,Blueprint._check_setup_finished,flask/sansio/blueprints.py,213,221,False,True,False,,,93d21e1a652f,0,0,
+flask/sansio/blueprints.py::Blueprint._merge_blueprint_funcs,function,_merge_blueprint_funcs,Blueprint._merge_blueprint_funcs,flask/sansio/blueprints.py,379,410,False,True,False,,,fd39d8a21813,1,1,
+flask/sansio/blueprints.py::Blueprint.add_app_template_filter,function,add_app_template_filter,Blueprint.add_app_template_filter,flask/sansio/blueprints.py,461,475,False,True,False,setupmethod,,99fa5d68d83a,1,3,"Register a template filter, available in any template rendered by the"
+flask/sansio/blueprints.py::Blueprint.add_app_template_global,function,add_app_template_global,Blueprint.add_app_template_global,flask/sansio/blueprints.py,535,551,False,True,False,setupmethod,,01f57a75509d,1,3,"Register a template global, available in any template rendered by the"
+flask/sansio/blueprints.py::Blueprint.add_app_template_test,function,add_app_template_test,Blueprint.add_app_template_test,flask/sansio/blueprints.py,497,513,False,True,False,setupmethod,,53027c336091,1,3,"Register a template test, available in any template rendered by the"
+flask/sansio/blueprints.py::Blueprint.add_url_rule,function,add_url_rule,Blueprint.add_url_rule,flask/sansio/blueprints.py,413,441,False,True,False,setupmethod,,e26e31752be7,0,2,Register a URL rule with the blueprint. See :meth:`.Flask.add_url_rule` for
+flask/sansio/blueprints.py::Blueprint.after_app_request,function,after_app_request,Blueprint.after_app_request,flask/sansio/blueprints.py,564,571,False,True,False,setupmethod,,95c2006c22fb,0,2,"Like :meth:`after_request`, but after every request, not only those handled"
+flask/sansio/blueprints.py::Blueprint.app_context_processor,function,app_context_processor,Blueprint.app_context_processor,flask/sansio/blueprints.py,584,593,False,True,False,setupmethod,,e81d14ced225,0,2,"Like :meth:`context_processor`, but for templates rendered by every view, not"
+flask/sansio/blueprints.py::Blueprint.app_errorhandler,function,app_errorhandler,Blueprint.app_errorhandler,flask/sansio/blueprints.py,596,610,False,True,False,setupmethod,,a12bce651f0b,0,3,"Like :meth:`errorhandler`, but for every request, not only those handled by"
+flask/sansio/blueprints.py::Blueprint.app_template_filter,function,app_template_filter,Blueprint.app_template_filter,flask/sansio/blueprints.py,444,458,False,True,False,setupmethod,,3dcebdcf19b5,0,2,"Register a template filter, available in any template rendered by the"
+flask/sansio/blueprints.py::Blueprint.app_template_global,function,app_template_global,Blueprint.app_template_global,flask/sansio/blueprints.py,516,532,False,True,False,setupmethod,,b70677cad824,0,2,"Register a template global, available in any template rendered by the"
+flask/sansio/blueprints.py::Blueprint.app_template_test,function,app_template_test,Blueprint.app_template_test,flask/sansio/blueprints.py,478,494,False,True,False,setupmethod,,079ca093fd27,0,2,"Register a template test, available in any template rendered by the"
+flask/sansio/blueprints.py::Blueprint.app_url_defaults,function,app_url_defaults,Blueprint.app_url_defaults,flask/sansio/blueprints.py,625,632,False,True,False,setupmethod,,c9e4775b60e7,0,2,"Like :meth:`url_defaults`, but for every request, not only those handled by"
+flask/sansio/blueprints.py::Blueprint.app_url_value_preprocessor,function,app_url_value_preprocessor,Blueprint.app_url_value_preprocessor,flask/sansio/blueprints.py,613,622,False,True,False,setupmethod,,8ff28001c984,0,2,"Like :meth:`url_value_preprocessor`, but for every request, not only those"
+flask/sansio/blueprints.py::Blueprint.before_app_request,function,before_app_request,Blueprint.before_app_request,flask/sansio/blueprints.py,554,561,False,True,False,setupmethod,,c483a865cea7,0,2,"Like :meth:`before_request`, but before every request, not only those handled"
+flask/sansio/blueprints.py::Blueprint.make_setup_state,function,make_setup_state,Blueprint.make_setup_state,flask/sansio/blueprints.py,246,253,False,True,False,,,45ec96395a72,1,4,Creates an instance of :meth:`~flask.blueprints.BlueprintSetupState`
+flask/sansio/blueprints.py::Blueprint.record,function,record,Blueprint.record,flask/sansio/blueprints.py,224,230,False,True,False,setupmethod,,129abae0987b,2,1,Registers a function that is called when the blueprint is
+flask/sansio/blueprints.py::Blueprint.record_once,function,record_once,Blueprint.record_once,flask/sansio/blueprints.py,233,244,False,True,False,setupmethod,,b0b154d44b27,10,3,Works like :meth:`record` but wraps the function in another
+flask/sansio/blueprints.py::Blueprint.register,function,register,Blueprint.register,flask/sansio/blueprints.py,273,377,False,True,False,,,74d38b1f5aee,1,6,Called by :meth:`Flask.register_blueprint` to register all
+flask/sansio/blueprints.py::Blueprint.register_blueprint,function,register_blueprint,Blueprint.register_blueprint,flask/sansio/blueprints.py,256,271,False,True,False,setupmethod,,230d5d779446,0,2,Register a :class:`~flask.Blueprint` on this blueprint. Keyword
+flask/sansio/blueprints.py::Blueprint.teardown_app_request,function,teardown_app_request,Blueprint.teardown_app_request,flask/sansio/blueprints.py,574,581,False,True,False,setupmethod,,0b258a0ac24b,0,2,"Like :meth:`teardown_request`, but after every request, not only those"
+flask/sansio/blueprints.py::BlueprintSetupState,class,BlueprintSetupState,BlueprintSetupState,flask/sansio/blueprints.py,34,116,False,,,,,7a1df788268c,8,0,Temporary holder object for registering a blueprint with the
+flask/sansio/blueprints.py::BlueprintSetupState.__init__,function,__init__,BlueprintSetupState.__init__,flask/sansio/blueprints.py,41,85,False,True,False,,,227d698986b6,1,2,
+flask/sansio/blueprints.py::BlueprintSetupState.add_url_rule,function,add_url_rule,BlueprintSetupState.add_url_rule,flask/sansio/blueprints.py,87,116,False,True,False,,,15261c9ac304,1,2,A helper method to register a rule (and optionally a view function)
+flask/sansio/scaffold.py,file,scaffold.py,,flask/sansio/scaffold.py,1,792,False,,,,,6397d2a888c0,0,2,
+flask/sansio/scaffold.py::Scaffold,class,Scaffold,Scaffold,flask/sansio/scaffold.py,52,698,False,,,,,874b65c19a40,11,0,Common behavior shared between :class:`~flask.Flask` and
+flask/sansio/scaffold.py::Scaffold.__init__,function,__init__,Scaffold.__init__,flask/sansio/scaffold.py,75,215,False,True,False,,,d5f354e9f89c,2,4,
+flask/sansio/scaffold.py::Scaffold.__repr__,function,__repr__,Scaffold.__repr__,flask/sansio/scaffold.py,217,218,False,True,False,,,b1f675d35481,0,0,
+flask/sansio/scaffold.py::Scaffold._check_setup_finished,function,_check_setup_finished,Scaffold._check_setup_finished,flask/sansio/scaffold.py,220,221,False,True,False,,,64f1f65fe03a,0,0,
+flask/sansio/scaffold.py::Scaffold._get_exc_class_and_code,function,_get_exc_class_and_code,Scaffold._get_exc_class_and_code,flask/sansio/scaffold.py,657,698,False,True,False,staticmethod,,81fc0880af10,2,0,Get the exception class being handled. For HTTP status codes
+flask/sansio/scaffold.py::Scaffold._method_route,function,_method_route,Scaffold._method_route,flask/sansio/scaffold.py,284,293,False,True,False,,,c3c54b6dde54,5,1,
+flask/sansio/scaffold.py::Scaffold.add_url_rule,function,add_url_rule,Scaffold.add_url_rule,flask/sansio/scaffold.py,368,433,False,True,False,setupmethod,,0b9d817df783,1,1,Register a rule for routing incoming requests and building
+flask/sansio/scaffold.py::Scaffold.after_request,function,after_request,Scaffold.after_request,flask/sansio/scaffold.py,487,505,False,True,False,setupmethod,,10742fcd2265,0,1,Register a function to run after each request to this object.
+flask/sansio/scaffold.py::Scaffold.before_request,function,before_request,Scaffold.before_request,flask/sansio/scaffold.py,460,484,False,True,False,setupmethod,,d5aa5ae9a313,0,1,Register a function to run before each request.
+flask/sansio/scaffold.py::Scaffold.context_processor,function,context_processor,Scaffold.context_processor,flask/sansio/scaffold.py,542,556,False,True,False,setupmethod,,d2e1cd72acf0,0,1,Registers a template context processor function. These functions run before
+flask/sansio/scaffold.py::Scaffold.delete,function,delete,Scaffold.delete,flask/sansio/scaffold.py,320,325,False,True,False,setupmethod,,ed4425b37197,0,2,"Shortcut for :meth:`route` with ``methods=[""DELETE""]``."
+flask/sansio/scaffold.py::Scaffold.endpoint,function,endpoint,Scaffold.endpoint,flask/sansio/scaffold.py,436,457,False,True,False,setupmethod,,35d6f0a23475,0,1,Decorate a view function to register it for the given
+flask/sansio/scaffold.py::Scaffold.errorhandler,function,errorhandler,Scaffold.errorhandler,flask/sansio/scaffold.py,598,639,False,True,False,setupmethod,,d33ec2cfd67e,0,2,Register a function to handle errors by code or exception class.
+flask/sansio/scaffold.py::Scaffold.get,function,get,Scaffold.get,flask/sansio/scaffold.py,296,301,False,True,False,setupmethod,,ad2f42a1c15f,0,2,"Shortcut for :meth:`route` with ``methods=[""GET""]``."
+flask/sansio/scaffold.py::Scaffold.has_static_folder,function,has_static_folder,Scaffold.has_static_folder,flask/sansio/scaffold.py,241,246,False,True,False,property,,2846294c2adc,4,1,``True`` if :attr:`static_folder` is set.
+flask/sansio/scaffold.py::Scaffold.jinja_loader,function,jinja_loader,Scaffold.jinja_loader,flask/sansio/scaffold.py,272,282,False,True,False,cached_property,,f9b032643fd1,2,0,The Jinja loader for this object's templates. By default this
+flask/sansio/scaffold.py::Scaffold.patch,function,patch,Scaffold.patch,flask/sansio/scaffold.py,328,333,False,True,False,setupmethod,,617fc4e1ab6d,0,2,"Shortcut for :meth:`route` with ``methods=[""PATCH""]``."
+flask/sansio/scaffold.py::Scaffold.post,function,post,Scaffold.post,flask/sansio/scaffold.py,304,309,False,True,False,setupmethod,,c9f78ee57cc1,0,2,"Shortcut for :meth:`route` with ``methods=[""POST""]``."
+flask/sansio/scaffold.py::Scaffold.put,function,put,Scaffold.put,flask/sansio/scaffold.py,312,317,False,True,False,setupmethod,,49ef1019cd54,0,2,"Shortcut for :meth:`route` with ``methods=[""PUT""]``."
+flask/sansio/scaffold.py::Scaffold.register_error_handler,function,register_error_handler,Scaffold.register_error_handler,flask/sansio/scaffold.py,642,654,False,True,False,setupmethod,,de5746c36e6e,1,2,Alternative error attach function to the :meth:`errorhandler`
+flask/sansio/scaffold.py::Scaffold.route,function,route,Scaffold.route,flask/sansio/scaffold.py,336,365,False,True,False,setupmethod,,6f2036a75b32,1,2,Decorate a view function to register it with the given URL
+flask/sansio/scaffold.py::Scaffold.static_folder,function,static_folder,Scaffold.static_folder,flask/sansio/scaffold.py,224,238,False,True,False,property;static_folder.setter,,eba75aecd5b6,5,0,The absolute path to the configured static folder. ``None``
+flask/sansio/scaffold.py::Scaffold.static_url_path,function,static_url_path,Scaffold.static_url_path,flask/sansio/scaffold.py,249,269,False,True,False,property;static_url_path.setter,,d96a0d9a0342,3,1,The URL prefix that the static route will be accessible from.
+flask/sansio/scaffold.py::Scaffold.teardown_request,function,teardown_request,Scaffold.teardown_request,flask/sansio/scaffold.py,508,539,False,True,False,setupmethod,,fc94de19e785,0,1,Register a function to be called when the request context is
+flask/sansio/scaffold.py::Scaffold.url_defaults,function,url_defaults,Scaffold.url_defaults,flask/sansio/scaffold.py,584,595,False,True,False,setupmethod,,66b03c4fdaf9,0,1,Callback function for URL defaults for all view functions of the
+flask/sansio/scaffold.py::Scaffold.url_value_preprocessor,function,url_value_preprocessor,Scaffold.url_value_preprocessor,flask/sansio/scaffold.py,559,581,False,True,False,setupmethod,,60e0b4acb4d4,0,1,Register a URL value preprocessor function for all view
+flask/sansio/scaffold.py::_endpoint_from_view_func,function,_endpoint_from_view_func,_endpoint_from_view_func,flask/sansio/scaffold.py,701,706,False,False,False,,,a72b34ceeb87,4,0,Internal helper that returns the default endpoint for a given
+flask/sansio/scaffold.py::_find_package_path,function,_find_package_path,_find_package_path,flask/sansio/scaffold.py,709,751,False,False,False,,,493cd225826d,1,0,Find the path that contains the package or module.
+flask/sansio/scaffold.py::find_package,function,find_package,find_package,flask/sansio/scaffold.py,754,792,False,False,False,,,e1d009f3df65,2,1,"Find the prefix that a package is installed under, and the path"
+flask/sansio/scaffold.py::setupmethod,function,setupmethod,setupmethod,flask/sansio/scaffold.py,42,49,False,False,False,,,cbdc345dca99,45,1,
+flask/sessions.py,file,sessions.py,,flask/sessions.py,1,385,False,,,,,3314f9cd92c5,0,6,
+flask/sessions.py::NullSession,class,NullSession,NullSession,flask/sessions.py,83,97,False,,,,,7a67d08a0133,4,3,Class used to generate nicer error messages if sessions are not
+flask/sessions.py::NullSession._fail,function,_fail,NullSession._fail,flask/sessions.py,89,94,False,True,False,,,c034ff1663ff,1,0,
+flask/sessions.py::SecureCookieSession,class,SecureCookieSession,SecureCookieSession,flask/sessions.py,57,80,False,,,,CallbackDict,cefdc461f001,5,2,Base class for sessions based on signed cookies.
+flask/sessions.py::SecureCookieSession.__init__,function,__init__,SecureCookieSession.__init__,flask/sessions.py,73,80,False,True,False,,,0acb79feafa9,2,0,
+flask/sessions.py::SecureCookieSessionInterface,class,SecureCookieSessionInterface,SecureCookieSessionInterface,flask/sessions.py,284,385,False,,,,,dacbc1cac0e5,2,4,The default session interface that stores sessions in signed cookies
+flask/sessions.py::SecureCookieSessionInterface.get_signing_serializer,function,get_signing_serializer,SecureCookieSessionInterface.get_signing_serializer,flask/sessions.py,303,321,False,True,False,,,6081b3c269bd,2,1,
+flask/sessions.py::SecureCookieSessionInterface.open_session,function,open_session,SecureCookieSessionInterface.open_session,flask/sessions.py,323,335,False,True,False,,,1a08f64b383e,0,7,
+flask/sessions.py::SecureCookieSessionInterface.save_session,function,save_session,SecureCookieSessionInterface.save_session,flask/sessions.py,337,385,False,True,False,,,183bfa74b4b3,0,13,
+flask/sessions.py::SessionInterface,class,SessionInterface,SessionInterface,flask/sessions.py,100,270,False,,,,,2b67f88edfb9,4,1,The basic interface you have to implement in order to replace the
+flask/sessions.py::SessionInterface.get_cookie_domain,function,get_cookie_domain,SessionInterface.get_cookie_domain,flask/sessions.py,175,185,False,True,False,,,fd0d2a207916,1,1,"The value of the ``Domain`` parameter on the session cookie. If not set,"
+flask/sessions.py::SessionInterface.get_cookie_httponly,function,get_cookie_httponly,SessionInterface.get_cookie_httponly,flask/sessions.py,195,200,False,True,False,,,1f0607451b50,1,1,Returns True if the session cookie should be httponly.  This
+flask/sessions.py::SessionInterface.get_cookie_name,function,get_cookie_name,SessionInterface.get_cookie_name,flask/sessions.py,171,173,False,True,False,,,47e4572c2177,2,1,"The name of the session cookie. Uses``app.config[""SESSION_COOKIE_NAME""]``."
+flask/sessions.py::SessionInterface.get_cookie_partitioned,function,get_cookie_partitioned,SessionInterface.get_cookie_partitioned,flask/sessions.py,215,221,False,True,False,,,aecccd2186c5,1,1,"Returns True if the cookie should be partitioned. By default, uses"
+flask/sessions.py::SessionInterface.get_cookie_path,function,get_cookie_path,SessionInterface.get_cookie_path,flask/sessions.py,187,193,False,True,False,,,699d4a2b6a71,1,1,Returns the path for which the cookie should be valid.  The
+flask/sessions.py::SessionInterface.get_cookie_samesite,function,get_cookie_samesite,SessionInterface.get_cookie_samesite,flask/sessions.py,208,213,False,True,False,,,e5af4ee86d5c,1,1,Return ``'Strict'`` or ``'Lax'`` if the cookie should use the
+flask/sessions.py::SessionInterface.get_cookie_secure,function,get_cookie_secure,SessionInterface.get_cookie_secure,flask/sessions.py,202,206,False,True,False,,,c3aaf0e74bf3,1,1,Returns True if the cookie should be secure.  This currently
+flask/sessions.py::SessionInterface.get_expiration_time,function,get_expiration_time,SessionInterface.get_expiration_time,flask/sessions.py,223,231,False,True,False,,,20d60dffbbf8,1,3,A helper method that returns an expiration date for the session
+flask/sessions.py::SessionInterface.is_null_session,function,is_null_session,SessionInterface.is_null_session,flask/sessions.py,162,169,False,True,False,,,03ea0be85e04,2,1,Checks if a given object is a null session.  Null sessions are
+flask/sessions.py::SessionInterface.make_null_session,function,make_null_session,SessionInterface.make_null_session,flask/sessions.py,150,160,False,True,False,,,32bf0ad9eb5f,1,4,Creates a null session which acts as a replacement object if the
+flask/sessions.py::SessionInterface.open_session,function,open_session,SessionInterface.open_session,flask/sessions.py,249,261,False,True,False,,,e392deae9c21,2,3,"This is called at the beginning of each request, after"
+flask/sessions.py::SessionInterface.save_session,function,save_session,SessionInterface.save_session,flask/sessions.py,263,270,False,True,False,,,7303ffcb4cf1,2,3,"This is called at the end of each request, after generating"
+flask/sessions.py::SessionInterface.should_set_cookie,function,should_set_cookie,SessionInterface.should_set_cookie,flask/sessions.py,233,247,False,True,False,,,bf5cd01921f4,1,3,Used by session backends to determine if a ``Set-Cookie`` header
+flask/sessions.py::SessionMixin,class,SessionMixin,SessionMixin,flask/sessions.py,24,54,False,,,,MutableMapping,379c41399b11,13,0,Expands a basic dictionary with session attributes.
+flask/sessions.py::SessionMixin.permanent,function,permanent,SessionMixin.permanent,flask/sessions.py,28,34,False,True,False,permanent.setter;property,,30ea998176d1,2,0,This reflects the ``'_permanent'`` key in the dict.
+flask/sessions.py::_lazy_sha1,function,_lazy_sha1,_lazy_sha1,flask/sessions.py,276,281,False,False,False,,,df69eeb70a76,1,0,Don't access ``hashlib.sha1`` until runtime. FIPS builds may not include
+flask/signals.py,file,signals.py,,flask/signals.py,1,17,False,,,,,81c4cdba4dfb,0,0,
+flask/templating.py,file,templating.py,,flask/templating.py,1,220,False,,,,,b7c06d7f48b1,0,5,
+flask/templating.py::DispatchingJinjaLoader,class,DispatchingJinjaLoader,DispatchingJinjaLoader,flask/templating.py,53,124,False,,,,BaseLoader,a4ba2477383e,3,0,A loader that looks for templates in the application and all
+flask/templating.py::DispatchingJinjaLoader.__init__,function,__init__,DispatchingJinjaLoader.__init__,flask/templating.py,58,59,False,True,False,,,4cef77f28e54,1,1,
+flask/templating.py::DispatchingJinjaLoader._get_source_explained,function,_get_source_explained,DispatchingJinjaLoader._get_source_explained,flask/templating.py,68,90,False,True,False,,,02c8986d40cd,1,2,
+flask/templating.py::DispatchingJinjaLoader._get_source_fast,function,_get_source_fast,DispatchingJinjaLoader._get_source_fast,flask/templating.py,92,100,False,True,False,,,5e28e6b1819d,1,1,
+flask/templating.py::DispatchingJinjaLoader._iter_loaders,function,_iter_loaders,DispatchingJinjaLoader._iter_loaders,flask/templating.py,102,110,False,True,False,,,9bbcd812f73b,2,3,
+flask/templating.py::DispatchingJinjaLoader.get_source,function,get_source,DispatchingJinjaLoader.get_source,flask/templating.py,61,66,False,True,False,,,dd6f0094c245,0,2,
+flask/templating.py::DispatchingJinjaLoader.list_templates,function,list_templates,DispatchingJinjaLoader.list_templates,flask/templating.py,112,124,False,True,False,,,fce6865f60d3,0,2,
+flask/templating.py::Environment,class,Environment,Environment,flask/templating.py,40,50,False,,,,BaseEnvironment,28ed081ee563,7,0,Works like a regular Jinja environment but has some additional
+flask/templating.py::Environment.__init__,function,__init__,Environment.__init__,flask/templating.py,46,50,False,True,False,,,e06d2942a59f,1,2,
+flask/templating.py::_default_template_ctx_processor,function,_default_template_ctx_processor,_default_template_ctx_processor,flask/templating.py,24,37,False,False,False,,,78cb4d0756d2,2,0,Default template context processor.  Replaces the ``request`` and ``g``
+flask/templating.py::_render,function,_render,_render,flask/templating.py,127,136,False,False,False,,,cac291be7c0d,2,3,
+flask/templating.py::_stream,function,_stream,_stream,flask/templating.py,166,186,False,False,False,,,cc4547382991,2,4,
+flask/templating.py::render_template,function,render_template,render_template,flask/templating.py,139,151,False,False,False,,,2b0f9f096c3f,1,1,Render a template by name with the given context.
+flask/templating.py::render_template_string,function,render_template_string,render_template_string,flask/templating.py,154,163,False,False,False,,,e5d131d23bc9,1,1,Render a template from the given source string with the given
+flask/templating.py::stream_template,function,stream_template,stream_template,flask/templating.py,189,205,False,False,False,,,4eecb1045a01,1,1,Render a template by name with the given context as a stream.
+flask/templating.py::stream_template_string,function,stream_template_string,stream_template_string,flask/templating.py,208,220,False,False,False,,,cc2c7eb62f3c,1,1,Render a template from the given source string with the given
+flask/testing.py,file,testing.py,,flask/testing.py,1,298,False,,,,,be771b5537eb,0,3,
+flask/testing.py::EnvironBuilder,class,EnvironBuilder,EnvironBuilder,flask/testing.py,27,94,False,,,,werkzeug.test.EnvironBuilder,0a2c1adf6745,3,0,"An :class:`~werkzeug.test.EnvironBuilder`, that takes defaults from the"
+flask/testing.py::EnvironBuilder.__init__,function,__init__,EnvironBuilder.__init__,flask/testing.py,49,86,False,True,False,,,a950c6732364,2,1,
+flask/testing.py::EnvironBuilder.json_dumps,function,json_dumps,EnvironBuilder.json_dumps,flask/testing.py,88,94,False,True,False,,,7fa639b2878e,0,1,Serialize ``obj`` to a JSON-formatted string.
+flask/testing.py::FlaskCliRunner,class,FlaskCliRunner,FlaskCliRunner,flask/testing.py,265,298,False,,,,CliRunner,0d4823165fd8,5,0,A :class:`~click.testing.CliRunner` for testing a Flask app's
+flask/testing.py::FlaskCliRunner.__init__,function,__init__,FlaskCliRunner.__init__,flask/testing.py,271,273,False,True,False,,,1096f7853498,1,1,
+flask/testing.py::FlaskCliRunner.invoke,function,invoke,FlaskCliRunner.invoke,flask/testing.py,275,298,False,True,False,,,103120b1ff04,0,2,Invokes a CLI command in an isolated environment. See
+flask/testing.py::FlaskClient,class,FlaskClient,FlaskClient,flask/testing.py,109,262,False,,,,Client,1ebe291fc8a9,6,1,Works like a regular Werkzeug test client but has knowledge about
+flask/testing.py::FlaskClient.__enter__,function,__enter__,FlaskClient.__enter__,flask/testing.py,249,253,False,True,False,,,464f3f077a01,0,1,
+flask/testing.py::FlaskClient.__exit__,function,__exit__,FlaskClient.__exit__,flask/testing.py,255,262,False,True,False,,,8f6201333c8e,0,0,
+flask/testing.py::FlaskClient.__init__,function,__init__,FlaskClient.__init__,flask/testing.py,125,133,False,True,False,,,353a18a40784,1,1,
+flask/testing.py::FlaskClient._copy_environ,function,_copy_environ,FlaskClient._copy_environ,flask/testing.py,185,191,False,True,False,,,81f8104ad09a,2,0,
+flask/testing.py::FlaskClient._request_from_builder_args,function,_request_from_builder_args,FlaskClient._request_from_builder_args,flask/testing.py,193,202,False,True,False,,,aa872017ee51,1,3,
+flask/testing.py::FlaskClient.open,function,open,FlaskClient.open,flask/testing.py,204,247,False,True,False,,,de59cb4f5a7a,0,2,
+flask/testing.py::FlaskClient.session_transaction,function,session_transaction,FlaskClient.session_transaction,flask/testing.py,136,183,False,True,False,contextmanager,,54df81bb832e,0,8,When used in combination with a ``with`` statement this opens a
+flask/testing.py::_get_werkzeug_version,function,_get_werkzeug_version,_get_werkzeug_version,flask/testing.py,100,106,False,False,False,,,f372d051b994,1,0,
+flask/typing.py,file,typing.py,,flask/typing.py,1,93,False,,,,,56bc246e7048,0,0,
+flask/views.py,file,views.py,,flask/views.py,1,191,False,,,,,f6b5a90651c6,0,0,
+flask/views.py::MethodView,class,MethodView,MethodView,flask/views.py,138,191,False,,,,,186759b26181,1,2,Dispatches request methods to the corresponding instance methods.
+flask/views.py::MethodView.__init_subclass__,function,__init_subclass__,MethodView.__init_subclass__,flask/views.py,165,180,False,True,False,,,94fdea68d02f,0,1,
+flask/views.py::MethodView.dispatch_request,function,dispatch_request,MethodView.dispatch_request,flask/views.py,182,191,False,True,False,,,17af3827bdb9,0,1,
+flask/views.py::View,class,View,View,flask/views.py,16,135,False,,,,,ca937e736bf8,4,0,Subclass this class and override :meth:`dispatch_request` to
+flask/views.py::View.as_view,function,as_view,View.as_view,flask/views.py,86,135,False,True,False,classmethod,,772065a86780,0,3,Convert the class into a view function that can be registered
+flask/views.py::View.dispatch_request,function,dispatch_request,View.dispatch_request,flask/views.py,78,83,False,True,False,,,35c56d8d808c,0,0,The actual view function behavior. Subclasses must override
+flask/wrappers.py,file,wrappers.py,,flask/wrappers.py,1,257,False,,,,,22974913f851,0,2,
+flask/wrappers.py::Request,class,Request,Request,flask/wrappers.py,18,219,False,,,,RequestBase,e901b5e06aa2,16,0,The request object used by default in Flask.  Remembers the
+flask/wrappers.py::Request._load_form_data,function,_load_form_data,Request._load_form_data,flask/wrappers.py,197,210,False,True,False,,,3fcc6c1056cb,0,1,
+flask/wrappers.py::Request.blueprint,function,blueprint,Request.blueprint,flask/wrappers.py,162,178,False,True,False,property,,3e0dcb1e6d57,1,1,The registered name of the current blueprint.
+flask/wrappers.py::Request.blueprints,function,blueprints,Request.blueprints,flask/wrappers.py,181,195,False,True,False,property,,d6b90fd6ef8f,7,2,The registered names of the current blueprint upwards through
+flask/wrappers.py::Request.endpoint,function,endpoint,Request.endpoint,flask/wrappers.py,147,159,False,True,False,property,,cccd001d6bae,3,0,The endpoint that matched the request URL.
+flask/wrappers.py::Request.max_content_length,function,max_content_length,Request.max_content_length,flask/wrappers.py,60,90,False,True,False,max_content_length.setter;property,,ff9acb9c8d14,0,0,The maximum number of bytes that will be read during this request. If
+flask/wrappers.py::Request.max_form_memory_size,function,max_form_memory_size,Request.max_form_memory_size,flask/wrappers.py,93,117,False,True,False,max_form_memory_size.setter;property,,84780b32ee44,0,0,The maximum size in bytes any non-file form field may be in a
+flask/wrappers.py::Request.max_form_parts,function,max_form_parts,Request.max_form_parts,flask/wrappers.py,120,144,False,True,False,max_form_parts.setter;property,,fa8b7e3317f2,0,0,The maximum number of fields that may be present in a
+flask/wrappers.py::Request.on_json_loading_failed,function,on_json_loading_failed,Request.on_json_loading_failed,flask/wrappers.py,212,219,False,True,False,,,eb09b8eab4ae,0,0,
+flask/wrappers.py::Response,class,Response,Response,flask/wrappers.py,222,257,False,,,,ResponseBase,39e36010ced4,27,0,The response object that is used by default in Flask.  Works like the
+flask/wrappers.py::Response.max_cookie_size,function,max_cookie_size,Response.max_cookie_size,flask/wrappers.py,247,257,False,True,False,property,,9d1e4a1b4463,0,0,Read-only view of the :data:`MAX_COOKIE_SIZE` config key.

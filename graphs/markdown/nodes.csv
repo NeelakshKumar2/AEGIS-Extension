@@ -1,0 +1,518 @@
+id,type,name,qualname,path,lineno,end_lineno,is_test_file,is_method,is_async,decorators,ext_bases,body_hash,fan_in,fan_out,doc
+markdown/__init__.py,file,__init__.py,,markdown/__init__.py,1,48,False,,,,,8134b3fa55e9,0,4,
+markdown/__main__.py,file,__main__.py,,markdown/__main__.py,1,154,False,,,,,5cfc922a5b8e,0,1,
+markdown/__main__.py::parse_options,function,parse_options,parse_options,markdown/__main__.py,45,127,False,False,False,,,f00f0130b605,1,0,Define and parse `optparse` options for command-line usage.
+markdown/__main__.py::run,function,run,run,markdown/__main__.py,130,148,False,False,False,,,a97ebd810e24,1,2,Run Markdown from the command line.
+markdown/__meta__.py,file,__meta__.py,,markdown/__meta__.py,1,51,False,,,,,823a2f913f75,0,1,
+markdown/__meta__.py::_get_version,function,_get_version,_get_version,markdown/__meta__.py,34,48,False,False,False,,,e00ec6230559,1,0,Returns a PEP 440-compliant version number from `version_info`.
+markdown/blockparser.py,file,blockparser.py,,markdown/blockparser.py,1,160,False,,,,,7a589e605065,0,2,
+markdown/blockparser.py::BlockParser,class,BlockParser,BlockParser,markdown/blockparser.py,75,160,False,,,,,7cefc231db59,12,0,Parse Markdown blocks into an `ElementTree` object.
+markdown/blockparser.py::BlockParser.__init__,function,__init__,BlockParser.__init__,markdown/blockparser.py,83,98,False,True,False,,,f624ff8d121f,1,6,Initialize the block parser.
+markdown/blockparser.py::BlockParser.parseBlocks,function,parseBlocks,BlockParser.parseBlocks,markdown/blockparser.py,138,160,False,True,False,,,d8a7c3277461,11,1,Process blocks of Markdown text and attach to given `etree` node.
+markdown/blockparser.py::BlockParser.parseChunk,function,parseChunk,BlockParser.parseChunk,markdown/blockparser.py,120,136,False,True,False,,,c9467a29d95e,4,1,Parse a chunk of Markdown text and attach to given `etree` node.
+markdown/blockparser.py::BlockParser.parseDocument,function,parseDocument,BlockParser.parseDocument,markdown/blockparser.py,100,118,False,True,False,,,2e257b5ad049,1,1,Parse a Markdown document into an `ElementTree`.
+markdown/blockparser.py::State,class,State,State,markdown/blockparser.py,41,72,False,,,,list,f2565ddab943,1,0,Track the current and nested state of the parser.
+markdown/blockparser.py::State.isstate,function,isstate,State.isstate,markdown/blockparser.py,67,72,False,True,False,,,1034041d739f,4,0,Test that top (current) level is of given state.
+markdown/blockparser.py::State.reset,function,reset,State.reset,markdown/blockparser.py,63,65,False,True,False,,,bf6da8a32c1e,4,0,Step back one step in nested state.
+markdown/blockparser.py::State.set,function,set,State.set,markdown/blockparser.py,59,61,False,True,False,,,f92315f72d6e,4,0,Set a new state.
+markdown/blockprocessors.py,file,blockprocessors.py,,markdown/blockprocessors.py,1,641,False,,,,,14fa3bb19b07,0,2,
+markdown/blockprocessors.py::BlockProcessor,class,BlockProcessor,BlockProcessor,markdown/blockprocessors.py,59,150,False,,,,,cdbd52f3599e,40,0,Base class for block processors.
+markdown/blockprocessors.py::BlockProcessor.__init__,function,__init__,BlockProcessor.__init__,markdown/blockprocessors.py,74,76,False,True,False,,,4dce37f733ca,9,1,
+markdown/blockprocessors.py::BlockProcessor.detab,function,detab,BlockProcessor.detab,markdown/blockprocessors.py,85,98,False,True,False,,,d0a864c52430,4,0,Remove a tab from the front of each line of the given text.
+markdown/blockprocessors.py::BlockProcessor.lastChild,function,lastChild,BlockProcessor.lastChild,markdown/blockprocessors.py,78,83,False,True,False,,,ead3f21538e6,8,0,Return the last child of an `etree` element.
+markdown/blockprocessors.py::BlockProcessor.looseDetab,function,looseDetab,BlockProcessor.looseDetab,markdown/blockprocessors.py,100,106,False,True,False,,,6a30651b00c7,2,0,Remove a tab from front of lines but allowing dedented lines.
+markdown/blockprocessors.py::BlockProcessor.run,function,run,BlockProcessor.run,markdown/blockprocessors.py,126,150,False,True,False,,,6a464ebb49d0,0,0,Run processor. Must be overridden by subclasses.
+markdown/blockprocessors.py::BlockProcessor.test,function,test,BlockProcessor.test,markdown/blockprocessors.py,108,124,False,True,False,,,f5c5b3a12d5a,0,0,Test for block type. Must be overridden by subclasses.
+markdown/blockprocessors.py::BlockQuoteProcessor,class,BlockQuoteProcessor,BlockQuoteProcessor,markdown/blockprocessors.py,284,324,False,,,,,e05d52862ca8,1,2,Process blockquotes.
+markdown/blockprocessors.py::BlockQuoteProcessor.clean,function,clean,BlockQuoteProcessor.clean,markdown/blockprocessors.py,316,324,False,True,False,,,bc138e725316,1,0,Remove `>` from beginning of a line.
+markdown/blockprocessors.py::BlockQuoteProcessor.run,function,run,BlockQuoteProcessor.run,markdown/blockprocessors.py,292,314,False,True,False,,,bb5c49ea326e,0,6,
+markdown/blockprocessors.py::BlockQuoteProcessor.test,function,test,BlockQuoteProcessor.test,markdown/blockprocessors.py,289,290,False,True,False,,,d98ae5873561,0,1,
+markdown/blockprocessors.py::CodeBlockProcessor,class,CodeBlockProcessor,CodeBlockProcessor,markdown/blockprocessors.py,251,281,False,,,,,751c12a8c89b,1,2,Process code blocks.
+markdown/blockprocessors.py::CodeBlockProcessor.run,function,run,CodeBlockProcessor.run,markdown/blockprocessors.py,257,281,False,True,False,,,75e736379a47,0,4,
+markdown/blockprocessors.py::CodeBlockProcessor.test,function,test,CodeBlockProcessor.test,markdown/blockprocessors.py,254,255,False,True,False,,,9747a600a702,0,0,
+markdown/blockprocessors.py::EmptyBlockProcessor,class,EmptyBlockProcessor,EmptyBlockProcessor,markdown/blockprocessors.py,550,574,False,,,,,1fffb385be8f,1,2,Process blocks that are empty or start with an empty line.
+markdown/blockprocessors.py::EmptyBlockProcessor.run,function,run,EmptyBlockProcessor.run,markdown/blockprocessors.py,556,574,False,True,False,,,2d3f5274e858,0,2,
+markdown/blockprocessors.py::EmptyBlockProcessor.test,function,test,EmptyBlockProcessor.test,markdown/blockprocessors.py,553,554,False,True,False,,,4f444cfddd40,0,0,
+markdown/blockprocessors.py::HRProcessor,class,HRProcessor,HRProcessor,markdown/blockprocessors.py,516,547,False,,,,,d52d353efbfe,1,2,Process Horizontal Rules.
+markdown/blockprocessors.py::HRProcessor.run,function,run,HRProcessor.run,markdown/blockprocessors.py,533,547,False,True,False,,,4e1984fbc232,0,1,
+markdown/blockprocessors.py::HRProcessor.test,function,test,HRProcessor.test,markdown/blockprocessors.py,525,531,False,True,False,,,f750c051d5c1,0,0,
+markdown/blockprocessors.py::HashHeaderProcessor,class,HashHeaderProcessor,HashHeaderProcessor,markdown/blockprocessors.py,457,490,False,,,,,566a045b378a,1,2,Process Hash Headers.
+markdown/blockprocessors.py::HashHeaderProcessor.run,function,run,HashHeaderProcessor.run,markdown/blockprocessors.py,466,490,False,True,False,,,70e6608b471e,0,3,
+markdown/blockprocessors.py::HashHeaderProcessor.test,function,test,HashHeaderProcessor.test,markdown/blockprocessors.py,463,464,False,True,False,,,ec25821319e5,0,0,
+markdown/blockprocessors.py::ListIndentProcessor,class,ListIndentProcessor,ListIndentProcessor,markdown/blockprocessors.py,153,248,False,,,,,a96467900489,4,2,Process children of list items.
+markdown/blockprocessors.py::ListIndentProcessor.__init__,function,__init__,ListIndentProcessor.__init__,markdown/blockprocessors.py,170,172,False,True,False,,,1d64e2f4d673,2,1,
+markdown/blockprocessors.py::ListIndentProcessor.create_item,function,create_item,ListIndentProcessor.create_item,markdown/blockprocessors.py,217,220,False,True,False,,,ee38352f61f9,1,1,Create a new `li` and parse the block with it as the parent.
+markdown/blockprocessors.py::ListIndentProcessor.get_level,function,get_level,ListIndentProcessor.get_level,markdown/blockprocessors.py,222,248,False,True,False,,,422f2a2423f9,1,2,Get level of indentation based on list level.
+markdown/blockprocessors.py::ListIndentProcessor.run,function,run,ListIndentProcessor.run,markdown/blockprocessors.py,181,215,False,True,False,,,f40940dbdf0c,0,7,
+markdown/blockprocessors.py::ListIndentProcessor.test,function,test,ListIndentProcessor.test,markdown/blockprocessors.py,174,179,False,True,False,,,536e98e39c10,0,1,
+markdown/blockprocessors.py::OListProcessor,class,OListProcessor,OListProcessor,markdown/blockprocessors.py,327,442,False,,,,,c4f0c962a617,6,2,Process ordered list blocks.
+markdown/blockprocessors.py::OListProcessor.__init__,function,__init__,OListProcessor.__init__,markdown/blockprocessors.py,345,354,False,True,False,,,30dc11067646,3,2,
+markdown/blockprocessors.py::OListProcessor.get_items,function,get_items,OListProcessor.get_items,markdown/blockprocessors.py,418,442,False,True,False,,,7663f29b75b6,1,0,Break a block into list items.
+markdown/blockprocessors.py::OListProcessor.run,function,run,OListProcessor.run,markdown/blockprocessors.py,359,416,False,True,False,,,396fd0e5e215,0,5,
+markdown/blockprocessors.py::OListProcessor.test,function,test,OListProcessor.test,markdown/blockprocessors.py,356,357,False,True,False,,,8df526ce7ae5,0,0,
+markdown/blockprocessors.py::ParagraphProcessor,class,ParagraphProcessor,ParagraphProcessor,markdown/blockprocessors.py,606,641,False,,,,,0c509dfddd59,1,2,Process Paragraph blocks.
+markdown/blockprocessors.py::ParagraphProcessor.run,function,run,ParagraphProcessor.run,markdown/blockprocessors.py,612,641,False,True,False,,,a32163fbc40d,0,2,
+markdown/blockprocessors.py::ParagraphProcessor.test,function,test,ParagraphProcessor.test,markdown/blockprocessors.py,609,610,False,True,False,,,4da644a702bb,0,0,
+markdown/blockprocessors.py::ReferenceProcessor,class,ReferenceProcessor,ReferenceProcessor,markdown/blockprocessors.py,577,603,False,,,,,ff158c87b02e,1,2,Process link references.
+markdown/blockprocessors.py::ReferenceProcessor.run,function,run,ReferenceProcessor.run,markdown/blockprocessors.py,586,603,False,True,False,,,51e06d4848d3,0,0,
+markdown/blockprocessors.py::ReferenceProcessor.test,function,test,ReferenceProcessor.test,markdown/blockprocessors.py,583,584,False,True,False,,,4da644a702bb,0,0,
+markdown/blockprocessors.py::SetextHeaderProcessor,class,SetextHeaderProcessor,SetextHeaderProcessor,markdown/blockprocessors.py,493,513,False,,,,,cfb4d75e1818,1,2,Process Setext-style Headers.
+markdown/blockprocessors.py::SetextHeaderProcessor.run,function,run,SetextHeaderProcessor.run,markdown/blockprocessors.py,502,513,False,True,False,,,6d40045df4a7,0,0,
+markdown/blockprocessors.py::SetextHeaderProcessor.test,function,test,SetextHeaderProcessor.test,markdown/blockprocessors.py,499,500,False,True,False,,,8df526ce7ae5,0,0,
+markdown/blockprocessors.py::UListProcessor,class,UListProcessor,UListProcessor,markdown/blockprocessors.py,445,454,False,,,,,c4bb0ef31b4a,4,2,Process unordered list blocks.
+markdown/blockprocessors.py::UListProcessor.__init__,function,__init__,UListProcessor.__init__,markdown/blockprocessors.py,451,454,False,True,False,,,bc7658e57464,2,2,
+markdown/blockprocessors.py::build_block_parser,function,build_block_parser,build_block_parser,markdown/blockprocessors.py,42,56,False,False,False,,,d1ce64ffd01a,2,20,Build the default block parser used by Markdown.
+markdown/core.py,file,core.py,,markdown/core.py,1,531,False,,,,,0f6f3b671879,0,8,
+markdown/core.py::Markdown,class,Markdown,Markdown,markdown/core.py,46,465,False,,,,,a4f0d6f20c10,51,2,A parser which converts Markdown to HTML.
+markdown/core.py::Markdown.__init__,function,__init__,Markdown.__init__,markdown/core.py,88,129,False,True,False,,,85c0bfb05ce8,3,8,Creates a new Markdown instance.
+markdown/core.py::Markdown.build_extension,function,build_extension,Markdown.build_extension,markdown/core.py,195,246,False,True,False,,,c764b3d920ad,1,2,"Build extension from a string name, then return an instance using the given `configs`."
+markdown/core.py::Markdown.build_parser,function,build_parser,Markdown.build_parser,markdown/core.py,131,157,False,True,False,,,fe8750b7be1e,1,6,Build the parser from the various parts.
+markdown/core.py::Markdown.convert,function,convert,Markdown.convert,markdown/core.py,315,392,False,True,False,,,855c676d467e,3,2,Convert a Markdown string to a string in the specified output format.
+markdown/core.py::Markdown.convertFile,function,convertFile,Markdown.convertFile,markdown/core.py,394,465,False,True,False,,,b7ea3bb2eb38,1,2,Read Markdown text from a file or stream and write HTML output to a file or stream.
+markdown/core.py::Markdown.is_block_level,function,is_block_level,Markdown.is_block_level,markdown/core.py,302,313,False,True,False,,,3b9baf8127f0,6,0,Check if the given `tag` is a block level HTML tag.
+markdown/core.py::Markdown.registerExtension,function,registerExtension,Markdown.registerExtension,markdown/core.py,248,261,False,True,False,,,0212b1efba36,0,2,Register an extension as having a resettable state.
+markdown/core.py::Markdown.registerExtensions,function,registerExtensions,Markdown.registerExtensions,markdown/core.py,159,193,False,True,False,,,dab839d973b9,1,3,Load a list of extensions into an instance of the `Markdown` class.
+markdown/core.py::Markdown.reset,function,reset,Markdown.reset,markdown/core.py,263,277,False,True,False,,,c6ae4443f7ef,1,2,Resets all state variables to prepare the parser instance for new input.
+markdown/core.py::Markdown.set_output_format,function,set_output_format,Markdown.set_output_format,markdown/core.py,279,298,False,True,False,,,6b78b6493f38,1,1,Set the output format for the class instance.
+markdown/core.py::markdown,function,markdown,markdown,markdown/core.py,477,502,False,False,False,,,91816730d716,3,3,Convert a markdown string to HTML and return HTML as a Unicode string.
+markdown/core.py::markdownFromFile,function,markdownFromFile,markdownFromFile,markdown/core.py,505,531,False,False,False,,,e09ffedd407f,2,3,Read Markdown text from a file or stream and write HTML output to a file or stream.
+markdown/extensions/__init__.py,file,__init__.py,,markdown/extensions/__init__.py,1,145,False,,,,,91ad6db23a1f,0,2,
+markdown/extensions/__init__.py::Extension,class,Extension,Extension,markdown/extensions/__init__.py,37,145,False,,,,,b7e6611bcdc6,60,0,Base class for extensions to subclass.
+markdown/extensions/__init__.py::Extension.__init__,function,__init__,Extension.__init__,markdown/extensions/__init__.py,56,58,False,True,False,,,75024b810475,16,1,Initiate Extension and set up configs.
+markdown/extensions/__init__.py::Extension.extendMarkdown,function,extendMarkdown,Extension.extendMarkdown,markdown/extensions/__init__.py,132,145,False,True,False,,,4c9bf21d4e88,0,1,Add the various processors and patterns to the Markdown Instance.
+markdown/extensions/__init__.py::Extension.getConfig,function,getConfig,Extension.getConfig,markdown/extensions/__init__.py,60,74,False,True,False,,,d7c624d7b83d,12,0,Return a single configuration option value.
+markdown/extensions/__init__.py::Extension.getConfigInfo,function,getConfigInfo,Extension.getConfigInfo,markdown/extensions/__init__.py,85,92,False,True,False,,,6b60a8d36861,0,0,Return descriptions of all configuration options.
+markdown/extensions/__init__.py::Extension.getConfigs,function,getConfigs,Extension.getConfigs,markdown/extensions/__init__.py,76,83,False,True,False,,,29b1f424a198,7,1,Return all configuration options.
+markdown/extensions/__init__.py::Extension.setConfig,function,setConfig,Extension.setConfig,markdown/extensions/__init__.py,94,113,False,True,False,,,7efec4c3f665,3,1,Set a configuration option.
+markdown/extensions/__init__.py::Extension.setConfigs,function,setConfigs,Extension.setConfigs,markdown/extensions/__init__.py,115,130,False,True,False,,,79c0cbde6f9c,1,1,"Loop through a collection of configuration options, passing each to"
+markdown/extensions/abbr.py,file,abbr.py,,markdown/extensions/abbr.py,1,190,False,,,,,0650670455c5,0,10,
+markdown/extensions/abbr.py::AbbrBlockprocessor,class,AbbrBlockprocessor,AbbrBlockprocessor,markdown/extensions/abbr.py,131,168,False,,,,,4974f30e91cc,2,2,Parse text for abbreviation references.
+markdown/extensions/abbr.py::AbbrBlockprocessor.__init__,function,__init__,AbbrBlockprocessor.__init__,markdown/extensions/abbr.py,136,138,False,True,False,,,e8da8fcd9f6b,1,2,
+markdown/extensions/abbr.py::AbbrBlockprocessor.run,function,run,AbbrBlockprocessor.run,markdown/extensions/abbr.py,143,168,False,True,False,,,5c4d2be7d30e,0,0,Find and remove all abbreviation references from the text.
+markdown/extensions/abbr.py::AbbrBlockprocessor.test,function,test,AbbrBlockprocessor.test,markdown/extensions/abbr.py,140,141,False,True,False,,,4da644a702bb,0,0,
+markdown/extensions/abbr.py::AbbrExtension,class,AbbrExtension,AbbrExtension,markdown/extensions/abbr.py,39,78,False,,,,,ea5e0aaf7712,1,2,Abbreviation Extension for Python-Markdown.
+markdown/extensions/abbr.py::AbbrExtension.__init__,function,__init__,AbbrExtension.__init__,markdown/extensions/abbr.py,42,54,False,True,False,,,1dd29ff92162,1,1,Initiate Extension and set up configs.
+markdown/extensions/abbr.py::AbbrExtension.extendMarkdown,function,extendMarkdown,AbbrExtension.extendMarkdown,markdown/extensions/abbr.py,71,78,False,True,False,,,f1e8dfa66a58,0,5,Insert `AbbrTreeprocessor` and `AbbrBlockprocessor`.
+markdown/extensions/abbr.py::AbbrExtension.load_glossary,function,load_glossary,AbbrExtension.load_glossary,markdown/extensions/abbr.py,66,69,False,True,False,,,264f6e255fd5,1,0,Adds `dictionary` to our glossary. Any abbreviations that already exist will be overwritten.
+markdown/extensions/abbr.py::AbbrExtension.reset,function,reset,AbbrExtension.reset,markdown/extensions/abbr.py,56,60,False,True,False,,,59d3e0a39190,0,0,Clear all previously defined abbreviations.
+markdown/extensions/abbr.py::AbbrExtension.reset_glossary,function,reset_glossary,AbbrExtension.reset_glossary,markdown/extensions/abbr.py,62,64,False,True,False,,,9e1ffa236e1c,0,0,Clear all abbreviations from the glossary.
+markdown/extensions/abbr.py::AbbrInlineProcessor,class,AbbrInlineProcessor,AbbrInlineProcessor,markdown/extensions/abbr.py,175,186,False,,,deprecated,,34a0b85e1b30,0,3,Abbreviation inline pattern.
+markdown/extensions/abbr.py::AbbrInlineProcessor.__init__,function,__init__,AbbrInlineProcessor.__init__,markdown/extensions/abbr.py,178,180,False,True,False,,,9ffdcecc6a59,0,1,
+markdown/extensions/abbr.py::AbbrInlineProcessor.handleMatch,function,handleMatch,AbbrInlineProcessor.handleMatch,markdown/extensions/abbr.py,182,186,False,True,False,,,28e8535e4ff1,0,1,
+markdown/extensions/abbr.py::AbbrTreeprocessor,class,AbbrTreeprocessor,AbbrTreeprocessor,markdown/extensions/abbr.py,81,128,False,,,,,b54a31a19121,1,2,Replace abbreviation text with `<abbr>` elements.
+markdown/extensions/abbr.py::AbbrTreeprocessor.__init__,function,__init__,AbbrTreeprocessor.__init__,markdown/extensions/abbr.py,84,87,False,True,False,,,f91e76948c2b,1,2,
+markdown/extensions/abbr.py::AbbrTreeprocessor.create_element,function,create_element,AbbrTreeprocessor.create_element,markdown/extensions/abbr.py,89,94,False,True,False,,,0960f0553bf0,1,1,Create an `abbr` element.
+markdown/extensions/abbr.py::AbbrTreeprocessor.iter_element,function,iter_element,AbbrTreeprocessor.iter_element,markdown/extensions/abbr.py,96,116,False,True,False,,,407fde813177,1,2,"Recursively iterate over elements, run regex on text and wrap matches in `abbr` tags."
+markdown/extensions/abbr.py::AbbrTreeprocessor.run,function,run,AbbrTreeprocessor.run,markdown/extensions/abbr.py,118,128,False,True,False,,,2e53bcdcbfdd,0,1,Step through tree to find known abbreviations.
+markdown/extensions/abbr.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/abbr.py,189,190,False,False,False,,,6d7b43e31ebc,0,2,
+markdown/extensions/admonition.py,file,admonition.py,,markdown/extensions/admonition.py,1,184,False,,,,,776d9675cf48,0,2,
+markdown/extensions/admonition.py::AdmonitionExtension,class,AdmonitionExtension,AdmonitionExtension,markdown/extensions/admonition.py,40,47,False,,,,,066d93ce2cda,1,2,Admonition extension for Python-Markdown.
+markdown/extensions/admonition.py::AdmonitionExtension.extendMarkdown,function,extendMarkdown,AdmonitionExtension.extendMarkdown,markdown/extensions/admonition.py,43,47,False,True,False,,,8cdafb31a631,0,2,Add Admonition to Markdown instance.
+markdown/extensions/admonition.py::AdmonitionProcessor,class,AdmonitionProcessor,AdmonitionProcessor,markdown/extensions/admonition.py,50,180,False,,,,,8dc5a5a37647,1,2,
+markdown/extensions/admonition.py::AdmonitionProcessor.__init__,function,__init__,AdmonitionProcessor.__init__,markdown/extensions/admonition.py,57,63,False,True,False,,,c216aa25fedd,1,2,Initialization.
+markdown/extensions/admonition.py::AdmonitionProcessor.get_class_and_title,function,get_class_and_title,AdmonitionProcessor.get_class_and_title,markdown/extensions/admonition.py,168,180,False,True,False,,,3cf2d1392afc,1,0,
+markdown/extensions/admonition.py::AdmonitionProcessor.parse_content,function,parse_content,AdmonitionProcessor.parse_content,markdown/extensions/admonition.py,65,121,False,True,False,,,e61bf1d0004d,2,2,Get sibling admonition.
+markdown/extensions/admonition.py::AdmonitionProcessor.run,function,run,AdmonitionProcessor.run,markdown/extensions/admonition.py,130,166,False,True,False,,,1b6405b851dd,0,5,
+markdown/extensions/admonition.py::AdmonitionProcessor.test,function,test,AdmonitionProcessor.test,markdown/extensions/admonition.py,123,128,False,True,False,,,48c12a68bbc6,0,1,
+markdown/extensions/admonition.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/admonition.py,183,184,False,False,False,,,02b9288e0b79,0,2,
+markdown/extensions/attr_list.py,file,attr_list.py,,markdown/extensions/attr_list.py,1,204,False,,,,,539f4dc25673,0,6,
+markdown/extensions/attr_list.py::AttrListExtension,class,AttrListExtension,AttrListExtension,markdown/extensions/attr_list.py,196,200,False,,,,,64989c58f0ee,3,2,Attribute List extension for Python-Markdown
+markdown/extensions/attr_list.py::AttrListExtension.extendMarkdown,function,extendMarkdown,AttrListExtension.extendMarkdown,markdown/extensions/attr_list.py,198,200,False,True,False,,,388f328e1ea3,0,2,
+markdown/extensions/attr_list.py::AttrListTreeprocessor,class,AttrListTreeprocessor,AttrListTreeprocessor,markdown/extensions/attr_list.py,91,193,False,,,,,9d52eaa8da98,1,2,
+markdown/extensions/attr_list.py::AttrListTreeprocessor.assign_attrs,function,assign_attrs,AttrListTreeprocessor.assign_attrs,markdown/extensions/attr_list.py,163,186,False,True,False,,,a2ddae958a6f,1,2,Assign `attrs` to element.
+markdown/extensions/attr_list.py::AttrListTreeprocessor.run,function,run,AttrListTreeprocessor.run,markdown/extensions/attr_list.py,103,161,False,True,False,,,e016b9477398,0,3,
+markdown/extensions/attr_list.py::AttrListTreeprocessor.sanitize_name,function,sanitize_name,AttrListTreeprocessor.sanitize_name,markdown/extensions/attr_list.py,188,193,False,True,False,,,595e2e79cbbd,1,0,"Sanitize name as 'an XML Name, minus the `:`.'"
+markdown/extensions/attr_list.py::_handle_double_quote,function,_handle_double_quote,_handle_double_quote,markdown/extensions/attr_list.py,38,40,False,False,False,,,168716c37381,1,0,
+markdown/extensions/attr_list.py::_handle_key_value,function,_handle_key_value,_handle_key_value,markdown/extensions/attr_list.py,48,49,False,False,False,,,d11b75dcdd22,1,0,
+markdown/extensions/attr_list.py::_handle_single_quote,function,_handle_single_quote,_handle_single_quote,markdown/extensions/attr_list.py,43,45,False,False,False,,,76746e3329e8,1,0,
+markdown/extensions/attr_list.py::_handle_word,function,_handle_word,_handle_word,markdown/extensions/attr_list.py,52,57,False,False,False,,,e99228e67422,1,0,
+markdown/extensions/attr_list.py::get_attrs,function,get_attrs,get_attrs,markdown/extensions/attr_list.py,82,84,False,False,False,,,52e3636c1be9,0,1,Soft-deprecated. Prefer `get_attrs_and_remainder`.
+markdown/extensions/attr_list.py::get_attrs_and_remainder,function,get_attrs_and_remainder,get_attrs_and_remainder,markdown/extensions/attr_list.py,69,79,False,False,False,,,5dccd9dfdaae,4,0,Parse attribute list and return a list of attribute tuples.
+markdown/extensions/attr_list.py::isheader,function,isheader,isheader,markdown/extensions/attr_list.py,87,88,False,False,False,,,874523123216,1,0,
+markdown/extensions/attr_list.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/attr_list.py,203,204,False,False,False,,,8d13e47b91a2,0,2,
+markdown/extensions/codehilite.py,file,codehilite.py,,markdown/extensions/codehilite.py,1,347,False,,,,,2fb0941e12dc,0,3,
+markdown/extensions/codehilite.py::CodeHilite,class,CodeHilite,CodeHilite,markdown/extensions/codehilite.py,58,247,False,,,,,375560d5e2c1,3,0,"Determine language of source code, and pass it on to the Pygments highlighter."
+markdown/extensions/codehilite.py::CodeHilite.__init__,function,__init__,CodeHilite.__init__,markdown/extensions/codehilite.py,115,133,False,True,False,,,424c2621e7f5,2,0,
+markdown/extensions/codehilite.py::CodeHilite._parseHeader,function,_parseHeader,CodeHilite._parseHeader,markdown/extensions/codehilite.py,194,247,False,True,False,,,2f94cc3ce87c,1,1,Determines language of a code block from shebang line and whether the
+markdown/extensions/codehilite.py::CodeHilite.hilite,function,hilite,CodeHilite.hilite,markdown/extensions/codehilite.py,135,192,False,True,False,,,8494db950356,2,1,Pass code to the [Pygments](https://pygments.org/) highlighter with
+markdown/extensions/codehilite.py::CodeHiliteExtension,class,CodeHiliteExtension,CodeHiliteExtension,markdown/extensions/codehilite.py,291,343,False,,,,,1a26702089a0,3,2,Add source code highlighting to markdown code blocks.
+markdown/extensions/codehilite.py::CodeHiliteExtension.__init__,function,__init__,CodeHiliteExtension.__init__,markdown/extensions/codehilite.py,294,335,False,True,False,,,9e2488685433,1,2,
+markdown/extensions/codehilite.py::CodeHiliteExtension.extendMarkdown,function,extendMarkdown,CodeHiliteExtension.extendMarkdown,markdown/extensions/codehilite.py,337,343,False,True,False,,,2126040f2fe5,0,3,Add `HilitePostprocessor` to Markdown instance.
+markdown/extensions/codehilite.py::HiliteTreeprocessor,class,HiliteTreeprocessor,HiliteTreeprocessor,markdown/extensions/codehilite.py,253,288,False,,,,,c5d78b6a652d,1,2,Highlight source code in code blocks.
+markdown/extensions/codehilite.py::HiliteTreeprocessor.code_unescape,function,code_unescape,HiliteTreeprocessor.code_unescape,markdown/extensions/codehilite.py,258,265,False,True,False,,,5e38af794250,1,0,Unescape code.
+markdown/extensions/codehilite.py::HiliteTreeprocessor.run,function,run,HiliteTreeprocessor.run,markdown/extensions/codehilite.py,267,288,False,True,False,,,11723ac5e724,0,5,Find code blocks and store in `htmlStash`.
+markdown/extensions/codehilite.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/codehilite.py,346,347,False,False,False,,,ca917ca5d309,0,2,
+markdown/extensions/codehilite.py::parse_hl_lines,function,parse_hl_lines,parse_hl_lines,markdown/extensions/codehilite.py,42,54,False,False,False,,,f3aecad4c07a,4,0,Support our syntax for emphasizing certain lines of code.
+markdown/extensions/def_list.py,file,def_list.py,,markdown/extensions/def_list.py,1,119,False,,,,,dea1d6a76283,0,3,
+markdown/extensions/def_list.py::DefListExtension,class,DefListExtension,DefListExtension,markdown/extensions/def_list.py,109,115,False,,,,,7ea8cf75eb44,1,2,Add definition lists to Markdown.
+markdown/extensions/def_list.py::DefListExtension.extendMarkdown,function,extendMarkdown,DefListExtension.extendMarkdown,markdown/extensions/def_list.py,112,115,False,True,False,,,4423045913a6,0,4,Add an instance of `DefListProcessor` to `BlockParser`.
+markdown/extensions/def_list.py::DefListIndentProcessor,class,DefListIndentProcessor,DefListIndentProcessor,markdown/extensions/def_list.py,93,106,False,,,,,f90f39d18725,1,2,Process indented children of definition list items.
+markdown/extensions/def_list.py::DefListIndentProcessor.create_item,function,create_item,DefListIndentProcessor.create_item,markdown/extensions/def_list.py,102,106,False,True,False,,,9fbd92becbe6,0,1,Create a new `dd` or `li` (depending on parent) and parse the block with it as the parent.
+markdown/extensions/def_list.py::DefListProcessor,class,DefListProcessor,DefListProcessor,markdown/extensions/def_list.py,30,90,False,,,,,6ff64e2b3829,1,2,Process Definition Lists.
+markdown/extensions/def_list.py::DefListProcessor.run,function,run,DefListProcessor.run,markdown/extensions/def_list.py,39,90,False,True,False,,,eba833d4e598,0,5,
+markdown/extensions/def_list.py::DefListProcessor.test,function,test,DefListProcessor.test,markdown/extensions/def_list.py,36,37,False,True,False,,,ec25821319e5,0,0,
+markdown/extensions/def_list.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/def_list.py,118,119,False,False,False,,,8b2557ead3ff,0,2,
+markdown/extensions/extra.py,file,extra.py,,markdown/extensions/extra.py,1,66,False,,,,,5f0ae01d6c76,0,1,
+markdown/extensions/extra.py::ExtraExtension,class,ExtraExtension,ExtraExtension,markdown/extensions/extra.py,53,62,False,,,,,dc44a647e00a,1,2,Add various extensions to Markdown class.
+markdown/extensions/extra.py::ExtraExtension.__init__,function,__init__,ExtraExtension.__init__,markdown/extensions/extra.py,56,58,False,True,False,,,97529a93fba3,1,0,`config` is a dumb holder which gets passed to the actual extension later.
+markdown/extensions/extra.py::ExtraExtension.extendMarkdown,function,extendMarkdown,ExtraExtension.extendMarkdown,markdown/extensions/extra.py,60,62,False,True,False,,,62beba0a4bd2,0,0,Register extension instances.
+markdown/extensions/extra.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/extra.py,65,66,False,False,False,,,3baa96c3f9b4,0,2,
+markdown/extensions/fenced_code.py,file,fenced_code.py,,markdown/extensions/fenced_code.py,1,193,False,,,,,a8f63c885ac6,0,10,
+markdown/extensions/fenced_code.py::FencedBlockPreprocessor,class,FencedBlockPreprocessor,FencedBlockPreprocessor,markdown/extensions/fenced_code.py,53,189,False,,,,,d60630aedf96,1,2,Find and extract fenced code blocks.
+markdown/extensions/fenced_code.py::FencedBlockPreprocessor.__init__,function,__init__,FencedBlockPreprocessor.__init__,markdown/extensions/fenced_code.py,69,81,False,True,False,,,ffef1a3a41b2,1,2,
+markdown/extensions/fenced_code.py::FencedBlockPreprocessor._escape,function,_escape,FencedBlockPreprocessor._escape,markdown/extensions/fenced_code.py,183,189,False,True,False,,,622290055517,1,0,basic html escaping
+markdown/extensions/fenced_code.py::FencedBlockPreprocessor.handle_attrs,function,handle_attrs,FencedBlockPreprocessor.handle_attrs,markdown/extensions/fenced_code.py,165,181,False,True,False,,,962ab7558260,1,2,"Return tuple: `(id, [list, of, classes], {configs})`"
+markdown/extensions/fenced_code.py::FencedBlockPreprocessor.run,function,run,FencedBlockPreprocessor.run,markdown/extensions/fenced_code.py,83,163,False,True,False,,,f28427015b51,0,12,Match and store Fenced Code Blocks in the `HtmlStash`.
+markdown/extensions/fenced_code.py::FencedCodeExtension,class,FencedCodeExtension,FencedCodeExtension,markdown/extensions/fenced_code.py,38,50,False,,,,,b3f21867222b,1,2,
+markdown/extensions/fenced_code.py::FencedCodeExtension.__init__,function,__init__,FencedCodeExtension.__init__,markdown/extensions/fenced_code.py,39,44,False,True,False,,,3fc3622e8df6,1,1,
+markdown/extensions/fenced_code.py::FencedCodeExtension.extendMarkdown,function,extendMarkdown,FencedCodeExtension.extendMarkdown,markdown/extensions/fenced_code.py,46,50,False,True,False,,,3de7518167cc,0,3,Add `FencedBlockPreprocessor` to the Markdown instance.
+markdown/extensions/fenced_code.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/fenced_code.py,192,193,False,False,False,,,a0dd80f1c682,0,2,
+markdown/extensions/footnotes.py,file,footnotes.py,,markdown/extensions/footnotes.py,1,482,False,,,,,14c144b1634d,0,5,
+markdown/extensions/footnotes.py::FootnoteBlockProcessor,class,FootnoteBlockProcessor,FootnoteBlockProcessor,markdown/extensions/footnotes.py,234,321,False,,,,,dc894814d892,1,2,Find footnote definitions and store for later use.
+markdown/extensions/footnotes.py::FootnoteBlockProcessor.__init__,function,__init__,FootnoteBlockProcessor.__init__,markdown/extensions/footnotes.py,239,241,False,True,False,,,2228983748be,1,2,
+markdown/extensions/footnotes.py::FootnoteBlockProcessor.detab,function,detab,FootnoteBlockProcessor.detab,markdown/extensions/footnotes.py,312,321,False,True,False,,,416b25a0f5c4,2,0,Remove one level of indent from a block.
+markdown/extensions/footnotes.py::FootnoteBlockProcessor.detectTabbed,function,detectTabbed,FootnoteBlockProcessor.detectTabbed,markdown/extensions/footnotes.py,283,310,False,True,False,,,b04c94b914d4,1,1,Find indented text and remove indent before further processing.
+markdown/extensions/footnotes.py::FootnoteBlockProcessor.run,function,run,FootnoteBlockProcessor.run,markdown/extensions/footnotes.py,246,281,False,True,False,,,d52530105194,0,3,"Find, set, and remove footnote definitions."
+markdown/extensions/footnotes.py::FootnoteBlockProcessor.test,function,test,FootnoteBlockProcessor.test,markdown/extensions/footnotes.py,243,244,False,True,False,,,4da644a702bb,0,0,
+markdown/extensions/footnotes.py::FootnoteExtension,class,FootnoteExtension,FootnoteExtension,markdown/extensions/footnotes.py,39,231,False,,,,,b733dd075f62,7,2,Footnote Extension.
+markdown/extensions/footnotes.py::FootnoteExtension.__init__,function,__init__,FootnoteExtension.__init__,markdown/extensions/footnotes.py,42,83,False,True,False,,,d8e4c8040bbb,1,4,Setup configs.
+markdown/extensions/footnotes.py::FootnoteExtension.addFootnoteRef,function,addFootnoteRef,FootnoteExtension.addFootnoteRef,markdown/extensions/footnotes.py,169,172,False,True,False,,,1b8b67c9c960,1,0,Store a footnote reference id in order of appearance.
+markdown/extensions/footnotes.py::FootnoteExtension.extendMarkdown,function,extendMarkdown,FootnoteExtension.extendMarkdown,markdown/extensions/footnotes.py,85,114,False,True,False,,,eb6da7543761,0,13,Add pieces to Markdown.
+markdown/extensions/footnotes.py::FootnoteExtension.findFootnotesPlaceholder,function,findFootnotesPlaceholder,FootnoteExtension.findFootnotesPlaceholder,markdown/extensions/footnotes.py,145,163,False,True,False,,,b6394b3be03f,1,1,Return ElementTree Element that contains Footnote placeholder.
+markdown/extensions/footnotes.py::FootnoteExtension.get_separator,function,get_separator,FootnoteExtension.get_separator,markdown/extensions/footnotes.py,174,176,False,True,False,,,3a378884340d,6,1,Get the footnote separator.
+markdown/extensions/footnotes.py::FootnoteExtension.makeFootnoteId,function,makeFootnoteId,FootnoteExtension.makeFootnoteId,markdown/extensions/footnotes.py,178,183,False,True,False,,,36b221903615,2,2,Return footnote link id.
+markdown/extensions/footnotes.py::FootnoteExtension.makeFootnoteRefId,function,makeFootnoteRefId,FootnoteExtension.makeFootnoteRefId,markdown/extensions/footnotes.py,185,190,False,True,False,,,c33a6e5df6c2,2,3,Return footnote back-link id.
+markdown/extensions/footnotes.py::FootnoteExtension.makeFootnotesDiv,function,makeFootnotesDiv,FootnoteExtension.makeFootnotesDiv,markdown/extensions/footnotes.py,192,231,False,True,False,,,9c7322a4a78a,1,3,Return `div` of footnotes as `etree` Element.
+markdown/extensions/footnotes.py::FootnoteExtension.reset,function,reset,FootnoteExtension.reset,markdown/extensions/footnotes.py,116,122,False,True,False,,,e076bcbc85b6,1,0,"Clear footnotes on reset, and prepare for distinct document."
+markdown/extensions/footnotes.py::FootnoteExtension.setFootnote,function,setFootnote,FootnoteExtension.setFootnote,markdown/extensions/footnotes.py,165,167,False,True,False,,,65f5d0205fc7,1,0,Store a footnote for later retrieval.
+markdown/extensions/footnotes.py::FootnoteExtension.unique_ref,function,unique_ref,FootnoteExtension.unique_ref,markdown/extensions/footnotes.py,124,143,False,True,False,,,fa9c4140e2b4,1,1,Get a unique reference if there are duplicates.
+markdown/extensions/footnotes.py::FootnoteInlineProcessor,class,FootnoteInlineProcessor,FootnoteInlineProcessor,markdown/extensions/footnotes.py,324,351,False,,,,,bfb5bb3f2634,1,2,`InlineProcessor` for footnote markers in a document's body text.
+markdown/extensions/footnotes.py::FootnoteInlineProcessor.__init__,function,__init__,FootnoteInlineProcessor.__init__,markdown/extensions/footnotes.py,327,329,False,True,False,,,83e7ef0d4d25,1,2,
+markdown/extensions/footnotes.py::FootnoteInlineProcessor.handleMatch,function,handleMatch,FootnoteInlineProcessor.handleMatch,markdown/extensions/footnotes.py,331,351,False,True,False,,,b736ff9f61cb,0,4,
+markdown/extensions/footnotes.py::FootnotePostTreeprocessor,class,FootnotePostTreeprocessor,FootnotePostTreeprocessor,markdown/extensions/footnotes.py,354,404,False,,,,,c89d26f2b46c,1,2,Amend footnote div with duplicates.
+markdown/extensions/footnotes.py::FootnotePostTreeprocessor.__init__,function,__init__,FootnotePostTreeprocessor.__init__,markdown/extensions/footnotes.py,357,358,False,True,False,,,e8489ad33aef,1,1,
+markdown/extensions/footnotes.py::FootnotePostTreeprocessor.add_duplicates,function,add_duplicates,FootnotePostTreeprocessor.add_duplicates,markdown/extensions/footnotes.py,360,378,False,True,False,,,9a5f70fc18f5,1,1,"Adjust current `li` and add the duplicates: `fnref2`, `fnref3`, etc."
+markdown/extensions/footnotes.py::FootnotePostTreeprocessor.get_num_duplicates,function,get_num_duplicates,FootnotePostTreeprocessor.get_num_duplicates,markdown/extensions/footnotes.py,380,384,False,True,False,,,8be71405dd17,1,1,Get the number of duplicate refs of the footnote.
+markdown/extensions/footnotes.py::FootnotePostTreeprocessor.handle_duplicates,function,handle_duplicates,FootnotePostTreeprocessor.handle_duplicates,markdown/extensions/footnotes.py,386,393,False,True,False,,,41a83e21bb72,1,2,Find duplicate footnotes and format and add the duplicates.
+markdown/extensions/footnotes.py::FootnotePostTreeprocessor.run,function,run,FootnotePostTreeprocessor.run,markdown/extensions/footnotes.py,395,404,False,True,False,,,701d77373f3a,0,1,Crawl the footnote div and add missing duplicate footnotes.
+markdown/extensions/footnotes.py::FootnotePostprocessor,class,FootnotePostprocessor,FootnotePostprocessor,markdown/extensions/footnotes.py,468,477,False,,,,,2c4fbbcd3356,1,2,Replace placeholders with html entities.
+markdown/extensions/footnotes.py::FootnotePostprocessor.__init__,function,__init__,FootnotePostprocessor.__init__,markdown/extensions/footnotes.py,470,471,False,True,False,,,e8489ad33aef,1,1,
+markdown/extensions/footnotes.py::FootnotePostprocessor.run,function,run,FootnotePostprocessor.run,markdown/extensions/footnotes.py,473,477,False,True,False,,,9fee4d939371,0,1,
+markdown/extensions/footnotes.py::FootnoteReorderingProcessor,class,FootnoteReorderingProcessor,FootnoteReorderingProcessor,markdown/extensions/footnotes.py,430,465,False,,,,,e106436ca02d,1,2,Reorder list items in the footnotes div.
+markdown/extensions/footnotes.py::FootnoteReorderingProcessor.__init__,function,__init__,FootnoteReorderingProcessor.__init__,markdown/extensions/footnotes.py,433,434,False,True,False,,,e8489ad33aef,1,1,
+markdown/extensions/footnotes.py::FootnoteReorderingProcessor.reorder_footnotes,function,reorder_footnotes,FootnoteReorderingProcessor.reorder_footnotes,markdown/extensions/footnotes.py,445,465,False,True,False,,,da9845c771bf,1,2,
+markdown/extensions/footnotes.py::FootnoteReorderingProcessor.run,function,run,FootnoteReorderingProcessor.run,markdown/extensions/footnotes.py,436,443,False,True,False,,,d5184a24968b,0,1,
+markdown/extensions/footnotes.py::FootnoteTreeprocessor,class,FootnoteTreeprocessor,FootnoteTreeprocessor,markdown/extensions/footnotes.py,407,427,False,,,,,539c950d6c30,1,2,Build and append footnote div to end of document.
+markdown/extensions/footnotes.py::FootnoteTreeprocessor.__init__,function,__init__,FootnoteTreeprocessor.__init__,markdown/extensions/footnotes.py,410,411,False,True,False,,,e8489ad33aef,1,1,
+markdown/extensions/footnotes.py::FootnoteTreeprocessor.run,function,run,FootnoteTreeprocessor.run,markdown/extensions/footnotes.py,413,427,False,True,False,,,568f4b5ce1d8,0,2,
+markdown/extensions/footnotes.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/footnotes.py,480,482,False,False,False,,,5c5b149051bd,0,2,Return an instance of the `FootnoteExtension`
+markdown/extensions/legacy_attrs.py,file,legacy_attrs.py,,markdown/extensions/legacy_attrs.py,1,71,False,,,,,50e18d7b369a,0,3,
+markdown/extensions/legacy_attrs.py::LegacyAttrExtension,class,LegacyAttrExtension,LegacyAttrExtension,markdown/extensions/legacy_attrs.py,64,67,False,,,,,fb4680fec8e6,1,2,
+markdown/extensions/legacy_attrs.py::LegacyAttrExtension.extendMarkdown,function,extendMarkdown,LegacyAttrExtension.extendMarkdown,markdown/extensions/legacy_attrs.py,65,67,False,True,False,,,c77260842777,0,2,Add `LegacyAttrs` to Markdown instance.
+markdown/extensions/legacy_attrs.py::LegacyAttrs,class,LegacyAttrs,LegacyAttrs,markdown/extensions/legacy_attrs.py,45,61,False,,,,,9f92977429f8,1,2,
+markdown/extensions/legacy_attrs.py::LegacyAttrs.handleAttributes,function,handleAttributes,LegacyAttrs.handleAttributes,markdown/extensions/legacy_attrs.py,57,61,False,True,False,,,7c4e42fe0821,1,0,Set attributes and return text without definitions.
+markdown/extensions/legacy_attrs.py::LegacyAttrs.run,function,run,LegacyAttrs.run,markdown/extensions/legacy_attrs.py,46,55,False,True,False,,,59913adef786,0,2,Find and set values of attributes ({@key=value}).
+markdown/extensions/legacy_attrs.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/legacy_attrs.py,70,71,False,False,False,,,e2b481451d88,0,2,
+markdown/extensions/legacy_em.py,file,legacy_em.py,,markdown/extensions/legacy_em.py,1,52,False,,,,,b7181e456bd6,0,3,
+markdown/extensions/legacy_em.py::LegacyEmExtension,class,LegacyEmExtension,LegacyEmExtension,markdown/extensions/legacy_em.py,42,47,False,,,,,4f3e69e04326,1,2,Add legacy_em extension to Markdown class.
+markdown/extensions/legacy_em.py::LegacyEmExtension.extendMarkdown,function,extendMarkdown,LegacyEmExtension.extendMarkdown,markdown/extensions/legacy_em.py,45,47,False,True,False,,,950e098788f2,0,2,Modify inline patterns.
+markdown/extensions/legacy_em.py::LegacyUnderscoreProcessor,class,LegacyUnderscoreProcessor,LegacyUnderscoreProcessor,markdown/extensions/legacy_em.py,30,39,False,,,,,abc99e7d5f5e,1,3,Emphasis processor for handling strong and em matches inside underscores.
+markdown/extensions/legacy_em.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/legacy_em.py,50,52,False,False,False,,,474850a9a004,0,2,Return an instance of the `LegacyEmExtension`
+markdown/extensions/md_in_html.py,file,md_in_html.py,,markdown/extensions/md_in_html.py,1,440,False,,,,,bb645392dddd,0,6,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra,class,HTMLExtractorExtra,HTMLExtractorExtra,markdown/extensions/md_in_html.py,37,297,False,,,,,f143159cd01a,1,2,Override `HTMLExtractor` and create `etree` `Elements` for any elements which should have content parsed as
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.__init__,function,__init__,HTMLExtractorExtra.__init__,markdown/extensions/md_in_html.py,43,57,False,True,False,,,54fd3a69a189,1,2,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.close,function,close,HTMLExtractorExtra.close,markdown/extensions/md_in_html.py,67,73,False,True,False,,,cb388e345598,1,2,Handle any buffered data.
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.get_element,function,get_element,HTMLExtractorExtra.get_element,markdown/extensions/md_in_html.py,75,79,False,True,False,,,e61bc6df9e71,1,0,Return element from `treebuilder` and reset `treebuilder` for later use.
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.get_state,function,get_state,HTMLExtractorExtra.get_state,markdown/extensions/md_in_html.py,81,100,False,True,False,,,bc6491f120da,1,0,"Return state from tag and `markdown` attribute. One of 'block', 'span', or 'off'."
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.handle_data,function,handle_data,HTMLExtractorExtra.handle_data,markdown/extensions/md_in_html.py,251,258,False,True,False,,,85b1cb66a81a,5,1,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.handle_empty_tag,function,handle_empty_tag,HTMLExtractorExtra.handle_empty_tag,markdown/extensions/md_in_html.py,260,269,False,True,False,,,3f1b645fb096,2,4,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.handle_endtag,function,handle_endtag,HTMLExtractorExtra.handle_endtag,markdown/extensions/md_in_html.py,151,236,False,True,False,,,96e8445872e3,2,6,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.handle_startendtag,function,handle_startendtag,HTMLExtractorExtra.handle_startendtag,markdown/extensions/md_in_html.py,238,249,False,True,False,,,28d2d5c8867e,0,3,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.handle_starttag,function,handle_starttag,HTMLExtractorExtra.handle_starttag,markdown/extensions/md_in_html.py,102,149,False,True,False,,,0ade790d9896,0,8,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.parse_html_declaration,function,parse_html_declaration,HTMLExtractorExtra.parse_html_declaration,markdown/extensions/md_in_html.py,281,297,False,True,False,,,ed6766dc10d6,0,4,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.parse_pi,function,parse_pi,HTMLExtractorExtra.parse_pi,markdown/extensions/md_in_html.py,271,279,False,True,False,,,12e6467221c8,0,3,
+markdown/extensions/md_in_html.py::HTMLExtractorExtra.reset,function,reset,HTMLExtractorExtra.reset,markdown/extensions/md_in_html.py,59,65,False,True,False,,,ba46f84bc0b9,0,1,Reset this instance.  Loses all unprocessed data.
+markdown/extensions/md_in_html.py::HtmlBlockPreprocessor,class,HtmlBlockPreprocessor,HtmlBlockPreprocessor,markdown/extensions/md_in_html.py,300,308,False,,,,,a55b6a766737,1,2,Remove html blocks from the text and store them for later retrieval.
+markdown/extensions/md_in_html.py::HtmlBlockPreprocessor.run,function,run,HtmlBlockPreprocessor.run,markdown/extensions/md_in_html.py,303,308,False,True,False,,,c1d68c6a61da,0,3,
+markdown/extensions/md_in_html.py::MarkdownInHTMLPostprocessor,class,MarkdownInHTMLPostprocessor,MarkdownInHTMLPostprocessor,markdown/extensions/md_in_html.py,414,420,False,,,,,3438995b2036,1,2,
+markdown/extensions/md_in_html.py::MarkdownInHTMLPostprocessor.stash_to_string,function,stash_to_string,MarkdownInHTMLPostprocessor.stash_to_string,markdown/extensions/md_in_html.py,415,420,False,True,False,,,e7c27a98f749,0,0,Override default to handle any `etree` elements still in the stash.
+markdown/extensions/md_in_html.py::MarkdownInHtmlExtension,class,MarkdownInHtmlExtension,MarkdownInHtmlExtension,markdown/extensions/md_in_html.py,423,436,False,,,,,e7d58a9ccab9,1,2,Add Markdown parsing in HTML to Markdown class.
+markdown/extensions/md_in_html.py::MarkdownInHtmlExtension.extendMarkdown,function,extendMarkdown,MarkdownInHtmlExtension.extendMarkdown,markdown/extensions/md_in_html.py,426,436,False,True,False,,,b7ab2be850b6,0,5,Register extension instances.
+markdown/extensions/md_in_html.py::MarkdownInHtmlProcessor,class,MarkdownInHtmlProcessor,MarkdownInHtmlProcessor,markdown/extensions/md_in_html.py,311,411,False,,,,,169b0652086c,1,2,Process Markdown Inside HTML Blocks which have been stored in the `HtmlStash`.
+markdown/extensions/md_in_html.py::MarkdownInHtmlProcessor.parse_element_content,function,parse_element_content,MarkdownInHtmlProcessor.parse_element_content,markdown/extensions/md_in_html.py,318,389,False,True,False,,,52f7ef5b6a1e,1,2,Recursively parse the text content of an `etree` Element as Markdown.
+markdown/extensions/md_in_html.py::MarkdownInHtmlProcessor.run,function,run,MarkdownInHtmlProcessor.run,markdown/extensions/md_in_html.py,391,411,False,True,False,,,6e98eb423d5a,0,1,
+markdown/extensions/md_in_html.py::MarkdownInHtmlProcessor.test,function,test,MarkdownInHtmlProcessor.test,markdown/extensions/md_in_html.py,314,316,False,True,False,,,4da644a702bb,0,0,
+markdown/extensions/md_in_html.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/md_in_html.py,439,440,False,False,False,,,d51d63eb3f20,0,2,
+markdown/extensions/meta.py,file,meta.py,,markdown/extensions/meta.py,1,86,False,,,,,778d5dd5b338,0,2,
+markdown/extensions/meta.py::MetaExtension,class,MetaExtension,MetaExtension,markdown/extensions/meta.py,39,49,False,,,,,99ac1deee1f7,1,2,Meta-Data extension for Python-Markdown.
+markdown/extensions/meta.py::MetaExtension.extendMarkdown,function,extendMarkdown,MetaExtension.extendMarkdown,markdown/extensions/meta.py,42,46,False,True,False,,,7f0f684115ef,0,2,Add `MetaPreprocessor` to Markdown instance.
+markdown/extensions/meta.py::MetaExtension.reset,function,reset,MetaExtension.reset,markdown/extensions/meta.py,48,49,False,True,False,,,abc981479186,0,0,
+markdown/extensions/meta.py::MetaPreprocessor,class,MetaPreprocessor,MetaPreprocessor,markdown/extensions/meta.py,52,82,False,,,,,57d8a781f6b6,1,2,Get Meta-Data.
+markdown/extensions/meta.py::MetaPreprocessor.run,function,run,MetaPreprocessor.run,markdown/extensions/meta.py,55,82,False,True,False,,,e4115caa2594,0,0,Parse Meta-Data and store in Markdown.Meta.
+markdown/extensions/meta.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/meta.py,85,86,False,False,False,,,b4294ec66711,0,2,
+markdown/extensions/nl2br.py,file,nl2br.py,,markdown/extensions/nl2br.py,1,41,False,,,,,e23ecf833e6e,0,2,
+markdown/extensions/nl2br.py::Nl2BrExtension,class,Nl2BrExtension,Nl2BrExtension,markdown/extensions/nl2br.py,32,37,False,,,,,2aee3a189dd3,1,2,
+markdown/extensions/nl2br.py::Nl2BrExtension.extendMarkdown,function,extendMarkdown,Nl2BrExtension.extendMarkdown,markdown/extensions/nl2br.py,34,37,False,True,False,,,21b13ac06483,0,2,Add a `SubstituteTagInlineProcessor` to Markdown.
+markdown/extensions/nl2br.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/nl2br.py,40,41,False,False,False,,,6626aadd3355,0,2,
+markdown/extensions/sane_lists.py,file,sane_lists.py,,markdown/extensions/sane_lists.py,1,69,False,,,,,1e164b6a5bdc,0,3,
+markdown/extensions/sane_lists.py::SaneListExtension,class,SaneListExtension,SaneListExtension,markdown/extensions/sane_lists.py,59,65,False,,,,,305c10c20d25,1,2,Add sane lists to Markdown.
+markdown/extensions/sane_lists.py::SaneListExtension.extendMarkdown,function,extendMarkdown,SaneListExtension.extendMarkdown,markdown/extensions/sane_lists.py,62,65,False,True,False,,,ccfda10b53b8,0,4,Override existing Processors.
+markdown/extensions/sane_lists.py::SaneOListProcessor,class,SaneOListProcessor,SaneOListProcessor,markdown/extensions/sane_lists.py,33,44,False,,,,,d0ffaa1c8c01,1,2,Override `SIBLING_TAGS` to not include `ul` and set `LAZY_OL` to `False`.
+markdown/extensions/sane_lists.py::SaneOListProcessor.__init__,function,__init__,SaneOListProcessor.__init__,markdown/extensions/sane_lists.py,41,44,False,True,False,,,0d786b1198b7,1,2,
+markdown/extensions/sane_lists.py::SaneUListProcessor,class,SaneUListProcessor,SaneUListProcessor,markdown/extensions/sane_lists.py,47,56,False,,,,,cde569cae339,1,2,Override `SIBLING_TAGS` to not include `ol`.
+markdown/extensions/sane_lists.py::SaneUListProcessor.__init__,function,__init__,SaneUListProcessor.__init__,markdown/extensions/sane_lists.py,53,56,False,True,False,,,e312e33c1cf3,1,2,
+markdown/extensions/sane_lists.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/sane_lists.py,68,69,False,False,False,,,0d17e2072fa3,0,2,
+markdown/extensions/smarty.py,file,smarty.py,,markdown/extensions/smarty.py,1,280,False,,,,,f61d2df94954,0,5,
+markdown/extensions/smarty.py::SmartyExtension,class,SmartyExtension,SmartyExtension,markdown/extensions/smarty.py,181,276,False,,,,,d3796b02e8c4,1,2,Add Smarty to Markdown.
+markdown/extensions/smarty.py::SmartyExtension.__init__,function,__init__,SmartyExtension.__init__,markdown/extensions/smarty.py,183,194,False,True,False,,,7fee653cf9d9,1,2,
+markdown/extensions/smarty.py::SmartyExtension._addPatterns,function,_addPatterns,SmartyExtension._addPatterns,markdown/extensions/smarty.py,196,207,False,True,False,,,a40938dc14ab,1,4,
+markdown/extensions/smarty.py::SmartyExtension.educateAngledQuotes,function,educateAngledQuotes,SmartyExtension.educateAngledQuotes,markdown/extensions/smarty.py,225,233,False,True,False,,,9f2fc944408f,1,4,
+markdown/extensions/smarty.py::SmartyExtension.educateDashes,function,educateDashes,SmartyExtension.educateDashes,markdown/extensions/smarty.py,209,217,False,True,False,,,89fe9ce589c1,1,4,
+markdown/extensions/smarty.py::SmartyExtension.educateEllipses,function,educateEllipses,SmartyExtension.educateEllipses,markdown/extensions/smarty.py,219,223,False,True,False,,,304be54c7195,1,4,
+markdown/extensions/smarty.py::SmartyExtension.educateQuotes,function,educateQuotes,SmartyExtension.educateQuotes,markdown/extensions/smarty.py,235,257,False,True,False,,,b7f2f5cd0a99,1,2,
+markdown/extensions/smarty.py::SmartyExtension.extendMarkdown,function,extendMarkdown,SmartyExtension.extendMarkdown,markdown/extensions/smarty.py,259,276,False,True,False,,,3aae9731b445,0,13,
+markdown/extensions/smarty.py::SubstituteTextPattern,class,SubstituteTextPattern,SubstituteTextPattern,markdown/extensions/smarty.py,164,178,False,,,,,bb5087cf4110,4,2,
+markdown/extensions/smarty.py::SubstituteTextPattern.__init__,function,__init__,SubstituteTextPattern.__init__,markdown/extensions/smarty.py,165,169,False,True,False,,,cd2d670e27fe,4,2,Replaces matches with some text.
+markdown/extensions/smarty.py::SubstituteTextPattern.handleMatch,function,handleMatch,SubstituteTextPattern.handleMatch,markdown/extensions/smarty.py,171,178,False,True,False,,,f7b19a049153,0,1,
+markdown/extensions/smarty.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/smarty.py,279,280,False,False,False,,,6e15cc2466b7,0,2,
+markdown/extensions/tables.py,file,tables.py,,markdown/extensions/tables.py,1,248,False,,,,,390b584ac64a,0,2,
+markdown/extensions/tables.py::TableExtension,class,TableExtension,TableExtension,markdown/extensions/tables.py,228,244,False,,,,,dfebd5102f83,1,2,Add tables to Markdown.
+markdown/extensions/tables.py::TableExtension.__init__,function,__init__,TableExtension.__init__,markdown/extensions/tables.py,231,237,False,True,False,,,7c9f684e5320,1,1,
+markdown/extensions/tables.py::TableExtension.extendMarkdown,function,extendMarkdown,TableExtension.extendMarkdown,markdown/extensions/tables.py,239,244,False,True,False,,,312f0aaacc09,0,3,Add an instance of `TableProcessor` to `BlockParser`.
+markdown/extensions/tables.py::TableProcessor,class,TableProcessor,TableProcessor,markdown/extensions/tables.py,38,225,False,,,,,4d08a14be2b3,1,2,Process Tables.
+markdown/extensions/tables.py::TableProcessor.__init__,function,__init__,TableProcessor.__init__,markdown/extensions/tables.py,44,49,False,True,False,,,8493a751de6c,1,2,
+markdown/extensions/tables.py::TableProcessor._build_empty_row,function,_build_empty_row,TableProcessor._build_empty_row,markdown/extensions/tables.py,118,124,False,True,False,,,7a1b68179df8,1,0,Build an empty row.
+markdown/extensions/tables.py::TableProcessor._build_row,function,_build_row,TableProcessor._build_row,markdown/extensions/tables.py,126,145,False,True,False,,,dd5ea7e400d6,1,1,"Given a row of text, build table cells."
+markdown/extensions/tables.py::TableProcessor._split,function,_split,TableProcessor._split,markdown/extensions/tables.py,155,225,False,True,False,,,c616eac4dde3,1,0,split a row of text with some code into a list of cells.
+markdown/extensions/tables.py::TableProcessor._split_row,function,_split_row,TableProcessor._split_row,markdown/extensions/tables.py,147,153,False,True,False,,,4a053f1359be,2,1,split a row of text into list of cells.
+markdown/extensions/tables.py::TableProcessor.run,function,run,TableProcessor.run,markdown/extensions/tables.py,87,116,False,True,False,,,3fe25b052cb4,0,2,Parse a table block and build table.
+markdown/extensions/tables.py::TableProcessor.test,function,test,TableProcessor.test,markdown/extensions/tables.py,51,85,False,True,False,,,fdc2e17c5b07,0,1,Ensure first two rows (column header and separator row) are valid table rows.
+markdown/extensions/tables.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/tables.py,247,248,False,False,False,,,c1c79f21fa1b,0,2,
+markdown/extensions/toc.py,file,toc.py,,markdown/extensions/toc.py,1,488,False,,,,,b207a207ac6c,0,7,
+markdown/extensions/toc.py::TocExtension,class,TocExtension,TocExtension,markdown/extensions/toc.py,418,484,False,,,,,fd08c433fe76,1,3,
+markdown/extensions/toc.py::TocExtension.__init__,function,__init__,TocExtension.__init__,markdown/extensions/toc.py,422,472,False,True,False,,,a6b62bb54540,1,2,
+markdown/extensions/toc.py::TocExtension.extendMarkdown,function,extendMarkdown,TocExtension.extendMarkdown,markdown/extensions/toc.py,474,480,False,True,False,,,93dff2035385,0,4,Add TOC tree processor to Markdown.
+markdown/extensions/toc.py::TocExtension.reset,function,reset,TocExtension.reset,markdown/extensions/toc.py,482,484,False,True,False,,,365ce1c7744f,1,0,
+markdown/extensions/toc.py::TocTreeprocessor,class,TocTreeprocessor,TocTreeprocessor,markdown/extensions/toc.py,239,415,False,,,,,da67d4c87e76,2,2,Step through document and build TOC.
+markdown/extensions/toc.py::TocTreeprocessor.__init__,function,__init__,TocTreeprocessor.__init__,markdown/extensions/toc.py,242,265,False,True,False,,,efdfe1dd3639,1,3,
+markdown/extensions/toc.py::TocTreeprocessor.add_anchor,function,add_anchor,TocTreeprocessor.add_anchor,markdown/extensions/toc.py,306,316,False,True,False,,,03753a07b83f,1,0,
+markdown/extensions/toc.py::TocTreeprocessor.add_permalink,function,add_permalink,TocTreeprocessor.add_permalink,markdown/extensions/toc.py,318,332,False,True,False,,,138b7a9eea9c,1,0,
+markdown/extensions/toc.py::TocTreeprocessor.build_toc_div,function,build_toc_div,TocTreeprocessor.build_toc_div,markdown/extensions/toc.py,334,363,False,True,False,,,0fff7596d149,1,2,Return a string div given a toc list.
+markdown/extensions/toc.py::TocTreeprocessor.iterparent,function,iterparent,TocTreeprocessor.iterparent,markdown/extensions/toc.py,267,276,False,True,False,,,f9099d2b2985,1,0,Iterator wrapper to get allowed parent and child all at once.
+markdown/extensions/toc.py::TocTreeprocessor.replace_marker,function,replace_marker,TocTreeprocessor.replace_marker,markdown/extensions/toc.py,278,297,False,True,False,,,7799cf2bb549,1,1,Replace marker with elem.
+markdown/extensions/toc.py::TocTreeprocessor.run,function,run,TocTreeprocessor.run,markdown/extensions/toc.py,365,415,False,True,False,,,44ca4cc8318b,0,14,
+markdown/extensions/toc.py::TocTreeprocessor.set_level,function,set_level,TocTreeprocessor.set_level,markdown/extensions/toc.py,299,304,False,True,False,,,88954ba7792f,1,0,Adjust header level according to base level.
+markdown/extensions/toc.py::escape_cdata,function,escape_cdata,escape_cdata,markdown/extensions/toc.py,119,128,False,False,False,,,df925e8bdfa8,1,0,Escape character data.
+markdown/extensions/toc.py::get_name,function,get_name,get_name,markdown/extensions/toc.py,69,78,False,False,False,deprecated,,d4a9d039053b,0,2,Get title name.
+markdown/extensions/toc.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/toc.py,487,488,False,False,False,,,3ee0f63e1c19,0,2,
+markdown/extensions/toc.py::nest_toc_tokens,function,nest_toc_tokens,nest_toc_tokens,markdown/extensions/toc.py,174,236,False,False,False,,,6799f4aa6835,1,0,"Given an unsorted list with errors and skips, return a nested one."
+markdown/extensions/toc.py::remove_fnrefs,function,remove_fnrefs,remove_fnrefs,markdown/extensions/toc.py,151,171,False,False,False,,,35fc9537a832,1,0,"Remove footnote references from a copy of the element, if any are present."
+markdown/extensions/toc.py::render_inner_html,function,render_inner_html,render_inner_html,markdown/extensions/toc.py,138,148,False,False,False,,,5985558be21e,1,3,Fully render inner html of an `etree` element as a string.
+markdown/extensions/toc.py::run_postprocessors,function,run_postprocessors,run_postprocessors,markdown/extensions/toc.py,131,135,False,False,False,,,bf81eb8f9972,2,2,Run postprocessors from Markdown instance on text.
+markdown/extensions/toc.py::slugify,function,slugify,slugify,markdown/extensions/toc.py,38,45,False,False,False,,,677239630a3c,2,0,"Slugify a string, to make it URL friendly."
+markdown/extensions/toc.py::slugify_unicode,function,slugify_unicode,slugify_unicode,markdown/extensions/toc.py,48,50,False,False,False,,,a7c176c1e2bc,0,1,"Slugify a string, to make it URL friendly while preserving Unicode characters."
+markdown/extensions/toc.py::stashedHTML2text,function,stashedHTML2text,stashedHTML2text,markdown/extensions/toc.py,82,96,False,False,False,deprecated,,1c6af4516990,0,2,"Extract raw HTML from stash, reduce to plain text and swap with placeholder."
+markdown/extensions/toc.py::strip_tags,function,strip_tags,strip_tags,markdown/extensions/toc.py,105,116,False,False,False,,,96a2d0a0f23e,1,0,Strip HTML tags and return plain text. Note: HTML entities are unaffected.
+markdown/extensions/toc.py::unescape,function,unescape,unescape,markdown/extensions/toc.py,99,102,False,False,False,,,d585c95d7f96,2,3,Unescape Markdown backslash escaped text.
+markdown/extensions/toc.py::unique,function,unique,unique,markdown/extensions/toc.py,56,65,False,False,False,,,d9058e4e0ac0,1,0,"Ensure id is unique in set of ids. Append '_1', '_2'... if not"
+markdown/extensions/wikilinks.py,file,wikilinks.py,,markdown/extensions/wikilinks.py,1,97,False,,,,,1fab24e3cadb,0,2,
+markdown/extensions/wikilinks.py::WikiLinkExtension,class,WikiLinkExtension,WikiLinkExtension,markdown/extensions/wikilinks.py,37,57,False,,,,,1be5a434d427,1,2,Add inline processor to Markdown.
+markdown/extensions/wikilinks.py::WikiLinkExtension.__init__,function,__init__,WikiLinkExtension.__init__,markdown/extensions/wikilinks.py,40,48,False,True,False,,,834ae28f3bf7,1,2,
+markdown/extensions/wikilinks.py::WikiLinkExtension.extendMarkdown,function,extendMarkdown,WikiLinkExtension.extendMarkdown,markdown/extensions/wikilinks.py,50,57,False,True,False,,,e874fc750cd3,0,3,
+markdown/extensions/wikilinks.py::WikiLinksInlineProcessor,class,WikiLinksInlineProcessor,WikiLinksInlineProcessor,markdown/extensions/wikilinks.py,60,93,False,,,,,cf5152800a83,1,2,Build link from `wikilink`.
+markdown/extensions/wikilinks.py::WikiLinksInlineProcessor.__init__,function,__init__,WikiLinksInlineProcessor.__init__,markdown/extensions/wikilinks.py,63,65,False,True,False,,,331dd4787ec6,1,1,
+markdown/extensions/wikilinks.py::WikiLinksInlineProcessor._getMeta,function,_getMeta,WikiLinksInlineProcessor._getMeta,markdown/extensions/wikilinks.py,81,93,False,True,False,,,613847781076,1,0,Return meta data or `config` data.
+markdown/extensions/wikilinks.py::WikiLinksInlineProcessor.handleMatch,function,handleMatch,WikiLinksInlineProcessor.handleMatch,markdown/extensions/wikilinks.py,67,79,False,True,False,,,d9963eecb593,0,1,
+markdown/extensions/wikilinks.py::build_url,function,build_url,build_url,markdown/extensions/wikilinks.py,31,34,False,False,False,,,358460995760,1,0,"Build a URL from the label, a base, and an end."
+markdown/extensions/wikilinks.py::makeExtension,function,makeExtension,makeExtension,markdown/extensions/wikilinks.py,96,97,False,False,False,,,4baa7dc5cdf6,0,2,
+markdown/htmlparser.py,file,htmlparser.py,,markdown/htmlparser.py,1,422,False,,,,,e5735f1d3ab4,0,2,
+markdown/htmlparser.py::HTMLExtractor,class,HTMLExtractor,HTMLExtractor,markdown/htmlparser.py,120,422,False,,,,htmlparser.HTMLParser,47c43be717a0,7,0,Extract raw HTML from text.
+markdown/htmlparser.py::HTMLExtractor.__init__,function,__init__,HTMLExtractor.__init__,markdown/htmlparser.py,129,140,False,True,False,,,e662bf860a00,2,1,
+markdown/htmlparser.py::HTMLExtractor.at_line_start,function,at_line_start,HTMLExtractor.at_line_start,markdown/htmlparser.py,181,192,False,True,False,,,7ce1e8124dbd,8,1,Returns True if current position is at start of line.
+markdown/htmlparser.py::HTMLExtractor.close,function,close,HTMLExtractor.close,markdown/htmlparser.py,153,166,False,True,False,,,18a1c2a1a876,2,2,Handle any buffered data.
+markdown/htmlparser.py::HTMLExtractor.get_endtag_text,function,get_endtag_text,HTMLExtractor.get_endtag_text,markdown/htmlparser.py,194,207,False,True,False,,,8671be0e1624,2,1,Returns the text of the end tag.
+markdown/htmlparser.py::HTMLExtractor.get_starttag_text,function,get_starttag_text,HTMLExtractor.get_starttag_text,markdown/htmlparser.py,364,366,False,True,False,,,57e363c4b95d,4,0,Return full source of start tag: `<...>`.
+markdown/htmlparser.py::HTMLExtractor.handle_charref,function,handle_charref,HTMLExtractor.handle_charref,markdown/htmlparser.py,291,292,False,True,False,,,0c746f10111a,0,1,
+markdown/htmlparser.py::HTMLExtractor.handle_comment,function,handle_comment,HTMLExtractor.handle_comment,markdown/htmlparser.py,297,299,False,True,False,,,c8b7dd1ff5dc,1,1,
+markdown/htmlparser.py::HTMLExtractor.handle_data,function,handle_data,HTMLExtractor.handle_data,markdown/htmlparser.py,257,263,False,True,False,,,989dbba7a029,6,0,
+markdown/htmlparser.py::HTMLExtractor.handle_decl,function,handle_decl,HTMLExtractor.handle_decl,markdown/htmlparser.py,301,302,False,True,False,,,3940f44bf57e,0,1,
+markdown/htmlparser.py::HTMLExtractor.handle_empty_tag,function,handle_empty_tag,HTMLExtractor.handle_empty_tag,markdown/htmlparser.py,265,286,False,True,False,,,fe9b510eb104,9,3,Handle empty tags (`<data>`).
+markdown/htmlparser.py::HTMLExtractor.handle_endtag,function,handle_endtag,HTMLExtractor.handle_endtag,markdown/htmlparser.py,230,255,False,True,False,,,b88459c1bd7f,1,3,
+markdown/htmlparser.py::HTMLExtractor.handle_entityref,function,handle_entityref,HTMLExtractor.handle_entityref,markdown/htmlparser.py,294,295,False,True,False,,,e8516078548c,0,1,
+markdown/htmlparser.py::HTMLExtractor.handle_pi,function,handle_pi,HTMLExtractor.handle_pi,markdown/htmlparser.py,304,305,False,True,False,,,5a89174da2c7,0,1,
+markdown/htmlparser.py::HTMLExtractor.handle_startendtag,function,handle_startendtag,HTMLExtractor.handle_startendtag,markdown/htmlparser.py,288,289,False,True,False,,,5eb681065d4f,2,3,
+markdown/htmlparser.py::HTMLExtractor.handle_starttag,function,handle_starttag,HTMLExtractor.handle_starttag,markdown/htmlparser.py,209,228,False,True,False,,,67a776f00581,2,4,
+markdown/htmlparser.py::HTMLExtractor.line_offset,function,line_offset,HTMLExtractor.line_offset,markdown/htmlparser.py,169,179,False,True,False,property,,68a6062f99bb,5,0,Returns char index in `self.rawdata` for the start of the current line.
+markdown/htmlparser.py::HTMLExtractor.parse_bogus_comment,function,parse_bogus_comment,HTMLExtractor.parse_bogus_comment,markdown/htmlparser.py,349,356,False,True,False,,,57db9fe7aee8,2,1,
+markdown/htmlparser.py::HTMLExtractor.parse_comment,function,parse_comment,HTMLExtractor.parse_comment,markdown/htmlparser.py,321,331,False,True,False,,,5af7a8c5d5a2,0,2,
+markdown/htmlparser.py::HTMLExtractor.parse_html_declaration,function,parse_html_declaration,HTMLExtractor.parse_html_declaration,markdown/htmlparser.py,333,347,False,True,False,,,9c6d29a77a84,0,3,
+markdown/htmlparser.py::HTMLExtractor.parse_pi,function,parse_pi,HTMLExtractor.parse_pi,markdown/htmlparser.py,311,317,False,True,False,,,02aaf5f2f5bd,0,2,
+markdown/htmlparser.py::HTMLExtractor.parse_starttag,function,parse_starttag,HTMLExtractor.parse_starttag,markdown/htmlparser.py,368,422,False,True,False,,,e86a9fa9c922,0,3,
+markdown/htmlparser.py::HTMLExtractor.reset,function,reset,HTMLExtractor.reset,markdown/htmlparser.py,142,151,False,True,False,,,939e2a1cc018,1,0,Reset this instance.  Loses all unprocessed data.
+markdown/htmlparser.py::HTMLExtractor.unknown_decl,function,unknown_decl,HTMLExtractor.unknown_decl,markdown/htmlparser.py,307,309,False,True,False,,,257025416727,0,1,
+markdown/htmlparser.py::_HTMLParser,class,_HTMLParser,_HTMLParser,markdown/htmlparser.py,96,113,False,,,,htmlparser.HTMLParser,a1b953503111,1,0,Handle special start and end tags.
+markdown/htmlparser.py::_HTMLParser.parse_endtag,function,parse_endtag,_HTMLParser.parse_endtag,markdown/htmlparser.py,99,105,False,True,False,,,0df71df5b508,0,0,
+markdown/htmlparser.py::_HTMLParser.parse_starttag,function,parse_starttag,_HTMLParser.parse_starttag,markdown/htmlparser.py,107,113,False,True,False,,,5dc8ae26d632,0,0,
+markdown/inlinepatterns.py,file,inlinepatterns.py,,markdown/inlinepatterns.py,1,996,False,,,,,3005593746b5,0,1,
+markdown/inlinepatterns.py::AsteriskProcessor,class,AsteriskProcessor,AsteriskProcessor,markdown/inlinepatterns.py,543,674,False,,,,,2b5c1e24b59c,3,3,Emphasis processor for handling strong and em matches inside asterisks.
+markdown/inlinepatterns.py::AsteriskProcessor.build_double,function,build_double,AsteriskProcessor.build_double,markdown/inlinepatterns.py,562,574,False,True,False,,,daf05eea56d0,1,1,Return double tag.
+markdown/inlinepatterns.py::AsteriskProcessor.build_double2,function,build_double2,AsteriskProcessor.build_double2,markdown/inlinepatterns.py,576,587,False,True,False,,,4ea47fc315b3,1,1,Return double tags (variant 2): `<strong>text <em>text</em></strong>`.
+markdown/inlinepatterns.py::AsteriskProcessor.build_element,function,build_element,AsteriskProcessor.build_element,markdown/inlinepatterns.py,650,658,False,True,False,,,e14323484aa2,2,3,Element builder.
+markdown/inlinepatterns.py::AsteriskProcessor.build_single,function,build_single,AsteriskProcessor.build_single,markdown/inlinepatterns.py,555,560,False,True,False,,,3e947c5572d6,1,1,Return single tag.
+markdown/inlinepatterns.py::AsteriskProcessor.handleMatch,function,handleMatch,AsteriskProcessor.handleMatch,markdown/inlinepatterns.py,660,674,False,True,False,,,604cf5ad23b9,0,1,Parse patterns.
+markdown/inlinepatterns.py::AsteriskProcessor.parse_sub_patterns,function,parse_sub_patterns,AsteriskProcessor.parse_sub_patterns,markdown/inlinepatterns.py,589,648,False,True,False,,,b5142fc2599f,3,1,Parses sub patterns.
+markdown/inlinepatterns.py::AutolinkInlineProcessor,class,AutolinkInlineProcessor,AutolinkInlineProcessor,markdown/inlinepatterns.py,960,967,False,,,,,6159f3b96864,1,2,Return a link Element given an auto-link (`<http://example/com>`).
+markdown/inlinepatterns.py::AutolinkInlineProcessor.handleMatch,function,handleMatch,AutolinkInlineProcessor.handleMatch,markdown/inlinepatterns.py,962,967,False,True,False,,,70cab8648c02,0,2,Return an `a` [`Element`][xml.etree.ElementTree.Element] of `group(1)`.
+markdown/inlinepatterns.py::AutomailInlineProcessor,class,AutomailInlineProcessor,AutomailInlineProcessor,markdown/inlinepatterns.py,970,996,False,,,,,03a3cce79c18,1,2,Return a `mailto` link Element given an auto-mail link (`<foo@example.com>`).
+markdown/inlinepatterns.py::AutomailInlineProcessor.handleMatch,function,handleMatch,AutomailInlineProcessor.handleMatch,markdown/inlinepatterns.py,974,996,False,True,False,,,ccbcb4364065,0,2,Return an [`Element`][xml.etree.ElementTree.Element] containing a `mailto` link  of `group(1)`.
+markdown/inlinepatterns.py::BacktickInlineProcessor,class,BacktickInlineProcessor,BacktickInlineProcessor,markdown/inlinepatterns.py,436,458,False,,,,,07dd1fc1251f,1,2,Return a `<code>` element containing the escaped matching text.
+markdown/inlinepatterns.py::BacktickInlineProcessor.__init__,function,__init__,BacktickInlineProcessor.__init__,markdown/inlinepatterns.py,438,442,False,True,False,,,224e9080e9d4,1,1,
+markdown/inlinepatterns.py::BacktickInlineProcessor.handleMatch,function,handleMatch,BacktickInlineProcessor.handleMatch,markdown/inlinepatterns.py,444,458,False,True,False,,,16dd55d1605e,0,2,"If the match contains `group(3)` of a pattern, then return a `code`"
+markdown/inlinepatterns.py::DoubleTagInlineProcessor,class,DoubleTagInlineProcessor,DoubleTagInlineProcessor,markdown/inlinepatterns.py,482,500,False,,,,,38824f47ccf4,0,2,Return a ElementTree element nested in tag2 nested in tag1.
+markdown/inlinepatterns.py::DoubleTagInlineProcessor.handleMatch,function,handleMatch,DoubleTagInlineProcessor.handleMatch,markdown/inlinepatterns.py,488,500,False,True,False,,,784512e93855,0,0,Return [`Element`][xml.etree.ElementTree.Element] in following format:
+markdown/inlinepatterns.py::DoubleTagPattern,class,DoubleTagPattern,DoubleTagPattern,markdown/inlinepatterns.py,461,479,False,,,,,0fa6058d8b73,0,2,Return a ElementTree element nested in tag2 nested in tag1.
+markdown/inlinepatterns.py::DoubleTagPattern.handleMatch,function,handleMatch,DoubleTagPattern.handleMatch,markdown/inlinepatterns.py,467,479,False,True,False,,,219c3d53d450,0,0,Return [`Element`][xml.etree.ElementTree.Element] in following format:
+markdown/inlinepatterns.py::EmStrongItem,class,EmStrongItem,EmStrongItem,markdown/inlinepatterns.py,186,190,False,,,,NamedTuple,dd95a4c78649,4,0,Emphasis/strong pattern item.
+markdown/inlinepatterns.py::EscapeInlineProcessor,class,EscapeInlineProcessor,EscapeInlineProcessor,markdown/inlinepatterns.py,345,361,False,,,,,486c5bc66d3b,1,2,Return an escaped character.
+markdown/inlinepatterns.py::EscapeInlineProcessor.handleMatch,function,handleMatch,EscapeInlineProcessor.handleMatch,markdown/inlinepatterns.py,348,361,False,True,False,,,eabb6dfbea57,0,0,If the character matched by `group(1)` of a pattern is in [`ESCAPED_CHARS`][markdown.Markdown.ESCAPED_CHARS]
+markdown/inlinepatterns.py::HtmlInlineProcessor,class,HtmlInlineProcessor,HtmlInlineProcessor,markdown/inlinepatterns.py,503,540,False,,,,,948ede805b03,5,2,Store raw inline html and return a placeholder.
+markdown/inlinepatterns.py::HtmlInlineProcessor.backslash_unescape,function,backslash_unescape,HtmlInlineProcessor.backslash_unescape,markdown/inlinepatterns.py,530,540,False,True,False,,,840697163163,1,1,Return text with backslash escapes undone (backslashes are restored).
+markdown/inlinepatterns.py::HtmlInlineProcessor.handleMatch,function,handleMatch,HtmlInlineProcessor.handleMatch,markdown/inlinepatterns.py,505,509,False,True,False,,,64c15873e44a,0,3,Store the text of `group(1)` of a pattern and return a placeholder string.
+markdown/inlinepatterns.py::HtmlInlineProcessor.unescape,function,unescape,HtmlInlineProcessor.unescape,markdown/inlinepatterns.py,511,528,False,True,False,,,1611ad232189,1,1,Return unescaped text given text with an inline placeholder.
+markdown/inlinepatterns.py::ImageInlineProcessor,class,ImageInlineProcessor,ImageInlineProcessor,markdown/inlinepatterns.py,852,873,False,,,,,aa14b3fd5db6,1,2,Return a `img` element from the given match.
+markdown/inlinepatterns.py::ImageInlineProcessor.handleMatch,function,handleMatch,ImageInlineProcessor.handleMatch,markdown/inlinepatterns.py,855,873,False,True,False,,,0a0a98a2757e,0,3,"Return an `img` [`Element`][xml.etree.ElementTree.Element] or `(None, None, None)`."
+markdown/inlinepatterns.py::ImageReferenceInlineProcessor,class,ImageReferenceInlineProcessor,ImageReferenceInlineProcessor,markdown/inlinepatterns.py,940,949,False,,,,,f8c0f638c673,3,2,Match to a stored reference and return `img` element.
+markdown/inlinepatterns.py::ImageReferenceInlineProcessor.makeTag,function,makeTag,ImageReferenceInlineProcessor.makeTag,markdown/inlinepatterns.py,942,949,False,True,False,,,6bc40b406ebc,0,1,Return an `img` [`Element`][xml.etree.ElementTree.Element].
+markdown/inlinepatterns.py::InlineProcessor,class,InlineProcessor,InlineProcessor,markdown/inlinepatterns.py,283,328,False,,,,,a821d9483dd7,30,2,Base class that inline processors subclass.
+markdown/inlinepatterns.py::InlineProcessor.__init__,function,__init__,InlineProcessor.__init__,markdown/inlinepatterns.py,292,307,False,True,False,,,26c361556bf5,9,1,Create an instant of an inline processor.
+markdown/inlinepatterns.py::InlineProcessor.handleMatch,function,handleMatch,InlineProcessor.handleMatch,markdown/inlinepatterns.py,309,328,False,True,False,,,877f7fa0bc35,0,0,Return a ElementTree element from the given match and the
+markdown/inlinepatterns.py::LinkInlineProcessor,class,LinkInlineProcessor,LinkInlineProcessor,markdown/inlinepatterns.py,690,849,False,,,,,95a504bcbb38,5,2,Return a link element from the given match.
+markdown/inlinepatterns.py::LinkInlineProcessor.getLink,function,getLink,LinkInlineProcessor.getLink,markdown/inlinepatterns.py,716,830,False,True,False,,,2ec02d4cc199,2,2,Parse data between `()` of `[Text]()` allowing recursive `()`.
+markdown/inlinepatterns.py::LinkInlineProcessor.getText,function,getText,LinkInlineProcessor.getText,markdown/inlinepatterns.py,832,849,False,True,False,,,b2415339bafa,3,0,Parse the content between `[]` of the start of an image or link
+markdown/inlinepatterns.py::LinkInlineProcessor.handleMatch,function,handleMatch,LinkInlineProcessor.handleMatch,markdown/inlinepatterns.py,695,714,False,True,False,,,5e67f003a0cf,0,2,"Return an `a` [`Element`][xml.etree.ElementTree.Element] or `(None, None, None)`."
+markdown/inlinepatterns.py::Pattern,class,Pattern,Pattern,markdown/inlinepatterns.py,197,280,False,,,,,3887371ccca6,7,1,Base class that inline patterns subclass.
+markdown/inlinepatterns.py::Pattern.__init__,function,__init__,Pattern.__init__,markdown/inlinepatterns.py,226,241,False,True,False,,,e832d10f3996,1,1,Create an instant of an inline pattern.
+markdown/inlinepatterns.py::Pattern.getCompiledRegExp,function,getCompiledRegExp,Pattern.getCompiledRegExp,markdown/inlinepatterns.py,243,245,False,True,False,,,d7add42ce7a7,1,0,Return a compiled regular expression.
+markdown/inlinepatterns.py::Pattern.handleMatch,function,handleMatch,Pattern.handleMatch,markdown/inlinepatterns.py,247,258,False,True,False,,,7005a5e7a3b7,1,0,Return a ElementTree element from the given match.
+markdown/inlinepatterns.py::Pattern.type,function,type,Pattern.type,markdown/inlinepatterns.py,260,262,False,True,False,,,1952a8cf2aeb,1,0,"Return class name, to define pattern type"
+markdown/inlinepatterns.py::Pattern.unescape,function,unescape,Pattern.unescape,markdown/inlinepatterns.py,264,280,False,True,False,,,19e9cd8c555d,5,1,Return unescaped text given text with an inline placeholder.
+markdown/inlinepatterns.py::ReferenceInlineProcessor,class,ReferenceInlineProcessor,ReferenceInlineProcessor,markdown/inlinepatterns.py,876,929,False,,,,,54c649a626eb,5,2,Match to a stored reference and return link element.
+markdown/inlinepatterns.py::ReferenceInlineProcessor.evalId,function,evalId,ReferenceInlineProcessor.evalId,markdown/inlinepatterns.py,904,918,False,True,False,,,e26de47cc506,1,0,Evaluate the id portion of `[ref][id]`.
+markdown/inlinepatterns.py::ReferenceInlineProcessor.handleMatch,function,handleMatch,ReferenceInlineProcessor.handleMatch,markdown/inlinepatterns.py,882,902,False,True,False,,,a1a72397493c,0,3,"Return [`Element`][xml.etree.ElementTree.Element] returned by `makeTag` method or `(None, None, None)`."
+markdown/inlinepatterns.py::ReferenceInlineProcessor.makeTag,function,makeTag,ReferenceInlineProcessor.makeTag,markdown/inlinepatterns.py,920,929,False,True,False,,,03b12730ee44,1,0,Return an `a` [`Element`][xml.etree.ElementTree.Element].
+markdown/inlinepatterns.py::ShortImageReferenceInlineProcessor,class,ShortImageReferenceInlineProcessor,ShortImageReferenceInlineProcessor,markdown/inlinepatterns.py,952,957,False,,,,,07d1c4df2055,1,2,Short form of image reference: `![ref]`.
+markdown/inlinepatterns.py::ShortImageReferenceInlineProcessor.evalId,function,evalId,ShortImageReferenceInlineProcessor.evalId,markdown/inlinepatterns.py,954,957,False,True,False,,,33161030025e,0,0,Evaluate the id of `[ref]`.
+markdown/inlinepatterns.py::ShortReferenceInlineProcessor,class,ShortReferenceInlineProcessor,ShortReferenceInlineProcessor,markdown/inlinepatterns.py,932,937,False,,,,,79cfd4deaf8d,1,2,Short form of reference: `[google]`.
+markdown/inlinepatterns.py::ShortReferenceInlineProcessor.evalId,function,evalId,ShortReferenceInlineProcessor.evalId,markdown/inlinepatterns.py,934,937,False,True,False,,,33161030025e,0,0,Evaluate the id of `[ref]`.
+markdown/inlinepatterns.py::SimpleTagInlineProcessor,class,SimpleTagInlineProcessor,SimpleTagInlineProcessor,markdown/inlinepatterns.py,393,419,False,,,,,f235716c9fa6,4,2,Return element of type `tag` with a text attribute of `group(2)`
+markdown/inlinepatterns.py::SimpleTagInlineProcessor.__init__,function,__init__,SimpleTagInlineProcessor.__init__,markdown/inlinepatterns.py,399,410,False,True,False,,,df87c5aa9c4c,2,1,Create an instant of an simple tag processor.
+markdown/inlinepatterns.py::SimpleTagInlineProcessor.handleMatch,function,handleMatch,SimpleTagInlineProcessor.handleMatch,markdown/inlinepatterns.py,412,419,False,True,False,,,a9d8f663dc7e,0,0,Return [`Element`][xml.etree.ElementTree.Element] of type `tag` with the string in `group(2)` of a
+markdown/inlinepatterns.py::SimpleTagPattern,class,SimpleTagPattern,SimpleTagPattern,markdown/inlinepatterns.py,364,390,False,,,,,afc039baeac4,4,2,Return element of type `tag` with a text attribute of `group(3)`
+markdown/inlinepatterns.py::SimpleTagPattern.__init__,function,__init__,SimpleTagPattern.__init__,markdown/inlinepatterns.py,370,381,False,True,False,,,012ecfff2f19,0,1,Create an instant of an simple tag pattern.
+markdown/inlinepatterns.py::SimpleTagPattern.handleMatch,function,handleMatch,SimpleTagPattern.handleMatch,markdown/inlinepatterns.py,383,390,False,True,False,,,b1d4d74706ca,0,0,Return [`Element`][xml.etree.ElementTree.Element] of type `tag` with the string in `group(3)` of a
+markdown/inlinepatterns.py::SimpleTextInlineProcessor,class,SimpleTextInlineProcessor,SimpleTextInlineProcessor,markdown/inlinepatterns.py,338,342,False,,,,,f6df2804a872,1,2,Return a simple text of `group(1)` of a Pattern.
+markdown/inlinepatterns.py::SimpleTextInlineProcessor.handleMatch,function,handleMatch,SimpleTextInlineProcessor.handleMatch,markdown/inlinepatterns.py,340,342,False,True,False,,,d6a5f4518ff5,0,0,Return string content of `group(1)` of a matching pattern.
+markdown/inlinepatterns.py::SimpleTextPattern,class,SimpleTextPattern,SimpleTextPattern,markdown/inlinepatterns.py,331,335,False,,,,,28e3cc471027,0,2,Return a simple text of `group(2)` of a Pattern.
+markdown/inlinepatterns.py::SimpleTextPattern.handleMatch,function,handleMatch,SimpleTextPattern.handleMatch,markdown/inlinepatterns.py,333,335,False,True,False,,,16d875746621,0,0,Return string content of `group(2)` of a matching pattern.
+markdown/inlinepatterns.py::SubstituteTagInlineProcessor,class,SubstituteTagInlineProcessor,SubstituteTagInlineProcessor,markdown/inlinepatterns.py,429,433,False,,,,,6bd5922f492d,3,2,Return an element of type `tag` with no children.
+markdown/inlinepatterns.py::SubstituteTagInlineProcessor.handleMatch,function,handleMatch,SubstituteTagInlineProcessor.handleMatch,markdown/inlinepatterns.py,431,433,False,True,False,,,3a44fe57c403,0,0,Return empty [`Element`][xml.etree.ElementTree.Element] of type `tag`.
+markdown/inlinepatterns.py::SubstituteTagPattern,class,SubstituteTagPattern,SubstituteTagPattern,markdown/inlinepatterns.py,422,426,False,,,,,0f24affbe198,0,2,Return an element of type `tag` with no children.
+markdown/inlinepatterns.py::SubstituteTagPattern.handleMatch,function,handleMatch,SubstituteTagPattern.handleMatch,markdown/inlinepatterns.py,424,426,False,True,False,,,98b6a797c419,0,0,Return empty [`Element`][xml.etree.ElementTree.Element] of type `tag`.
+markdown/inlinepatterns.py::UnderscoreProcessor,class,UnderscoreProcessor,UnderscoreProcessor,markdown/inlinepatterns.py,677,687,False,,,,,44e4a585e3f3,4,3,Emphasis processor for handling strong and em matches inside underscores.
+markdown/inlinepatterns.py::build_inlinepatterns,function,build_inlinepatterns,build_inlinepatterns,markdown/inlinepatterns.py,53,95,False,False,False,,,95e7776de934,2,24,Build the default set of inline patterns for Markdown.
+markdown/inlinepatterns.py::dequote,function,dequote,dequote,markdown/inlinepatterns.py,177,183,False,False,False,,,8b8f1b110a65,1,0,Remove quotes from around a string.
+markdown/postprocessors.py,file,postprocessors.py,,markdown/postprocessors.py,1,131,False,,,,,b44f48aef794,0,1,
+markdown/postprocessors.py::AndSubstitutePostprocessor,class,AndSubstitutePostprocessor,AndSubstitutePostprocessor,markdown/postprocessors.py,110,115,False,,,,,f2e12ae2d79c,1,2,Restore valid entities
+markdown/postprocessors.py::AndSubstitutePostprocessor.run,function,run,AndSubstitutePostprocessor.run,markdown/postprocessors.py,113,115,False,True,False,,,fc6abe7943d6,0,0,
+markdown/postprocessors.py::Postprocessor,class,Postprocessor,Postprocessor,markdown/postprocessors.py,47,65,False,,,,,47817c8335fa,10,2,Postprocessors are run after the ElementTree it converted back into text.
+markdown/postprocessors.py::Postprocessor.run,function,run,Postprocessor.run,markdown/postprocessors.py,58,65,False,True,False,,,d9335b14053f,0,0,"Subclasses of `Postprocessor` should implement a `run` method, which"
+markdown/postprocessors.py::RawHtmlPostprocessor,class,RawHtmlPostprocessor,RawHtmlPostprocessor,markdown/postprocessors.py,68,107,False,,,,,8a05ca2798d4,4,2,Restore raw html to the document.
+markdown/postprocessors.py::RawHtmlPostprocessor.isblocklevel,function,isblocklevel,RawHtmlPostprocessor.isblocklevel,markdown/postprocessors.py,95,103,False,True,False,,,0d35ff9c209b,1,1,Check is block of HTML is block-level.
+markdown/postprocessors.py::RawHtmlPostprocessor.run,function,run,RawHtmlPostprocessor.run,markdown/postprocessors.py,73,93,False,True,False,,,dd4d60be4e27,0,2,Iterate over html stash and restore html.
+markdown/postprocessors.py::RawHtmlPostprocessor.stash_to_string,function,stash_to_string,RawHtmlPostprocessor.stash_to_string,markdown/postprocessors.py,105,107,False,True,False,,,0c2aa6d4887d,1,0,Convert a stashed object to a string.
+markdown/postprocessors.py::UnescapePostprocessor,class,UnescapePostprocessor,UnescapePostprocessor,markdown/postprocessors.py,122,131,False,,,util.deprecated,,3e19a91be287,0,3,Restore escaped chars.
+markdown/postprocessors.py::UnescapePostprocessor.run,function,run,UnescapePostprocessor.run,markdown/postprocessors.py,130,131,False,True,False,,,9ee07509479f,0,1,
+markdown/postprocessors.py::UnescapePostprocessor.unescape,function,unescape,UnescapePostprocessor.unescape,markdown/postprocessors.py,127,128,False,True,False,,,e736d5d0a0b2,1,0,
+markdown/postprocessors.py::build_postprocessors,function,build_postprocessors,build_postprocessors,markdown/postprocessors.py,39,44,False,False,False,,,69337ddaea45,2,9,Build the default postprocessors for Markdown.
+markdown/preprocessors.py,file,preprocessors.py,,markdown/preprocessors.py,1,91,False,,,,,3420a96569f9,0,2,
+markdown/preprocessors.py::HtmlBlockPreprocessor,class,HtmlBlockPreprocessor,HtmlBlockPreprocessor,markdown/preprocessors.py,78,91,False,,,,,73461a2f296b,1,2,Remove html blocks from the text and store them for later retrieval.
+markdown/preprocessors.py::HtmlBlockPreprocessor.run,function,run,HtmlBlockPreprocessor.run,markdown/preprocessors.py,86,91,False,True,False,,,ec00c9f27353,0,3,
+markdown/preprocessors.py::NormalizeWhitespace,class,NormalizeWhitespace,NormalizeWhitespace,markdown/preprocessors.py,66,75,False,,,,,6ce9e70945c7,1,2,Normalize whitespace for consistent parsing.
+markdown/preprocessors.py::NormalizeWhitespace.run,function,run,NormalizeWhitespace.run,markdown/preprocessors.py,69,75,False,True,False,,,e0f084f2ec7b,0,0,
+markdown/preprocessors.py::Preprocessor,class,Preprocessor,Preprocessor,markdown/preprocessors.py,45,63,False,,,,,b51c23a50320,14,2,Preprocessors are run after the text is broken into lines.
+markdown/preprocessors.py::Preprocessor.run,function,run,Preprocessor.run,markdown/preprocessors.py,56,63,False,True,False,,,4c66b719416a,0,0,"Each subclass of `Preprocessor` should override the `run` method, which"
+markdown/preprocessors.py::build_preprocessors,function,build_preprocessors,build_preprocessors,markdown/preprocessors.py,37,42,False,False,False,,,5baed23c2179,2,9,Build and return the default set of preprocessors used by Markdown.
+markdown/serializers.py,file,serializers.py,,markdown/serializers.py,1,194,False,,,,,8aecabe644d0,0,0,
+markdown/serializers.py::_escape_attrib,function,_escape_attrib,_escape_attrib,markdown/serializers.py,82,98,False,False,False,,,45a3ddbacb51,1,1,
+markdown/serializers.py::_escape_attrib_html,function,_escape_attrib_html,_escape_attrib_html,markdown/serializers.py,101,115,False,False,False,,,7c17e76b07f3,3,1,
+markdown/serializers.py::_escape_cdata,function,_escape_cdata,_escape_cdata,markdown/serializers.py,64,79,False,False,False,,,8f4bdd961466,1,1,
+markdown/serializers.py::_raise_serialization_error,function,_raise_serialization_error,_raise_serialization_error,markdown/serializers.py,58,61,False,False,False,,,5e8fcc60ba80,3,0,
+markdown/serializers.py::_serialize_html,function,_serialize_html,_serialize_html,markdown/serializers.py,118,172,False,False,False,,,7e170543cb6e,1,3,
+markdown/serializers.py::_write_html,function,_write_html,_write_html,markdown/serializers.py,175,180,False,False,False,,,25b0861b5e17,2,1,
+markdown/serializers.py::to_html_string,function,to_html_string,to_html_string,markdown/serializers.py,187,189,False,False,False,,,3112ccb29156,2,1,Serialize element and its children to a string of HTML5.
+markdown/serializers.py::to_xhtml_string,function,to_xhtml_string,to_xhtml_string,markdown/serializers.py,192,194,False,False,False,,,5bae46468ff4,2,1,Serialize element and its children to a string of XHTML.
+markdown/test_tools.py,file,test_tools.py,,markdown/test_tools.py,1,224,True,,,,,e38bb9eab5b4,0,2,
+markdown/test_tools.py::Kwargs,class,Kwargs,Kwargs,markdown/test_tools.py,124,126,True,,,,dict,8d80edaf8560,1,0,A `dict` like class for holding keyword arguments.
+markdown/test_tools.py::LegacyTestCase,class,LegacyTestCase,LegacyTestCase,markdown/test_tools.py,196,224,True,,,,unittest.TestCase,2643e40a8436,0,1,A [`unittest.TestCase`][] subclass for running Markdown's legacy file-based tests.
+markdown/test_tools.py::LegacyTestMeta,class,LegacyTestMeta,LegacyTestMeta,markdown/test_tools.py,146,193,True,,,,type,092178de12b4,2,0,
+markdown/test_tools.py::LegacyTestMeta.__new__,function,__new__,LegacyTestMeta.__new__,markdown/test_tools.py,147,193,True,True,False,,,03dc9d5a9890,0,4,
+markdown/test_tools.py::TestCase,class,TestCase,TestCase,markdown/test_tools.py,39,88,True,,,,unittest.TestCase,baaea9934385,0,0,A [`unittest.TestCase`][] subclass with helpers for testing Markdown output.
+markdown/test_tools.py::TestCase.assertMarkdownRenders,function,assertMarkdownRenders,TestCase.assertMarkdownRenders,markdown/test_tools.py,61,79,True,True,False,,,048a2f1086be,0,3,Test that source Markdown text renders to expected output with given keywords.
+markdown/test_tools.py::TestCase.dedent,function,dedent,TestCase.dedent,markdown/test_tools.py,81,88,True,True,False,,,b3d76a68d3b7,0,0,Dedent text.
+markdown/test_tools.py::_normalize_whitespace,function,_normalize_whitespace,_normalize_whitespace,markdown/test_tools.py,129,143,True,False,False,,,eb089256b111,1,0,Normalize whitespace for a string of HTML using `tidylib`.
+markdown/test_tools.py::recursionlimit,class,recursionlimit,recursionlimit,markdown/test_tools.py,91,116,True,,,,,6c25cabfca8e,0,0,A context manager which temporarily modifies the Python recursion limit.
+markdown/test_tools.py::recursionlimit.__enter__,function,__enter__,recursionlimit.__enter__,markdown/test_tools.py,112,113,True,True,False,,,9f53774f88b7,0,0,
+markdown/test_tools.py::recursionlimit.__exit__,function,__exit__,recursionlimit.__exit__,markdown/test_tools.py,115,116,True,True,False,,,cbb10b0ff01d,0,0,
+markdown/test_tools.py::recursionlimit.__init__,function,__init__,recursionlimit.__init__,markdown/test_tools.py,108,110,True,True,False,,,9376ab9f0e80,0,1,
+markdown/treeprocessors.py,file,treeprocessors.py,,markdown/treeprocessors.py,1,476,False,,,,,0964dd49257e,0,1,
+markdown/treeprocessors.py::InlineProcessor,class,InlineProcessor,InlineProcessor,markdown/treeprocessors.py,75,412,False,,,,,c919909467d2,3,2,"A `Treeprocessor` that traverses a tree, applying inline patterns."
+markdown/treeprocessors.py::InlineProcessor.__applyPattern,function,__applyPattern,InlineProcessor.__applyPattern,markdown/treeprocessors.py,253,331,False,True,False,,,88ba72918e02,1,9,"Check if the line fits the pattern, create the necessary"
+markdown/treeprocessors.py::InlineProcessor.__build_ancestors,function,__build_ancestors,InlineProcessor.__build_ancestors,markdown/treeprocessors.py,333,341,False,True,False,,,d69513d6d981,1,0,Build the ancestor list.
+markdown/treeprocessors.py::InlineProcessor.__findPlaceholder,function,__findPlaceholder,InlineProcessor.__findPlaceholder,markdown/treeprocessors.py,96,112,False,True,False,,,3494c001a472,1,0,"Extract id from data string, start from index."
+markdown/treeprocessors.py::InlineProcessor.__handleInline,function,__handleInline,InlineProcessor.__handleInline,markdown/treeprocessors.py,120,141,False,True,False,,,2543635a6187,2,4,Process string with inline patterns and replace it with placeholders.
+markdown/treeprocessors.py::InlineProcessor.__init__,function,__init__,InlineProcessor.__init__,markdown/treeprocessors.py,80,88,False,True,False,,,26a179bec352,2,1,
+markdown/treeprocessors.py::InlineProcessor.__makePlaceholder,function,__makePlaceholder,InlineProcessor.__makePlaceholder,markdown/treeprocessors.py,90,94,False,True,False,,,d2194c77ae78,1,0,Generate a placeholder
+markdown/treeprocessors.py::InlineProcessor.__processElementText,function,__processElementText,InlineProcessor.__processElementText,markdown/treeprocessors.py,143,170,False,True,False,,,0904a1ee3808,1,1,Process placeholders in `Element.text` or `Element.tail`
+markdown/treeprocessors.py::InlineProcessor.__processPlaceholders,function,__processPlaceholders,InlineProcessor.__processPlaceholders,markdown/treeprocessors.py,172,251,False,True,False,,,eda7278126ad,2,4,Process string with placeholders and generate `ElementTree` tree.
+markdown/treeprocessors.py::InlineProcessor.__stashNode,function,__stashNode,InlineProcessor.__stashNode,markdown/treeprocessors.py,114,118,False,True,False,,,9bccdb9e80ae,1,1,Add node to stash.
+markdown/treeprocessors.py::InlineProcessor.run,function,run,InlineProcessor.run,markdown/treeprocessors.py,343,412,False,True,False,,,e60815a015d3,0,4,Apply inline patterns to a parsed Markdown tree.
+markdown/treeprocessors.py::PrettifyTreeprocessor,class,PrettifyTreeprocessor,PrettifyTreeprocessor,markdown/treeprocessors.py,415,451,False,,,,,bf0c9f96d416,1,2,Add line breaks to the html document.
+markdown/treeprocessors.py::PrettifyTreeprocessor._prettifyETree,function,_prettifyETree,PrettifyTreeprocessor._prettifyETree,markdown/treeprocessors.py,418,430,False,True,False,,,f2b11a6ece04,1,1,Recursively add line breaks to `ElementTree` children.
+markdown/treeprocessors.py::PrettifyTreeprocessor.run,function,run,PrettifyTreeprocessor.run,markdown/treeprocessors.py,432,451,False,True,False,,,ee46fdcbb057,0,2,Add line breaks to `Element` object and its children.
+markdown/treeprocessors.py::Treeprocessor,class,Treeprocessor,Treeprocessor,markdown/treeprocessors.py,55,72,False,,,,,cba364e1d6b1,29,2,`Treeprocessor`s are run on the `ElementTree` object before serialization.
+markdown/treeprocessors.py::Treeprocessor.run,function,run,Treeprocessor.run,markdown/treeprocessors.py,65,72,False,True,False,,,692a0a265aff,0,0,"Subclasses of `Treeprocessor` should implement a `run` method, which"
+markdown/treeprocessors.py::UnescapeTreeprocessor,class,UnescapeTreeprocessor,UnescapeTreeprocessor,markdown/treeprocessors.py,454,476,False,,,,,e00070abeb51,3,2,Restore escaped chars
+markdown/treeprocessors.py::UnescapeTreeprocessor._unescape,function,_unescape,UnescapeTreeprocessor._unescape,markdown/treeprocessors.py,459,460,False,True,False,,,0157a3479839,1,0,
+markdown/treeprocessors.py::UnescapeTreeprocessor.run,function,run,UnescapeTreeprocessor.run,markdown/treeprocessors.py,465,476,False,True,False,,,72e49d713391,0,1,Loop over all elements and unescape all text.
+markdown/treeprocessors.py::UnescapeTreeprocessor.unescape,function,unescape,UnescapeTreeprocessor.unescape,markdown/treeprocessors.py,462,463,False,True,False,,,f4def3e41c18,2,1,
+markdown/treeprocessors.py::build_treeprocessors,function,build_treeprocessors,build_treeprocessors,markdown/treeprocessors.py,39,45,False,False,False,,,ee57a685aff9,2,11,Build the default  `treeprocessors` for Markdown.
+markdown/treeprocessors.py::isString,function,isString,isString,markdown/treeprocessors.py,48,52,False,False,False,,,f473d4343c1d,3,1,Return `True` if object is a string but not an  [`AtomicString`][markdown.util.AtomicString].
+markdown/util.py,file,util.py,,markdown/util.py,1,409,False,,,,,9c1d6f4ed334,0,1,
+markdown/util.py::AtomicString,class,AtomicString,AtomicString,markdown/util.py,189,191,False,,,,str,f280e59f2f69,19,0,A string which should not be further processed.
+markdown/util.py::HtmlStash,class,HtmlStash,HtmlStash,markdown/util.py,216,262,False,,,,,b43fd80e027d,2,0,This class is used for stashing HTML objects that we extract
+markdown/util.py::HtmlStash.__init__,function,__init__,HtmlStash.__init__,markdown/util.py,222,227,False,True,False,,,05c6d5e29e2d,1,1,Create an `HtmlStash`.
+markdown/util.py::HtmlStash.get_placeholder,function,get_placeholder,HtmlStash.get_placeholder,markdown/util.py,252,253,False,True,False,,,85d7df446367,1,0,
+markdown/util.py::HtmlStash.reset,function,reset,HtmlStash.reset,markdown/util.py,247,250,False,True,False,,,c6b39205f035,1,0,Clear the stash.
+markdown/util.py::HtmlStash.store,function,store,HtmlStash.store,markdown/util.py,229,245,False,True,False,,,1679c1b5698a,10,1,Saves an HTML segment for later reinsertion.  Returns a
+markdown/util.py::HtmlStash.store_tag,function,store_tag,HtmlStash.store_tag,markdown/util.py,255,262,False,True,False,,,02891d858fa3,0,0,Store tag data and return a placeholder.
+markdown/util.py::Processor,class,Processor,Processor,markdown/util.py,194,205,False,,,,,c336560e17ad,6,0,The base class for all processors.
+markdown/util.py::Processor.__init__,function,__init__,Processor.__init__,markdown/util.py,204,205,False,True,False,,,9140193e9ebe,12,1,
+markdown/util.py::Registry,class,Registry,Registry,markdown/util.py,273,409,False,,,,Generic,f6094644a721,15,0,A priority sorted registry.
+markdown/util.py::Registry.__contains__,function,__contains__,Registry.__contains__,markdown/util.py,318,323,False,True,False,,,526f7d78ddb1,3,0,
+markdown/util.py::Registry.__getitem__,function,__getitem__,Registry.__getitem__,markdown/util.py,330,346,False,True,False,overload,,6ed53d2d11ae,5,5,
+markdown/util.py::Registry.__init__,function,__init__,Registry.__init__,markdown/util.py,313,316,False,True,False,,,1ae1d1e2e1d9,7,1,
+markdown/util.py::Registry.__iter__,function,__iter__,Registry.__iter__,markdown/util.py,325,327,False,True,False,,,6494c9334597,5,1,
+markdown/util.py::Registry.__len__,function,__len__,Registry.__len__,markdown/util.py,348,349,False,True,False,,,e7e9bc5d8371,2,0,
+markdown/util.py::Registry.__repr__,function,__repr__,Registry.__repr__,markdown/util.py,351,352,False,True,False,,,89687c66df1e,0,2,
+markdown/util.py::Registry._sort,function,_sort,Registry._sort,markdown/util.py,401,409,False,True,False,,,1a228cd94578,3,0,Sort the registry by priority from highest to lowest.
+markdown/util.py::Registry.deregister,function,deregister,Registry.deregister,markdown/util.py,387,399,False,True,False,,,8a218644585b,1,1,Remove an item from the registry.
+markdown/util.py::Registry.get_index_for_name,function,get_index_for_name,Registry.get_index_for_name,markdown/util.py,354,363,False,True,False,,,98f4681ac1ca,1,2,Return the index of the given name.
+markdown/util.py::Registry.register,function,register,Registry.register,markdown/util.py,365,385,False,True,False,,,bdbce625f99c,10,3,Add an item to the registry with the given name and priority.
+markdown/util.py::TagData,class,TagData,TagData,markdown/util.py,209,213,False,,,,TypedDict,e73d8695aa1e,1,0,
+markdown/util.py::_PriorityItem,class,_PriorityItem,_PriorityItem,markdown/util.py,268,270,False,,,,NamedTuple,acb9f07d350c,2,0,
+markdown/util.py::_get_stack_depth,function,_get_stack_depth,_get_stack_depth,markdown/util.py,169,177,False,False,False,,,3fe4e8fe4456,2,0,"Get current stack depth, performantly."
+markdown/util.py::code_escape,function,code_escape,code_escape,markdown/util.py,158,166,False,False,False,,,2fb2df62bff5,2,0,HTML escape a string of code.
+markdown/util.py::deprecated,function,deprecated,deprecated,markdown/util.py,114,136,False,False,False,,,c874029a7158,7,0,Raise a [`DeprecationWarning`][] when wrapped function/method is called.
+markdown/util.py::get_installed_extensions,function,get_installed_extensions,get_installed_extensions,markdown/util.py,104,111,False,False,False,lru_cache,,a18c88090c5d,1,0,Return all entry_points in the `markdown.extensions` group.
+markdown/util.py::nearing_recursion_limit,function,nearing_recursion_limit,nearing_recursion_limit,markdown/util.py,180,182,False,False,False,,,cf6f90302580,1,1,Return true if current stack depth is within 100 of maximum limit.
+markdown/util.py::parseBoolValue,function,parseBoolValue,parseBoolValue,markdown/util.py,139,155,False,False,False,,,79aed5f2140d,8,0,"Parses a string representing a boolean value. If parsing was successful,"

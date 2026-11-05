@@ -1,0 +1,551 @@
+id,type,name,qualname,path,lineno,end_lineno,is_test_file,is_method,is_async,decorators,ext_bases,body_hash,fan_in,fan_out,doc
+click/__init__.py,file,__init__.py,,click/__init__.py,1,123,False,,,,,226513412024,0,59,
+click/__init__.py::__getattr__,function,__getattr__,__getattr__,click/__init__.py,74,123,False,False,False,,,f5334dfbc65e,0,3,
+click/_compat.py,file,_compat.py,,click/_compat.py,1,622,False,,,,,3fb619ba82fd,0,8,
+click/_compat.py::_AtomicFile,class,_AtomicFile,_AtomicFile,click/_compat.py,452,485,False,,,,,2d9b5218b47b,2,0,
+click/_compat.py::_AtomicFile.__enter__,function,__enter__,_AtomicFile.__enter__,click/_compat.py,473,474,False,True,False,,,a1e6d10e56df,0,1,
+click/_compat.py::_AtomicFile.__exit__,function,__exit__,_AtomicFile.__exit__,click/_compat.py,476,482,False,True,False,,,a03a97274a05,0,1,
+click/_compat.py::_AtomicFile.__getattr__,function,__getattr__,_AtomicFile.__getattr__,click/_compat.py,470,471,False,True,False,,,3e1f39ae59ba,0,0,
+click/_compat.py::_AtomicFile.__init__,function,__init__,_AtomicFile.__init__,click/_compat.py,453,457,False,True,False,,,13fb2ee66937,1,0,
+click/_compat.py::_AtomicFile.__repr__,function,__repr__,_AtomicFile.__repr__,click/_compat.py,484,485,False,True,False,,,7140ba57bf3f,0,0,
+click/_compat.py::_AtomicFile.close,function,close,_AtomicFile.close,click/_compat.py,463,468,False,True,False,,,91523700dcff,1,0,
+click/_compat.py::_AtomicFile.name,function,name,_AtomicFile.name,click/_compat.py,460,461,False,True,False,property,,17ac4d500f98,0,0,
+click/_compat.py::_FixupStream,class,_FixupStream,_FixupStream,click/_compat.py,82,148,False,,,,,9434867804ec,2,0,The new io interface needs more from streams than streams
+click/_compat.py::_FixupStream.__getattr__,function,__getattr__,_FixupStream.__getattr__,click/_compat.py,102,103,False,True,False,,,4c356dd8c204,0,0,
+click/_compat.py::_FixupStream.__init__,function,__init__,_FixupStream.__init__,click/_compat.py,92,100,False,True,False,,,6a7ca0789fba,1,0,
+click/_compat.py::_FixupStream.read1,function,read1,_FixupStream.read1,click/_compat.py,105,111,False,True,False,,,d23f9bcbe28b,0,0,
+click/_compat.py::_FixupStream.readable,function,readable,_FixupStream.readable,click/_compat.py,113,123,False,True,False,,,2f74dcf16db2,0,0,
+click/_compat.py::_FixupStream.seekable,function,seekable,_FixupStream.seekable,click/_compat.py,140,148,False,True,False,,,a00116175551,0,0,
+click/_compat.py::_FixupStream.writable,function,writable,_FixupStream.writable,click/_compat.py,125,138,False,True,False,,,b94a15eed564,0,0,
+click/_compat.py::_NonClosingTextIOWrapper,class,_NonClosingTextIOWrapper,_NonClosingTextIOWrapper,click/_compat.py,56,79,False,,,,io.TextIOWrapper,66eafe395ca6,6,0,
+click/_compat.py::_NonClosingTextIOWrapper.__del__,function,__del__,_NonClosingTextIOWrapper.__del__,click/_compat.py,71,75,False,True,False,,,4360f88bd662,0,0,
+click/_compat.py::_NonClosingTextIOWrapper.__init__,function,__init__,_NonClosingTextIOWrapper.__init__,click/_compat.py,57,69,False,True,False,,,2dc17db283ec,4,2,
+click/_compat.py::_NonClosingTextIOWrapper.isatty,function,isatty,_NonClosingTextIOWrapper.isatty,click/_compat.py,77,79,False,True,False,,,de6c61140243,0,0,
+click/_compat.py::_find_binary_reader,function,_find_binary_reader,_find_binary_reader,click/_compat.py,173,188,False,False,False,,,231388366014,4,1,
+click/_compat.py::_find_binary_writer,function,_find_binary_writer,_find_binary_writer,click/_compat.py,191,206,False,False,False,,,4bb67ca948df,5,1,
+click/_compat.py::_force_correct_text_reader,function,_force_correct_text_reader,_force_correct_text_reader,click/_compat.py,284,297,False,False,False,,,05d95bf7bc82,1,3,
+click/_compat.py::_force_correct_text_stream,function,_force_correct_text_stream,_force_correct_text_stream,click/_compat.py,238,281,False,False,False,,,e75d1cb19802,2,3,
+click/_compat.py::_force_correct_text_writer,function,_force_correct_text_writer,_force_correct_text_writer,click/_compat.py,300,313,False,False,False,,,74064afdadd8,2,3,
+click/_compat.py::_get_argv_encoding,function,_get_argv_encoding,_get_argv_encoding,click/_compat.py,515,560,False,False,False,,,67e528646e85,2,0,
+click/_compat.py::_get_windows_console_stream,function,_get_windows_console_stream,_get_windows_console_stream,click/_compat.py,562,565,False,False,False,,,5d6a0c0e29f9,3,0,
+click/_compat.py::_is_binary_reader,function,_is_binary_reader,_is_binary_reader,click/_compat.py,151,155,False,False,False,,,3d3f62daf041,2,0,
+click/_compat.py::_is_binary_writer,function,_is_binary_writer,_is_binary_writer,click/_compat.py,160,170,False,False,False,,,f3397b3ba199,2,0,
+click/_compat.py::_is_compat_stream_attr,function,_is_compat_stream_attr,_is_compat_stream_attr,click/_compat.py,218,224,False,False,False,,,28590c62155c,1,0,A stream attribute is compatible if it is equal to the
+click/_compat.py::_is_compatible_text_stream,function,_is_compatible_text_stream,_is_compatible_text_stream,click/_compat.py,227,235,False,False,False,,,0747d1cad7cd,1,1,Check if a stream's encoding and errors attributes are
+click/_compat.py::_is_jupyter_kernel_output,function,_is_jupyter_kernel_output,_is_jupyter_kernel_output,click/_compat.py,492,496,False,False,False,,,5c64a1778d51,1,2,
+click/_compat.py::_make_cached_stream_func,function,_make_cached_stream_func,_make_cached_stream_func,click/_compat.py,579,604,False,False,False,,,02b8c41fe35a,1,0,
+click/_compat.py::_make_text_stream,function,_make_text_stream,_make_text_stream,click/_compat.py,19,37,False,False,False,,,81e2d5f60271,1,3,
+click/_compat.py::_stream_is_misconfigured,function,_stream_is_misconfigured,_stream_is_misconfigured,click/_compat.py,209,215,False,False,False,,,c8ca2fea2059,1,1,A stream is misconfigured if its encoding is ASCII.
+click/_compat.py::_wrap_io_open,function,_wrap_io_open,_wrap_io_open,click/_compat.py,358,368,False,False,False,,,03ff8f6c29b8,1,0,Handles not passing ``encoding`` and ``errors`` in binary mode.
+click/_compat.py::auto_wrap_for_ansi,function,auto_wrap_for_ansi,auto_wrap_for_ansi,click/_compat.py,522,555,False,False,False,,,882d34d767bf,3,1,Support ANSI color and style codes on Windows by wrapping a
+click/_compat.py::get_best_encoding,function,get_best_encoding,get_best_encoding,click/_compat.py,48,53,False,False,False,,,e59b72cd4e1c,4,1,Returns the default stream encoding if not found.
+click/_compat.py::get_binary_stderr,function,get_binary_stderr,get_binary_stderr,click/_compat.py,330,334,False,False,False,,,edf73f469cb3,1,1,
+click/_compat.py::get_binary_stdin,function,get_binary_stdin,get_binary_stdin,click/_compat.py,316,320,False,False,False,,,d7d8b274a638,2,1,
+click/_compat.py::get_binary_stdout,function,get_binary_stdout,get_binary_stdout,click/_compat.py,323,327,False,False,False,,,c309c2212c00,2,1,
+click/_compat.py::get_text_stderr,function,get_text_stderr,get_text_stderr,click/_compat.py,351,355,False,False,False,,,6d7008d5224c,4,2,
+click/_compat.py::get_text_stdin,function,get_text_stdin,get_text_stdin,click/_compat.py,337,341,False,False,False,,,31a8a274a0c6,2,2,
+click/_compat.py::get_text_stdout,function,get_text_stdout,get_text_stdout,click/_compat.py,344,348,False,False,False,,,d52d5545f9a8,2,2,
+click/_compat.py::is_ascii_encoding,function,is_ascii_encoding,is_ascii_encoding,click/_compat.py,40,45,False,False,False,,,d56fa634b337,2,0,Checks if a given encoding is ascii.
+click/_compat.py::isatty,function,isatty,isatty,click/_compat.py,572,576,False,False,False,,,1870531c2995,9,0,
+click/_compat.py::open_stream,function,open_stream,open_stream,click/_compat.py,371,449,False,False,False,,,06cd521ba586,8,7,
+click/_compat.py::should_strip_ansi,function,should_strip_ansi,should_strip_ansi,click/_compat.py,499,506,False,False,False,,,45a2b8a80463,4,2,
+click/_compat.py::strip_ansi,function,strip_ansi,strip_ansi,click/_compat.py,488,489,False,False,False,,,7f45c775ed53,9,0,
+click/_compat.py::term_len,function,term_len,term_len,click/_compat.py,568,569,False,False,False,,,26d480e0c0ab,7,1,
+click/_termui_impl.py,file,_termui_impl.py,,click/_termui_impl.py,1,852,False,,,,,c6c9cd3dea66,0,7,
+click/_termui_impl.py::Editor,class,Editor,Editor,click/_termui_impl.py,564,673,False,,,,,cad95707bf88,2,0,
+click/_termui_impl.py::Editor.__init__,function,__init__,Editor.__init__,click/_termui_impl.py,565,575,False,True,False,,,13911d50d62d,1,0,
+click/_termui_impl.py::Editor.edit,function,edit,Editor.edit,click/_termui_impl.py,621,673,False,True,False,t.overload,,835c147ad00a,1,1,
+click/_termui_impl.py::Editor.edit_files,function,edit_files,Editor.edit_files,click/_termui_impl.py,594,618,False,True,False,,,0aa761434d11,2,3,
+click/_termui_impl.py::Editor.get_editor,function,get_editor,Editor.get_editor,click/_termui_impl.py,577,592,False,True,False,,,aeb3e73be605,1,0,
+click/_termui_impl.py::ProgressBar,class,ProgressBar,ProgressBar,click/_termui_impl.py,43,366,False,,,,t.Generic,a7d2535c9740,4,0,
+click/_termui_impl.py::ProgressBar.__enter__,function,__enter__,ProgressBar.__enter__,click/_termui_impl.py,115,118,False,True,False,,,cc4dea77af5e,0,2,
+click/_termui_impl.py::ProgressBar.__exit__,function,__exit__,ProgressBar.__exit__,click/_termui_impl.py,120,126,False,True,False,,,33f2b7a4a150,0,1,
+click/_termui_impl.py::ProgressBar.__init__,function,__init__,ProgressBar.__init__,click/_termui_impl.py,44,113,False,True,False,,,efdb328e4f1a,1,1,
+click/_termui_impl.py::ProgressBar.__iter__,function,__iter__,ProgressBar.__iter__,click/_termui_impl.py,128,132,False,True,False,,,df146dfcb1b3,1,2,
+click/_termui_impl.py::ProgressBar.__next__,function,__next__,ProgressBar.__next__,click/_termui_impl.py,134,140,False,True,False,,,f04141e96ac4,0,1,
+click/_termui_impl.py::ProgressBar.eta,function,eta,ProgressBar.eta,click/_termui_impl.py,161,164,False,True,False,property,,e6b45a9c7039,1,1,
+click/_termui_impl.py::ProgressBar.finish,function,finish,ProgressBar.finish,click/_termui_impl.py,330,333,False,True,False,,,49cf4662ef38,1,0,
+click/_termui_impl.py::ProgressBar.format_bar,function,format_bar,ProgressBar.format_bar,click/_termui_impl.py,190,207,False,True,False,,,e261ab78b1c6,1,2,
+click/_termui_impl.py::ProgressBar.format_eta,function,format_eta,ProgressBar.format_eta,click/_termui_impl.py,166,179,False,True,False,,,368f7970e98b,1,1,
+click/_termui_impl.py::ProgressBar.format_pct,function,format_pct,ProgressBar.format_pct,click/_termui_impl.py,187,188,False,True,False,,,0fafb112cc07,1,1,
+click/_termui_impl.py::ProgressBar.format_pos,function,format_pos,ProgressBar.format_pos,click/_termui_impl.py,181,185,False,True,False,,,5034244268a4,1,0,
+click/_termui_impl.py::ProgressBar.format_progress_line,function,format_progress_line,ProgressBar.format_progress_line,click/_termui_impl.py,209,234,False,True,False,,,4a6818ad3231,1,4,
+click/_termui_impl.py::ProgressBar.generator,function,generator,ProgressBar.generator,click/_termui_impl.py,335,366,False,True,False,,,ff84a21bc6fb,1,3,Return a generator which yields the items added to the bar
+click/_termui_impl.py::ProgressBar.make_step,function,make_step,ProgressBar.make_step,click/_termui_impl.py,282,302,False,True,False,,,70928d3cd4cf,1,0,
+click/_termui_impl.py::ProgressBar.pct,function,pct,ProgressBar.pct,click/_termui_impl.py,149,152,False,True,False,property,,b7124082a759,2,0,
+click/_termui_impl.py::ProgressBar.render_finish,function,render_finish,ProgressBar.render_finish,click/_termui_impl.py,142,146,False,True,False,,,ba4ad7823d25,1,0,
+click/_termui_impl.py::ProgressBar.render_progress,function,render_progress,ProgressBar.render_progress,click/_termui_impl.py,236,280,False,True,False,,,c0b20777c9e8,4,3,
+click/_termui_impl.py::ProgressBar.time_per_iteration,function,time_per_iteration,ProgressBar.time_per_iteration,click/_termui_impl.py,155,158,False,True,False,property,,84a37deb5501,2,0,
+click/_termui_impl.py::ProgressBar.update,function,update,ProgressBar.update,click/_termui_impl.py,304,328,False,True,False,,,4313a871e0c5,1,2,Update the progress bar by advancing a specified number of
+click/_termui_impl.py::_nullpager,function,_nullpager,_nullpager,click/_termui_impl.py,554,561,False,False,False,,,2a9f61b7a5f5,1,1,Simply print unformatted text.  This is the ultimate fallback.
+click/_termui_impl.py::_pipepager,function,_pipepager,_pipepager,click/_termui_impl.py,411,504,False,False,False,,,b9101b19d33f,1,1,Page through text by feeding it to another program. Invoking a
+click/_termui_impl.py::_tempfilepager,function,_tempfilepager,_tempfilepager,click/_termui_impl.py,507,551,False,False,False,,,f4851566f53f,1,3,Page through text by invoking a program on a temporary file.
+click/_termui_impl.py::_translate_ch_to_exc,function,_translate_ch_to_exc,_translate_ch_to_exc,click/_termui_impl.py,747,757,False,False,False,,,eaf85243e111,1,0,
+click/_termui_impl.py::getchar,function,getchar,getchar,click/_termui_impl.py,767,852,False,False,False,,,58e93e8a3dd8,1,4,
+click/_termui_impl.py::open_url,function,open_url,open_url,click/_termui_impl.py,676,744,False,False,False,,,d00f22550cfd,2,0,
+click/_termui_impl.py::pager,function,pager,pager,click/_termui_impl.py,369,408,False,False,False,,,eafa80186971,2,4,Decide what method to use for paging through text.
+click/_termui_impl.py::raw_terminal,function,raw_terminal,raw_terminal,click/_termui_impl.py,764,842,False,False,False,contextlib.contextmanager,,36b718f96553,4,1,
+click/_textwrap.py,file,_textwrap.py,,click/_textwrap.py,1,51,False,,,,,2cf25aa2021c,0,0,
+click/_textwrap.py::TextWrapper,class,TextWrapper,TextWrapper,click/_textwrap.py,8,51,False,,,,textwrap.TextWrapper,960123f8ca8b,2,0,
+click/_textwrap.py::TextWrapper._handle_long_word,function,_handle_long_word,TextWrapper._handle_long_word,click/_textwrap.py,9,25,False,True,False,,,37dd8cdc58fd,0,0,
+click/_textwrap.py::TextWrapper.extra_indent,function,extra_indent,TextWrapper.extra_indent,click/_textwrap.py,28,38,False,True,False,contextmanager,,73f7cf24ee2e,1,0,
+click/_textwrap.py::TextWrapper.indent_only,function,indent_only,TextWrapper.indent_only,click/_textwrap.py,40,51,False,True,False,,,b2ddb3c19d8b,1,0,
+click/_utils.py,file,_utils.py,,click/_utils.py,1,36,False,,,,,0d81dd8c5714,0,0,
+click/_utils.py::Sentinel,class,Sentinel,Sentinel,click/_utils.py,7,19,False,,,,enum.Enum,223ec724bbea,0,0,Enum used to define sentinel values.
+click/_utils.py::Sentinel.__repr__,function,__repr__,Sentinel.__repr__,click/_utils.py,18,19,False,True,False,,,2db3d594ad4a,0,0,
+click/_winconsole.py,file,_winconsole.py,,click/_winconsole.py,1,296,False,,,,,f5fdebd0969b,0,4,
+click/_winconsole.py::ConsoleStream,class,ConsoleStream,ConsoleStream,click/_winconsole.py,194,223,False,,,,,cc684ee29031,3,0,
+click/_winconsole.py::ConsoleStream.__getattr__,function,__getattr__,ConsoleStream.__getattr__,click/_winconsole.py,216,217,False,True,False,,,c7ade2e746e5,0,0,
+click/_winconsole.py::ConsoleStream.__init__,function,__init__,ConsoleStream.__init__,click/_winconsole.py,195,197,False,True,False,,,acdb6cdbf7b5,3,0,
+click/_winconsole.py::ConsoleStream.__repr__,function,__repr__,ConsoleStream.__repr__,click/_winconsole.py,222,223,False,True,False,,,f001c2400901,0,1,
+click/_winconsole.py::ConsoleStream.isatty,function,isatty,ConsoleStream.isatty,click/_winconsole.py,219,220,False,True,False,,,591592624a50,0,0,
+click/_winconsole.py::ConsoleStream.name,function,name,ConsoleStream.name,click/_winconsole.py,200,201,False,True,False,property,,f586c4e18ed3,1,0,
+click/_winconsole.py::ConsoleStream.write,function,write,ConsoleStream.write,click/_winconsole.py,203,210,False,True,False,,,3b480fbe8c7a,1,0,
+click/_winconsole.py::ConsoleStream.writelines,function,writelines,ConsoleStream.writelines,click/_winconsole.py,212,214,False,True,False,,,5e54eedf14e1,0,1,
+click/_winconsole.py::Py_buffer,class,Py_buffer,Py_buffer,click/_winconsole.py,87,100,False,,,,Structure,e5236a318e1f,1,0,
+click/_winconsole.py::_WindowsConsoleRawIOBase,class,_WindowsConsoleRawIOBase,_WindowsConsoleRawIOBase,click/_winconsole.py,118,124,False,,,,io.RawIOBase,e7791fad934d,4,0,
+click/_winconsole.py::_WindowsConsoleRawIOBase.__init__,function,__init__,_WindowsConsoleRawIOBase.__init__,click/_winconsole.py,119,120,False,True,False,,,68a734b4c465,3,0,
+click/_winconsole.py::_WindowsConsoleRawIOBase.isatty,function,isatty,_WindowsConsoleRawIOBase.isatty,click/_winconsole.py,122,124,False,True,False,,,db1df561861c,0,0,
+click/_winconsole.py::_WindowsConsoleReader,class,_WindowsConsoleReader,_WindowsConsoleReader,click/_winconsole.py,127,159,False,,,,,bfb35bd8911f,1,2,
+click/_winconsole.py::_WindowsConsoleReader.readable,function,readable,_WindowsConsoleReader.readable,click/_winconsole.py,128,129,False,True,False,,,3ff727610597,0,0,
+click/_winconsole.py::_WindowsConsoleReader.readinto,function,readinto,_WindowsConsoleReader.readinto,click/_winconsole.py,131,159,False,True,False,,,2cacc6915922,0,1,
+click/_winconsole.py::_WindowsConsoleWriter,class,_WindowsConsoleWriter,_WindowsConsoleWriter,click/_winconsole.py,162,191,False,,,,,683370ee39bd,2,2,
+click/_winconsole.py::_WindowsConsoleWriter._get_error_message,function,_get_error_message,_WindowsConsoleWriter._get_error_message,click/_winconsole.py,167,172,False,True,False,staticmethod,,e5cdf34c943a,1,0,
+click/_winconsole.py::_WindowsConsoleWriter.writable,function,writable,_WindowsConsoleWriter.writable,click/_winconsole.py,163,164,False,True,False,,,3ee489489ca7,0,0,
+click/_winconsole.py::_WindowsConsoleWriter.write,function,write,_WindowsConsoleWriter.write,click/_winconsole.py,174,191,False,True,False,,,036167304320,0,2,
+click/_winconsole.py::_get_text_stderr,function,_get_text_stderr,_get_text_stderr,click/_winconsole.py,246,253,False,False,False,,,c8736d3c94e3,1,6,
+click/_winconsole.py::_get_text_stdin,function,_get_text_stdin,_get_text_stdin,click/_winconsole.py,226,233,False,False,False,,,529f42f94dc9,1,6,
+click/_winconsole.py::_get_text_stdout,function,_get_text_stdout,_get_text_stdout,click/_winconsole.py,236,243,False,False,False,,,5d687df0eafe,1,6,
+click/_winconsole.py::_get_windows_console_stream,function,_get_windows_console_stream,_get_windows_console_stream,click/_winconsole.py,276,296,False,False,False,,,06bf73c29e9e,1,2,
+click/_winconsole.py::_is_console,function,_is_console,_is_console,click/_winconsole.py,263,273,False,False,False,,,41248f718702,1,0,
+click/_winconsole.py::get_buffer,function,get_buffer,get_buffer,click/_winconsole.py,105,115,False,False,False,,,eff056350028,3,1,
+click/core.py,file,core.py,,click/core.py,1,3415,False,,,,,527f600d9f4f,0,27,
+click/core.py::Argument,class,Argument,Argument,click/core.py,3316,3391,False,,,,,2217dfb64dab,10,2,Arguments are positional parameters to a command.  They generally
+click/core.py::Argument.__init__,function,__init__,Argument.__init__,click/core.py,3326,3345,False,True,False,,,fdb99145a6cc,1,1,
+click/core.py::Argument._parse_decls,function,_parse_decls,Argument._parse_decls,click/core.py,3367,3382,False,True,False,,,832c7fe2932e,0,0,
+click/core.py::Argument.add_to_parser,function,add_to_parser,Argument.add_to_parser,click/core.py,3390,3391,False,True,False,,,0112a2a8c2cf,0,3,
+click/core.py::Argument.get_error_hint,function,get_error_hint,Argument.get_error_hint,click/core.py,3387,3388,False,True,False,,,42bf94d5beca,0,2,
+click/core.py::Argument.get_usage_pieces,function,get_usage_pieces,Argument.get_usage_pieces,click/core.py,3384,3385,False,True,False,,,75c8a18a3afc,0,2,
+click/core.py::Argument.human_readable_name,function,human_readable_name,Argument.human_readable_name,click/core.py,3348,3351,False,True,False,property,,6da97d3ce66c,0,0,
+click/core.py::Argument.make_metavar,function,make_metavar,Argument.make_metavar,click/core.py,3353,3365,False,True,False,,,24dfd22416c9,2,2,
+click/core.py::Command,class,Command,Command,click/core.py,873,1485,False,,,,,2fe99facf70a,31,1,Commands are the basic building block of command line interfaces in
+click/core.py::Command.__call__,function,__call__,Command.__call__,click/core.py,1483,1485,False,True,False,,,e26862967784,0,1,Alias for :meth:`main`.
+click/core.py::Command.__init__,function,__init__,Command.__init__,click/core.py,935,977,False,True,False,,,63c863b14f8c,1,1,
+click/core.py::Command.__repr__,function,__repr__,Command.__repr__,click/core.py,990,991,False,True,False,,,727e3c5b089c,0,0,
+click/core.py::Command._main_shell_completion,function,_main_shell_completion,Command._main_shell_completion,click/core.py,1451,1481,False,True,False,,,6c58a9816673,1,1,"Check if the shell is asking for tab completion, process"
+click/core.py::Command.collect_usage_pieces,function,collect_usage_pieces,Command.collect_usage_pieces,click/core.py,1035,1044,False,True,False,,,2e12615652ee,2,3,Returns all the pieces that go into the usage line and returns
+click/core.py::Command.format_epilog,function,format_epilog,Command.format_epilog,click/core.py,1173,1180,False,True,False,,,f7f00231c58c,1,5,Writes the epilog into the formatter if it exists.
+click/core.py::Command.format_help,function,format_help,Command.format_help,click/core.py,1120,1135,False,True,False,,,721a169d3396,1,6,Writes the help into the formatter if it exists.
+click/core.py::Command.format_help_text,function,format_help_text,Command.format_help_text,click/core.py,1137,1159,False,True,False,,,c5c80c2687e9,1,5,Writes the help text to the formatter if it exists.
+click/core.py::Command.format_options,function,format_options,Command.format_options,click/core.py,1161,1171,False,True,False,,,bb5cd5db01a5,2,6,Writes all the options into the formatter if they exist.
+click/core.py::Command.format_usage,function,format_usage,Command.format_usage,click/core.py,1027,1033,False,True,False,,,3fc47a874618,2,5,Writes the usage line into the formatter.
+click/core.py::Command.get_help,function,get_help,Command.get_help,click/core.py,1088,1095,False,True,False,,,a3a74398d301,1,4,Formats the help into a string and returns it.
+click/core.py::Command.get_help_option,function,get_help_option,Command.get_help_option,click/core.py,1054,1079,False,True,False,,,4f1e7fcc77f1,2,4,Returns the help option object.
+click/core.py::Command.get_help_option_names,function,get_help_option_names,Command.get_help_option_names,click/core.py,1046,1052,False,True,False,,,775de83c4f68,1,1,Returns the names for the help option.
+click/core.py::Command.get_params,function,get_params,Command.get_params,click/core.py,1002,1025,False,True,False,,,8494cf836251,8,3,
+click/core.py::Command.get_short_help_str,function,get_short_help_str,Command.get_short_help_str,click/core.py,1097,1118,False,True,False,,,3616b4121dce,0,1,Gets short help for the command or makes it by shortening the
+click/core.py::Command.get_usage,function,get_usage,Command.get_usage,click/core.py,993,1000,False,True,False,,,cf7313624b73,1,4,Formats the usage line into a string and returns it.
+click/core.py::Command.invoke,function,invoke,Command.invoke,click/core.py,1255,1269,False,True,False,,,55ded9b0644a,2,4,"Given a context, this invokes the attached callback (if it exists)"
+click/core.py::Command.main,function,main,Command.main,click/core.py,1319,1449,False,True,False,t.overload,,4a2657e9c744,2,15,
+click/core.py::Command.make_context,function,make_context,Command.make_context,click/core.py,1182,1217,False,True,False,,,7d7e6c9f809e,2,5,This function when given an info name and arguments will kick
+click/core.py::Command.make_parser,function,make_parser,Command.make_parser,click/core.py,1081,1086,False,True,False,,,58fdeba66a7d,1,6,Creates the underlying option parser for this command.
+click/core.py::Command.parse_args,function,parse_args,Command.parse_args,click/core.py,1219,1253,False,True,False,,,e853eeb64d7b,2,9,
+click/core.py::Command.shell_complete,function,shell_complete,Command.shell_complete,click/core.py,1271,1316,False,True,False,,,76765c2a8fed,1,8,Return a list of completions for the incomplete value. Looks
+click/core.py::Command.to_info_dict,function,to_info_dict,Command.to_info_dict,click/core.py,979,988,False,True,False,,,7f8cfef32f8b,2,3,
+click/core.py::CommandCollection,class,CommandCollection,CommandCollection,click/core.py,1961,2014,False,,,,,b00a583b4b08,1,2,A :class:`Group` that looks up subcommands on other groups. If a command
+click/core.py::CommandCollection.__init__,function,__init__,CommandCollection.__init__,click/core.py,1977,1985,False,True,False,,,90ce83c08b66,0,2,
+click/core.py::CommandCollection.add_source,function,add_source,CommandCollection.add_source,click/core.py,1987,1989,False,True,False,,,e7ec1cdf17c8,0,1,Add a group as a source of commands.
+click/core.py::CommandCollection.get_command,function,get_command,CommandCollection.get_command,click/core.py,1991,2006,False,True,False,,,051fbcb59bdd,0,4,
+click/core.py::CommandCollection.list_commands,function,list_commands,CommandCollection.list_commands,click/core.py,2008,2014,False,True,False,,,057362358d9d,0,2,
+click/core.py::Context,class,Context,Context,click/core.py,169,870,False,,,,,9767a188a82b,120,1,The context is a special internal object that holds state relevant
+click/core.py::Context.__enter__,function,__enter__,Context.__enter__,click/core.py,476,479,False,True,False,,,52a79f2edac8,6,2,
+click/core.py::Context.__exit__,function,__exit__,Context.__exit__,click/core.py,481,493,False,True,False,,,dfd168c70e8f,6,2,
+click/core.py::Context.__init__,function,__init__,Context.__init__,click/core.py,273,441,False,True,False,,,c3e191c9f737,2,3,
+click/core.py::Context._close_with_exception_info,function,_close_with_exception_info,Context._close_with_exception_info,click/core.py,623,639,False,True,False,,,493c8b6285b3,2,0,Unwind the exit stack by calling its :meth:`__exit__` providing the exception
+click/core.py::Context._make_sub_context,function,_make_sub_context,Context._make_sub_context,click/core.py,752,758,False,True,False,,,05e7d5b224aa,2,4,"Create a new context of the same type as this context, but"
+click/core.py::Context.abort,function,abort,Context.abort,click/core.py,726,728,False,True,False,,,6f15a0c2585f,0,1,Aborts the script.
+click/core.py::Context.call_on_close,function,call_on_close,Context.call_on_close,click/core.py,604,614,False,True,False,,,07e4b342d70c,1,0,Register a function to be called when the context tears down.
+click/core.py::Context.close,function,close,Context.close,click/core.py,616,621,False,True,False,,,497a06ca950e,1,1,Invoke all close callbacks registered with
+click/core.py::Context.command_path,function,command_path,Context.command_path,click/core.py,642,658,False,True,False,property,,7b0a839618c2,2,3,The computed command path.  This is used for the ``usage``
+click/core.py::Context.ensure_object,function,ensure_object,Context.ensure_object,click/core.py,679,686,False,True,False,,,3d72845c6c1c,1,1,Like :meth:`find_object` but sets the innermost object to a
+click/core.py::Context.exit,function,exit,Context.exit,click/core.py,730,738,False,True,False,,,4444154a60db,1,3,Exits the application with a given exit code.
+click/core.py::Context.fail,function,fail,Context.fail,click/core.py,718,724,False,True,False,,,3804afaed613,3,2,Aborts the execution of the program with a specific error
+click/core.py::Context.find_object,function,find_object,Context.find_object,click/core.py,667,677,False,True,False,,,648dd871eae5,2,1,Finds the closest object of a given type.
+click/core.py::Context.find_root,function,find_root,Context.find_root,click/core.py,660,665,False,True,False,,,984d45769226,0,1,Finds the outermost context.
+click/core.py::Context.forward,function,forward,Context.forward,click/core.py,826,843,False,True,False,,,a68384ed499d,0,2,Similar to :meth:`invoke` but fills in default keyword
+click/core.py::Context.get_help,function,get_help,Context.get_help,click/core.py,746,750,False,True,False,,,e66c5795f4d0,1,1,Helper method to get formatted help page for the current
+click/core.py::Context.get_parameter_source,function,get_parameter_source,Context.get_parameter_source,click/core.py,854,870,False,True,False,,,5b34743fa7df,1,1,Get the source of a parameter. This indicates the location
+click/core.py::Context.get_usage,function,get_usage,Context.get_usage,click/core.py,740,744,False,True,False,,,77d60dc5e84a,1,1,Helper method to get formatted usage string for the current
+click/core.py::Context.invoke,function,invoke,Context.invoke,click/core.py,761,824,False,True,False,t.overload,,b1df4f6e62e0,5,5,
+click/core.py::Context.lookup_default,function,lookup_default,Context.lookup_default,click/core.py,689,716,False,True,False,t.overload,,12979d89bb85,2,0,
+click/core.py::Context.make_formatter,function,make_formatter,Context.make_formatter,click/core.py,561,573,False,True,False,,,9e40639c30b4,2,3,Creates the :class:`~click.HelpFormatter` for the help and
+click/core.py::Context.meta,function,meta,Context.meta,click/core.py,534,559,False,True,False,property,,e57229613b64,1,0,This is a dictionary which is shared with all the contexts
+click/core.py::Context.protected_args,function,protected_args,Context.protected_args,click/core.py,444,453,False,True,False,property,,89ed441d4635,0,0,
+click/core.py::Context.scope,function,scope,Context.scope,click/core.py,496,531,False,True,False,contextmanager,,3ee8bfe0823c,2,3,This helper method can be used with the context object to promote
+click/core.py::Context.set_parameter_source,function,set_parameter_source,Context.set_parameter_source,click/core.py,845,852,False,True,False,,,559f0dcbd76b,1,1,Set the source of a parameter. This indicates the location
+click/core.py::Context.to_info_dict,function,to_info_dict,Context.to_info_dict,click/core.py,455,474,False,True,False,,,38c8910042ec,0,1,Gather information that could be useful for a tool generating
+click/core.py::Context.with_resource,function,with_resource,Context.with_resource,click/core.py,575,602,False,True,False,,,b2ccc0092555,0,0,Register a resource as if it were used in a ``with``
+click/core.py::Group,class,Group,Group,click/core.py,1503,1951,False,,,,,0454b34e5b4e,15,2,A group is a command that nests other commands (or more groups).
+click/core.py::Group.__init__,function,__init__,Group.__init__,click/core.py,1556,1602,False,True,False,,,924cafd2a7c0,1,3,
+click/core.py::Group.add_command,function,add_command,Group.add_command,click/core.py,1622,1630,False,True,False,,,9dc89f29d1e5,2,2,Registers another :class:`Command` with this group.  If the name
+click/core.py::Group.collect_usage_pieces,function,collect_usage_pieces,Group.collect_usage_pieces,click/core.py,1788,1791,False,True,False,,,b5251169e31c,0,2,
+click/core.py::Group.command,function,command,Group.command,click/core.py,1633,1679,False,True,False,t.overload,,ae8c1a40b675,0,3,
+click/core.py::Group.format_commands,function,format_commands,Group.format_commands,click/core.py,1797,1823,False,True,False,,,ab46a9558cc0,1,6,Extra format methods for multi methods that adds all the commands
+click/core.py::Group.format_options,function,format_options,Group.format_options,click/core.py,1793,1795,False,True,False,,,453fb9d0653d,0,4,
+click/core.py::Group.get_command,function,get_command,Group.get_command,click/core.py,1778,1782,False,True,False,,,348bf6459e24,4,2,"Given a context and a command name, this returns a :class:`Command`"
+click/core.py::Group.group,function,group,Group.group,click/core.py,1682,1731,False,True,False,t.overload,,f13f8b3972c9,0,3,
+click/core.py::Group.invoke,function,invoke,Group.invoke,click/core.py,1839,1905,False,True,False,,,8c1a4cccb764,0,7,
+click/core.py::Group.list_commands,function,list_commands,Group.list_commands,click/core.py,1784,1786,False,True,False,,,c514f6bcd43a,3,1,Returns a list of subcommand names in the order they should appear.
+click/core.py::Group.parse_args,function,parse_args,Group.parse_args,click/core.py,1825,1837,False,True,False,,,1a9669d08e0f,1,4,
+click/core.py::Group.resolve_command,function,resolve_command,Group.resolve_command,click/core.py,1907,1932,False,True,False,,,a6a3bd02b79f,1,7,
+click/core.py::Group.result_callback,function,result_callback,Group.result_callback,click/core.py,1733,1776,False,True,False,,,742f40baf28c,0,0,Adds a result callback to the command.  By default if a
+click/core.py::Group.shell_complete,function,shell_complete,Group.shell_complete,click/core.py,1934,1951,False,True,False,,,e5a955bfec99,0,6,Return a list of completions for the incomplete value. Looks
+click/core.py::Group.to_info_dict,function,to_info_dict,Group.to_info_dict,click/core.py,1604,1620,False,True,False,,,5aedc57047ca,0,6,
+click/core.py::Option,class,Option,Option,click/core.py,2641,3313,False,,,,,29ab34fb429f,11,2,Options are usually optional values on the command line and
+click/core.py::Option.__init__,function,__init__,Option.__init__,click/core.py,2709,2864,False,True,False,,,4e9a86f7e573,1,7,
+click/core.py::Option._parse_decls,function,_parse_decls,Option._parse_decls,click/core.py,2891,2944,False,True,False,,,c8b18ddb2943,0,1,
+click/core.py::Option.add_to_parser,function,add_to_parser,Option.add_to_parser,click/core.py,2946,2983,False,True,False,,,ce21ccca9de7,0,3,
+click/core.py::Option.consume_value,function,consume_value,Option.consume_value,click/core.py,3234,3296,False,True,False,,,740510215538,0,5,"For :class:`Option`, the value can be collected from an interactive prompt"
+click/core.py::Option.get_error_hint,function,get_error_hint,Option.get_error_hint,click/core.py,2885,2889,False,True,False,,,64d8fb6080cf,0,2,
+click/core.py::Option.get_help_extra,function,get_help_extra,Option.get_help_extra,click/core.py,3030,3112,False,True,False,,,c063906ceb5c,1,5,
+click/core.py::Option.get_help_record,function,get_help_record,Option.get_help_record,click/core.py,2985,3028,False,True,False,,,1ad536efb6c1,0,4,
+click/core.py::Option.process_value,function,process_value,Option.process_value,click/core.py,3298,3313,False,True,False,,,4fbf9231e929,1,2,
+click/core.py::Option.prompt_for_value,function,prompt_for_value,Option.prompt_for_value,click/core.py,3114,3162,False,True,False,,,c66544dbe38f,1,5,This is an alternative flow that can be activated in the full
+click/core.py::Option.resolve_envvar_value,function,resolve_envvar_value,Option.resolve_envvar_value,click/core.py,3164,3190,False,True,False,,,07810ae0147a,1,2,:class:`Option` resolves its environment variable the same way as
+click/core.py::Option.to_info_dict,function,to_info_dict,Option.to_info_dict,click/core.py,2866,2883,False,True,False,,,9ef5e244ce01,0,1,.. versionchanged:: 8.3.0
+click/core.py::Option.value_from_envvar,function,value_from_envvar,Option.value_from_envvar,click/core.py,3192,3232,False,True,False,,,74443d09cb3e,0,4,"For :class:`Option`, this method processes the raw environment variable"
+click/core.py::Parameter,class,Parameter,Parameter,click/core.py,2027,2638,False,,,,,9e7129793ad3,51,0,A parameter to a command comes in two versions: they are either
+click/core.py::Parameter.__init__,function,__init__,Parameter.__init__,click/core.py,2120,2189,False,True,False,,,fb9c017bc15f,2,7,
+click/core.py::Parameter.__repr__,function,__repr__,Parameter.__repr__,click/core.py,2219,2220,False,True,False,,,727e3c5b089c,0,0,
+click/core.py::Parameter._parse_decls,function,_parse_decls,Parameter._parse_decls,click/core.py,2222,2225,False,True,False,,,90e5da3ec601,1,0,
+click/core.py::Parameter.add_to_parser,function,add_to_parser,Parameter.add_to_parser,click/core.py,2291,2292,False,True,False,,,c738b2b77a0b,1,2,
+click/core.py::Parameter.consume_value,function,consume_value,Parameter.consume_value,click/core.py,2294,2335,False,True,False,,,095f2ca12996,2,5,Returns the parameter value produced by the parser.
+click/core.py::Parameter.get_default,function,get_default,Parameter.get_default,click/core.py,2249,2289,False,True,False,t.overload,,b8bed34286fe,3,2,
+click/core.py::Parameter.get_error_hint,function,get_error_hint,Parameter.get_error_hint,click/core.py,2610,2615,False,True,False,,,4ca73c8dca1c,3,2,Get a stringified version of the param for use in error messages to
+click/core.py::Parameter.get_help_record,function,get_help_record,Parameter.get_help_record,click/core.py,2604,2605,False,True,False,,,3b430a18fd40,1,1,
+click/core.py::Parameter.get_usage_pieces,function,get_usage_pieces,Parameter.get_usage_pieces,click/core.py,2607,2608,False,True,False,,,0a63eb13b1bc,2,1,
+click/core.py::Parameter.handle_parse_result,function,handle_parse_result,Parameter.handle_parse_result,click/core.py,2538,2602,False,True,False,,,a893e1b775b4,1,8,Process the value produced by the parser from user input.
+click/core.py::Parameter.human_readable_name,function,human_readable_name,Parameter.human_readable_name,click/core.py,2228,2232,False,True,False,property,,4cf4e32747e9,3,0,Returns the human readable name of this parameter.  This is the
+click/core.py::Parameter.make_metavar,function,make_metavar,Parameter.make_metavar,click/core.py,2234,2246,False,True,False,,,54b5b75508be,1,2,
+click/core.py::Parameter.process_value,function,process_value,Parameter.process_value,click/core.py,2411,2475,False,True,False,,,f1f2e4892227,2,7,Process the value of this parameter:
+click/core.py::Parameter.resolve_envvar_value,function,resolve_envvar_value,Parameter.resolve_envvar_value,click/core.py,2477,2520,False,True,False,,,f2e839cc9ff2,2,1,Returns the value found in the environment variable(s) attached to this
+click/core.py::Parameter.shell_complete,function,shell_complete,Parameter.shell_complete,click/core.py,2617,2638,False,True,False,,,7570a5187012,0,5,Return a list of completions for the incomplete value. If a
+click/core.py::Parameter.to_info_dict,function,to_info_dict,Parameter.to_info_dict,click/core.py,2191,2217,False,True,False,,,018fbf1a1208,2,1,Gather information that could be useful for a tool generating
+click/core.py::Parameter.type_cast_value,function,type_cast_value,Parameter.type_cast_value,click/core.py,2337,2391,False,True,False,,,d5b526a53d86,1,5,Convert and validate a value against the parameter's
+click/core.py::Parameter.value_from_envvar,function,value_from_envvar,Parameter.value_from_envvar,click/core.py,2522,2536,False,True,False,,,feb2203031b3,1,3,Process the raw environment variable string for this parameter.
+click/core.py::Parameter.value_is_missing,function,value_is_missing,Parameter.value_is_missing,click/core.py,2393,2409,False,True,False,,,7c2acc1a90d0,1,0,A value is considered missing if:
+click/core.py::ParameterSource,class,ParameterSource,ParameterSource,click/core.py,143,166,False,,,,enum.Enum,c623464208ca,6,0,This is an :class:`~enum.Enum` that indicates the source of a
+click/core.py::_BaseCommand,class,_BaseCommand,_BaseCommand,click/core.py,1496,1500,False,,,,,55edac223352,3,3,.. deprecated:: 8.2
+click/core.py::_FakeSubclassCheck,class,_FakeSubclassCheck,_FakeSubclassCheck,click/core.py,1488,1493,False,,,,type,22c04c55f9ac,2,0,
+click/core.py::_FakeSubclassCheck.__instancecheck__,function,__instancecheck__,_FakeSubclassCheck.__instancecheck__,click/core.py,1492,1493,False,True,False,,,ba4a79dab354,0,0,
+click/core.py::_FakeSubclassCheck.__subclasscheck__,function,__subclasscheck__,_FakeSubclassCheck.__subclasscheck__,click/core.py,1489,1490,False,True,False,,,59af176764c9,0,0,
+click/core.py::_MultiCommand,class,_MultiCommand,_MultiCommand,click/core.py,1954,1958,False,,,,,50c9de1bdd5f,3,3,.. deprecated:: 8.2
+click/core.py::__getattr__,function,__getattr__,__getattr__,click/core.py,3394,3415,False,False,False,,,5536537ea449,0,2,
+click/core.py::_check_iter,function,_check_iter,_check_iter,click/core.py,2017,2024,False,False,False,,,db7f40eb51f3,1,0,Check if the value is iterable but not a string. Raises a type
+click/core.py::_check_nested_chain,function,_check_nested_chain,_check_nested_chain,click/core.py,73,90,False,False,False,,,904cebc0c75d,2,2,
+click/core.py::_complete_visible_commands,function,_complete_visible_commands,_complete_visible_commands,click/core.py,54,70,False,False,False,,,1e8597a4ef47,2,3,List all the subcommands of a group that start with the
+click/core.py::augment_usage_errors,function,augment_usage_errors,augment_usage_errors,click/core.py,98,113,False,False,False,contextmanager,,89f467cdaed4,2,4,Context manager that attaches extra information to exceptions.
+click/core.py::batch,function,batch,batch,click/core.py,93,94,False,False,False,,,8449ed49d4f4,1,0,
+click/core.py::iter_params_for_processing,function,iter_params_for_processing,iter_params_for_processing,click/core.py,116,140,False,False,False,,,7ffc804b1379,1,1,Returns all declared parameters in the order they should be processed.
+click/decorators.py,file,decorators.py,,click/decorators.py,1,551,False,,,,,3550d503444d,0,8,
+click/decorators.py::_param_memo,function,_param_memo,_param_memo,click/decorators.py,314,321,False,False,False,,,53671c6879d5,2,2,
+click/decorators.py::argument,function,argument,argument,click/decorators.py,324,349,False,False,False,,,c8337a3cfd35,1,4,Attaches an argument to the command.  All positional arguments are
+click/decorators.py::command,function,command,command,click/decorators.py,138,255,False,False,False,t.overload,,bfdfa05ae72e,4,1,
+click/decorators.py::confirmation_option,function,confirmation_option,confirmation_option,click/decorators.py,380,401,False,False,False,,,95c6b299622d,1,3,Add a ``--yes`` option which shows a prompt before continuing if
+click/decorators.py::group,function,group,group,click/decorators.py,263,311,False,False,False,t.overload,,2dca650a0796,3,2,
+click/decorators.py::help_option,function,help_option,help_option,click/decorators.py,527,551,False,False,False,,,0257f6df920a,3,4,Pre-configured ``--help`` option which immediately prints the help page
+click/decorators.py::make_pass_decorator,function,make_pass_decorator,make_pass_decorator,click/decorators.py,51,97,False,False,False,,,cdf07968a8b3,1,4,Given an object type this creates a decorator that will work
+click/decorators.py::option,function,option,option,click/decorators.py,352,377,False,False,False,,,af2d7d1b3920,5,4,Attaches an option to the command.  All positional arguments are
+click/decorators.py::pass_context,function,pass_context,pass_context,click/decorators.py,28,36,False,False,False,,,63bbffdc67cf,1,2,Marks a callback as wanting to receive the current context
+click/decorators.py::pass_meta_key,function,pass_meta_key,pass_meta_key,click/decorators.py,100,130,False,False,False,,,d61b8e04a493,0,3,Create a decorator that passes a key from
+click/decorators.py::pass_obj,function,pass_obj,pass_obj,click/decorators.py,39,48,False,False,False,,,273f67aa9b07,1,1,"Similar to :func:`pass_context`, but only pass the object on the"
+click/decorators.py::password_option,function,password_option,password_option,click/decorators.py,404,418,False,False,False,,,4adc0ad452c8,1,1,"Add a ``--password`` option which prompts for a password, hiding"
+click/decorators.py::version_option,function,version_option,version_option,click/decorators.py,421,524,False,False,False,,,f162fb7d6984,1,4,Add a ``--version`` option which immediately prints the version
+click/exceptions.py,file,exceptions.py,,click/exceptions.py,1,308,False,,,,,cebc48b86c5f,0,7,
+click/exceptions.py::Abort,class,Abort,Abort,click/exceptions.py,294,295,False,,,,RuntimeError,b7442ada62de,8,0,An internal signalling exception that signals Click to abort.
+click/exceptions.py::BadArgumentUsage,class,BadArgumentUsage,BadArgumentUsage,click/exceptions.py,259,265,False,,,,,1b5891b40ba5,3,2,Raised if an argument is generally supplied but the use of the argument
+click/exceptions.py::BadOptionUsage,class,BadOptionUsage,BadOptionUsage,click/exceptions.py,242,256,False,,,,,7b29b32acac9,4,2,Raised if an option is generally supplied but the use of the option
+click/exceptions.py::BadOptionUsage.__init__,function,__init__,BadOptionUsage.__init__,click/exceptions.py,252,256,False,True,False,,,88f43a252497,2,2,
+click/exceptions.py::BadParameter,class,BadParameter,BadParameter,click/exceptions.py,95,134,False,,,,,e0602dcd8b79,8,2,An exception that formats out a standardized error message for a
+click/exceptions.py::BadParameter.__init__,function,__init__,BadParameter.__init__,click/exceptions.py,113,122,False,True,False,,,e7a8af5a4b7c,3,3,
+click/exceptions.py::BadParameter.format_message,function,format_message,BadParameter.format_message,click/exceptions.py,124,134,False,True,False,,,7e8fe8666e06,0,2,
+click/exceptions.py::ClickException,class,ClickException,ClickException,click/exceptions.py,26,53,False,,,,Exception,b7b80d713c05,9,0,An exception that Click can handle and show to the user.
+click/exceptions.py::ClickException.__init__,function,__init__,ClickException.__init__,click/exceptions.py,32,37,False,True,False,,,6f1df08ce00d,3,1,
+click/exceptions.py::ClickException.__str__,function,__str__,ClickException.__str__,click/exceptions.py,42,43,False,True,False,,,44a8de275617,0,0,
+click/exceptions.py::ClickException.format_message,function,format_message,ClickException.format_message,click/exceptions.py,39,40,False,True,False,,,7d7d824c4ae7,3,0,
+click/exceptions.py::ClickException.show,function,show,ClickException.show,click/exceptions.py,45,53,False,True,False,,,8ecd8e769344,0,3,
+click/exceptions.py::Exit,class,Exit,Exit,click/exceptions.py,298,308,False,,,,RuntimeError,d3ebbb6499a9,3,0,An exception that indicates that the application should exit with some
+click/exceptions.py::Exit.__init__,function,__init__,Exit.__init__,click/exceptions.py,307,308,False,True,False,,,c6b9fac5c57a,1,0,
+click/exceptions.py::FileError,class,FileError,FileError,click/exceptions.py,277,291,False,,,,,26799f64f466,3,2,Raised if a file cannot be opened.
+click/exceptions.py::FileError.__init__,function,__init__,FileError.__init__,click/exceptions.py,280,286,False,True,False,,,1e625acabac8,1,2,
+click/exceptions.py::FileError.format_message,function,format_message,FileError.format_message,click/exceptions.py,288,291,False,True,False,,,47ee0d1f87d1,0,0,
+click/exceptions.py::MissingParameter,class,MissingParameter,MissingParameter,click/exceptions.py,137,205,False,,,,,afd2add74d56,3,2,Raised if click required an option or argument but it was not
+click/exceptions.py::MissingParameter.__init__,function,__init__,MissingParameter.__init__,click/exceptions.py,149,158,False,True,False,,,0c36c23b98ce,1,3,
+click/exceptions.py::MissingParameter.__str__,function,__str__,MissingParameter.__str__,click/exceptions.py,200,205,False,True,False,,,27671669f12b,0,0,
+click/exceptions.py::MissingParameter.format_message,function,format_message,MissingParameter.format_message,click/exceptions.py,160,198,False,True,False,,,6c413346a45c,0,3,
+click/exceptions.py::NoArgsIsHelpError,class,NoArgsIsHelpError,NoArgsIsHelpError,click/exceptions.py,268,274,False,,,,,3475b6ade27a,3,2,
+click/exceptions.py::NoArgsIsHelpError.__init__,function,__init__,NoArgsIsHelpError.__init__,click/exceptions.py,269,271,False,True,False,,,889245218b7d,2,3,
+click/exceptions.py::NoArgsIsHelpError.show,function,show,NoArgsIsHelpError.show,click/exceptions.py,273,274,False,True,False,,,ed5c87783843,0,2,
+click/exceptions.py::NoSuchOption,class,NoSuchOption,NoSuchOption,click/exceptions.py,208,239,False,,,,,c0b4817cc1f5,5,2,Raised if click attempted to handle an option that does not
+click/exceptions.py::NoSuchOption.__init__,function,__init__,NoSuchOption.__init__,click/exceptions.py,215,227,False,True,False,,,bd8868fb3a00,2,2,
+click/exceptions.py::NoSuchOption.format_message,function,format_message,NoSuchOption.format_message,click/exceptions.py,229,239,False,True,False,,,0f8cfd247792,0,0,
+click/exceptions.py::UsageError,class,UsageError,UsageError,click/exceptions.py,56,92,False,,,,,1bb128b4fcf0,18,2,An internal exception that signals a usage error.  This typically
+click/exceptions.py::UsageError.__init__,function,__init__,UsageError.__init__,click/exceptions.py,67,70,False,True,False,,,f90d28a7da22,6,3,
+click/exceptions.py::UsageError.show,function,show,UsageError.show,click/exceptions.py,72,92,False,True,False,,,e71ee3dff695,0,6,
+click/exceptions.py::_join_param_hints,function,_join_param_hints,_join_param_hints,click/exceptions.py,19,23,False,False,False,,,8f244247fe60,2,0,
+click/formatting.py,file,formatting.py,,click/formatting.py,1,301,False,,,,,fa744409af98,0,3,
+click/formatting.py::HelpFormatter,class,HelpFormatter,HelpFormatter,click/formatting.py,104,280,False,,,,,4b0d06801ec8,12,0,This class helps with formatting text-based help pages.  It's
+click/formatting.py::HelpFormatter.__init__,function,__init__,HelpFormatter.__init__,click/formatting.py,116,133,False,True,False,,,03616a0e15a9,1,0,
+click/formatting.py::HelpFormatter.dedent,function,dedent,HelpFormatter.dedent,click/formatting.py,143,145,False,True,False,,,45e53a41f96f,2,0,Decreases the indentation.
+click/formatting.py::HelpFormatter.getvalue,function,getvalue,HelpFormatter.getvalue,click/formatting.py,278,280,False,True,False,,,e12da03b3e5a,2,0,Returns the buffer contents.
+click/formatting.py::HelpFormatter.indent,function,indent,HelpFormatter.indent,click/formatting.py,139,141,False,True,False,,,d0ba8ee2c381,2,0,Increases the indentation.
+click/formatting.py::HelpFormatter.indentation,function,indentation,HelpFormatter.indentation,click/formatting.py,270,276,False,True,False,contextmanager,,0396ff381261,2,2,A context manager that increases the indentation.
+click/formatting.py::HelpFormatter.section,function,section,HelpFormatter.section,click/formatting.py,255,267,False,True,False,contextmanager,,84fe1c3de259,2,4,"Helpful context manager that writes a paragraph, a heading,"
+click/formatting.py::HelpFormatter.write,function,write,HelpFormatter.write,click/formatting.py,135,137,False,True,False,,,2fc7464d8f39,5,0,Writes a unicode string into the internal buffer.
+click/formatting.py::HelpFormatter.write_dl,function,write_dl,HelpFormatter.write_dl,click/formatting.py,210,252,False,True,False,,,7fb4f287ad3a,2,5,Writes a definition list into the buffer.  This is how options
+click/formatting.py::HelpFormatter.write_heading,function,write_heading,HelpFormatter.write_heading,click/formatting.py,185,187,False,True,False,,,c6fd31e85d41,1,1,Writes a heading into the buffer.
+click/formatting.py::HelpFormatter.write_paragraph,function,write_paragraph,HelpFormatter.write_paragraph,click/formatting.py,189,192,False,True,False,,,b4e5de05af41,3,1,Writes a paragraph into the buffer.
+click/formatting.py::HelpFormatter.write_text,function,write_text,HelpFormatter.write_text,click/formatting.py,194,208,False,True,False,,,b8669cdd5c59,2,2,Writes re-indented text into the buffer.  This rewraps and
+click/formatting.py::HelpFormatter.write_usage,function,write_usage,HelpFormatter.write_usage,click/formatting.py,147,183,False,True,False,,,b86fc312fdb1,1,3,Writes a usage line into the buffer.
+click/formatting.py::iter_rows,function,iter_rows,iter_rows,click/formatting.py,24,28,False,False,False,,,a40fae7396e5,1,0,
+click/formatting.py::join_options,function,join_options,join_options,click/formatting.py,283,301,False,False,False,,,6d29e91dc1e3,2,1,Given a list of option strings this joins them in the most appropriate
+click/formatting.py::measure_table,function,measure_table,measure_table,click/formatting.py,14,21,False,False,False,,,cb934186b463,1,1,
+click/formatting.py::wrap_text,function,wrap_text,wrap_text,click/formatting.py,31,101,False,False,False,,,633e76b895e1,4,4,"A helper function that intelligently wraps text.  By default, it"
+click/globals.py,file,globals.py,,click/globals.py,1,67,False,,,,,637074e37842,0,1,
+click/globals.py::get_current_context,function,get_current_context,get_current_context,click/globals.py,13,41,False,False,False,t.overload,,50c6f994cc5b,7,1,
+click/globals.py::pop_context,function,pop_context,pop_context,click/globals.py,49,51,False,False,False,,,1b85e37c77ce,2,0,Removes the top level from the stack.
+click/globals.py::push_context,function,push_context,push_context,click/globals.py,44,46,False,False,False,,,87741726fdea,2,1,Pushes a new context to the current stack.
+click/globals.py::resolve_color_default,function,resolve_color_default,resolve_color_default,click/globals.py,54,67,False,False,False,,,f9866924e321,7,1,Internal helper to get the default value of the color flag.  If a
+click/parser.py,file,parser.py,,click/parser.py,1,532,False,,,,,c4872ee0b8ac,0,9,
+click/parser.py::_Argument,class,_Argument,_Argument,click/parser.py,181,209,False,,,,,13a125e9b3b5,2,0,
+click/parser.py::_Argument.__init__,function,__init__,_Argument.__init__,click/parser.py,182,185,False,True,False,,,f179476b5710,1,1,
+click/parser.py::_Argument.process,function,process,_Argument.process,click/parser.py,187,209,False,True,False,,,22823fe5a63f,0,3,
+click/parser.py::_Option,class,_Option,_Option,click/parser.py,127,178,False,,,,,b8f841eb1855,3,0,
+click/parser.py::_Option.__init__,function,__init__,_Option.__init__,click/parser.py,128,159,False,True,False,,,762b924acca6,1,2,
+click/parser.py::_Option.process,function,process,_Option.process,click/parser.py,165,178,False,True,False,,,64f59875cdf3,2,1,
+click/parser.py::_Option.takes_value,function,takes_value,_Option.takes_value,click/parser.py,162,163,False,True,False,property,,46667a760da4,2,0,
+click/parser.py::_OptionParser,class,_OptionParser,_OptionParser,click/parser.py,220,499,False,,,,,4c64266f4e97,8,0,The option parser is an internal class that is ultimately used to
+click/parser.py::_OptionParser.__init__,function,__init__,_OptionParser.__init__,click/parser.py,237,259,False,True,False,,,9fddf70abce3,1,3,
+click/parser.py::_OptionParser._get_value_from_state,function,_get_value_from_state,_OptionParser._get_value_from_state,click/parser.py,429,467,False,True,False,,,a14fa6a64970,2,4,
+click/parser.py::_OptionParser._match_long_opt,function,_match_long_opt,_OptionParser._match_long_opt,click/parser.py,359,387,False,True,False,,,6258e5d46995,1,8,
+click/parser.py::_OptionParser._match_short_opt,function,_match_short_opt,_OptionParser._match_short_opt,click/parser.py,389,427,False,True,False,,,3e5bdcfaf501,1,7,
+click/parser.py::_OptionParser._process_args_for_args,function,_process_args_for_args,_OptionParser._process_args_for_args,click/parser.py,312,321,False,True,False,,,2c681b63fb67,1,2,
+click/parser.py::_OptionParser._process_args_for_options,function,_process_args_for_options,_OptionParser._process_args_for_options,click/parser.py,323,337,False,True,False,,,6e7c67fe0209,1,2,
+click/parser.py::_OptionParser._process_opts,function,_process_opts,_OptionParser._process_opts,click/parser.py,469,499,False,True,False,,,31d596d27d37,1,5,
+click/parser.py::_OptionParser.add_argument,function,add_argument,_OptionParser.add_argument,click/parser.py,286,292,False,True,False,,,cdac8229b5a5,1,3,Adds a positional argument named `dest` to the parser.
+click/parser.py::_OptionParser.add_option,function,add_option,_OptionParser.add_option,click/parser.py,261,284,False,True,False,,,c39f1abe750d,1,4,Adds a new option named `dest` to the parser.  The destination
+click/parser.py::_OptionParser.parse_args,function,parse_args,_OptionParser.parse_args,click/parser.py,294,310,False,True,False,,,5955f52fbac0,1,6,"Parses positional arguments and returns ``(values, args, order)``"
+click/parser.py::_ParsingState,class,_ParsingState,_ParsingState,click/parser.py,212,217,False,,,,,5a682bf4c959,9,0,
+click/parser.py::_ParsingState.__init__,function,__init__,_ParsingState.__init__,click/parser.py,213,217,False,True,False,,,84be71685868,1,1,
+click/parser.py::__getattr__,function,__getattr__,__getattr__,click/parser.py,502,532,False,False,False,,,a28829fd622f,0,1,
+click/parser.py::_normalize_opt,function,_normalize_opt,_normalize_opt,click/parser.py,120,124,False,False,False,,,134affcdf17c,3,2,
+click/parser.py::_split_opt,function,_split_opt,_split_opt,click/parser.py,111,117,False,False,False,,,4c8ea7e9abd2,8,0,
+click/parser.py::_unpack_args,function,_unpack_args,_unpack_args,click/parser.py,51,108,False,False,False,,,f8b2763af393,1,0,"Given an iterable of arguments and an iterable of nargs specifications,"
+click/shell_completion.py,file,shell_completion.py,,click/shell_completion.py,1,667,False,,,,,51b1b9ff2c9e,0,12,
+click/shell_completion.py::BashComplete,class,BashComplete,BashComplete,click/shell_completion.py,304,360,False,,,,,d79b86366c22,1,2,Shell completion for Bash.
+click/shell_completion.py::BashComplete._check_version,function,_check_version,BashComplete._check_version,click/shell_completion.py,311,341,False,True,False,staticmethod,,318dfe0ce195,1,1,
+click/shell_completion.py::BashComplete.format_completion,function,format_completion,BashComplete.format_completion,click/shell_completion.py,359,360,False,True,False,,,eaaf8691e726,0,1,
+click/shell_completion.py::BashComplete.get_completion_args,function,get_completion_args,BashComplete.get_completion_args,click/shell_completion.py,347,357,False,True,False,,,5faf02a2f7de,0,1,
+click/shell_completion.py::BashComplete.source,function,source,BashComplete.source,click/shell_completion.py,343,345,False,True,False,,,afebe1d057a2,0,2,
+click/shell_completion.py::CompletionItem,class,CompletionItem,CompletionItem,click/shell_completion.py,57,91,False,,,,,323854f18021,21,0,Represents a completion value and metadata about the value. The
+click/shell_completion.py::CompletionItem.__getattr__,function,__getattr__,CompletionItem.__getattr__,click/shell_completion.py,90,91,False,True,False,,,16bb07595763,0,0,
+click/shell_completion.py::CompletionItem.__init__,function,__init__,CompletionItem.__init__,click/shell_completion.py,78,88,False,True,False,,,820435366069,6,0,
+click/shell_completion.py::FishComplete,class,FishComplete,FishComplete,click/shell_completion.py,399,423,False,,,,,4a5c4e6cd5df,1,2,Shell completion for Fish.
+click/shell_completion.py::FishComplete.format_completion,function,format_completion,FishComplete.format_completion,click/shell_completion.py,419,423,False,True,False,,,373df7d359d7,0,1,
+click/shell_completion.py::FishComplete.get_completion_args,function,get_completion_args,FishComplete.get_completion_args,click/shell_completion.py,405,417,False,True,False,,,1adc45e79348,0,1,
+click/shell_completion.py::ShellComplete,class,ShellComplete,ShellComplete,click/shell_completion.py,200,301,False,,,,,21349a966916,10,0,Base class for providing shell completion support. A subclass for
+click/shell_completion.py::ShellComplete.__init__,function,__init__,ShellComplete.__init__,click/shell_completion.py,224,234,False,True,False,,,dcb5facd5536,1,1,
+click/shell_completion.py::ShellComplete.complete,function,complete,ShellComplete.complete,click/shell_completion.py,291,301,False,True,False,,,2753352123dd,1,3,Produce the completion data to send back to the shell.
+click/shell_completion.py::ShellComplete.format_completion,function,format_completion,ShellComplete.format_completion,click/shell_completion.py,283,289,False,True,False,,,90bfc7308f2f,1,1,Format a completion item into the form recognized by the
+click/shell_completion.py::ShellComplete.func_name,function,func_name,ShellComplete.func_name,click/shell_completion.py,237,242,False,True,False,property,,2e54ce679d97,1,0,The name of the shell function defined by the completion
+click/shell_completion.py::ShellComplete.get_completion_args,function,get_completion_args,ShellComplete.get_completion_args,click/shell_completion.py,264,269,False,True,False,,,a3e82131d7a8,1,0,Use the env vars defined by the shell script to return a
+click/shell_completion.py::ShellComplete.get_completions,function,get_completions,ShellComplete.get_completions,click/shell_completion.py,271,281,False,True,False,,,f1b5fe12b158,1,3,Determine the context and last complete command or parameter
+click/shell_completion.py::ShellComplete.source,function,source,ShellComplete.source,click/shell_completion.py,256,262,False,True,False,,,9a89d8827731,2,1,Produce the shell script that defines the completion
+click/shell_completion.py::ShellComplete.source_vars,function,source_vars,ShellComplete.source_vars,click/shell_completion.py,244,254,False,True,False,,,a3d73718768e,1,1,Vars for formatting :attr:`source_template`.
+click/shell_completion.py::ZshComplete,class,ZshComplete,ZshComplete,click/shell_completion.py,363,396,False,,,,,3d7fb9554b82,1,2,Shell completion for Zsh.
+click/shell_completion.py::ZshComplete.format_completion,function,format_completion,ZshComplete.format_completion,click/shell_completion.py,381,396,False,True,False,,,1c7807d395e4,0,1,
+click/shell_completion.py::ZshComplete.get_completion_args,function,get_completion_args,ZshComplete.get_completion_args,click/shell_completion.py,369,379,False,True,False,,,5faf02a2f7de,0,1,
+click/shell_completion.py::_is_incomplete_argument,function,_is_incomplete_argument,_is_incomplete_argument,click/shell_completion.py,503,525,False,False,False,,,e783d5957910,1,4,Determine if the given parameter is an argument that can still
+click/shell_completion.py::_is_incomplete_option,function,_is_incomplete_option,_is_incomplete_option,click/shell_completion.py,537,559,False,False,False,,,b663362343cf,1,4,Determine if the given parameter is an option that needs a value.
+click/shell_completion.py::_resolve_context,function,_resolve_context,_resolve_context,click/shell_completion.py,562,620,False,False,False,,,737d7aaeccec,1,6,Produce the context hierarchy starting with the command and
+click/shell_completion.py::_resolve_incomplete,function,_resolve_incomplete,_resolve_incomplete,click/shell_completion.py,623,667,False,False,False,,,324ca2a33f96,1,7,Find the Click object that will handle the completion of the
+click/shell_completion.py::_start_of_option,function,_start_of_option,_start_of_option,click/shell_completion.py,528,534,False,False,False,,,14bf33e7f8e5,2,1,Check if the value looks like the start of an option.
+click/shell_completion.py::add_completion_class,function,add_completion_class,add_completion_class,click/shell_completion.py,436,453,False,False,False,,,d6d1e16b8874,0,0,Register a :class:`ShellComplete` subclass under the given name.
+click/shell_completion.py::get_completion_class,function,get_completion_class,get_completion_class,click/shell_completion.py,456,463,False,False,False,,,16aa93347655,1,1,Look up a registered :class:`ShellComplete` subclass by the name
+click/shell_completion.py::shell_complete,function,shell_complete,shell_complete,click/shell_completion.py,19,54,False,False,False,,,8e2299701c5b,2,8,Perform shell completion for the given CLI program.
+click/shell_completion.py::split_arg_string,function,split_arg_string,split_arg_string,click/shell_completion.py,466,500,False,False,False,,,b9129c4fe9fa,5,0,"Split an argument string as with :func:`shlex.split`, but don't"
+click/termui.py,file,termui.py,,click/termui.py,1,883,False,,,,,c2422d8e2eee,0,16,
+click/termui.py::_build_prompt,function,_build_prompt,_build_prompt,click/termui.py,60,73,False,False,False,,,1b60b20ccd9a,2,3,
+click/termui.py::_format_default,function,_format_default,_format_default,click/termui.py,76,80,False,False,False,,,9fad9482cbd6,1,1,
+click/termui.py::_interpret_color,function,_interpret_color,_interpret_color,click/termui.py,507,515,False,False,False,,,9fa00f80746b,1,0,
+click/termui.py::clear,function,clear,clear,click/termui.py,493,504,False,False,False,,,67b5bf3bfb7b,1,2,Clears the terminal screen.  This will have the effect of clearing
+click/termui.py::confirm,function,confirm,confirm,click/termui.py,197,258,False,False,False,,,97c8b41acd6e,3,3,Prompts for confirmation (yes/no question).
+click/termui.py::echo_via_pager,function,echo_via_pager,echo_via_pager,click/termui.py,261,290,False,False,False,,,5dabef71838a,1,2,This function takes a text and shows it via an environment specific
+click/termui.py::edit,function,edit,edit,click/termui.py,694,779,False,False,False,t.overload,,ae512746dce8,1,4,
+click/termui.py::getchar,function,getchar,getchar,click/termui.py,816,843,False,False,False,,,6cbc54d12934,2,1,Fetches a single character from the terminal and returns it.  This
+click/termui.py::hidden_prompt_func,function,hidden_prompt_func,hidden_prompt_func,click/termui.py,54,57,False,False,False,,,c1d85690e195,2,0,
+click/termui.py::launch,function,launch,launch,click/termui.py,782,808,False,False,False,,,b5c27311f660,1,1,This function launches the given URL (or filename) in the default
+click/termui.py::pause,function,pause,pause,click/termui.py,852,883,False,False,False,,,73ef841ab181,1,3,This command stops execution and waits for the user to press any
+click/termui.py::progressbar,function,progressbar,progressbar,click/termui.py,294,490,False,False,False,t.overload,,0b27ec79c7cc,1,4,
+click/termui.py::prompt,function,prompt,prompt,click/termui.py,83,194,False,False,False,,,84f0d67f4f65,3,7,Prompts a user for input.  This is a convenience function that can
+click/termui.py::raw_terminal,function,raw_terminal,raw_terminal,click/termui.py,846,849,False,False,False,,,86359f373dcb,0,1,
+click/termui.py::secho,function,secho,secho,click/termui.py,659,690,False,False,False,,,5db378cd7bff,1,2,This function combines :func:`echo` and :func:`style` into one
+click/termui.py::style,function,style,style,click/termui.py,518,644,False,False,False,,,1bf2c8b64b6f,5,1,Styles a text with ANSI styles and returns the new string.  By
+click/termui.py::unstyle,function,unstyle,unstyle,click/termui.py,647,656,False,False,False,,,3cd767ace01f,1,1,Removes ANSI styling information from a string.  Usually it's not
+click/testing.py,file,testing.py,,click/testing.py,1,577,False,,,,,26a13e891f54,0,2,
+click/testing.py::BytesIOCopy,class,BytesIOCopy,BytesIOCopy,click/testing.py,69,85,False,,,,io.BytesIO,d73e2f6d58f3,1,0,Patch ``io.BytesIO`` to let the written stream be copied to another.
+click/testing.py::BytesIOCopy.__init__,function,__init__,BytesIOCopy.__init__,click/testing.py,75,77,False,True,False,,,ef708f50dd88,1,0,
+click/testing.py::BytesIOCopy.flush,function,flush,BytesIOCopy.flush,click/testing.py,79,81,False,True,False,,,b64cf68f9c34,0,0,
+click/testing.py::BytesIOCopy.write,function,write,BytesIOCopy.write,click/testing.py,83,85,False,True,False,,,2b2a5117f3e8,0,0,
+click/testing.py::CliRunner,class,CliRunner,CliRunner,click/testing.py,229,577,False,,,,,459bcc0dc7fe,1,0,The CLI runner provides functionality to invoke a Click command line
+click/testing.py::CliRunner.__init__,function,__init__,CliRunner.__init__,click/testing.py,251,261,False,True,False,,,ca7fffa7ecc4,0,0,
+click/testing.py::CliRunner.get_default_prog_name,function,get_default_prog_name,CliRunner.get_default_prog_name,click/testing.py,263,268,False,True,False,,,c2552dc56df1,1,1,Given a command object it will return the default program name
+click/testing.py::CliRunner.invoke,function,invoke,CliRunner.invoke,click/testing.py,433,544,False,True,False,,,812fa1498572,0,7,Invokes a command in an isolated environment.  The arguments are
+click/testing.py::CliRunner.isolated_filesystem,function,isolated_filesystem,CliRunner.isolated_filesystem,click/testing.py,547,577,False,True,False,contextlib.contextmanager,,b053d3d11fd6,0,0,A context manager that creates a temporary directory and
+click/testing.py::CliRunner.isolation,function,isolation,CliRunner.isolation,click/testing.py,280,431,False,True,False,contextlib.contextmanager,,c01872112a40,1,11,A context manager that sets up the isolation for invoking of a
+click/testing.py::CliRunner.make_env,function,make_env,CliRunner.make_env,click/testing.py,270,277,False,True,False,,,e360fdc96ad1,1,0,Returns the environment overrides for invoking a script.
+click/testing.py::EchoingStdin,class,EchoingStdin,EchoingStdin,click/testing.py,25,56,False,,,,,8db0d1e14964,2,0,
+click/testing.py::EchoingStdin.__getattr__,function,__getattr__,EchoingStdin.__getattr__,click/testing.py,31,32,False,True,False,,,367753a7a805,0,0,
+click/testing.py::EchoingStdin.__init__,function,__init__,EchoingStdin.__init__,click/testing.py,26,29,False,True,False,,,db825fadada6,1,0,
+click/testing.py::EchoingStdin.__iter__,function,__iter__,EchoingStdin.__iter__,click/testing.py,52,53,False,True,False,,,a5c415c9d8b7,0,1,
+click/testing.py::EchoingStdin.__repr__,function,__repr__,EchoingStdin.__repr__,click/testing.py,55,56,False,True,False,,,0d2c40271dc1,0,0,
+click/testing.py::EchoingStdin._echo,function,_echo,EchoingStdin._echo,click/testing.py,34,38,False,True,False,,,1e14e3b9487e,5,0,
+click/testing.py::EchoingStdin.read,function,read,EchoingStdin.read,click/testing.py,40,41,False,True,False,,,c7fe879ac996,0,1,
+click/testing.py::EchoingStdin.read1,function,read1,EchoingStdin.read1,click/testing.py,43,44,False,True,False,,,6eb55f466f9b,0,1,
+click/testing.py::EchoingStdin.readline,function,readline,EchoingStdin.readline,click/testing.py,46,47,False,True,False,,,60f3466fb3cf,0,1,
+click/testing.py::EchoingStdin.readlines,function,readlines,EchoingStdin.readlines,click/testing.py,49,50,False,True,False,,,a31783a4b035,0,1,
+click/testing.py::Result,class,Result,Result,click/testing.py,151,226,False,,,,,d309b0f25912,2,0,Holds the captured result of an invoked CLI script.
+click/testing.py::Result.__init__,function,__init__,Result.__init__,click/testing.py,173,192,False,True,False,,,86bf63580d28,1,1,
+click/testing.py::Result.__repr__,function,__repr__,Result.__repr__,click/testing.py,224,226,False,True,False,,,bfc8317e30b0,0,0,
+click/testing.py::Result.output,function,output,Result.output,click/testing.py,195,204,False,True,False,property,,b0ce19adf41b,0,0,"The terminal output as unicode string, as the user would see it."
+click/testing.py::Result.stderr,function,stderr,Result.stderr,click/testing.py,214,222,False,True,False,property,,2c6125e49b65,0,0,The standard error as unicode string.
+click/testing.py::Result.stdout,function,stdout,Result.stdout,click/testing.py,207,211,False,True,False,property,,d112bdf8a0f9,0,0,The standard output as unicode string.
+click/testing.py::StreamMixer,class,StreamMixer,StreamMixer,click/testing.py,88,111,False,,,,,7391e94738da,1,0,Mixes `<stdout>` and `<stderr>` streams.
+click/testing.py::StreamMixer.__del__,function,__del__,StreamMixer.__del__,click/testing.py,101,111,False,True,False,,,e4703c111589,0,0,Guarantee that embedded file-like objects are closed in a
+click/testing.py::StreamMixer.__init__,function,__init__,StreamMixer.__init__,click/testing.py,96,99,False,True,False,,,44e36c3aea0a,1,2,
+click/testing.py::_NamedTextIOWrapper,class,_NamedTextIOWrapper,_NamedTextIOWrapper,click/testing.py,114,128,False,,,,io.TextIOWrapper,3b384a71ce4f,1,0,
+click/testing.py::_NamedTextIOWrapper.__init__,function,__init__,_NamedTextIOWrapper.__init__,click/testing.py,115,120,False,True,False,,,3b6f81e63347,1,0,
+click/testing.py::_NamedTextIOWrapper.mode,function,mode,_NamedTextIOWrapper.mode,click/testing.py,127,128,False,True,False,property,,7df679cc9f77,0,0,
+click/testing.py::_NamedTextIOWrapper.name,function,name,_NamedTextIOWrapper.name,click/testing.py,123,124,False,True,False,property,,aa774d2c523f,0,0,
+click/testing.py::_pause_echo,function,_pause_echo,_pause_echo,click/testing.py,60,66,False,False,False,contextlib.contextmanager,,35e16c9431d6,1,1,
+click/testing.py::make_input_stream,function,make_input_stream,make_input_stream,click/testing.py,131,148,False,False,False,,,471ac4075103,1,1,
+click/types.py,file,types.py,,click/types.py,1,1209,False,,,,,2d83bc819476,0,15,
+click/types.py::BoolParamType,class,BoolParamType,BoolParamType,click/types.py,661,727,False,,,,,83a18ad14b6d,3,2,
+click/types.py::BoolParamType.__repr__,function,__repr__,BoolParamType.__repr__,click/types.py,726,727,False,True,False,,,d8c830c71719,0,0,
+click/types.py::BoolParamType.convert,function,convert,BoolParamType.convert,click/types.py,712,724,False,True,False,,,80e8e9a14123,0,4,
+click/types.py::BoolParamType.str_to_bool,function,str_to_bool,BoolParamType.str_to_bool,click/types.py,698,710,False,True,False,staticmethod,,94c12be3a55d,2,0,Convert a string to a boolean value.
+click/types.py::Choice,class,Choice,Choice,click/types.py,233,398,False,,,,t.Generic,d75075037b68,3,2,The choice type allows a value to be checked against a fixed set
+click/types.py::Choice.__init__,function,__init__,Choice.__init__,click/types.py,258,262,False,True,False,,,d110d52f108e,0,0,
+click/types.py::Choice.__repr__,function,__repr__,Choice.__repr__,click/types.py,374,375,False,True,False,,,1d615a041ac5,0,0,
+click/types.py::Choice._normalized_mapping,function,_normalized_mapping,Choice._normalized_mapping,click/types.py,270,286,False,True,False,,,c036e80452ef,4,2,Returns mapping where keys are the original choices and the values are
+click/types.py::Choice.convert,function,convert,Choice.convert,click/types.py,336,358,False,True,False,,,8d76a8e703be,0,6,"For a given value from the parser, normalize it and find its"
+click/types.py::Choice.get_invalid_choice_message,function,get_invalid_choice_message,Choice.get_invalid_choice_message,click/types.py,360,372,False,True,False,,,bfb2c35b54b2,1,2,Get the error message when the given choice is invalid.
+click/types.py::Choice.get_metavar,function,get_metavar,Choice.get_metavar,click/types.py,308,324,False,True,False,,,9aca5d58bdf5,0,4,
+click/types.py::Choice.get_missing_message,function,get_missing_message,Choice.get_missing_message,click/types.py,326,334,False,True,False,,,c578af35d334,0,3,Message shown when no choice is passed.
+click/types.py::Choice.normalize_choice,function,normalize_choice,Choice.normalize_choice,click/types.py,288,306,False,True,False,,,258123d505e6,2,1,"Normalize a choice value, used to map a passed string to a choice."
+click/types.py::Choice.shell_complete,function,shell_complete,Choice.shell_complete,click/types.py,377,398,False,True,False,,,0d643ca63476,0,5,Complete choices that start with the incomplete value.
+click/types.py::Choice.to_info_dict,function,to_info_dict,Choice.to_info_dict,click/types.py,264,268,False,True,False,,,16b04ffd78c5,0,1,
+click/types.py::CompositeParamType,class,CompositeParamType,CompositeParamType,click/types.py,163,168,False,,,,,af6aa5c33856,2,2,
+click/types.py::CompositeParamType.arity,function,arity,CompositeParamType.arity,click/types.py,167,168,False,True,False,property,,421285533333,0,0,
+click/types.py::DateTime,class,DateTime,DateTime,click/types.py,401,469,False,,,,,e517e8fc87b6,1,2,The DateTime type converts date strings into `datetime` objects.
+click/types.py::DateTime.__init__,function,__init__,DateTime.__init__,click/types.py,424,429,False,True,False,,,c2984522cda0,0,0,
+click/types.py::DateTime.__repr__,function,__repr__,DateTime.__repr__,click/types.py,468,469,False,True,False,,,252bf475221a,0,0,
+click/types.py::DateTime._try_to_convert_date,function,_try_to_convert_date,DateTime._try_to_convert_date,click/types.py,439,443,False,True,False,,,2550ad46c3e6,1,0,
+click/types.py::DateTime.convert,function,convert,DateTime.convert,click/types.py,445,466,False,True,False,,,850722005416,0,4,
+click/types.py::DateTime.get_metavar,function,get_metavar,DateTime.get_metavar,click/types.py,436,437,False,True,False,,,3ff4ef148184,0,2,
+click/types.py::DateTime.to_info_dict,function,to_info_dict,DateTime.to_info_dict,click/types.py,431,434,False,True,False,,,dd06a180a32e,0,1,
+click/types.py::File,class,File,File,click/types.py,754,872,False,,,,,5fe79d2ee857,1,2,Declares a parameter to be a file for reading or writing.  The file
+click/types.py::File.__init__,function,__init__,File.__init__,click/types.py,787,799,False,True,False,,,a725401c442e,0,0,
+click/types.py::File.convert,function,convert,File.convert,click/types.py,815,856,False,True,False,,,174726c469ff,0,12,
+click/types.py::File.resolve_lazy_flag,function,resolve_lazy_flag,File.resolve_lazy_flag,click/types.py,806,813,False,True,False,,,08f6b8d8d812,1,0,
+click/types.py::File.shell_complete,function,shell_complete,File.shell_complete,click/types.py,858,872,False,True,False,,,7dcb9b004e8e,0,5,Return a special completion marker that tells the completion
+click/types.py::File.to_info_dict,function,to_info_dict,File.to_info_dict,click/types.py,801,804,False,True,False,,,da62dd86967a,0,1,
+click/types.py::FloatParamType,class,FloatParamType,FloatParamType,click/types.py,610,615,False,,,,,2d2bf36c453c,3,2,
+click/types.py::FloatParamType.__repr__,function,__repr__,FloatParamType.__repr__,click/types.py,614,615,False,True,False,,,bd15ffaff643,0,0,
+click/types.py::FloatRange,class,FloatRange,FloatRange,click/types.py,618,658,False,,,,,7ca4814dae8b,1,4,Restrict a :data:`click.FLOAT` value to a range of accepted
+click/types.py::FloatRange.__init__,function,__init__,FloatRange.__init__,click/types.py,636,649,False,True,False,,,bf2e62e2a0ae,0,1,
+click/types.py::FloatRange._clamp,function,_clamp,FloatRange._clamp,click/types.py,651,658,False,True,False,,,903600d74a8a,0,0,
+click/types.py::FuncParamType,class,FuncParamType,FuncParamType,click/types.py,171,192,False,,,,,c8bb6f7aac09,1,2,
+click/types.py::FuncParamType.__init__,function,__init__,FuncParamType.__init__,click/types.py,172,174,False,True,False,,,fe179211398e,1,0,
+click/types.py::FuncParamType.convert,function,convert,FuncParamType.convert,click/types.py,181,192,False,True,False,,,872ed0656914,0,3,
+click/types.py::FuncParamType.to_info_dict,function,to_info_dict,FuncParamType.to_info_dict,click/types.py,176,179,False,True,False,,,2186ae08aa77,0,1,
+click/types.py::IntParamType,class,IntParamType,IntParamType,click/types.py,576,581,False,,,,,af96fe94b8f4,3,2,
+click/types.py::IntParamType.__repr__,function,__repr__,IntParamType.__repr__,click/types.py,580,581,False,True,False,,,37b0058f0386,0,0,
+click/types.py::IntRange,class,IntRange,IntRange,click/types.py,584,607,False,,,,,8a9531a2ccf4,2,4,Restrict an :data:`click.INT` value to a range of accepted
+click/types.py::IntRange._clamp,function,_clamp,IntRange._clamp,click/types.py,601,607,False,True,False,,,c75e3cc0b7e6,0,0,
+click/types.py::OptionHelpExtra,class,OptionHelpExtra,OptionHelpExtra,click/types.py,1205,1209,False,,,,t.TypedDict,7a0e5a02ed6f,1,0,
+click/types.py::ParamType,class,ParamType,ParamType,click/types.py,30,160,False,,,,,ad216ca88857,30,0,Represents the type of a parameter. Validates and converts values
+click/types.py::ParamType.__call__,function,__call__,ParamType.__call__,click/types.py,83,90,False,True,False,,,7e7a62c02630,1,3,
+click/types.py::ParamType.convert,function,convert,ParamType.convert,click/types.py,102,124,False,True,False,,,9c9d1b07b4c3,1,2,Convert the value to the correct type. This is not called if
+click/types.py::ParamType.fail,function,fail,ParamType.fail,click/types.py,136,143,False,True,False,,,dbecf9a93bd1,10,4,Helper method to fail with an invalid value message.
+click/types.py::ParamType.get_metavar,function,get_metavar,ParamType.get_metavar,click/types.py,92,93,False,True,False,,,711469f272c2,2,2,Returns the metavar default for this param if it provides one.
+click/types.py::ParamType.get_missing_message,function,get_missing_message,ParamType.get_missing_message,click/types.py,95,100,False,True,False,,,48f3816c7ca0,1,2,Optionally might return extra information about a missing
+click/types.py::ParamType.shell_complete,function,shell_complete,ParamType.shell_complete,click/types.py,145,160,False,True,False,,,dcb76cebd41a,1,3,Return a list of
+click/types.py::ParamType.split_envvar_value,function,split_envvar_value,ParamType.split_envvar_value,click/types.py,126,134,False,True,False,,,4ef0bd38b31e,1,0,Given a value from an environment variable this splits it up
+click/types.py::ParamType.to_info_dict,function,to_info_dict,ParamType.to_info_dict,click/types.py,62,81,False,True,False,,,9360fdf54974,8,0,Gather information that could be useful for a tool generating
+click/types.py::Path,class,Path,Path,click/types.py,879,1057,False,,,,,03825413d83b,1,2,"The ``Path`` type is similar to the :class:`File` type, but"
+click/types.py::Path.__init__,function,__init__,Path.__init__,click/types.py,914,941,False,True,False,,,f344315c8352,0,0,
+click/types.py::Path.coerce_path_result,function,coerce_path_result,Path.coerce_path_result,click/types.py,955,966,False,True,False,,,6a74cda89221,1,0,
+click/types.py::Path.convert,function,convert,Path.convert,click/types.py,968,1039,False,True,False,,,72978c079338,0,5,
+click/types.py::Path.shell_complete,function,shell_complete,Path.shell_complete,click/types.py,1041,1057,False,True,False,,,fda1dd7fd051,0,5,Return a special completion marker that tells the completion
+click/types.py::Path.to_info_dict,function,to_info_dict,Path.to_info_dict,click/types.py,943,953,False,True,False,,,c68e0e080175,0,1,
+click/types.py::StringParamType,class,StringParamType,StringParamType,click/types.py,207,230,False,,,,,07f3275bb34d,1,2,
+click/types.py::StringParamType.__repr__,function,__repr__,StringParamType.__repr__,click/types.py,229,230,False,True,False,,,6d9c8d7b81bc,0,0,
+click/types.py::StringParamType.convert,function,convert,StringParamType.convert,click/types.py,210,227,False,True,False,,,90d19a88ee55,0,3,
+click/types.py::Tuple,class,Tuple,Tuple,click/types.py,1060,1109,False,,,,,b8277bb77197,2,2,The default behavior of Click is to apply a type on a value directly.
+click/types.py::Tuple.__init__,function,__init__,Tuple.__init__,click/types.py,1074,1075,False,True,False,,,a0ed004d57be,1,2,
+click/types.py::Tuple.arity,function,arity,Tuple.arity,click/types.py,1087,1088,False,True,False,property,,76e42bbdfdfb,0,0,
+click/types.py::Tuple.convert,function,convert,Tuple.convert,click/types.py,1090,1109,False,True,False,,,1b6f6a233fae,0,3,
+click/types.py::Tuple.name,function,name,Tuple.name,click/types.py,1083,1084,False,True,False,property,,0c5ea58e19ef,0,0,
+click/types.py::Tuple.to_info_dict,function,to_info_dict,Tuple.to_info_dict,click/types.py,1077,1080,False,True,False,,,3f9b2f6f1ba5,0,1,
+click/types.py::UUIDParameterType,class,UUIDParameterType,UUIDParameterType,click/types.py,730,751,False,,,,,8b68e2405c56,1,2,
+click/types.py::UUIDParameterType.__repr__,function,__repr__,UUIDParameterType.__repr__,click/types.py,750,751,False,True,False,,,e6244328c985,0,0,
+click/types.py::UUIDParameterType.convert,function,convert,UUIDParameterType.convert,click/types.py,733,748,False,True,False,,,c9d20868e594,0,3,
+click/types.py::UnprocessedParamType,class,UnprocessedParamType,UnprocessedParamType,click/types.py,195,204,False,,,,,d108dc568aa4,1,2,
+click/types.py::UnprocessedParamType.__repr__,function,__repr__,UnprocessedParamType.__repr__,click/types.py,203,204,False,True,False,,,a9ac6a677845,0,0,
+click/types.py::UnprocessedParamType.convert,function,convert,UnprocessedParamType.convert,click/types.py,198,201,False,True,False,,,a8b571578b2d,0,2,
+click/types.py::_NumberParamTypeBase,class,_NumberParamTypeBase,_NumberParamTypeBase,click/types.py,472,487,False,,,,,5809d75fd514,6,2,
+click/types.py::_NumberParamTypeBase.convert,function,convert,_NumberParamTypeBase.convert,click/types.py,475,487,False,True,False,,,91e6b9fb82ac,1,3,
+click/types.py::_NumberRangeBase,class,_NumberRangeBase,_NumberRangeBase,click/types.py,490,573,False,,,,,4e40e70bacf4,5,2,
+click/types.py::_NumberRangeBase.__init__,function,__init__,_NumberRangeBase.__init__,click/types.py,491,503,False,True,False,,,85163f7e2e1d,2,0,
+click/types.py::_NumberRangeBase.__repr__,function,__repr__,_NumberRangeBase.__repr__,click/types.py,571,573,False,True,False,,,7d3b0fc3ce45,0,1,
+click/types.py::_NumberRangeBase._clamp,function,_clamp,_NumberRangeBase._clamp,click/types.py,547,555,False,True,False,,,4038c6904a0a,1,0,Find the valid value to clamp to bound in the given
+click/types.py::_NumberRangeBase._describe_range,function,_describe_range,_NumberRangeBase._describe_range,click/types.py,557,569,False,True,False,,,7e1175d96b25,2,0,Describe the range for use in help text.
+click/types.py::_NumberRangeBase.convert,function,convert,_NumberRangeBase.convert,click/types.py,516,545,False,True,False,,,d8a890f0a91c,0,6,
+click/types.py::_NumberRangeBase.to_info_dict,function,to_info_dict,_NumberRangeBase.to_info_dict,click/types.py,505,514,False,True,False,,,adfa592a2cdc,0,1,
+click/types.py::_is_file_like,function,_is_file_like,_is_file_like,click/types.py,875,876,False,False,False,,,e6c861608b44,1,0,
+click/types.py::convert_type,function,convert_type,convert_type,click/types.py,1112,1169,False,False,False,,,cf75af8b1f19,6,5,Find the most appropriate :class:`ParamType` for the given Python
+click/utils.py,file,utils.py,,click/utils.py,1,627,False,,,,,8d75b1348457,0,7,
+click/utils.py::KeepOpenFile,class,KeepOpenFile,KeepOpenFile,click/utils.py,197,219,False,,,,,73568ba79f56,2,0,
+click/utils.py::KeepOpenFile.__enter__,function,__enter__,KeepOpenFile.__enter__,click/utils.py,204,205,False,True,False,,,ded4ad313b03,0,1,
+click/utils.py::KeepOpenFile.__exit__,function,__exit__,KeepOpenFile.__exit__,click/utils.py,207,213,False,True,False,,,5250b64cbf3c,0,0,
+click/utils.py::KeepOpenFile.__getattr__,function,__getattr__,KeepOpenFile.__getattr__,click/utils.py,201,202,False,True,False,,,245089ccd003,0,0,
+click/utils.py::KeepOpenFile.__init__,function,__init__,KeepOpenFile.__init__,click/utils.py,198,199,False,True,False,,,1c6384d3276e,1,0,
+click/utils.py::KeepOpenFile.__iter__,function,__iter__,KeepOpenFile.__iter__,click/utils.py,218,219,False,True,False,,,dbc0075b9610,0,0,
+click/utils.py::KeepOpenFile.__repr__,function,__repr__,KeepOpenFile.__repr__,click/utils.py,215,216,False,True,False,,,8f845a88581c,0,0,
+click/utils.py::LazyFile,class,LazyFile,LazyFile,click/utils.py,109,194,False,,,,,5679a78ad949,6,0,A lazy file works like a regular file but it does not fully open
+click/utils.py::LazyFile.__enter__,function,__enter__,LazyFile.__enter__,click/utils.py,181,182,False,True,False,,,744165af4806,0,1,
+click/utils.py::LazyFile.__exit__,function,__exit__,LazyFile.__exit__,click/utils.py,184,190,False,True,False,,,958a03103429,0,1,
+click/utils.py::LazyFile.__getattr__,function,__getattr__,LazyFile.__getattr__,click/utils.py,143,144,False,True,False,,,bb49478d774f,0,1,
+click/utils.py::LazyFile.__init__,function,__init__,LazyFile.__init__,click/utils.py,116,141,False,True,False,,,af29d469d643,2,1,
+click/utils.py::LazyFile.__iter__,function,__iter__,LazyFile.__iter__,click/utils.py,192,194,False,True,False,,,4bb9ddf83417,0,1,
+click/utils.py::LazyFile.__repr__,function,__repr__,LazyFile.__repr__,click/utils.py,146,149,False,True,False,,,35e111da2df5,0,1,
+click/utils.py::LazyFile.close,function,close,LazyFile.close,click/utils.py,169,172,False,True,False,,,f24318b40d47,1,0,"Closes the underlying file, no matter what."
+click/utils.py::LazyFile.close_intelligently,function,close_intelligently,LazyFile.close_intelligently,click/utils.py,174,179,False,True,False,,,4fb2e3e6cfe3,2,1,This function only closes the file if it was opened by the lazy
+click/utils.py::LazyFile.open,function,open,LazyFile.open,click/utils.py,151,167,False,True,False,,,afe146aea15a,2,3,Opens the file if it's not yet open.  This call might fail with
+click/utils.py::PacifyFlushWrapper,class,PacifyFlushWrapper,PacifyFlushWrapper,click/utils.py,498,520,False,,,,,1a7ea7479a14,2,0,This wrapper is used to catch and suppress BrokenPipeErrors resulting
+click/utils.py::PacifyFlushWrapper.__getattr__,function,__getattr__,PacifyFlushWrapper.__getattr__,click/utils.py,519,520,False,True,False,,,bbedebbbffce,0,0,
+click/utils.py::PacifyFlushWrapper.__init__,function,__init__,PacifyFlushWrapper.__init__,click/utils.py,507,508,False,True,False,,,5762abbc3ac1,1,0,
+click/utils.py::PacifyFlushWrapper.flush,function,flush,PacifyFlushWrapper.flush,click/utils.py,510,517,False,True,False,,,a94f13e01476,0,0,
+click/utils.py::_detect_program_name,function,_detect_program_name,_detect_program_name,click/utils.py,523,575,False,False,False,,,8ec7d1411305,2,0,"Determine the command used to run the program, for use in help"
+click/utils.py::_expand_args,function,_expand_args,_expand_args,click/utils.py,578,627,False,False,False,,,c8d201e0fa84,2,0,Simulate Unix shell expansion with Python functions.
+click/utils.py::_posixify,function,_posixify,_posixify,click/utils.py,32,33,False,False,False,,,55d4c9857990,1,0,
+click/utils.py::echo,function,echo,echo,click/utils.py,222,322,False,False,False,,,4ed6848bd281,23,6,Print a message and newline to stdout or a file. This should be
+click/utils.py::format_filename,function,format_filename,format_filename,click/utils.py,407,446,False,False,False,,,a2eefb42bab4,7,0,Format a filename as a string for display. Ensures the filename can be
+click/utils.py::get_app_dir,function,get_app_dir,get_app_dir,click/utils.py,449,495,False,False,False,,,b7295992a93e,1,1,Returns the config folder for the application.  The default behavior
+click/utils.py::get_binary_stream,function,get_binary_stream,get_binary_stream,click/utils.py,325,334,False,False,False,,,83cae51e4e2a,1,0,Returns a system stream for byte processing.
+click/utils.py::get_text_stream,function,get_text_stream,get_text_stream,click/utils.py,337,355,False,False,False,,,4ee834c6a6f6,1,0,Returns a system stream for text processing.  This usually returns
+click/utils.py::make_default_short_help,function,make_default_short_help,make_default_short_help,click/utils.py,59,106,False,False,False,,,cce82ecba011,2,0,Returns a condensed version of help string.
+click/utils.py::make_str,function,make_str,make_str,click/utils.py,49,56,False,False,False,,,d70733fc95c4,2,0,Converts a value into a valid string.
+click/utils.py::open_file,function,open_file,open_file,click/utils.py,358,404,False,False,False,,,1bd98d71ce2a,1,5,"Open a file, with extra behavior to handle ``'-'`` to indicate"
+click/utils.py::safecall,function,safecall,safecall,click/utils.py,36,46,False,False,False,,,73798283d19a,2,0,Wraps a function so that it swallows exceptions.

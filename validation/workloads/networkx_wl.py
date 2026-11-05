@@ -1,0 +1,15 @@
+import networkx as nx
+G = nx.gnp_random_graph(40, 0.15, seed=1)
+nx.connected_components(G); list(nx.connected_components(G)); nx.shortest_path(G, 0, 5) if nx.has_path(G, 0, 5) else None
+nx.pagerank(G); nx.betweenness_centrality(G); nx.clustering(G); nx.degree_centrality(G)
+nx.minimum_spanning_tree(G); nx.diameter(G.subgraph(max(nx.connected_components(G), key=len)))
+D = nx.gnp_random_graph(30, 0.1, directed=True, seed=2)
+nx.strongly_connected_components(D); list(nx.strongly_connected_components(D)); nx.is_directed_acyclic_graph(D)
+nx.dijkstra_path_length(nx.path_graph(6), 0, 5); nx.bfs_tree(G, 0); list(nx.dfs_edges(G, 0))
+nx.to_dict_of_lists(G); nx.to_numpy_array(G); nx.relabel_nodes(G, {0: "a"}); nx.union(G, nx.path_graph(3), rename=("g", "p"))
+nx.density(G); nx.average_clustering(G); nx.triangles(G); nx.core_number(G); nx.greedy_color(G)
+nx.maximal_matching(G); nx.is_bipartite(G); nx.find_cliques(G) and list(nx.find_cliques(G)); nx.complement(G)
+W = nx.Graph(); W.add_weighted_edges_from([(1, 2, 3), (2, 3, 1), (1, 3, 5)]); nx.shortest_path(W, 1, 3, weight="weight")
+nx.floyd_warshall(W); nx.eigenvector_centrality_numpy(W) if False else None; nx.adjacency_matrix(W); nx.node_link_data(W)
+nx.read_edgelist  ; import io; b = io.BytesIO(); nx.write_edgelist(W, b); b.seek(0); nx.read_edgelist(b)
+nx.algorithms.community.greedy_modularity_communities(G); nx.algorithms.flow.maximum_flow(nx.DiGraph([(0, 1, {"capacity": 2}), (1, 2, {"capacity": 1})]), 0, 2)

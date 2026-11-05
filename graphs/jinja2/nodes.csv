@@ -1,0 +1,897 @@
+id,type,name,qualname,path,lineno,end_lineno,is_test_file,is_method,is_async,decorators,ext_bases,body_hash,fan_in,fan_out,doc
+jinja2/__init__.py,file,__init__.py,,jinja2/__init__.py,1,38,False,,,,,0c5c5e15615e,0,31,
+jinja2/_identifier.py,file,_identifier.py,,jinja2/_identifier.py,1,6,False,,,,,7350c0318a19,0,0,
+jinja2/async_utils.py,file,async_utils.py,,jinja2/async_utils.py,1,99,False,,,,,3fe488738eda,0,2,
+jinja2/async_utils.py::_IteratorToAsyncIterator,class,_IteratorToAsyncIterator,_IteratorToAsyncIterator,jinja2/async_utils.py,73,84,False,,,,t.Generic,877ca964dcd6,1,0,
+jinja2/async_utils.py::_IteratorToAsyncIterator.__aiter__,function,__aiter__,_IteratorToAsyncIterator.__aiter__,jinja2/async_utils.py,77,78,False,True,False,,,ecee085b6964,0,0,
+jinja2/async_utils.py::_IteratorToAsyncIterator.__anext__,function,__anext__,_IteratorToAsyncIterator.__anext__,jinja2/async_utils.py,80,84,False,True,True,,,4fc1826e2bfb,0,0,
+jinja2/async_utils.py::_IteratorToAsyncIterator.__init__,function,__init__,_IteratorToAsyncIterator.__init__,jinja2/async_utils.py,74,75,False,True,False,,,fd36c93b47fc,1,0,
+jinja2/async_utils.py::async_variant,function,async_variant,async_variant,jinja2/async_utils.py,15,56,False,False,False,,,e98c51f9b0d2,13,2,
+jinja2/async_utils.py::auto_aiter,function,auto_aiter,auto_aiter,jinja2/async_utils.py,87,93,False,False,False,,,74f7000cf16f,8,2,
+jinja2/async_utils.py::auto_await,function,auto_await,auto_await,jinja2/async_utils.py,62,70,False,False,True,,,ad77866e6b3d,3,0,
+jinja2/async_utils.py::auto_to_list,function,auto_to_list,auto_to_list,jinja2/async_utils.py,96,99,False,False,True,,,eae8053f0815,6,1,
+jinja2/bccache.py,file,bccache.py,,jinja2/bccache.py,1,408,False,,,,,c5ce6a9873ae,0,1,
+jinja2/bccache.py::Bucket,class,Bucket,Bucket,jinja2/bccache.py,46,100,False,,,,,45564ea1bea4,10,0,Buckets are used to store the bytecode for one template.  It's created
+jinja2/bccache.py::Bucket.__init__,function,__init__,Bucket.__init__,jinja2/bccache.py,55,59,False,True,False,,,581279bc825d,1,2,
+jinja2/bccache.py::Bucket.bytecode_from_string,function,bytecode_from_string,Bucket.bytecode_from_string,jinja2/bccache.py,92,94,False,True,False,,,a74174ef5f31,1,1,Load bytecode from bytes.
+jinja2/bccache.py::Bucket.bytecode_to_string,function,bytecode_to_string,Bucket.bytecode_to_string,jinja2/bccache.py,96,100,False,True,False,,,89bc0be4b160,1,1,Return the bytecode as bytes.
+jinja2/bccache.py::Bucket.load_bytecode,function,load_bytecode,Bucket.load_bytecode,jinja2/bccache.py,65,82,False,True,False,,,1c97ddf4dc83,2,1,Loads bytecode from a file or file like object.
+jinja2/bccache.py::Bucket.reset,function,reset,Bucket.reset,jinja2/bccache.py,61,63,False,True,False,,,5ccae2379b24,2,0,Resets the bucket (unloads the bytecode).
+jinja2/bccache.py::Bucket.write_bytecode,function,write_bytecode,Bucket.write_bytecode,jinja2/bccache.py,84,90,False,True,False,,,58172a0cf2e4,2,0,Dump the bytecode into the file or file like object passed.
+jinja2/bccache.py::BytecodeCache,class,BytecodeCache,BytecodeCache,jinja2/bccache.py,103,185,False,,,,,63e6c3998bc4,6,0,To implement your own bytecode cache you have to subclass this class
+jinja2/bccache.py::BytecodeCache.clear,function,clear,BytecodeCache.clear,jinja2/bccache.py,146,150,False,True,False,,,2a89adf95f81,0,0,Clears the cache.  This method is not used by Jinja but should be
+jinja2/bccache.py::BytecodeCache.dump_bytecode,function,dump_bytecode,BytecodeCache.dump_bytecode,jinja2/bccache.py,139,144,False,True,False,,,cc39ecf2c54f,1,1,Subclasses have to override this method to write the bytecode
+jinja2/bccache.py::BytecodeCache.get_bucket,function,get_bucket,BytecodeCache.get_bucket,jinja2/bccache.py,167,181,False,True,False,,,e37832e333fe,1,7,Return a cache bucket for the given template.  All arguments are
+jinja2/bccache.py::BytecodeCache.get_cache_key,function,get_cache_key,BytecodeCache.get_cache_key,jinja2/bccache.py,152,161,False,True,False,,,c9798b19b93a,1,0,Returns the unique hash key for this template name.
+jinja2/bccache.py::BytecodeCache.get_source_checksum,function,get_source_checksum,BytecodeCache.get_source_checksum,jinja2/bccache.py,163,165,False,True,False,,,20951212ab8b,1,0,Returns a checksum for the source.
+jinja2/bccache.py::BytecodeCache.load_bytecode,function,load_bytecode,BytecodeCache.load_bytecode,jinja2/bccache.py,132,137,False,True,False,,,b19e7fc0de3a,1,1,Subclasses have to override this method to load bytecode into a
+jinja2/bccache.py::BytecodeCache.set_bucket,function,set_bucket,BytecodeCache.set_bucket,jinja2/bccache.py,183,185,False,True,False,,,4db77610ad8a,1,2,Put the bucket into the cache.
+jinja2/bccache.py::FileSystemBytecodeCache,class,FileSystemBytecodeCache,FileSystemBytecodeCache,jinja2/bccache.py,188,328,False,,,,,be760d6f102d,1,2,A bytecode cache that stores bytecode on the filesystem.  It accepts
+jinja2/bccache.py::FileSystemBytecodeCache.__init__,function,__init__,FileSystemBytecodeCache.__init__,jinja2/bccache.py,206,212,False,True,False,,,823114a1d78e,0,1,
+jinja2/bccache.py::FileSystemBytecodeCache._get_cache_filename,function,_get_cache_filename,FileSystemBytecodeCache._get_cache_filename,jinja2/bccache.py,261,262,False,True,False,,,26bf9d1a239d,2,1,
+jinja2/bccache.py::FileSystemBytecodeCache._get_default_cache_dir,function,_get_default_cache_dir,FileSystemBytecodeCache._get_default_cache_dir,jinja2/bccache.py,214,259,False,True,False,,,6a1fff1873ca,1,0,
+jinja2/bccache.py::FileSystemBytecodeCache.clear,function,clear,FileSystemBytecodeCache.clear,jinja2/bccache.py,317,328,False,True,False,,,2508de9ba4f6,0,0,
+jinja2/bccache.py::FileSystemBytecodeCache.dump_bytecode,function,dump_bytecode,FileSystemBytecodeCache.dump_bytecode,jinja2/bccache.py,279,315,False,True,False,,,5a3a76230f56,0,3,
+jinja2/bccache.py::FileSystemBytecodeCache.load_bytecode,function,load_bytecode,FileSystemBytecodeCache.load_bytecode,jinja2/bccache.py,264,277,False,True,False,,,374939f1400c,0,3,
+jinja2/bccache.py::MemcachedBytecodeCache,class,MemcachedBytecodeCache,MemcachedBytecodeCache,jinja2/bccache.py,331,408,False,,,,,2ef38c18a235,1,2,This class implements a bytecode cache that uses a memcache cache for
+jinja2/bccache.py::MemcachedBytecodeCache.__init__,function,__init__,MemcachedBytecodeCache.__init__,jinja2/bccache.py,376,386,False,True,False,,,7c3dabcc2468,0,1,
+jinja2/bccache.py::MemcachedBytecodeCache.dump_bytecode,function,dump_bytecode,MemcachedBytecodeCache.dump_bytecode,jinja2/bccache.py,397,408,False,True,False,,,234313e75508,0,3,
+jinja2/bccache.py::MemcachedBytecodeCache.load_bytecode,function,load_bytecode,MemcachedBytecodeCache.load_bytecode,jinja2/bccache.py,388,395,False,True,False,,,b09a571811a7,0,3,
+jinja2/bccache.py::_MemcachedClient,class,_MemcachedClient,_MemcachedClient,jinja2/bccache.py,27,32,False,,,,te.Protocol,e1fb829b0b4b,1,0,
+jinja2/bccache.py::_MemcachedClient.get,function,get,_MemcachedClient.get,jinja2/bccache.py,28,28,False,True,False,,,c091114c8a72,1,0,
+jinja2/bccache.py::_MemcachedClient.set,function,set,_MemcachedClient.set,jinja2/bccache.py,30,32,False,True,False,,,24824ac28d63,1,0,
+jinja2/compiler.py,file,compiler.py,,jinja2/compiler.py,1,1998,False,,,,,ecce1e5613e0,0,7,
+jinja2/compiler.py::CodeGenerator,class,CodeGenerator,CodeGenerator,jinja2/compiler.py,300,1998,False,,,,,26a420a475bf,12,5,
+jinja2/compiler.py::CodeGenerator._FinalizeInfo,class,_FinalizeInfo,CodeGenerator._FinalizeInfo,jinja2/compiler.py,1386,1388,False,,,,t.NamedTuple,05b4d052ae27,9,0,
+jinja2/compiler.py::CodeGenerator.__init__,function,__init__,CodeGenerator.__init__,jinja2/compiler.py,301,372,False,True,False,,,35d7462d4e03,2,5,
+jinja2/compiler.py::CodeGenerator._default_finalize,function,_default_finalize,CodeGenerator._default_finalize,jinja2/compiler.py,1391,1396,False,True,False,staticmethod,,f8612f653f63,2,0,The default finalize function if the environment isn't
+jinja2/compiler.py::CodeGenerator._filter_test_common,function,_filter_test_common,CodeGenerator._filter_test_common,jinja2/compiler.py,1795,1834,False,True,False,contextmanager,,579c7ee8421b,2,7,
+jinja2/compiler.py::CodeGenerator._import_common,function,_import_common,CodeGenerator._import_common,jinja2/compiler.py,1100,1113,False,True,False,,,386aa8e9cab7,2,7,
+jinja2/compiler.py::CodeGenerator._make_finalize,function,_make_finalize,CodeGenerator._make_finalize,jinja2/compiler.py,1400,1446,False,True,False,,,35e6b2d31644,1,5,Build the finalize function to be used on constants and at
+jinja2/compiler.py::CodeGenerator._output_child_post,function,_output_child_post,CodeGenerator._output_child_post,jinja2/compiler.py,1492,1501,False,True,False,,,254d0d18aa78,1,4,Output extra source code after visiting a child of an
+jinja2/compiler.py::CodeGenerator._output_child_pre,function,_output_child_pre,CodeGenerator._output_child_pre,jinja2/compiler.py,1476,1490,False,True,False,,,1f73b3004a2f,1,4,Output extra source code before visiting a child of an
+jinja2/compiler.py::CodeGenerator._output_child_to_const,function,_output_child_to_const,CodeGenerator._output_child_to_const,jinja2/compiler.py,1455,1474,False,True,False,,,47501ada6efe,1,5,Try to optimize a child of an ``Output`` node by trying to
+jinja2/compiler.py::CodeGenerator._output_const_repr,function,_output_const_repr,CodeGenerator._output_const_repr,jinja2/compiler.py,1448,1453,False,True,False,,,ddfee4e1b87e,1,0,Given a group of constant values converted from ``Output``
+jinja2/compiler.py::CodeGenerator.blockvisit,function,blockvisit,CodeGenerator.blockvisit,jinja2/compiler.py,442,451,False,True,False,,,2aa7497df636,9,5,Visit a list of nodes as block in a frame.  If the current frame
+jinja2/compiler.py::CodeGenerator.buffer,function,buffer,CodeGenerator.buffer,jinja2/compiler.py,389,392,False,True,False,,,9edf0eaba547,4,3,Enable buffering for the frame from that point onwards.
+jinja2/compiler.py::CodeGenerator.choose_async,function,choose_async,CodeGenerator.choose_async,jinja2/compiler.py,608,609,False,True,False,,,7bc82347d1e4,5,0,
+jinja2/compiler.py::CodeGenerator.derive_context,function,derive_context,CodeGenerator.derive_context,jinja2/compiler.py,771,772,False,True,False,,,3a6cbe430a91,3,3,
+jinja2/compiler.py::CodeGenerator.dump_local_context,function,dump_local_context,CodeGenerator.dump_local_context,jinja2/compiler.py,716,721,False,True,False,,,6e6ac5803db1,3,2,
+jinja2/compiler.py::CodeGenerator.end_write,function,end_write,CodeGenerator.end_write,jinja2/compiler.py,429,432,False,True,False,,,a1d7cf88b4ff,4,2,End the writing process started by `start_write`.
+jinja2/compiler.py::CodeGenerator.enter_frame,function,enter_frame,CodeGenerator.enter_frame,jinja2/compiler.py,584,598,False,True,False,,,9901081b89e2,9,3,
+jinja2/compiler.py::CodeGenerator.fail,function,fail,CodeGenerator.fail,jinja2/compiler.py,380,382,False,True,False,,,0d301a6ccf16,5,2,Fail with a :exc:`TemplateAssertionError`.
+jinja2/compiler.py::CodeGenerator.func,function,func,CodeGenerator.func,jinja2/compiler.py,611,612,False,True,False,,,c52b806c44ed,3,1,
+jinja2/compiler.py::CodeGenerator.get_context_ref,function,get_context_ref,CodeGenerator.get_context_ref,jinja2/compiler.py,762,763,False,True,False,,,9276f2a65680,2,0,
+jinja2/compiler.py::CodeGenerator.get_resolve_func,function,get_resolve_func,CodeGenerator.get_resolve_func,jinja2/compiler.py,765,769,False,True,False,,,3f364cb6d6eb,1,0,
+jinja2/compiler.py::CodeGenerator.indent,function,indent,CodeGenerator.indent,jinja2/compiler.py,414,416,False,True,False,,,b9f91a238ad5,12,0,Indent by one.
+jinja2/compiler.py::CodeGenerator.leave_frame,function,leave_frame,CodeGenerator.leave_frame,jinja2/compiler.py,600,606,False,True,False,,,6f436c131f89,8,2,
+jinja2/compiler.py::CodeGenerator.macro_body,function,macro_body,CodeGenerator.macro_body,jinja2/compiler.py,614,695,False,True,False,,,e098202ca4b9,2,21,Dump the function def of a macro or call block.
+jinja2/compiler.py::CodeGenerator.macro_def,function,macro_def,CodeGenerator.macro_def,jinja2/compiler.py,697,707,False,True,False,,,5f6715a142a2,2,3,Dump the macro definition for the def created by macro_body.
+jinja2/compiler.py::CodeGenerator.mark_parameter_stored,function,mark_parameter_stored,CodeGenerator.mark_parameter_stored,jinja2/compiler.py,749,754,False,True,False,,,002daf61a392,1,0,Marks a parameter in the current parameter definitions as stored.
+jinja2/compiler.py::CodeGenerator.newline,function,newline,CodeGenerator.newline,jinja2/compiler.py,474,479,False,True,False,,,d7db6a87a186,8,1,Add one or more newlines before the next write.
+jinja2/compiler.py::CodeGenerator.optimized,function,optimized,CodeGenerator.optimized,jinja2/compiler.py,375,376,False,True,False,property,,b9b2042f65a6,0,0,
+jinja2/compiler.py::CodeGenerator.outdent,function,outdent,CodeGenerator.outdent,jinja2/compiler.py,418,420,False,True,False,,,bc992a7d1cd8,12,0,Outdent by step.
+jinja2/compiler.py::CodeGenerator.parameter_is_undeclared,function,parameter_is_undeclared,CodeGenerator.parameter_is_undeclared,jinja2/compiler.py,774,778,False,True,False,,,8edb64362405,1,0,Checks if a given target is an undeclared parameter.
+jinja2/compiler.py::CodeGenerator.pop_assign_tracking,function,pop_assign_tracking,CodeGenerator.pop_assign_tracking,jinja2/compiler.py,784,825,False,True,False,,,d67f6ad14663,2,4,Pops the topmost level for assignment tracking and updates the
+jinja2/compiler.py::CodeGenerator.pop_context_reference,function,pop_context_reference,CodeGenerator.pop_context_reference,jinja2/compiler.py,759,760,False,True,False,,,e4de0499c6fb,1,0,
+jinja2/compiler.py::CodeGenerator.pop_parameter_definitions,function,pop_parameter_definitions,CodeGenerator.pop_parameter_definitions,jinja2/compiler.py,745,747,False,True,False,,,a70054e209a2,1,0,Pops the current parameter definitions set.
+jinja2/compiler.py::CodeGenerator.position,function,position,CodeGenerator.position,jinja2/compiler.py,709,714,False,True,False,,,f4bc37b0db38,2,1,Return a human readable position for the node.
+jinja2/compiler.py::CodeGenerator.pull_dependencies,function,pull_dependencies,CodeGenerator.pull_dependencies,jinja2/compiler.py,538,582,False,True,False,,,0c583ec42b22,1,8,Find all filter and test names used in the template and
+jinja2/compiler.py::CodeGenerator.push_assign_tracking,function,push_assign_tracking,CodeGenerator.push_assign_tracking,jinja2/compiler.py,780,782,False,True,False,,,ffdfc0a43c31,2,0,Pushes a new layer for assignment tracking.
+jinja2/compiler.py::CodeGenerator.push_context_reference,function,push_context_reference,CodeGenerator.push_context_reference,jinja2/compiler.py,756,757,False,True,False,,,5032cb9b7749,1,0,
+jinja2/compiler.py::CodeGenerator.push_parameter_definitions,function,push_parameter_definitions,CodeGenerator.push_parameter_definitions,jinja2/compiler.py,736,743,False,True,False,,,76e9e9be00e5,1,2,Pushes all parameter targets from the given frame into a local
+jinja2/compiler.py::CodeGenerator.return_buffer_contents,function,return_buffer_contents,CodeGenerator.return_buffer_contents,jinja2/compiler.py,394,412,False,True,False,,,883867a96778,2,4,Return the buffer contents of the frame.
+jinja2/compiler.py::CodeGenerator.signature,function,signature,CodeGenerator.signature,jinja2/compiler.py,481,536,False,True,False,,,31984671577a,2,6,Writes a function call to the stream for the current node.
+jinja2/compiler.py::CodeGenerator.simple_write,function,simple_write,CodeGenerator.simple_write,jinja2/compiler.py,434,440,False,True,False,,,e6fa926a77c0,2,5,Simple shortcut for start_write + write + end_write.
+jinja2/compiler.py::CodeGenerator.start_write,function,start_write,CodeGenerator.start_write,jinja2/compiler.py,422,427,False,True,False,,,8b7482cb14fb,4,3,Yield or write into the frame buffer.
+jinja2/compiler.py::CodeGenerator.temporary_identifier,function,temporary_identifier,CodeGenerator.temporary_identifier,jinja2/compiler.py,384,387,False,True,False,,,ae7c0fd06847,6,0,Get a new unique identifier.
+jinja2/compiler.py::CodeGenerator.visit_Assign,function,visit_Assign,CodeGenerator.visit_Assign,jinja2/compiler.py,1582,1611,False,True,False,,,83518950c3eb,0,13,
+jinja2/compiler.py::CodeGenerator.visit_AssignBlock,function,visit_AssignBlock,CodeGenerator.visit_AssignBlock,jinja2/compiler.py,1613,1633,False,True,False,,,65acc4a885ed,0,14,
+jinja2/compiler.py::CodeGenerator.visit_Block,function,visit_Block,CodeGenerator.visit_Block,jinja2/compiler.py,951,998,False,True,False,,,9d55994e7ba8,0,9,Call a block and register it for the template.
+jinja2/compiler.py::CodeGenerator.visit_Break,function,visit_Break,CodeGenerator.visit_Break,jinja2/compiler.py,1951,1952,False,True,False,,,6205206ce969,0,3,
+jinja2/compiler.py::CodeGenerator.visit_Call,function,visit_Call,CodeGenerator.visit_Call,jinja2/compiler.py,1882,1902,False,True,False,optimizeconst,,3282d3e3d64e,1,6,
+jinja2/compiler.py::CodeGenerator.visit_CallBlock,function,visit_CallBlock,CodeGenerator.visit_CallBlock,jinja2/compiler.py,1351,1357,False,True,False,,,48d38008c00a,0,8,
+jinja2/compiler.py::CodeGenerator.visit_Compare,function,visit_Compare,CodeGenerator.visit_Compare,jinja2/compiler.py,1740,1745,False,True,False,optimizeconst,,4e304b4fe092,0,5,
+jinja2/compiler.py::CodeGenerator.visit_Concat,function,visit_Concat,CodeGenerator.visit_Concat,jinja2/compiler.py,1726,1737,False,True,False,optimizeconst,,af91733852cb,0,5,
+jinja2/compiler.py::CodeGenerator.visit_CondExpr,function,visit_CondExpr,CodeGenerator.visit_CondExpr,jinja2/compiler.py,1859,1879,False,True,False,optimizeconst,,cdd2ada5837e,0,6,
+jinja2/compiler.py::CodeGenerator.visit_Const,function,visit_Const,CodeGenerator.visit_Const,jinja2/compiler.py,1670,1675,False,True,False,,,e8a4f94616b6,0,4,
+jinja2/compiler.py::CodeGenerator.visit_ContextReference,function,visit_ContextReference,CodeGenerator.visit_ContextReference,jinja2/compiler.py,1938,1941,False,True,False,,,94c1af91fad3,0,3,
+jinja2/compiler.py::CodeGenerator.visit_Continue,function,visit_Continue,CodeGenerator.visit_Continue,jinja2/compiler.py,1948,1949,False,True,False,,,74bb2d9dc83e,0,3,
+jinja2/compiler.py::CodeGenerator.visit_DerivedContextReference,function,visit_DerivedContextReference,CodeGenerator.visit_DerivedContextReference,jinja2/compiler.py,1943,1946,False,True,False,,,66d17aa43b33,0,4,
+jinja2/compiler.py::CodeGenerator.visit_Dict,function,visit_Dict,CodeGenerator.visit_Dict,jinja2/compiler.py,1702,1710,False,True,False,,,5d6497d3ada1,0,4,
+jinja2/compiler.py::CodeGenerator.visit_EnvironmentAttribute,function,visit_EnvironmentAttribute,CodeGenerator.visit_EnvironmentAttribute,jinja2/compiler.py,1922,1925,False,True,False,,,16157bf085c9,0,3,
+jinja2/compiler.py::CodeGenerator.visit_EvalContextModifier,function,visit_EvalContextModifier,CodeGenerator.visit_EvalContextModifier,jinja2/compiler.py,1975,1986,False,True,False,,,a30600727e79,1,6,
+jinja2/compiler.py::CodeGenerator.visit_ExprStmt,function,visit_ExprStmt,CodeGenerator.visit_ExprStmt,jinja2/compiler.py,1382,1384,False,True,False,,,e43b8f70d147,0,4,
+jinja2/compiler.py::CodeGenerator.visit_Extends,function,visit_Extends,CodeGenerator.visit_Extends,jinja2/compiler.py,1000,1040,False,True,False,,,49a314315b43,0,9,Calls the extender.
+jinja2/compiler.py::CodeGenerator.visit_ExtensionAttribute,function,visit_ExtensionAttribute,CodeGenerator.visit_ExtensionAttribute,jinja2/compiler.py,1927,1930,False,True,False,,,23ac46429837,0,3,
+jinja2/compiler.py::CodeGenerator.visit_Filter,function,visit_Filter,CodeGenerator.visit_Filter,jinja2/compiler.py,1837,1851,False,True,False,optimizeconst,,3071f9d2d911,2,6,
+jinja2/compiler.py::CodeGenerator.visit_FilterBlock,function,visit_FilterBlock,CodeGenerator.visit_FilterBlock,jinja2/compiler.py,1359,1368,False,True,False,,,3b3c53d622aa,0,11,
+jinja2/compiler.py::CodeGenerator.visit_For,function,visit_For,CodeGenerator.visit_For,jinja2/compiler.py,1181,1318,False,True,False,,,3c180fb4459a,0,26,
+jinja2/compiler.py::CodeGenerator.visit_FromImport,function,visit_FromImport,CodeGenerator.visit_FromImport,jinja2/compiler.py,1126,1179,False,True,False,,,a8a0090af119,0,10,Visit named imports.
+jinja2/compiler.py::CodeGenerator.visit_Getattr,function,visit_Getattr,CodeGenerator.visit_Getattr,jinja2/compiler.py,1752,1761,False,True,False,optimizeconst,,b1b8b9dfac33,0,5,
+jinja2/compiler.py::CodeGenerator.visit_Getitem,function,visit_Getitem,CodeGenerator.visit_Getitem,jinja2/compiler.py,1764,1782,False,True,False,optimizeconst,,813439b6dffa,0,6,
+jinja2/compiler.py::CodeGenerator.visit_If,function,visit_If,CodeGenerator.visit_If,jinja2/compiler.py,1320,1339,False,True,False,,,de6c1ec016b6,0,9,
+jinja2/compiler.py::CodeGenerator.visit_Import,function,visit_Import,CodeGenerator.visit_Import,jinja2/compiler.py,1115,1124,False,True,False,,,73e02f01ecab,0,6,Visit regular imports.
+jinja2/compiler.py::CodeGenerator.visit_ImportedName,function,visit_ImportedName,CodeGenerator.visit_ImportedName,jinja2/compiler.py,1932,1933,False,True,False,,,94a546d95c25,0,3,
+jinja2/compiler.py::CodeGenerator.visit_Include,function,visit_Include,CodeGenerator.visit_Include,jinja2/compiler.py,1042,1098,False,True,False,,,5062c12c16eb,0,13,Handles includes.
+jinja2/compiler.py::CodeGenerator.visit_InternalName,function,visit_InternalName,CodeGenerator.visit_InternalName,jinja2/compiler.py,1935,1936,False,True,False,,,2b889ac52c51,0,3,
+jinja2/compiler.py::CodeGenerator.visit_Keyword,function,visit_Keyword,CodeGenerator.visit_Keyword,jinja2/compiler.py,1904,1906,False,True,False,,,8003204a9d6b,0,4,
+jinja2/compiler.py::CodeGenerator.visit_List,function,visit_List,CodeGenerator.visit_List,jinja2/compiler.py,1694,1700,False,True,False,,,878d48637ef5,0,4,
+jinja2/compiler.py::CodeGenerator.visit_Macro,function,visit_Macro,CodeGenerator.visit_Macro,jinja2/compiler.py,1341,1349,False,True,False,,,970b391beaf7,0,8,
+jinja2/compiler.py::CodeGenerator.visit_MarkSafe,function,visit_MarkSafe,CodeGenerator.visit_MarkSafe,jinja2/compiler.py,1910,1913,False,True,False,,,ee56ef8d61ed,0,4,
+jinja2/compiler.py::CodeGenerator.visit_MarkSafeIfAutoescape,function,visit_MarkSafeIfAutoescape,CodeGenerator.visit_MarkSafeIfAutoescape,jinja2/compiler.py,1915,1920,False,True,False,,,837922dd8e6e,0,4,
+jinja2/compiler.py::CodeGenerator.visit_NSRef,function,visit_NSRef,CodeGenerator.visit_NSRef,jinja2/compiler.py,1662,1668,False,True,False,,,0d40bb81de0d,0,4,
+jinja2/compiler.py::CodeGenerator.visit_Name,function,visit_Name,CodeGenerator.visit_Name,jinja2/compiler.py,1637,1660,False,True,False,,,ae8f2011bbd1,0,6,
+jinja2/compiler.py::CodeGenerator.visit_Operand,function,visit_Operand,CodeGenerator.visit_Operand,jinja2/compiler.py,1747,1749,False,True,False,,,d2e917685992,0,4,
+jinja2/compiler.py::CodeGenerator.visit_Output,function,visit_Output,CodeGenerator.visit_Output,jinja2/compiler.py,1503,1580,False,True,False,,,eb0661b1169f,0,17,
+jinja2/compiler.py::CodeGenerator.visit_OverlayScope,function,visit_OverlayScope,CodeGenerator.visit_OverlayScope,jinja2/compiler.py,1961,1973,False,True,False,,,99ec6133c637,0,13,
+jinja2/compiler.py::CodeGenerator.visit_Scope,function,visit_Scope,CodeGenerator.visit_Scope,jinja2/compiler.py,1954,1959,False,True,False,,,c09b55f8cac3,0,7,
+jinja2/compiler.py::CodeGenerator.visit_ScopedEvalContextModifier,function,visit_ScopedEvalContextModifier,CodeGenerator.visit_ScopedEvalContextModifier,jinja2/compiler.py,1988,1998,False,True,False,,,5b59e4a28b3b,0,8,
+jinja2/compiler.py::CodeGenerator.visit_Slice,function,visit_Slice,CodeGenerator.visit_Slice,jinja2/compiler.py,1784,1792,False,True,False,,,43af1e497368,0,4,
+jinja2/compiler.py::CodeGenerator.visit_Template,function,visit_Template,CodeGenerator.visit_Template,jinja2/compiler.py,829,949,False,True,False,,,f873caa10105,0,25,
+jinja2/compiler.py::CodeGenerator.visit_TemplateData,function,visit_TemplateData,CodeGenerator.visit_TemplateData,jinja2/compiler.py,1677,1683,False,True,False,,,ce0900e3cd86,0,5,
+jinja2/compiler.py::CodeGenerator.visit_Test,function,visit_Test,CodeGenerator.visit_Test,jinja2/compiler.py,1854,1856,False,True,False,optimizeconst,,8aa56324255d,0,5,
+jinja2/compiler.py::CodeGenerator.visit_Tuple,function,visit_Tuple,CodeGenerator.visit_Tuple,jinja2/compiler.py,1685,1692,False,True,False,,,c1ce243eb4df,0,4,
+jinja2/compiler.py::CodeGenerator.visit_With,function,visit_With,CodeGenerator.visit_With,jinja2/compiler.py,1370,1380,False,True,False,,,b3e1a5f0df13,0,10,
+jinja2/compiler.py::CodeGenerator.write,function,write,CodeGenerator.write,jinja2/compiler.py,453,465,False,True,False,,,f960eaaee0b3,47,0,Write a string into the output stream.
+jinja2/compiler.py::CodeGenerator.write_commons,function,write_commons,CodeGenerator.write_commons,jinja2/compiler.py,723,734,False,True,False,,,21fe73bb9423,1,1,Writes a common preamble that is used by root and block functions.
+jinja2/compiler.py::CodeGenerator.writeline,function,writeline,CodeGenerator.writeline,jinja2/compiler.py,467,472,False,True,False,,,c84d7f42c3d1,28,3,Combination of newline and write.
+jinja2/compiler.py::CompilerExit,class,CompilerExit,CompilerExit,jinja2/compiler.py,293,297,False,,,,Exception,4314bb63df41,2,0,Raised if the compiler encountered a situation where it just
+jinja2/compiler.py::DependencyFinderVisitor,class,DependencyFinderVisitor,DependencyFinderVisitor,jinja2/compiler.py,252,268,False,,,,,d2006c42b426,1,2,A visitor that collects filter and test calls.
+jinja2/compiler.py::DependencyFinderVisitor.__init__,function,__init__,DependencyFinderVisitor.__init__,jinja2/compiler.py,255,257,False,True,False,,,65611a0efd47,1,0,
+jinja2/compiler.py::DependencyFinderVisitor.visit_Block,function,visit_Block,DependencyFinderVisitor.visit_Block,jinja2/compiler.py,267,268,False,True,False,,,88f37882fb55,0,1,Stop visiting at blocks.
+jinja2/compiler.py::DependencyFinderVisitor.visit_Filter,function,visit_Filter,DependencyFinderVisitor.visit_Filter,jinja2/compiler.py,259,261,False,True,False,,,b0954d47d61c,0,2,
+jinja2/compiler.py::DependencyFinderVisitor.visit_Test,function,visit_Test,DependencyFinderVisitor.visit_Test,jinja2/compiler.py,263,265,False,True,False,,,76713f8e6488,0,2,
+jinja2/compiler.py::Frame,class,Frame,Frame,jinja2/compiler.py,165,245,False,,,,,9055d656fd87,81,1,Holds compile time information for us.
+jinja2/compiler.py::Frame.__init__,function,__init__,Frame.__init__,jinja2/compiler.py,168,217,False,True,False,,,9089a614360e,2,3,
+jinja2/compiler.py::Frame.copy,function,copy,Frame.copy,jinja2/compiler.py,219,224,False,True,False,,,7c9d768f58ef,2,2,Create a copy of the current one.
+jinja2/compiler.py::Frame.inner,function,inner,Frame.inner,jinja2/compiler.py,226,230,False,True,False,,,d12b812300c4,6,3,Return an inner frame.
+jinja2/compiler.py::Frame.soft,function,soft,Frame.soft,jinja2/compiler.py,232,243,False,True,False,,,f59e11cebd1f,1,1,Return a soft frame.  A soft frame may not be modified as
+jinja2/compiler.py::MacroRef,class,MacroRef,MacroRef,jinja2/compiler.py,157,162,False,,,,,a977021f84d4,3,0,
+jinja2/compiler.py::MacroRef.__init__,function,__init__,MacroRef.__init__,jinja2/compiler.py,158,162,False,True,False,,,2cca06a0421b,1,2,
+jinja2/compiler.py::UndeclaredNameVisitor,class,UndeclaredNameVisitor,UndeclaredNameVisitor,jinja2/compiler.py,271,290,False,,,,,0c2b031d4493,1,2,A visitor that checks if a name is accessed without being
+jinja2/compiler.py::UndeclaredNameVisitor.__init__,function,__init__,UndeclaredNameVisitor.__init__,jinja2/compiler.py,277,279,False,True,False,,,8298b8dac36b,1,0,
+jinja2/compiler.py::UndeclaredNameVisitor.visit_Block,function,visit_Block,UndeclaredNameVisitor.visit_Block,jinja2/compiler.py,289,290,False,True,False,,,3734634327e1,0,1,Stop visiting a blocks.
+jinja2/compiler.py::UndeclaredNameVisitor.visit_Name,function,visit_Name,UndeclaredNameVisitor.visit_Name,jinja2/compiler.py,281,287,False,True,False,,,e02d8e4bdce4,0,2,
+jinja2/compiler.py::VisitorExit,class,VisitorExit,VisitorExit,jinja2/compiler.py,248,249,False,,,,RuntimeError,4521e1524ebd,2,0,Exception used by the `UndeclaredNameVisitor` to signal a stop.
+jinja2/compiler.py::_make_binop,function,_make_binop,_make_binop,jinja2/compiler.py,61,79,False,False,False,,,f0f5113a3cec,1,4,
+jinja2/compiler.py::_make_unop,function,_make_unop,_make_unop,jinja2/compiler.py,82,98,False,False,False,,,1a84c4244acc,1,4,
+jinja2/compiler.py::find_undeclared,function,find_undeclared,find_undeclared,jinja2/compiler.py,142,154,False,False,False,,,975f5b5eb7c1,3,5,Check if the names passed are accessed undeclared.  The return value
+jinja2/compiler.py::generate,function,generate,generate,jinja2/compiler.py,101,122,False,False,False,,,133cd3d5abc5,2,5,Generate the python source for a node tree.
+jinja2/compiler.py::has_safe_repr,function,has_safe_repr,has_safe_repr,jinja2/compiler.py,125,139,False,False,False,,,650ed7ff4511,4,0,Does the node have a safe representation?
+jinja2/compiler.py::optimizeconst,function,optimizeconst,optimizeconst,jinja2/compiler.py,45,58,False,False,False,,,cf473fda10a5,10,3,
+jinja2/constants.py,file,constants.py,,jinja2/constants.py,1,20,False,,,,,64d1675afe76,0,0,
+jinja2/debug.py,file,debug.py,,jinja2/debug.py,1,191,False,,,,,528a0dde0433,0,2,
+jinja2/debug.py::fake_traceback,function,fake_traceback,fake_traceback,jinja2/debug.py,76,147,False,False,False,,,b1a9eec25f75,1,1,Produce a new traceback object that looks like it came from the
+jinja2/debug.py::get_template_locals,function,get_template_locals,get_template_locals,jinja2/debug.py,150,191,False,False,False,,,a96e318f7756,1,2,"Based on the runtime locals, get the context that would be"
+jinja2/debug.py::rewrite_traceback_stack,function,rewrite_traceback_stack,rewrite_traceback_stack,jinja2/debug.py,14,73,False,False,False,,,f20aa8b04652,2,2,Rewrite the current exception to replace any tracebacks from
+jinja2/defaults.py,file,defaults.py,,jinja2/defaults.py,1,48,False,,,,,33c803c94828,0,4,
+jinja2/environment.py,file,environment.py,,jinja2/environment.py,1,1672,False,,,,,df489a1b8583,0,27,
+jinja2/environment.py::Environment,class,Environment,Environment,jinja2/environment.py,144,1133,False,,,,,2f008b9a341e,80,2,The core component of Jinja is the `Environment`.  It contains
+jinja2/environment.py::Environment.__init__,function,__init__,Environment.__init__,jinja2/environment.py,294,368,False,True,False,,,3055490a5000,2,4,
+jinja2/environment.py::Environment._compile,function,_compile,Environment._compile,jinja2/environment.py,703,709,False,True,False,,,897e6e0fd649,1,0,Internal hook that can be overridden to hook a different compile
+jinja2/environment.py::Environment._filter_test_common,function,_filter_test_common,Environment._filter_test_common,jinja2/environment.py,498,550,False,True,False,,,54698d28c538,2,8,
+jinja2/environment.py::Environment._generate,function,_generate,Environment._generate,jinja2/environment.py,682,701,False,True,False,,,7970169b3954,1,2,Internal hook that can be overridden to hook a different generate
+jinja2/environment.py::Environment._load_template,function,_load_template,Environment._load_template,jinja2/environment.py,957,979,False,True,False,internalcode,,72442497d59e,2,5,
+jinja2/environment.py::Environment._parse,function,_parse,Environment._parse,jinja2/environment.py,618,622,False,True,False,,,a156efefa149,2,4,Internal parsing function used by `parse` and `compile`.
+jinja2/environment.py::Environment._tokenize,function,_tokenize,Environment._tokenize,jinja2/environment.py,661,680,False,True,False,,,ff28afdd0547,1,8,Called by the parser to do the preprocessing and filtering
+jinja2/environment.py::Environment.add_extension,function,add_extension,Environment.add_extension,jinja2/environment.py,370,375,False,True,False,,,2cdd102cdf02,0,1,Adds an extension after the environment was created.
+jinja2/environment.py::Environment.call_filter,function,call_filter,Environment.call_filter,jinja2/environment.py,552,571,False,True,False,,,cdb0bd9b7777,1,3,Invoke a filter on a value the same way the compiler does.
+jinja2/environment.py::Environment.call_test,function,call_test,Environment.call_test,jinja2/environment.py,573,596,False,True,False,,,7d4067fbff45,1,3,Invoke a test on a value the same way the compiler does.
+jinja2/environment.py::Environment.compile,function,compile,Environment.compile,jinja2/environment.py,712,771,False,True,False,internalcode;typing.overload,,58beae195834,3,7,
+jinja2/environment.py::Environment.compile_expression,function,compile_expression,Environment.compile_expression,jinja2/environment.py,773,816,False,True,False,,,959576f63742,0,17,A handy helper method that returns a callable that accepts keyword
+jinja2/environment.py::Environment.compile_templates,function,compile_templates,Environment.compile_templates,jinja2/environment.py,818,897,False,True,False,,,dc7258893ddd,0,5,"Finds all the templates the loader can find, compiles them"
+jinja2/environment.py::Environment.extend,function,extend,Environment.extend,jinja2/environment.py,377,384,False,True,False,,,cfc05bb25dc4,1,0,Add the items to the instance of the environment if they do not exist
+jinja2/environment.py::Environment.from_string,function,from_string,Environment.from_string,jinja2/environment.py,1092,1111,False,True,False,,,31494d162aae,1,5,Load a template from a source string without using
+jinja2/environment.py::Environment.get_or_select_template,function,get_or_select_template,Environment.get_or_select_template,jinja2/environment.py,1073,1090,False,True,False,internalcode,,6312cc46d6f1,0,5,Use :meth:`select_template` if an iterable of template names
+jinja2/environment.py::Environment.get_template,function,get_template,Environment.get_template,jinja2/environment.py,982,1016,False,True,False,internalcode,,1527ac31402d,1,4,Load a template by name with :attr:`loader` and return a
+jinja2/environment.py::Environment.getattr,function,getattr,Environment.getattr,jinja2/environment.py,485,496,False,True,False,,,eace32518daa,3,2,Get an item or attribute of an object but prefer the attribute.
+jinja2/environment.py::Environment.getitem,function,getitem,Environment.getitem,jinja2/environment.py,466,483,False,True,False,,,3a636bc0e31d,4,3,Get an item or attribute of an object but prefer the item.
+jinja2/environment.py::Environment.handle_exception,function,handle_exception,Environment.handle_exception,jinja2/environment.py,936,942,False,True,False,,,62c1a46e9688,10,1,Exception handling helper.  This is used internally to either raise
+jinja2/environment.py::Environment.iter_extensions,function,iter_extensions,Environment.iter_extensions,jinja2/environment.py,462,464,False,True,False,,,7f37b50968a1,3,0,Iterates over the extensions by priority.
+jinja2/environment.py::Environment.join_path,function,join_path,Environment.join_path,jinja2/environment.py,944,954,False,True,False,,,fab341c32ab5,2,0,Join a template with the parent.  By default all the lookups are
+jinja2/environment.py::Environment.lex,function,lex,Environment.lex,jinja2/environment.py,624,643,False,True,False,,,3835cf61f085,1,4,Lex the given sourcecode and return a generator that yields
+jinja2/environment.py::Environment.lexer,function,lexer,Environment.lexer,jinja2/environment.py,458,460,False,True,False,property,,62694059e57e,2,2,The lexer for this environment.
+jinja2/environment.py::Environment.list_templates,function,list_templates,Environment.list_templates,jinja2/environment.py,899,934,False,True,False,,,45b08a058233,1,1,Returns a list of templates for this environment.  This requires
+jinja2/environment.py::Environment.make_globals,function,make_globals,Environment.make_globals,jinja2/environment.py,1113,1133,False,True,False,,,3dc241008ff1,2,0,Make the globals map for a template. Any given template
+jinja2/environment.py::Environment.overlay,function,overlay,Environment.overlay,jinja2/environment.py,386,455,False,True,False,,,58528bc4295a,0,6,Create a new overlay environment that shares all the data with the
+jinja2/environment.py::Environment.parse,function,parse,Environment.parse,jinja2/environment.py,599,616,False,True,False,internalcode,,6bbcfe3a0446,2,5,Parse the sourcecode and return the abstract syntax tree.  This
+jinja2/environment.py::Environment.preprocess,function,preprocess,Environment.preprocess,jinja2/environment.py,645,659,False,True,False,,,46c028c42ec3,2,1,Preprocesses the source with all extensions.  This is automatically
+jinja2/environment.py::Environment.select_template,function,select_template,Environment.select_template,jinja2/environment.py,1019,1070,False,True,False,internalcode,,05f0f72529f2,1,9,"Like :meth:`get_template`, but tries loading multiple names."
+jinja2/environment.py::Template,class,Template,Template,jinja2/environment.py,1136,1514,False,,,,,8db6dc146f54,21,2,A compiled template that can be rendered.
+jinja2/environment.py::Template.__new__,function,__new__,Template.__new__,jinja2/environment.py,1167,1214,False,True,False,,,8141a64521ea,0,5,
+jinja2/environment.py::Template.__repr__,function,__repr__,Template.__repr__,jinja2/environment.py,1509,1514,False,True,False,,,59506f520984,0,0,
+jinja2/environment.py::Template._from_namespace,function,_from_namespace,Template._from_namespace,jinja2/environment.py,1248,1273,False,True,False,classmethod,,be797c9de1aa,2,2,
+jinja2/environment.py::Template._get_default_module,function,_get_default_module,Template._get_default_module,jinja2/environment.py,1426,1450,False,True,False,internalcode,,605f0413e58d,1,4,"If a context is passed in, this means that the template was"
+jinja2/environment.py::Template._get_default_module_async,function,_get_default_module_async,Template._get_default_module_async,jinja2/environment.py,1452,1464,False,True,True,,,9f418b42c95b,0,3,
+jinja2/environment.py::Template.debug_info,function,debug_info,Template.debug_info,jinja2/environment.py,1499,1507,False,True,False,property,,963884a06e6b,1,0,The debug info mapping.
+jinja2/environment.py::Template.from_code,function,from_code,Template.from_code,jinja2/environment.py,1217,1231,False,True,False,classmethod,,ededaece9b3e,2,3,Creates a template object from compiled code and the globals.  This
+jinja2/environment.py::Template.from_module_dict,function,from_module_dict,Template.from_module_dict,jinja2/environment.py,1234,1245,False,True,False,classmethod,,9fa31c294f35,1,3,Creates a template object from a module.  This is used by the
+jinja2/environment.py::Template.generate,function,generate,Template.generate,jinja2/environment.py,1326,1348,False,True,False,,,1cc350cedfdb,1,3,For very large templates it can be useful to not render the whole
+jinja2/environment.py::Template.generate_async,function,generate_async,Template.generate_async,jinja2/environment.py,1350,1373,False,True,True,,,74a2b0743353,1,2,An async version of :meth:`generate`.  Works very similarly but
+jinja2/environment.py::Template.get_corresponding_lineno,function,get_corresponding_lineno,Template.get_corresponding_lineno,jinja2/environment.py,1482,1489,False,True,False,,,e13b0e196616,0,1,Return the source line number of a line number in the
+jinja2/environment.py::Template.is_up_to_date,function,is_up_to_date,Template.is_up_to_date,jinja2/environment.py,1492,1496,False,True,False,property,,671fc84e8c3b,1,0,If this variable is `False` there is a newer version available.
+jinja2/environment.py::Template.make_module,function,make_module,Template.make_module,jinja2/environment.py,1392,1405,False,True,False,,,2b87c1f74a76,1,4,This method works like the :attr:`module` attribute when called
+jinja2/environment.py::Template.make_module_async,function,make_module_async,Template.make_module_async,jinja2/environment.py,1407,1423,False,True,True,,,0aaf2ba87911,1,4,As template module creation can invoke template code for
+jinja2/environment.py::Template.module,function,module,Template.module,jinja2/environment.py,1467,1480,False,True,False,property,,ca6196a0a381,0,2,The template as module.  This is used for imports in the
+jinja2/environment.py::Template.new_context,function,new_context,Template.new_context,jinja2/environment.py,1375,1390,False,True,False,,,23add3fde54f,9,2,Create a new :class:`Context` for this template.  The vars
+jinja2/environment.py::Template.render,function,render,Template.render,jinja2/environment.py,1275,1295,False,True,False,,,39404c3d75d2,0,3,This method accepts the same arguments as the `dict` constructor:
+jinja2/environment.py::Template.render_async,function,render_async,Template.render_async,jinja2/environment.py,1297,1318,False,True,True,,,bcec82f9be42,1,2,This works similar to :meth:`render` but returns a coroutine
+jinja2/environment.py::Template.stream,function,stream,Template.stream,jinja2/environment.py,1320,1324,False,True,False,,,fd7b32d715f2,0,4,Works exactly like :meth:`generate` but returns a
+jinja2/environment.py::TemplateExpression,class,TemplateExpression,TemplateExpression,jinja2/environment.py,1557,1573,False,,,,,f8d922725301,2,0,The :meth:`jinja2.Environment.compile_expression` method returns an
+jinja2/environment.py::TemplateExpression.__call__,function,__call__,TemplateExpression.__call__,jinja2/environment.py,1567,1573,False,True,False,,,691705dd94bc,0,3,
+jinja2/environment.py::TemplateExpression.__init__,function,__init__,TemplateExpression.__init__,jinja2/environment.py,1563,1565,False,True,False,,,85cc6c669947,1,1,
+jinja2/environment.py::TemplateModule,class,TemplateModule,TemplateModule,jinja2/environment.py,1517,1554,False,,,,,0d3f01928fa2,7,0,Represents an imported template.  All the exported names of the
+jinja2/environment.py::TemplateModule.__html__,function,__html__,TemplateModule.__html__,jinja2/environment.py,1543,1544,False,True,False,,,bb45604c0864,0,0,
+jinja2/environment.py::TemplateModule.__init__,function,__init__,TemplateModule.__init__,jinja2/environment.py,1523,1541,False,True,False,,,a86bf5cd5a46,2,3,
+jinja2/environment.py::TemplateModule.__repr__,function,__repr__,TemplateModule.__repr__,jinja2/environment.py,1549,1554,False,True,False,,,6124cee4e854,0,0,
+jinja2/environment.py::TemplateModule.__str__,function,__str__,TemplateModule.__str__,jinja2/environment.py,1546,1547,False,True,False,,,23351a8c0d5b,0,0,
+jinja2/environment.py::TemplateStream,class,TemplateStream,TemplateStream,jinja2/environment.py,1576,1667,False,,,,,bc2caaf90d17,3,0,A template stream works pretty much like an ordinary python generator
+jinja2/environment.py::TemplateStream.__init__,function,__init__,TemplateStream.__init__,jinja2/environment.py,1587,1589,False,True,False,,,5b960dccae6b,1,1,
+jinja2/environment.py::TemplateStream.__iter__,function,__iter__,TemplateStream.__iter__,jinja2/environment.py,1663,1664,False,True,False,,,efc6add0aff7,0,1,
+jinja2/environment.py::TemplateStream.__next__,function,__next__,TemplateStream.__next__,jinja2/environment.py,1666,1667,False,True,False,,,556d2ecabf7e,0,0,
+jinja2/environment.py::TemplateStream._buffered_generator,function,_buffered_generator,TemplateStream._buffered_generator,jinja2/environment.py,1636,1653,False,True,False,,,ab8a7c2c4434,1,0,
+jinja2/environment.py::TemplateStream.disable_buffering,function,disable_buffering,TemplateStream.disable_buffering,jinja2/environment.py,1631,1634,False,True,False,,,1b608f00d6e8,1,0,Disable the output buffering.
+jinja2/environment.py::TemplateStream.dump,function,dump,TemplateStream.dump,jinja2/environment.py,1591,1629,False,True,False,,,e92ebfe03f21,0,0,Dump the complete stream into a file or file-like object.
+jinja2/environment.py::TemplateStream.enable_buffering,function,enable_buffering,TemplateStream.enable_buffering,jinja2/environment.py,1655,1661,False,True,False,,,2242da23ba4d,0,1,Enable buffering.  Buffer `size` items before yielding them.
+jinja2/environment.py::_environment_config_check,function,_environment_config_check,_environment_config_check,jinja2/environment.py,126,141,False,False,False,,,f75cc80dba7f,2,1,Perform a sanity check on the environment.
+jinja2/environment.py::copy_cache,function,copy_cache,copy_cache,jinja2/environment.py,95,105,False,False,False,,,311b3722bdc1,1,2,Create an empty copy of the given cache.
+jinja2/environment.py::create_cache,function,create_cache,create_cache,jinja2/environment.py,82,92,False,False,False,,,922981ae9886,2,2,Return the cache class for the given size.
+jinja2/environment.py::get_spontaneous_environment,function,get_spontaneous_environment,get_spontaneous_environment,jinja2/environment.py,69,79,False,False,False,lru_cache,,1d5a122c17e9,2,0,Return a new spontaneous environment. A spontaneous environment
+jinja2/environment.py::load_extensions,function,load_extensions,load_extensions,jinja2/environment.py,108,123,False,False,False,,,9fd897cf4f1f,3,2,Load the extensions from the list and bind it to the environment.
+jinja2/exceptions.py,file,exceptions.py,,jinja2/exceptions.py,1,166,False,,,,,dcc4a315066a,0,1,
+jinja2/exceptions.py::FilterArgumentError,class,FilterArgumentError,FilterArgumentError,jinja2/exceptions.py,163,166,False,,,,,9e01dce6089c,8,2,This error is raised if a filter was called with inappropriate
+jinja2/exceptions.py::SecurityError,class,SecurityError,SecurityError,jinja2/exceptions.py,157,160,False,,,,,b6101dedf9ae,3,2,Raised if a template tries to do something insecure if the
+jinja2/exceptions.py::TemplateAssertionError,class,TemplateAssertionError,TemplateAssertionError,jinja2/exceptions.py,139,144,False,,,,,7fbd520966e9,7,2,"Like a template syntax error, but covers cases where something in the"
+jinja2/exceptions.py::TemplateError,class,TemplateError,TemplateError,jinja2/exceptions.py,7,15,False,,,,Exception,74eb04f5b916,7,0,Baseclass for all template errors.
+jinja2/exceptions.py::TemplateError.__init__,function,__init__,TemplateError.__init__,jinja2/exceptions.py,10,11,False,True,False,,,e9abf8a965dd,11,0,
+jinja2/exceptions.py::TemplateError.message,function,message,TemplateError.message,jinja2/exceptions.py,14,15,False,True,False,property,,e2f19ee379ad,2,0,
+jinja2/exceptions.py::TemplateNotFound,class,TemplateNotFound,TemplateNotFound,jinja2/exceptions.py,18,50,False,,,,IOError;LookupError,f2b5757d38fb,23,2,Raised if a template does not exist.
+jinja2/exceptions.py::TemplateNotFound.__init__,function,__init__,TemplateNotFound.__init__,jinja2/exceptions.py,30,47,False,True,False,,,766584716925,13,1,
+jinja2/exceptions.py::TemplateNotFound.__str__,function,__str__,TemplateNotFound.__str__,jinja2/exceptions.py,49,50,False,True,False,,,a58ca2b91282,0,0,
+jinja2/exceptions.py::TemplateRuntimeError,class,TemplateRuntimeError,TemplateRuntimeError,jinja2/exceptions.py,147,150,False,,,,,d8f0ffc58b6b,12,2,A generic runtime error in the template engine.  Under some situations
+jinja2/exceptions.py::TemplateSyntaxError,class,TemplateSyntaxError,TemplateSyntaxError,jinja2/exceptions.py,88,136,False,,,,,13fc75ff76c6,24,2,Raised to tell the user that there is a problem with the template.
+jinja2/exceptions.py::TemplateSyntaxError.__init__,function,__init__,TemplateSyntaxError.__init__,jinja2/exceptions.py,91,106,False,True,False,,,d0b2dcffec04,7,1,
+jinja2/exceptions.py::TemplateSyntaxError.__reduce__,function,__reduce__,TemplateSyntaxError.__reduce__,jinja2/exceptions.py,131,136,False,True,False,,,f70d94c8b84c,0,2,
+jinja2/exceptions.py::TemplateSyntaxError.__str__,function,__str__,TemplateSyntaxError.__str__,jinja2/exceptions.py,108,129,False,True,False,,,e9e9cee4d258,0,1,
+jinja2/exceptions.py::TemplatesNotFound,class,TemplatesNotFound,TemplatesNotFound,jinja2/exceptions.py,53,85,False,,,,,a671848bbac9,3,2,Like :class:`TemplateNotFound` but raised if multiple templates
+jinja2/exceptions.py::TemplatesNotFound.__init__,function,__init__,TemplatesNotFound.__init__,jinja2/exceptions.py,65,85,False,True,False,,,813f1ec8231c,1,2,
+jinja2/exceptions.py::UndefinedError,class,UndefinedError,UndefinedError,jinja2/exceptions.py,153,154,False,,,,,0b1137a53efd,5,2,Raised if a template tries to operate on :class:`Undefined`.
+jinja2/ext.py,file,ext.py,,jinja2/ext.py,1,870,False,,,,,1877575d1a80,0,16,
+jinja2/ext.py::DebugExtension,class,DebugExtension,DebugExtension,jinja2/ext.py,615,652,False,,,,,b9f6b4ee6475,1,2,"A ``{% debug %}`` tag that dumps the available variables,"
+jinja2/ext.py::DebugExtension._render,function,_render,DebugExtension._render,jinja2/ext.py,644,652,False,True,False,,,40251bb0b7ed,0,2,
+jinja2/ext.py::DebugExtension.parse,function,parse,DebugExtension.parse,jinja2/ext.py,638,642,False,True,False,,,6dab9938db07,0,7,
+jinja2/ext.py::ExprStmtExtension,class,ExprStmtExtension,ExprStmtExtension,jinja2/ext.py,590,600,False,,,,,fdbbaf5c1c3b,1,2,Adds a `do` tag to Jinja that works like the print statement just
+jinja2/ext.py::ExprStmtExtension.parse,function,parse,ExprStmtExtension.parse,jinja2/ext.py,597,600,False,True,False,,,f6173ab26feb,0,6,
+jinja2/ext.py::Extension,class,Extension,Extension,jinja2/ext.py,55,161,False,,,,,a69e3edc4747,12,0,Extensions can be used to add extra functionality to the Jinja template
+jinja2/ext.py::Extension.__init__,function,__init__,Extension.__init__,jinja2/ext.py,89,90,False,True,False,,,6ef028c2d0b9,1,1,
+jinja2/ext.py::Extension.__init_subclass__,function,__init_subclass__,Extension.__init_subclass__,jinja2/ext.py,76,77,False,True,False,,,062202b49136,0,1,
+jinja2/ext.py::Extension.attr,function,attr,Extension.attr,jinja2/ext.py,126,136,False,True,False,,,d95b493dcae0,1,3,Return an attribute node for the current extension.  This is useful
+jinja2/ext.py::Extension.bind,function,bind,Extension.bind,jinja2/ext.py,92,97,False,True,False,,,0c1b064964b6,0,2,Create a copy of this extension bound to another environment.
+jinja2/ext.py::Extension.call_method,function,call_method,Extension.call_method,jinja2/ext.py,138,161,False,True,False,,,51951b326477,1,6,Call a method of the extension.  This is a shortcut for
+jinja2/ext.py::Extension.filter_stream,function,filter_stream,Extension.filter_stream,jinja2/ext.py,108,116,False,True,False,,,48a5e98c1750,1,1,It's passed a :class:`~jinja2.lexer.TokenStream` that can be used
+jinja2/ext.py::Extension.parse,function,parse,Extension.parse,jinja2/ext.py,118,124,False,True,False,,,de14f3645460,1,2,If any of the :attr:`tags` matched this method is called with the
+jinja2/ext.py::Extension.preprocess,function,preprocess,Extension.preprocess,jinja2/ext.py,99,106,False,True,False,,,da19a5814a93,0,0,This method is called before the actual lexing and can be used to
+jinja2/ext.py::InternationalizationExtension,class,InternationalizationExtension,InternationalizationExtension,jinja2/ext.py,246,587,False,,,,,21bb6e263482,2,2,This extension adds gettext support to Jinja.
+jinja2/ext.py::InternationalizationExtension.__init__,function,__init__,InternationalizationExtension.__init__,jinja2/ext.py,258,268,False,True,False,,,2853fe979c20,0,9,
+jinja2/ext.py::InternationalizationExtension._extract,function,_extract,InternationalizationExtension._extract,jinja2/ext.py,344,353,False,True,False,,,ac16ac3c33dc,1,3,
+jinja2/ext.py::InternationalizationExtension._install,function,_install,InternationalizationExtension._install,jinja2/ext.py,270,286,False,True,False,,,626db7fd2c79,1,1,
+jinja2/ext.py::InternationalizationExtension._install_callables,function,_install_callables,InternationalizationExtension._install_callables,jinja2/ext.py,316,338,False,True,False,,,d609f1a3c0fa,3,4,
+jinja2/ext.py::InternationalizationExtension._install_null,function,_install_null,InternationalizationExtension._install_null,jinja2/ext.py,288,314,False,True,False,,,8b4b83d933fb,1,1,
+jinja2/ext.py::InternationalizationExtension._make_node,function,_make_node,InternationalizationExtension._make_node,jinja2/ext.py,527,587,False,True,False,,,cc1af4bb2cf3,1,12,Generates a useful node from the data provided.
+jinja2/ext.py::InternationalizationExtension._parse_block,function,_parse_block,InternationalizationExtension._parse_block,jinja2/ext.py,480,525,False,True,False,,,e0de48a56107,1,5,Parse until the next block tag with a given name.
+jinja2/ext.py::InternationalizationExtension._trim_whitespace,function,_trim_whitespace,InternationalizationExtension._trim_whitespace,jinja2/ext.py,477,478,False,True,False,,,76b10dd43981,1,0,
+jinja2/ext.py::InternationalizationExtension._uninstall,function,_uninstall,InternationalizationExtension._uninstall,jinja2/ext.py,340,342,False,True,False,,,f5e85381a4b7,1,0,
+jinja2/ext.py::InternationalizationExtension.parse,function,parse,InternationalizationExtension.parse,jinja2/ext.py,355,475,False,True,False,,,db5726b0d61b,0,19,Parse a translatable tag.
+jinja2/ext.py::LoopControlExtension,class,LoopControlExtension,LoopControlExtension,jinja2/ext.py,603,612,False,,,,,3eb992f96cae,1,2,Adds break and continue to the template engine.
+jinja2/ext.py::LoopControlExtension.parse,function,parse,LoopControlExtension.parse,jinja2/ext.py,608,612,False,True,False,,,728d7c1d7b35,0,7,
+jinja2/ext.py::_CommentFinder,class,_CommentFinder,_CommentFinder,jinja2/ext.py,734,771,False,,,,,0a5d642a1d44,1,0,Helper class to find comments in a token stream.  Can only
+jinja2/ext.py::_CommentFinder.__init__,function,__init__,_CommentFinder.__init__,jinja2/ext.py,741,747,False,True,False,,,6088d7ca2f52,1,0,
+jinja2/ext.py::_CommentFinder.find_backwards,function,find_backwards,_CommentFinder.find_backwards,jinja2/ext.py,749,763,False,True,False,,,95a7a29c143b,1,0,
+jinja2/ext.py::_CommentFinder.find_comments,function,find_comments,_CommentFinder.find_comments,jinja2/ext.py,765,771,False,True,False,,,2c736fc632e9,1,1,
+jinja2/ext.py::_TranslationsBasic,class,_TranslationsBasic,_TranslationsBasic,jinja2/ext.py,27,31,False,,,,te.Protocol,8234b8c65c25,3,0,
+jinja2/ext.py::_TranslationsBasic.gettext,function,gettext,_TranslationsBasic.gettext,jinja2/ext.py,28,28,False,True,False,,,e6ccc6e3bf8a,0,0,
+jinja2/ext.py::_TranslationsBasic.ngettext,function,ngettext,_TranslationsBasic.ngettext,jinja2/ext.py,30,31,False,True,False,,,24c7ca036941,0,0,
+jinja2/ext.py::_TranslationsContext,class,_TranslationsContext,_TranslationsContext,jinja2/ext.py,33,38,False,,,,,871e468bc3a7,1,2,
+jinja2/ext.py::_TranslationsContext.npgettext,function,npgettext,_TranslationsContext.npgettext,jinja2/ext.py,36,38,False,True,False,,,ce174b1a3eeb,0,0,
+jinja2/ext.py::_TranslationsContext.pgettext,function,pgettext,_TranslationsContext.pgettext,jinja2/ext.py,34,34,False,True,False,,,20e33a6f22a1,0,0,
+jinja2/ext.py::_gettext_alias,function,_gettext_alias,_gettext_alias,jinja2/ext.py,165,168,False,False,False,pass_context,,b3cb9a899a5b,1,5,
+jinja2/ext.py::_make_new_gettext,function,_make_new_gettext,_make_new_gettext,jinja2/ext.py,171,182,False,False,False,,,fea782f9cfdb,1,2,
+jinja2/ext.py::_make_new_ngettext,function,_make_new_ngettext,_make_new_ngettext,jinja2/ext.py,185,201,False,False,False,,,5eacd426f685,1,2,
+jinja2/ext.py::_make_new_npgettext,function,_make_new_npgettext,_make_new_npgettext,jinja2/ext.py,221,243,False,False,False,,,3f7dc26e2eea,1,2,
+jinja2/ext.py::_make_new_pgettext,function,_make_new_pgettext,_make_new_pgettext,jinja2/ext.py,204,218,False,False,False,,,33dd706c1a9a,1,2,
+jinja2/ext.py::babel_extract,function,babel_extract,babel_extract,jinja2/ext.py,774,863,False,False,False,,,57930a255806,0,13,Babel extraction method for Jinja templates.
+jinja2/ext.py::extract_from_ast,function,extract_from_ast,extract_from_ast,jinja2/ext.py,655,731,False,False,False,,,3cc84970beb8,2,5,Extract localizable strings from the given template node.  Per
+jinja2/filters.py,file,filters.py,,jinja2/filters.py,1,1873,False,,,,,43ccd078892a,0,64,
+jinja2/filters.py::HasHTML,class,HasHTML,HasHTML,jinja2/filters.py,39,41,False,,,,te.Protocol,149448194eea,2,0,
+jinja2/filters.py::HasHTML.__html__,function,__html__,HasHTML.__html__,jinja2/filters.py,40,41,False,True,False,,,b3ec60598737,0,0,
+jinja2/filters.py::_GroupTuple,class,_GroupTuple,_GroupTuple,jinja2/filters.py,1188,1198,False,,,,t.NamedTuple,8bba1c2adf80,4,0,
+jinja2/filters.py::_GroupTuple.__repr__,function,__repr__,_GroupTuple.__repr__,jinja2/filters.py,1194,1195,False,True,False,,,942d82b5962f,0,0,
+jinja2/filters.py::_GroupTuple.__str__,function,__str__,_GroupTuple.__str__,jinja2/filters.py,1197,1198,False,True,False,,,e6069c8545a4,0,0,
+jinja2/filters.py::_min_or_max,function,_min_or_max,_min_or_max,jinja2/filters.py,486,503,False,False,False,,,2527e1951f33,2,6,
+jinja2/filters.py::_prepare_attribute_parts,function,_prepare_attribute_parts,_prepare_attribute_parts,jinja2/filters.py,127,136,False,False,False,,,b29d03cc7d43,2,0,
+jinja2/filters.py::async_select_or_reject,function,async_select_or_reject,async_select_or_reject,jinja2/filters.py,1802,1815,False,False,True,,,895942c1cee5,4,3,
+jinja2/filters.py::do_attr,function,do_attr,do_attr,jinja2/filters.py,1412,1433,False,False,False,pass_environment,,d7d23bf64a1f,1,6,"Get an attribute of an object. ``foo|attr(""bar"")`` works like"
+jinja2/filters.py::do_batch,function,do_batch,do_batch,jinja2/filters.py,1111,1145,False,False,False,,,141e276142f9,1,0,A filter that batches items. It works pretty much like `slice`
+jinja2/filters.py::do_capitalize,function,do_capitalize,do_capitalize,jinja2/filters.py,321,325,False,False,False,,,634f9790f452,1,0,"Capitalize a value. The first character will be uppercase, all others"
+jinja2/filters.py::do_center,function,do_center,do_center,jinja2/filters.py,647,649,False,False,False,,,a3e1e4bf97e7,1,0,Centers the value in a field of a given width.
+jinja2/filters.py::do_default,function,do_default,do_default,jinja2/filters.py,546,576,False,False,False,,,9bbd0ea3377d,1,1,"If the value is undefined it will return the passed default value,"
+jinja2/filters.py::do_dictsort,function,do_dictsort,do_dictsort,jinja2/filters.py,344,382,False,False,False,,,edbe77cd9833,1,3,"Sort a dict and yield (key, value) pairs. Python dicts may not"
+jinja2/filters.py::do_filesizeformat,function,do_filesizeformat,do_filesizeformat,jinja2/filters.py,704,734,False,False,False,,,391d52aed443,1,0,"Format the value like a 'human-readable' file size (i.e. 13 kB,"
+jinja2/filters.py::do_first,function,do_first,do_first,jinja2/filters.py,664,670,False,False,True,async_variant,,6f8342b044e0,1,7,
+jinja2/filters.py::do_float,function,do_float,do_float,jinja2/filters.py,1007,1015,False,False,False,,,759b16af07cd,1,0,Convert the value into a floating point number. If the
+jinja2/filters.py::do_forceescape,function,do_forceescape,do_forceescape,jinja2/filters.py,139,144,False,False,False,,,492777104f1d,1,1,Enforce HTML escaping.  This will probably double escape variables.
+jinja2/filters.py::do_format,function,do_format,do_format,jinja2/filters.py,1018,1043,False,False,False,,,abb669a40df8,1,2,"Apply the given values to a `printf-style`_ format string, like"
+jinja2/filters.py::do_groupby,function,do_groupby,do_groupby,jinja2/filters.py,1286,1309,False,False,True,async_variant,,9041c81c6950,1,8,
+jinja2/filters.py::do_indent,function,do_indent,do_indent,jinja2/filters.py,825,870,False,False,False,,,7b6a151d6a22,1,0,Return a copy of the string with each line indented by 4 spaces. The
+jinja2/filters.py::do_int,function,do_int,do_int,jinja2/filters.py,985,1004,False,False,False,,,f7c1d80904f2,1,0,Convert the value into an integer. If the
+jinja2/filters.py::do_items,function,do_items,do_items,jinja2/filters.py,224,251,False,False,False,,,72fea4f592bf,1,1,"Return an iterator over the ``(key, value)`` items of a mapping."
+jinja2/filters.py::do_join,function,do_join,do_join,jinja2/filters.py,638,644,False,False,True,async_variant,,c0aab6b95ad4,1,5,
+jinja2/filters.py::do_last,function,do_last,do_last,jinja2/filters.py,674,689,False,False,False,pass_environment,,da84a2de6275,1,5,Return the last item of a sequence.
+jinja2/filters.py::do_list,function,do_list,do_list,jinja2/filters.py,1369,1370,False,False,True,async_variant,,614c8b8907a6,1,3,
+jinja2/filters.py::do_lower,function,do_lower,do_lower,jinja2/filters.py,219,221,False,False,False,,,eec956b20011,1,0,Convert a value to lowercase.
+jinja2/filters.py::do_map,function,do_map,do_map,jinja2/filters.py,1507,1537,False,False,False,async_variant;typing.overload,,acb8ca827640,1,6,
+jinja2/filters.py::do_mark_safe,function,do_mark_safe,do_mark_safe,jinja2/filters.py,1373,1377,False,False,False,,,c8af3a2b1a26,1,0,Mark the value as safe which means that in an environment with automatic
+jinja2/filters.py::do_mark_unsafe,function,do_mark_unsafe,do_mark_unsafe,jinja2/filters.py,1380,1382,False,False,False,,,d59a5eda56bf,0,0,Mark a value as unsafe.  This is the reverse operation for :func:`safe`.
+jinja2/filters.py::do_max,function,do_max,do_max,jinja2/filters.py,527,543,False,False,False,pass_environment,,c127912b6f37,1,4,Return the largest item from the sequence.
+jinja2/filters.py::do_min,function,do_min,do_min,jinja2/filters.py,507,523,False,False,False,pass_environment,,055b9321eff4,1,4,Return the smallest item from the sequence.
+jinja2/filters.py::do_pprint,function,do_pprint,do_pprint,jinja2/filters.py,737,739,False,False,False,,,f73ab978f0d1,1,1,Pretty print a variable. Useful for debugging.
+jinja2/filters.py::do_random,function,do_random,do_random,jinja2/filters.py,696,701,False,False,False,pass_context,,e2fdf057db72,1,5,Return a random item from the sequence.
+jinja2/filters.py::do_reject,function,do_reject,do_reject,jinja2/filters.py,1608,1614,False,False,True,async_variant,,0b36062f09ab,1,4,
+jinja2/filters.py::do_rejectattr,function,do_rejectattr,do_rejectattr,jinja2/filters.py,1686,1692,False,False,True,async_variant,,f30cbf5393d2,1,4,
+jinja2/filters.py::do_replace,function,do_replace,do_replace,jinja2/filters.py,179,211,False,False,False,pass_eval_context,,172566323844,1,2,Return a copy of the value with all occurrences of a substring
+jinja2/filters.py::do_reverse,function,do_reverse,do_reverse,jinja2/filters.py,1386,1408,False,False,False,typing.overload,,44dd04ccd6df,1,2,
+jinja2/filters.py::do_round,function,do_round,do_round,jinja2/filters.py,1148,1185,False,False,False,,,12085c986077,1,2,Round the number to a given precision. The first
+jinja2/filters.py::do_select,function,do_select,do_select,jinja2/filters.py,1572,1578,False,False,True,async_variant,,2df1d881c717,1,4,
+jinja2/filters.py::do_selectattr,function,do_selectattr,do_selectattr,jinja2/filters.py,1648,1654,False,False,True,async_variant,,014d29302267,1,4,
+jinja2/filters.py::do_slice,function,do_slice,do_slice,jinja2/filters.py,1103,1108,False,False,True,async_variant,,8726d726becf,1,4,
+jinja2/filters.py::do_sort,function,do_sort,do_sort,jinja2/filters.py,386,438,False,False,False,pass_environment,,5fff7af4ce04,1,4,Sort an iterable using Python's :func:`sorted`.
+jinja2/filters.py::do_striptags,function,do_striptags,do_striptags,jinja2/filters.py,1051,1056,False,False,False,,,48f9b3f4f9d0,1,1,Strip SGML/XML tags and replace adjacent whitespace by one space.
+jinja2/filters.py::do_sum,function,do_sum,do_sum,jinja2/filters.py,1340,1358,False,False,True,async_variant,,ebffc4fb9a77,1,5,
+jinja2/filters.py::do_title,function,do_title,do_title,jinja2/filters.py,331,341,False,False,False,,,e486d3fd1fef,1,0,Return a titlecased version of the value. I.e. words will start with
+jinja2/filters.py::do_tojson,function,do_tojson,do_tojson,jinja2/filters.py,1696,1721,False,False,False,pass_eval_context,,6e5911458d90,1,3,"Serialize an object to a string of JSON, and mark it safe to"
+jinja2/filters.py::do_trim,function,do_trim,do_trim,jinja2/filters.py,1046,1048,False,False,False,,,c18c5f21eec8,1,0,"Strip leading and trailing characters, by default whitespace."
+jinja2/filters.py::do_truncate,function,do_truncate,do_truncate,jinja2/filters.py,874,918,False,False,False,pass_environment,,6451e294a921,1,2,Return a truncated copy of the string. The length is specified
+jinja2/filters.py::do_unique,function,do_unique,do_unique,jinja2/filters.py,475,483,False,False,True,async_variant,,e83d018be54d,1,5,
+jinja2/filters.py::do_upper,function,do_upper,do_upper,jinja2/filters.py,214,216,False,False,False,,,8eebf2ed79b0,1,0,Convert a value to uppercase.
+jinja2/filters.py::do_urlencode,function,do_urlencode,do_urlencode,jinja2/filters.py,147,175,False,False,False,,,372e5d5964ee,1,1,Quote data for use in a URL path or query using UTF-8.
+jinja2/filters.py::do_urlize,function,do_urlize,do_urlize,jinja2/filters.py,746,822,False,False,False,pass_eval_context,,9750b39689bf,1,5,Convert URLs in text into clickable links.
+jinja2/filters.py::do_wordcount,function,do_wordcount,do_wordcount,jinja2/filters.py,980,982,False,False,False,,,cdc81dfbe427,1,0,Count the words in that string.
+jinja2/filters.py::do_wordwrap,function,do_wordwrap,do_wordwrap,jinja2/filters.py,922,974,False,False,False,pass_environment,,b091c11233bd,1,2,Wrap a string to the given width. Existing newlines are treated
+jinja2/filters.py::do_xmlattr,function,do_xmlattr,do_xmlattr,jinja2/filters.py,260,318,False,False,False,pass_eval_context,,34357eb4ee70,1,3,Create an SGML/XML attribute string based on the items in a dict.
+jinja2/filters.py::ignore_case,function,ignore_case,ignore_case,jinja2/filters.py,49,55,False,False,False,,,cc46ee77d285,6,0,For use as a postprocessor for :func:`make_attrgetter`. Converts strings
+jinja2/filters.py::make_attrgetter,function,make_attrgetter,make_attrgetter,jinja2/filters.py,58,83,False,False,False,,,4bcb0014177a,9,4,Returns a callable that looks up the given attribute from a
+jinja2/filters.py::make_multi_attrgetter,function,make_multi_attrgetter,make_multi_attrgetter,jinja2/filters.py,86,124,False,False,False,,,562c2d141047,1,3,Returns a callable that looks up the given comma separated
+jinja2/filters.py::prepare_map,function,prepare_map,prepare_map,jinja2/filters.py,1724,1749,False,False,False,,,2f87fcb0c535,2,5,
+jinja2/filters.py::prepare_select_or_reject,function,prepare_select_or_reject,prepare_select_or_reject,jinja2/filters.py,1752,1783,False,False,False,,,1a2c7eea9e85,2,5,
+jinja2/filters.py::select_or_reject,function,select_or_reject,select_or_reject,jinja2/filters.py,1786,1799,False,False,False,,,126ea0fcc7b0,4,2,
+jinja2/filters.py::sync_do_first,function,sync_do_first,sync_do_first,jinja2/filters.py,653,660,False,False,False,pass_environment,,912fee3fcac2,1,5,Return the first item of a sequence.
+jinja2/filters.py::sync_do_groupby,function,sync_do_groupby,sync_do_groupby,jinja2/filters.py,1202,1282,False,False,False,pass_environment,,809bcf37cbd8,1,6,Group a sequence of objects by an attribute using Python's
+jinja2/filters.py::sync_do_join,function,sync_do_join,sync_do_join,jinja2/filters.py,580,634,False,False,False,pass_eval_context,,ac61179bcb7d,2,3,Return a string which is the concatenation of the strings in the
+jinja2/filters.py::sync_do_list,function,sync_do_list,sync_do_list,jinja2/filters.py,1361,1365,False,False,False,,,2ccf806b53fc,1,0,Convert the value into a list.  If it was a string the returned list
+jinja2/filters.py::sync_do_map,function,sync_do_map,sync_do_map,jinja2/filters.py,1437,1503,False,False,False,pass_context;typing.overload,,bd6c07e7370a,1,3,
+jinja2/filters.py::sync_do_reject,function,sync_do_reject,sync_do_reject,jinja2/filters.py,1582,1604,False,False,False,pass_context,,afd92457fe55,1,3,"Filters a sequence of objects by applying a test to each object,"
+jinja2/filters.py::sync_do_rejectattr,function,sync_do_rejectattr,sync_do_rejectattr,jinja2/filters.py,1658,1682,False,False,False,pass_context,,11e4c25cc38a,1,3,Filters a sequence of objects by applying a test to the specified
+jinja2/filters.py::sync_do_select,function,sync_do_select,sync_do_select,jinja2/filters.py,1541,1568,False,False,False,pass_context,,cb3efa62dee5,1,3,"Filters a sequence of objects by applying a test to each object,"
+jinja2/filters.py::sync_do_selectattr,function,sync_do_selectattr,sync_do_selectattr,jinja2/filters.py,1618,1644,False,False,False,pass_context,,7ec5c7900da6,1,3,Filters a sequence of objects by applying a test to the specified
+jinja2/filters.py::sync_do_slice,function,sync_do_slice,sync_do_slice,jinja2/filters.py,1059,1099,False,False,False,,,3ab0fbace9eb,2,0,Slice an iterator and return a list of lists containing
+jinja2/filters.py::sync_do_sum,function,sync_do_sum,sync_do_sum,jinja2/filters.py,1313,1336,False,False,False,pass_environment,,ce9508cf7207,1,3,Returns the sum of a sequence of numbers plus the value of parameter
+jinja2/filters.py::sync_do_unique,function,sync_do_unique,sync_do_unique,jinja2/filters.py,442,471,False,False,False,pass_environment,,b2533d8ce19a,2,4,Returns a list of unique items from the given iterable.
+jinja2/idtracking.py,file,idtracking.py,,jinja2/idtracking.py,1,318,False,,,,,36fd256b7485,0,1,
+jinja2/idtracking.py::FrameSymbolVisitor,class,FrameSymbolVisitor,FrameSymbolVisitor,jinja2/idtracking.py,232,318,False,,,,,76d204383ed0,2,2,A visitor for `Frame.inspect`.
+jinja2/idtracking.py::FrameSymbolVisitor.__init__,function,__init__,FrameSymbolVisitor.__init__,jinja2/idtracking.py,235,236,False,True,False,,,29a8b5706401,2,1,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_Assign,function,visit_Assign,FrameSymbolVisitor.visit_Assign,jinja2/idtracking.py,286,289,False,True,False,,,2beed4636943,0,2,Visit assignments in the correct order.
+jinja2/idtracking.py::FrameSymbolVisitor.visit_AssignBlock,function,visit_AssignBlock,FrameSymbolVisitor.visit_AssignBlock,jinja2/idtracking.py,307,309,False,True,False,,,db79ea107e62,0,2,Stop visiting at block assigns.
+jinja2/idtracking.py::FrameSymbolVisitor.visit_Block,function,visit_Block,FrameSymbolVisitor.visit_Block,jinja2/idtracking.py,314,315,False,True,False,,,f491988d2ecb,0,1,Stop visiting at blocks.
+jinja2/idtracking.py::FrameSymbolVisitor.visit_CallBlock,function,visit_CallBlock,FrameSymbolVisitor.visit_CallBlock,jinja2/idtracking.py,297,298,False,True,False,,,26ec0d5aea23,0,2,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_FilterBlock,function,visit_FilterBlock,FrameSymbolVisitor.visit_FilterBlock,jinja2/idtracking.py,300,301,False,True,False,,,0b7d9cb8ad7d,0,2,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_For,function,visit_For,FrameSymbolVisitor.visit_For,jinja2/idtracking.py,291,295,False,True,False,,,e3d8fb66f658,0,2,Visiting stops at for blocks.  However the block sequence
+jinja2/idtracking.py::FrameSymbolVisitor.visit_FromImport,function,visit_FromImport,FrameSymbolVisitor.visit_FromImport,jinja2/idtracking.py,277,284,False,True,False,,,43ea8219a639,0,2,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_If,function,visit_If,FrameSymbolVisitor.visit_If,jinja2/idtracking.py,252,268,False,True,False,,,32695ef74258,0,3,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_Import,function,visit_Import,FrameSymbolVisitor.visit_Import,jinja2/idtracking.py,273,275,False,True,False,,,996ced5412d0,0,2,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_Macro,function,visit_Macro,FrameSymbolVisitor.visit_Macro,jinja2/idtracking.py,270,271,False,True,False,,,d157c2679c83,0,1,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_NSRef,function,visit_NSRef,FrameSymbolVisitor.visit_NSRef,jinja2/idtracking.py,249,250,False,True,False,,,44472a406369,0,1,
+jinja2/idtracking.py::FrameSymbolVisitor.visit_Name,function,visit_Name,FrameSymbolVisitor.visit_Name,jinja2/idtracking.py,238,247,False,True,False,,,a985b1fef741,0,1,All assignments to names go through this function.
+jinja2/idtracking.py::FrameSymbolVisitor.visit_OverlayScope,function,visit_OverlayScope,FrameSymbolVisitor.visit_OverlayScope,jinja2/idtracking.py,317,318,False,True,False,,,6e2c5fe0bf41,0,1,Do not visit into overlay scopes.
+jinja2/idtracking.py::FrameSymbolVisitor.visit_Scope,function,visit_Scope,FrameSymbolVisitor.visit_Scope,jinja2/idtracking.py,311,312,False,True,False,,,cca88487ba35,0,1,Stop visiting at scopes.
+jinja2/idtracking.py::FrameSymbolVisitor.visit_With,function,visit_With,FrameSymbolVisitor.visit_With,jinja2/idtracking.py,303,305,False,True,False,,,e4a0159badc9,0,2,
+jinja2/idtracking.py::RootVisitor,class,RootVisitor,RootVisitor,jinja2/idtracking.py,174,229,False,,,,,865da8162205,1,3,
+jinja2/idtracking.py::RootVisitor.__init__,function,__init__,RootVisitor.__init__,jinja2/idtracking.py,175,176,False,True,False,,,d66ad28d5a5b,1,3,
+jinja2/idtracking.py::RootVisitor._simple_visit,function,_simple_visit,RootVisitor._simple_visit,jinja2/idtracking.py,178,180,False,True,False,,,003ae822eea9,1,3,
+jinja2/idtracking.py::RootVisitor.generic_visit,function,generic_visit,RootVisitor.generic_visit,jinja2/idtracking.py,228,229,False,True,False,,,12f0205114d5,0,1,
+jinja2/idtracking.py::RootVisitor.visit_AssignBlock,function,visit_AssignBlock,RootVisitor.visit_AssignBlock,jinja2/idtracking.py,190,192,False,True,False,,,368a7d20088c,0,2,
+jinja2/idtracking.py::RootVisitor.visit_CallBlock,function,visit_CallBlock,RootVisitor.visit_CallBlock,jinja2/idtracking.py,194,196,False,True,False,,,73e0b39d98fe,0,3,
+jinja2/idtracking.py::RootVisitor.visit_For,function,visit_For,RootVisitor.visit_For,jinja2/idtracking.py,202,220,False,True,False,,,47f4213b79e1,0,2,
+jinja2/idtracking.py::RootVisitor.visit_OverlayScope,function,visit_OverlayScope,RootVisitor.visit_OverlayScope,jinja2/idtracking.py,198,200,False,True,False,,,3e5f4562db7b,0,2,
+jinja2/idtracking.py::RootVisitor.visit_With,function,visit_With,RootVisitor.visit_With,jinja2/idtracking.py,222,226,False,True,False,,,c94b7e2df391,0,2,
+jinja2/idtracking.py::Symbols,class,Symbols,Symbols,jinja2/idtracking.py,33,171,False,,,,,925a5ad6852f,12,0,
+jinja2/idtracking.py::Symbols.__init__,function,__init__,Symbols.__init__,jinja2/idtracking.py,34,47,False,True,False,,,326713caa18a,3,0,
+jinja2/idtracking.py::Symbols._define_ref,function,_define_ref,Symbols._define_ref,jinja2/idtracking.py,53,60,False,True,False,,,fb43a0574196,3,0,
+jinja2/idtracking.py::Symbols.analyze_node,function,analyze_node,Symbols.analyze_node,jinja2/idtracking.py,49,51,False,True,False,,,8b9dd4710ab5,8,4,
+jinja2/idtracking.py::Symbols.branch_update,function,branch_update,Symbols.branch_update,jinja2/idtracking.py,123,145,False,True,False,,,f8fab1c356dc,0,1,
+jinja2/idtracking.py::Symbols.copy,function,copy,Symbols.copy,jinja2/idtracking.py,89,95,False,True,False,,,749448905e4d,1,1,
+jinja2/idtracking.py::Symbols.declare_parameter,function,declare_parameter,Symbols.declare_parameter,jinja2/idtracking.py,115,117,False,True,False,,,e91753ccd1b2,2,1,
+jinja2/idtracking.py::Symbols.dump_param_targets,function,dump_param_targets,Symbols.dump_param_targets,jinja2/idtracking.py,160,171,False,True,False,,,f79c30f4c030,1,1,
+jinja2/idtracking.py::Symbols.dump_stores,function,dump_stores,Symbols.dump_stores,jinja2/idtracking.py,147,158,False,True,False,,,3a43e613c7a6,1,2,
+jinja2/idtracking.py::Symbols.find_load,function,find_load,Symbols.find_load,jinja2/idtracking.py,62,69,False,True,False,,,fdcc5a226b13,1,0,
+jinja2/idtracking.py::Symbols.find_ref,function,find_ref,Symbols.find_ref,jinja2/idtracking.py,71,78,False,True,False,,,17f75847aa40,5,0,
+jinja2/idtracking.py::Symbols.load,function,load,Symbols.load,jinja2/idtracking.py,119,121,False,True,False,,,76c2f441f970,0,2,
+jinja2/idtracking.py::Symbols.ref,function,ref,Symbols.ref,jinja2/idtracking.py,80,87,False,True,False,,,c80ba6a3d3c2,7,1,
+jinja2/idtracking.py::Symbols.store,function,store,Symbols.store,jinja2/idtracking.py,97,113,False,True,False,,,b465baa7aa1b,0,2,
+jinja2/idtracking.py::find_symbols,function,find_symbols,find_symbols,jinja2/idtracking.py,15,22,False,False,False,,,ef91702db9a7,0,7,
+jinja2/idtracking.py::symbols_for_node,function,symbols_for_node,symbols_for_node,jinja2/idtracking.py,25,30,False,False,False,,,1200cb721bd9,0,5,
+jinja2/lexer.py,file,lexer.py,,jinja2/lexer.py,1,868,False,,,,,6fd3ef4a01be,0,5,
+jinja2/lexer.py::Failure,class,Failure,Failure,jinja2/lexer.py,254,266,False,,,,,c8daf76b2b59,3,0,Class that raises a `TemplateSyntaxError` if called.
+jinja2/lexer.py::Failure.__call__,function,__call__,Failure.__call__,jinja2/lexer.py,265,266,False,True,False,,,40fa547fd93d,0,2,
+jinja2/lexer.py::Failure.__init__,function,__init__,Failure.__init__,jinja2/lexer.py,259,263,False,True,False,,,11ec08036daf,1,1,
+jinja2/lexer.py::Lexer,class,Lexer,Lexer,jinja2/lexer.py,471,868,False,,,,,c607e2eaf524,4,0,Class that implements a lexer for a given environment. Automatically
+jinja2/lexer.py::Lexer.__init__,function,__init__,Lexer.__init__,jinja2/lexer.py,479,596,False,True,False,,,be5019737876,1,8,
+jinja2/lexer.py::Lexer._normalize_newlines,function,_normalize_newlines,Lexer._normalize_newlines,jinja2/lexer.py,598,602,False,True,False,,,977f87119f69,1,0,Replace all newlines with the configured sequence in strings
+jinja2/lexer.py::Lexer.tokeniter,function,tokeniter,Lexer.tokeniter,jinja2/lexer.py,669,868,False,True,False,,,a26d8b361987,2,4,This method tokenizes the text and returns the tokens in a
+jinja2/lexer.py::Lexer.tokenize,function,tokenize,Lexer.tokenize,jinja2/lexer.py,604,613,False,True,False,,,aca4cdb2eab1,1,5,Calls tokeniter + tokenize and wraps it in a token stream.
+jinja2/lexer.py::Lexer.wrap,function,wrap,Lexer.wrap,jinja2/lexer.py,615,667,False,True,False,,,a4aa83e36a41,1,5,This is called with the stream as returned by `tokenize` and wraps
+jinja2/lexer.py::OptionalLStrip,class,OptionalLStrip,OptionalLStrip,jinja2/lexer.py,452,462,False,,,,tuple,b671ea1089b9,3,0,A special tuple for marking a point in the state that can have
+jinja2/lexer.py::OptionalLStrip.__new__,function,__new__,OptionalLStrip.__new__,jinja2/lexer.py,461,462,False,True,False,,,8e4522530d77,1,1,
+jinja2/lexer.py::Token,class,Token,Token,jinja2/lexer.py,269,294,False,,,,t.NamedTuple,de9fd4c774e1,13,0,
+jinja2/lexer.py::Token.__str__,function,__str__,Token.__str__,jinja2/lexer.py,274,275,False,True,False,,,6a7abf16c874,0,1,
+jinja2/lexer.py::Token.test,function,test,Token.test,jinja2/lexer.py,277,290,False,True,False,,,fee3ac11b2ed,5,0,Test a token against a token expression.  This can either be a
+jinja2/lexer.py::Token.test_any,function,test_any,Token.test_any,jinja2/lexer.py,292,294,False,True,False,,,200e4af874ac,0,1,Test against multiple token expressions.
+jinja2/lexer.py::TokenStream,class,TokenStream,TokenStream,jinja2/lexer.py,319,425,False,,,,,a853ed399e64,8,0,A token stream is an iterable that yields :class:`Token`\s.  The
+jinja2/lexer.py::TokenStream.__bool__,function,__bool__,TokenStream.__bool__,jinja2/lexer.py,342,343,False,True,False,,,ddda53ef58d8,0,0,
+jinja2/lexer.py::TokenStream.__init__,function,__init__,TokenStream.__init__,jinja2/lexer.py,325,337,False,True,False,,,4293a8d31fb9,2,3,
+jinja2/lexer.py::TokenStream.__iter__,function,__iter__,TokenStream.__iter__,jinja2/lexer.py,339,340,False,True,False,,,43b794a7e9d0,0,3,
+jinja2/lexer.py::TokenStream.__next__,function,__next__,TokenStream.__next__,jinja2/lexer.py,380,395,False,True,False,,,9d5fbddd2734,40,2,Go one token ahead and return the old one.
+jinja2/lexer.py::TokenStream.close,function,close,TokenStream.close,jinja2/lexer.py,397,401,False,True,False,,,59aaeabe7c51,2,1,Close the stream.
+jinja2/lexer.py::TokenStream.eos,function,eos,TokenStream.eos,jinja2/lexer.py,346,348,False,True,False,property,,6bf960020d75,2,0,Are we at the end of the stream?
+jinja2/lexer.py::TokenStream.expect,function,expect,TokenStream.expect,jinja2/lexer.py,403,425,False,True,False,,,8439f878463a,22,6,Expect a given token type and return it.  This accepts the same
+jinja2/lexer.py::TokenStream.look,function,look,TokenStream.look,jinja2/lexer.py,354,360,False,True,False,,,4e9a7bed8d8d,5,3,Look at the next token.
+jinja2/lexer.py::TokenStream.next_if,function,next_if,TokenStream.next_if,jinja2/lexer.py,367,374,False,True,False,,,9ca0774f30c4,2,2,Perform the token test and return the token if it matched.
+jinja2/lexer.py::TokenStream.push,function,push,TokenStream.push,jinja2/lexer.py,350,352,False,True,False,,,0dbfb858eee8,1,1,Push a token back to the stream.
+jinja2/lexer.py::TokenStream.skip,function,skip,TokenStream.skip,jinja2/lexer.py,362,365,False,True,False,,,d4f90e41b970,5,1,Got n tokens ahead.
+jinja2/lexer.py::TokenStream.skip_if,function,skip_if,TokenStream.skip_if,jinja2/lexer.py,376,378,False,True,False,,,35a406a6b1ee,11,1,Like :meth:`next_if` but only returns `True` or `False`.
+jinja2/lexer.py::TokenStreamIterator,class,TokenStreamIterator,TokenStreamIterator,jinja2/lexer.py,297,316,False,,,,,6be87ffc1142,3,0,The iterator for tokenstreams.  Iterate over the stream
+jinja2/lexer.py::TokenStreamIterator.__init__,function,__init__,TokenStreamIterator.__init__,jinja2/lexer.py,302,303,False,True,False,,,b88d8c17d5d7,1,1,
+jinja2/lexer.py::TokenStreamIterator.__iter__,function,__iter__,TokenStreamIterator.__iter__,jinja2/lexer.py,305,306,False,True,False,,,c1b5cc239aec,0,1,
+jinja2/lexer.py::TokenStreamIterator.__next__,function,__next__,TokenStreamIterator.__next__,jinja2/lexer.py,308,316,False,True,False,,,584dfe2c5f96,0,3,
+jinja2/lexer.py::_Rule,class,_Rule,_Rule,jinja2/lexer.py,465,468,False,,,,t.NamedTuple,81ee070777ee,2,1,
+jinja2/lexer.py::_describe_token_type,function,_describe_token_type,_describe_token_type,jinja2/lexer.py,165,182,False,False,False,,,d78148c72b94,2,0,
+jinja2/lexer.py::compile_rules,function,compile_rules,compile_rules,jinja2/lexer.py,213,251,False,False,False,,,6ec790f92ba6,1,1,Compiles all the rules from the environment into a list of rules.
+jinja2/lexer.py::count_newlines,function,count_newlines,count_newlines,jinja2/lexer.py,206,210,False,False,False,,,f2dd6523ecbe,0,0,Count the number of newline characters in the string.  This is
+jinja2/lexer.py::describe_token,function,describe_token,describe_token,jinja2/lexer.py,185,190,False,False,False,,,a927c3918361,5,2,Returns a description of the token.
+jinja2/lexer.py::describe_token_expr,function,describe_token_expr,describe_token_expr,jinja2/lexer.py,193,203,False,False,False,,,2ce3efd99607,3,1,Like `describe_token` but for token expressions.
+jinja2/lexer.py::get_lexer,function,get_lexer,get_lexer,jinja2/lexer.py,428,449,False,False,False,,,ad83ef197a51,2,4,Return a lexer which is probably cached.
+jinja2/loaders.py,file,loaders.py,,jinja2/loaders.py,1,693,False,,,,,ea4f28ed559a,0,4,
+jinja2/loaders.py::BaseLoader,class,BaseLoader,BaseLoader,jinja2/loaders.py,42,149,False,,,,,64592bfd394a,19,0,Baseclass for all loaders.  Subclass this and override `get_source` to
+jinja2/loaders.py::BaseLoader.get_source,function,get_source,BaseLoader.get_source,jinja2/loaders.py,75,99,False,True,False,,,93293e856b96,3,3,"Get the template source, filename and reload helper for a template."
+jinja2/loaders.py::BaseLoader.list_templates,function,list_templates,BaseLoader.list_templates,jinja2/loaders.py,101,105,False,True,False,,,c07ed3034291,2,0,Iterates over all templates.  If the loader does not support that
+jinja2/loaders.py::BaseLoader.load,function,load,BaseLoader.load,jinja2/loaders.py,108,149,False,True,False,internalcode,,0ad06ff0f6f8,2,8,Loads a template.  This method looks up the template in the cache
+jinja2/loaders.py::ChoiceLoader,class,ChoiceLoader,ChoiceLoader,jinja2/loaders.py,568,613,False,,,,,7066cc53df77,1,2,This loader works like the `PrefixLoader` just that no prefix is
+jinja2/loaders.py::ChoiceLoader.__init__,function,__init__,ChoiceLoader.__init__,jinja2/loaders.py,582,583,False,True,False,,,4a3d24ede06a,0,1,
+jinja2/loaders.py::ChoiceLoader.get_source,function,get_source,ChoiceLoader.get_source,jinja2/loaders.py,585,593,False,True,False,,,9eea6e793317,0,5,
+jinja2/loaders.py::ChoiceLoader.list_templates,function,list_templates,ChoiceLoader.list_templates,jinja2/loaders.py,609,613,False,True,False,,,b73cb7a8850d,0,1,
+jinja2/loaders.py::ChoiceLoader.load,function,load,ChoiceLoader.load,jinja2/loaders.py,596,607,False,True,False,internalcode,,b3a05358c571,0,7,
+jinja2/loaders.py::DictLoader,class,DictLoader,DictLoader,jinja2/loaders.py,436,457,False,,,,,ee31558f370e,1,2,Loads a template from a Python dict mapping template names to
+jinja2/loaders.py::DictLoader.__init__,function,__init__,DictLoader.__init__,jinja2/loaders.py,445,446,False,True,False,,,0217ce2aefdb,0,0,
+jinja2/loaders.py::DictLoader.get_source,function,get_source,DictLoader.get_source,jinja2/loaders.py,448,454,False,True,False,,,549fe5f2d49f,0,3,
+jinja2/loaders.py::DictLoader.list_templates,function,list_templates,DictLoader.list_templates,jinja2/loaders.py,456,457,False,True,False,,,d62cdfdc67ff,0,0,
+jinja2/loaders.py::FileSystemLoader,class,FileSystemLoader,FileSystemLoader,jinja2/loaders.py,152,243,False,,,,,85e96755dae0,1,2,Load templates from a directory in the file system.
+jinja2/loaders.py::FileSystemLoader.__init__,function,__init__,FileSystemLoader.__init__,jinja2/loaders.py,179,192,False,True,False,,,4e72d8fb806b,0,0,
+jinja2/loaders.py::FileSystemLoader.get_source,function,get_source,FileSystemLoader.get_source,jinja2/loaders.py,194,226,False,True,False,,,8e24b41cb890,0,4,
+jinja2/loaders.py::FileSystemLoader.list_templates,function,list_templates,FileSystemLoader.list_templates,jinja2/loaders.py,228,243,False,True,False,,,699f8239f82f,0,0,
+jinja2/loaders.py::FunctionLoader,class,FunctionLoader,FunctionLoader,jinja2/loaders.py,460,502,False,,,,,0cb04ce90262,1,2,A loader that is passed a function which does the loading.  The
+jinja2/loaders.py::FunctionLoader.__init__,function,__init__,FunctionLoader.__init__,jinja2/loaders.py,478,489,False,True,False,,,f217583a6452,0,0,
+jinja2/loaders.py::FunctionLoader.get_source,function,get_source,FunctionLoader.get_source,jinja2/loaders.py,491,502,False,True,False,,,f672e95efc2f,0,3,
+jinja2/loaders.py::ModuleLoader,class,ModuleLoader,ModuleLoader,jinja2/loaders.py,620,693,False,,,,,a4aa685dd007,2,2,This loader loads templates from precompiled templates.
+jinja2/loaders.py::ModuleLoader.__init__,function,__init__,ModuleLoader.__init__,jinja2/loaders.py,632,657,False,True,False,,,6a50139dc1c1,0,1,
+jinja2/loaders.py::ModuleLoader.get_module_filename,function,get_module_filename,ModuleLoader.get_module_filename,jinja2/loaders.py,664,665,False,True,False,staticmethod,,663ef62785e1,1,1,
+jinja2/loaders.py::ModuleLoader.get_template_key,function,get_template_key,ModuleLoader.get_template_key,jinja2/loaders.py,660,661,False,True,False,staticmethod,,1a4856eb9fdc,2,0,
+jinja2/loaders.py::ModuleLoader.load,function,load,ModuleLoader.load,jinja2/loaders.py,668,693,False,True,False,internalcode,,5ab34ac6fa90,0,7,
+jinja2/loaders.py::PackageLoader,class,PackageLoader,PackageLoader,jinja2/loaders.py,270,433,False,,,,,c6f0b6c19293,1,2,Load templates from a directory in a Python package.
+jinja2/loaders.py::PackageLoader.__init__,function,__init__,PackageLoader.__init__,jinja2/loaders.py,303,364,False,True,False,,,5f489423e4cf,0,0,
+jinja2/loaders.py::PackageLoader.get_source,function,get_source,PackageLoader.get_source,jinja2/loaders.py,366,402,False,True,False,,,f70b01bd1668,0,4,
+jinja2/loaders.py::PackageLoader.list_templates,function,list_templates,PackageLoader.list_templates,jinja2/loaders.py,404,433,False,True,False,,,05ea9b89b18b,0,1,
+jinja2/loaders.py::PrefixLoader,class,PrefixLoader,PrefixLoader,jinja2/loaders.py,505,565,False,,,,,f8214d2e5ced,1,2,A loader that is passed a dict of loaders where each loader is bound
+jinja2/loaders.py::PrefixLoader.__init__,function,__init__,PrefixLoader.__init__,jinja2/loaders.py,520,524,False,True,False,,,1eaf78f3104a,0,1,
+jinja2/loaders.py::PrefixLoader.get_loader,function,get_loader,PrefixLoader.get_loader,jinja2/loaders.py,526,532,False,True,False,,,9b7a25cb42ce,2,3,
+jinja2/loaders.py::PrefixLoader.get_source,function,get_source,PrefixLoader.get_source,jinja2/loaders.py,534,543,False,True,False,,,892c7dc11a34,0,5,
+jinja2/loaders.py::PrefixLoader.list_templates,function,list_templates,PrefixLoader.list_templates,jinja2/loaders.py,560,565,False,True,False,,,fe1b73a7436e,0,0,
+jinja2/loaders.py::PrefixLoader.load,function,load,PrefixLoader.load,jinja2/loaders.py,546,558,False,True,False,internalcode,,c9413396d76b,0,7,
+jinja2/loaders.py::_TemplateModule,class,_TemplateModule,_TemplateModule,jinja2/loaders.py,616,617,False,,,,ModuleType,c114e0746489,1,0,Like a normal module but with support for weak references
+jinja2/loaders.py::_get_zipimporter_files,function,_get_zipimporter_files,_get_zipimporter_files,jinja2/loaders.py,248,267,False,False,False,,,f940243b4446,1,0,
+jinja2/loaders.py::split_template_path,function,split_template_path,split_template_path,jinja2/loaders.py,25,39,False,False,False,,,dc56395a6a2a,2,2,Split a path into segments and perform a sanity check.  If it detects
+jinja2/meta.py,file,meta.py,,jinja2/meta.py,1,112,False,,,,,655b180706d0,0,7,
+jinja2/meta.py::TrackingCodeGenerator,class,TrackingCodeGenerator,TrackingCodeGenerator,jinja2/meta.py,15,31,False,,,,,e7af55a1f72e,1,2,We abuse the code generator for introspection.
+jinja2/meta.py::TrackingCodeGenerator.__init__,function,__init__,TrackingCodeGenerator.__init__,jinja2/meta.py,18,20,False,True,False,,,2860f85bbb76,1,2,
+jinja2/meta.py::TrackingCodeGenerator.enter_frame,function,enter_frame,TrackingCodeGenerator.enter_frame,jinja2/meta.py,25,31,False,True,False,,,7923c4649754,0,2,Remember all undeclared identifiers.
+jinja2/meta.py::TrackingCodeGenerator.write,function,write,TrackingCodeGenerator.write,jinja2/meta.py,22,23,False,True,False,,,2285e5fb6fa3,0,0,Don't write.
+jinja2/meta.py::find_referenced_templates,function,find_referenced_templates,find_referenced_templates,jinja2/meta.py,62,112,False,False,False,,,cd6dea8af93e,0,7,Finds all the referenced templates from the AST.  This will return an
+jinja2/meta.py::find_undeclared_variables,function,find_undeclared_variables,find_undeclared_variables,jinja2/meta.py,34,55,False,False,False,,,a564cf1b779c,0,4,Returns a set of all variables in the AST that will be looked up from
+jinja2/nativetypes.py,file,nativetypes.py,,jinja2/nativetypes.py,1,130,False,,,,,e08b3aaf4645,0,7,
+jinja2/nativetypes.py::NativeCodeGenerator,class,NativeCodeGenerator,NativeCodeGenerator,jinja2/nativetypes.py,50,85,False,,,,,f422b119f779,1,2,A code generator which renders Python types by not adding
+jinja2/nativetypes.py::NativeCodeGenerator._default_finalize,function,_default_finalize,NativeCodeGenerator._default_finalize,jinja2/nativetypes.py,56,57,False,True,False,staticmethod,,1a607ee4a1be,0,0,
+jinja2/nativetypes.py::NativeCodeGenerator._output_child_post,function,_output_child_post,NativeCodeGenerator._output_child_post,jinja2/nativetypes.py,81,85,False,True,False,,,87e444e81fc5,0,4,
+jinja2/nativetypes.py::NativeCodeGenerator._output_child_pre,function,_output_child_pre,NativeCodeGenerator._output_child_pre,jinja2/nativetypes.py,75,79,False,True,False,,,34cd9b2a3d84,0,4,
+jinja2/nativetypes.py::NativeCodeGenerator._output_child_to_const,function,_output_child_to_const,NativeCodeGenerator._output_child_to_const,jinja2/nativetypes.py,62,73,False,True,False,,,0819eeac5fd4,0,7,
+jinja2/nativetypes.py::NativeCodeGenerator._output_const_repr,function,_output_const_repr,NativeCodeGenerator._output_const_repr,jinja2/nativetypes.py,59,60,False,True,False,,,6fc4ad647182,0,0,
+jinja2/nativetypes.py::NativeEnvironment,class,NativeEnvironment,NativeEnvironment,jinja2/nativetypes.py,88,92,False,,,,,ab9b0dfc46fd,2,4,An environment that renders templates to native Python types.
+jinja2/nativetypes.py::NativeTemplate,class,NativeTemplate,NativeTemplate,jinja2/nativetypes.py,95,127,False,,,,,0b1a7c41daf1,1,3,
+jinja2/nativetypes.py::NativeTemplate.render,function,render,NativeTemplate.render,jinja2/nativetypes.py,98,112,False,True,False,,,6acb5ac05781,0,2,Render the template to produce a native Python type. If the
+jinja2/nativetypes.py::NativeTemplate.render_async,function,render_async,NativeTemplate.render_async,jinja2/nativetypes.py,114,127,False,True,True,,,1d2774d0e02c,0,2,
+jinja2/nativetypes.py::native_concat,function,native_concat,native_concat,jinja2/nativetypes.py,16,47,False,False,False,,,07e20d876c13,1,0,Return a native Python type from the list of compiled nodes. If
+jinja2/nodes.py,file,nodes.py,,jinja2/nodes.py,1,1206,False,,,,,b2d9f8a3c65b,0,5,
+jinja2/nodes.py::Add,class,Add,Add,jinja2/nodes.py,967,970,False,,,,,46f34d54d6a3,1,2,Add the left to the right node.
+jinja2/nodes.py::And,class,And,And,jinja2/nodes.py,991,998,False,,,,,7d0a9ec6eb1d,1,2,Short circuited AND.
+jinja2/nodes.py::And.as_const,function,as_const,And.as_const,jinja2/nodes.py,996,998,False,True,False,,,9feaacc8647f,0,3,
+jinja2/nodes.py::Assign,class,Assign,Assign,jinja2/nodes.py,450,455,False,,,,,48f9b5e81693,7,3,Assigns an expression to a target.
+jinja2/nodes.py::AssignBlock,class,AssignBlock,AssignBlock,jinja2/nodes.py,458,464,False,,,,,812f43f7a8b1,5,3,Assigns a block to a target.
+jinja2/nodes.py::BinExpr,class,BinExpr,BinExpr,jinja2/nodes.py,490,512,False,,,,,82e65d57cd0d,19,2,Baseclass for all binary expressions.
+jinja2/nodes.py::BinExpr.as_const,function,as_const,BinExpr.as_const,jinja2/nodes.py,499,512,False,True,False,,,4b81da48029b,0,4,
+jinja2/nodes.py::Block,class,Block,Block,jinja2/nodes.py,393,404,False,,,,,4972b5737ef6,9,3,A node that represents a block.
+jinja2/nodes.py::Break,class,Break,Break,jinja2/nodes.py,1147,1148,False,,,,,3d35c882bf00,3,2,Break a loop.
+jinja2/nodes.py::Call,class,Call,Call,jinja2/nodes.py,817,830,False,,,,,03caef82b79f,10,3,"Calls an expression.  `args` is a list of arguments, `kwargs` a list"
+jinja2/nodes.py::CallBlock,class,CallBlock,CallBlock,jinja2/nodes.py,360,369,False,,,,,308c9b3387c5,8,3,Like a macro without a name but a call instead.  `call` is called with
+jinja2/nodes.py::Compare,class,Compare,Compare,jinja2/nodes.py,911,936,False,,,,,706badf2148b,2,2,Compares an expression with some other expressions.  `ops` must be a
+jinja2/nodes.py::Compare.as_const,function,as_const,Compare.as_const,jinja2/nodes.py,920,936,False,True,False,,,9c923111a62d,0,4,
+jinja2/nodes.py::Concat,class,Concat,Concat,jinja2/nodes.py,898,908,False,,,,,0f701c314305,2,2,Concatenates the list of expressions provided after converting
+jinja2/nodes.py::Concat.as_const,function,as_const,Concat.as_const,jinja2/nodes.py,906,908,False,True,False,,,469477e493c4,0,3,
+jinja2/nodes.py::CondExpr,class,CondExpr,CondExpr,jinja2/nodes.py,696,715,False,,,,,cf06756d29d4,2,2,A conditional expression (inline if expression).  (``{{
+jinja2/nodes.py::CondExpr.as_const,function,as_const,CondExpr.as_const,jinja2/nodes.py,706,715,False,True,False,,,a4c12a16f102,0,4,
+jinja2/nodes.py::Const,class,Const,Const,jinja2/nodes.py,577,605,False,,,,,c54a73707d42,9,2,All constant values.  The parser will return this node for simple
+jinja2/nodes.py::Const.as_const,function,as_const,Const.as_const,jinja2/nodes.py,587,588,False,True,False,,,8a722acd5eca,1,1,
+jinja2/nodes.py::Const.from_untrusted,function,from_untrusted,Const.from_untrusted,jinja2/nodes.py,591,605,False,True,False,classmethod,,5a87b8ecbb20,1,6,Return a const object if the value is representable as
+jinja2/nodes.py::ContextReference,class,ContextReference,ContextReference,jinja2/nodes.py,1116,1131,False,,,,,4cfc214b868d,2,2,Returns the current template context.  It can be used like a
+jinja2/nodes.py::Continue,class,Continue,Continue,jinja2/nodes.py,1143,1144,False,,,,,592d7322a835,3,2,Continue a loop.
+jinja2/nodes.py::DerivedContextReference,class,DerivedContextReference,DerivedContextReference,jinja2/nodes.py,1134,1140,False,,,,,9580cd5cfe2a,1,2,Return the current template context including locals. Behaves
+jinja2/nodes.py::Dict,class,Dict,Dict,jinja2/nodes.py,655,667,False,,,,,9cfea3d21528,4,2,"Any dict literal such as ``{1: 2, 3: 4}``.  The items must be a list of"
+jinja2/nodes.py::Dict.as_const,function,as_const,Dict.as_const,jinja2/nodes.py,663,667,False,True,False,,,f127f7f312bc,0,3,
+jinja2/nodes.py::Div,class,Div,Div,jinja2/nodes.py,953,956,False,,,,,0fca6890252a,1,2,Divides the left by the right node.
+jinja2/nodes.py::EnvironmentAttribute,class,EnvironmentAttribute,EnvironmentAttribute,jinja2/nodes.py,1032,1038,False,,,,,9b8b453d3108,1,2,Loads an attribute from the environment object.  This is useful for
+jinja2/nodes.py::EvalContext,class,EvalContext,EvalContext,jinja2/nodes.py,71,91,False,,,,,b58a061c0568,43,0,Holds evaluation time information.  Custom attributes can be attached
+jinja2/nodes.py::EvalContext.__init__,function,__init__,EvalContext.__init__,jinja2/nodes.py,76,84,False,True,False,,,276c74f630b6,4,1,
+jinja2/nodes.py::EvalContext.revert,function,revert,EvalContext.revert,jinja2/nodes.py,89,91,False,True,False,,,a2a28a61269e,1,0,
+jinja2/nodes.py::EvalContext.save,function,save,EvalContext.save,jinja2/nodes.py,86,87,False,True,False,,,c3565897371f,1,0,
+jinja2/nodes.py::EvalContextModifier,class,EvalContextModifier,EvalContextModifier,jinja2/nodes.py,1177,1187,False,,,,,4eb0b9a6dd03,3,3,"Modifies the eval context.  For each option that should be modified,"
+jinja2/nodes.py::Expr,class,Expr,Expr,jinja2/nodes.py,467,487,False,,,,,b8908cbd8e34,88,2,Baseclass for all expressions.
+jinja2/nodes.py::Expr.as_const,function,as_const,Expr.as_const,jinja2/nodes.py,472,483,False,True,False,,,8cc7b7d5ef82,19,2,Return the value of the expression as constant or raise
+jinja2/nodes.py::Expr.can_assign,function,can_assign,Expr.can_assign,jinja2/nodes.py,485,487,False,True,False,,,f692d620c875,1,0,Check if it's possible to assign something to this node.
+jinja2/nodes.py::ExprStmt,class,ExprStmt,ExprStmt,jinja2/nodes.py,443,447,False,,,,,80e4e62bd748,3,3,A statement that evaluates an expression and discards the result.
+jinja2/nodes.py::Extends,class,Extends,Extends,jinja2/nodes.py,312,316,False,,,,,3d39a0805b10,5,2,Represents an extends statement.
+jinja2/nodes.py::ExtensionAttribute,class,ExtensionAttribute,ExtensionAttribute,jinja2/nodes.py,1041,1051,False,,,,,eda4c99b236a,3,2,Returns the attribute of an extension bound to the environment.
+jinja2/nodes.py::Filter,class,Filter,Filter,jinja2/nodes.py,787,801,False,,,,,b1d8c7e9b2a9,5,3,Apply a filter to an expression. ``name`` is the name of the
+jinja2/nodes.py::Filter.as_const,function,as_const,Filter.as_const,jinja2/nodes.py,797,801,False,True,False,,,8484eeed1897,0,3,
+jinja2/nodes.py::FilterBlock,class,FilterBlock,FilterBlock,jinja2/nodes.py,372,377,False,,,,,c40e73aeeb53,4,3,Node for filter sections.
+jinja2/nodes.py::FloorDiv,class,FloorDiv,FloorDiv,jinja2/nodes.py,959,964,False,,,,,9df0d27a4f9a,1,2,Divides the left by the right node and converts the
+jinja2/nodes.py::For,class,For,For,jinja2/nodes.py,319,334,False,,,,,d9388c4fee88,5,3,The for loop.  `target` is the target for the iteration (usually a
+jinja2/nodes.py::FromImport,class,FromImport,FromImport,jinja2/nodes.py,425,440,False,,,,,e0e89c917884,6,2,A node that represents the from import tag.  It's important to not
+jinja2/nodes.py::Getattr,class,Getattr,Getattr,jinja2/nodes.py,855,874,False,,,,,fe9e0445ccaf,3,2,Get an attribute or item from an expression that is a ascii-only
+jinja2/nodes.py::Getattr.as_const,function,as_const,Getattr.as_const,jinja2/nodes.py,865,874,False,True,False,,,b93d63346c48,0,5,
+jinja2/nodes.py::Getitem,class,Getitem,Getitem,jinja2/nodes.py,833,852,False,,,,,d6b937c4ad6d,3,2,Get an attribute or item from an expression and prefer the item.
+jinja2/nodes.py::Getitem.as_const,function,as_const,Getitem.as_const,jinja2/nodes.py,841,852,False,True,False,,,c1f1e2ffd39d,0,5,
+jinja2/nodes.py::Helper,class,Helper,Helper,jinja2/nodes.py,288,291,False,,,,,4f4044d3b9c3,6,2,Nodes that exist in a specific context only.
+jinja2/nodes.py::If,class,If,If,jinja2/nodes.py,337,344,False,,,,,3b6e3f85329e,4,3,"If `test` is true, `body` is rendered, else `else_`."
+jinja2/nodes.py::Import,class,Import,Import,jinja2/nodes.py,416,422,False,,,,,4c6a7fb65739,7,2,A node that represents the import tag.
+jinja2/nodes.py::ImportedName,class,ImportedName,ImportedName,jinja2/nodes.py,1054,1062,False,,,,,e98d71c1c9db,2,2,If created with an import name the import name is returned on node
+jinja2/nodes.py::Impossible,class,Impossible,Impossible,jinja2/nodes.py,50,51,False,,,,Exception,3fbd898517e2,19,0,Raised if the node could not perform a requested action.
+jinja2/nodes.py::Include,class,Include,Include,jinja2/nodes.py,407,413,False,,,,,8e9e0a18d4e4,6,2,A node that represents the include tag.
+jinja2/nodes.py::InternalName,class,InternalName,InternalName,jinja2/nodes.py,1065,1080,False,,,,,b42a61a1ef1a,2,2,An internal name in the compiler.  You cannot create these nodes
+jinja2/nodes.py::InternalName.__init__,function,__init__,InternalName.__init__,jinja2/nodes.py,1076,1080,False,True,False,,,627b6d3068ca,0,0,
+jinja2/nodes.py::Keyword,class,Keyword,Keyword,jinja2/nodes.py,684,693,False,,,,,d88225952685,9,3,"A key, value pair for keyword arguments where key is a string."
+jinja2/nodes.py::Keyword.as_const,function,as_const,Keyword.as_const,jinja2/nodes.py,691,693,False,True,False,,,2fdda9e14a84,0,3,
+jinja2/nodes.py::List,class,List,List,jinja2/nodes.py,644,652,False,,,,,447d02411efd,5,3,"Any list literal such as ``[1, 2, 3]``"
+jinja2/nodes.py::List.as_const,function,as_const,List.as_const,jinja2/nodes.py,650,652,False,True,False,,,0233a627cfd1,0,3,
+jinja2/nodes.py::Literal,class,Literal,Literal,jinja2/nodes.py,571,574,False,,,,,2ee2c6e813e5,10,2,Baseclass for literals.
+jinja2/nodes.py::Macro,class,Macro,Macro,jinja2/nodes.py,347,357,False,,,,,332e6e1fa18d,7,3,"A macro definition.  `name` is the name of the macro, `args` a list of"
+jinja2/nodes.py::MarkSafe,class,MarkSafe,MarkSafe,jinja2/nodes.py,1083,1091,False,,,,,5ef1ba8498d4,1,2,Mark the wrapped expression as safe (wrap it as `Markup`).
+jinja2/nodes.py::MarkSafe.as_const,function,as_const,MarkSafe.as_const,jinja2/nodes.py,1089,1091,False,True,False,,,22def0b976d2,0,3,
+jinja2/nodes.py::MarkSafeIfAutoescape,class,MarkSafeIfAutoescape,MarkSafeIfAutoescape,jinja2/nodes.py,1094,1113,False,,,,,ab29732e84b0,2,2,Mark the wrapped expression as safe (wrap it as `Markup`) but
+jinja2/nodes.py::MarkSafeIfAutoescape.as_const,function,as_const,MarkSafeIfAutoescape.as_const,jinja2/nodes.py,1104,1113,False,True,False,,,c4031dd3d940,0,4,
+jinja2/nodes.py::Mod,class,Mod,Mod,jinja2/nodes.py,979,982,False,,,,,c2babc8e302b,2,2,Left modulo right.
+jinja2/nodes.py::Mul,class,Mul,Mul,jinja2/nodes.py,947,950,False,,,,,4b85029de23e,1,2,Multiplies the left with the right node.
+jinja2/nodes.py::NSRef,class,NSRef,NSRef,jinja2/nodes.py,556,568,False,,,,,0c28d02a4d80,5,2,Reference to a namespace value assignment
+jinja2/nodes.py::NSRef.can_assign,function,can_assign,NSRef.can_assign,jinja2/nodes.py,563,568,False,True,False,,,8f6ec73ea5a7,0,0,
+jinja2/nodes.py::Name,class,Name,Name,jinja2/nodes.py,539,553,False,,,,,86417c0a1e0e,11,2,Looks up a name or stores a value in a name.
+jinja2/nodes.py::Name.can_assign,function,can_assign,Name.can_assign,jinja2/nodes.py,552,553,False,True,False,,,273f0bbe8dd1,0,0,
+jinja2/nodes.py::Neg,class,Neg,Neg,jinja2/nodes.py,1017,1020,False,,,,,bba73f54117d,1,2,Make the expression negative.
+jinja2/nodes.py::Node,class,Node,Node,jinja2/nodes.py,105,279,False,,,,,22bbdf9e97ac,55,1,Baseclass for all Jinja nodes.  There are a number of nodes available
+jinja2/nodes.py::Node.__eq__,function,__eq__,Node.__eq__,jinja2/nodes.py,240,244,False,True,False,,,d8e174f6161e,0,1,
+jinja2/nodes.py::Node.__init__,function,__init__,Node.__init__,jinja2/nodes.py,129,145,False,True,False,,,5deb5d6b8905,45,0,
+jinja2/nodes.py::Node.__repr__,function,__repr__,Node.__repr__,jinja2/nodes.py,248,250,False,True,False,,,9393d6f535bf,0,0,
+jinja2/nodes.py::Node.dump,function,dump,Node.dump,jinja2/nodes.py,252,279,False,True,False,,,ee6925db840e,0,1,
+jinja2/nodes.py::Node.find,function,find,Node.find,jinja2/nodes.py,186,193,False,True,False,,,d060c0cf272c,1,1,Find the first node of a given type.  If no such node exists the
+jinja2/nodes.py::Node.find_all,function,find_all,Node.find_all,jinja2/nodes.py,195,204,False,True,False,,,fd394fb29341,6,1,"Find all the nodes of a given type.  If the type is a tuple,"
+jinja2/nodes.py::Node.iter_child_nodes,function,iter_child_nodes,Node.iter_child_nodes,jinja2/nodes.py,169,184,False,True,False,,,8cca1d2b8d64,5,2,Iterates over all direct child nodes of the node.  This iterates
+jinja2/nodes.py::Node.iter_fields,function,iter_fields,Node.iter_fields,jinja2/nodes.py,147,167,False,True,False,,,477a00110bd6,3,0,This method iterates over all fields that are defined and yields
+jinja2/nodes.py::Node.set_ctx,function,set_ctx,Node.set_ctx,jinja2/nodes.py,206,218,False,True,False,,,5193a01a4372,0,1,Reset the context of a node and all child nodes.  Per default the
+jinja2/nodes.py::Node.set_environment,function,set_environment,Node.set_environment,jinja2/nodes.py,231,238,False,True,False,,,71790caa8873,2,2,Set the environment for all nodes.
+jinja2/nodes.py::Node.set_lineno,function,set_lineno,Node.set_lineno,jinja2/nodes.py,220,229,False,True,False,,,56600081a361,1,1,Set the line numbers of the node and children.
+jinja2/nodes.py::NodeType,class,NodeType,NodeType,jinja2/nodes.py,54,68,False,,,,type,0a8f06523d01,3,0,A metaclass for nodes that handles the field and attribute
+jinja2/nodes.py::NodeType.__new__,function,__new__,NodeType.__new__,jinja2/nodes.py,59,68,False,True,False,,,26c995ec3966,0,1,
+jinja2/nodes.py::Not,class,Not,Not,jinja2/nodes.py,1011,1014,False,,,,,ea04b6d296ba,2,2,Negate the expression.
+jinja2/nodes.py::Operand,class,Operand,Operand,jinja2/nodes.py,939,944,False,,,,,f1d17051ca6e,2,3,Holds an operator and an expression.
+jinja2/nodes.py::Or,class,Or,Or,jinja2/nodes.py,1001,1008,False,,,,,7c8c656a9561,1,2,Short circuited OR.
+jinja2/nodes.py::Or.as_const,function,as_const,Or.as_const,jinja2/nodes.py,1006,1008,False,True,False,,,18a2871833f9,0,3,
+jinja2/nodes.py::Output,class,Output,Output,jinja2/nodes.py,303,309,False,,,,,a224e8bc6caf,9,2,A node that holds multiple expressions which are then printed out.
+jinja2/nodes.py::OverlayScope,class,OverlayScope,OverlayScope,jinja2/nodes.py,1158,1174,False,,,,,4c5367e46493,3,4,An overlay scope for extensions.  This is a largely unoptimized scope
+jinja2/nodes.py::Pair,class,Pair,Pair,jinja2/nodes.py,670,681,False,,,,,c8ccb629f7ca,4,3,"A key, value pair for dicts."
+jinja2/nodes.py::Pair.as_const,function,as_const,Pair.as_const,jinja2/nodes.py,677,681,False,True,False,,,57211c444ce6,1,3,
+jinja2/nodes.py::Pos,class,Pos,Pos,jinja2/nodes.py,1023,1026,False,,,,,c717792cdde0,1,2,Make the expression positive (noop for most expressions)
+jinja2/nodes.py::Pow,class,Pow,Pow,jinja2/nodes.py,985,988,False,,,,,c6cfc1bfc6a7,1,2,Left to the power of right.
+jinja2/nodes.py::Scope,class,Scope,Scope,jinja2/nodes.py,1151,1155,False,,,,,8a4fd7e4a5ff,4,3,An artificial scope.
+jinja2/nodes.py::ScopedEvalContextModifier,class,ScopedEvalContextModifier,ScopedEvalContextModifier,jinja2/nodes.py,1190,1197,False,,,,,de84756d9c21,2,3,Modifies the eval context and reverts it later.  Works exactly like
+jinja2/nodes.py::Slice,class,Slice,Slice,jinja2/nodes.py,877,895,False,,,,,07be953e771a,3,2,Represents a slice object.  This must only be used as argument for
+jinja2/nodes.py::Slice.as_const,function,as_const,Slice.as_const,jinja2/nodes.py,887,895,False,True,False,,,b44515340601,0,3,
+jinja2/nodes.py::Stmt,class,Stmt,Stmt,jinja2/nodes.py,282,285,False,,,,,55b15970529b,40,2,Base node for all statements.
+jinja2/nodes.py::Sub,class,Sub,Sub,jinja2/nodes.py,973,976,False,,,,,1b9ecd6ab9e7,1,2,Subtract the right from the left node.
+jinja2/nodes.py::Template,class,Template,Template,jinja2/nodes.py,294,300,False,,,,,97bb00fde5c1,15,2,Node that represents a template.  This must be the outermost node that
+jinja2/nodes.py::TemplateData,class,TemplateData,TemplateData,jinja2/nodes.py,608,620,False,,,,,ba34fc3f9a43,6,2,A constant template string.
+jinja2/nodes.py::TemplateData.as_const,function,as_const,TemplateData.as_const,jinja2/nodes.py,614,620,False,True,False,,,a7252b35f218,1,3,
+jinja2/nodes.py::Test,class,Test,Test,jinja2/nodes.py,804,814,False,,,,,f6a366e0858b,5,2,"Apply a test to an expression. ``name`` is the name of the test,"
+jinja2/nodes.py::Tuple,class,Tuple,Tuple,jinja2/nodes.py,623,641,False,,,,,9bf45acaf7ae,7,3,For loop unpacking and some other things like multiple arguments
+jinja2/nodes.py::Tuple.as_const,function,as_const,Tuple.as_const,jinja2/nodes.py,633,635,False,True,False,,,f7c9b295b98c,0,3,
+jinja2/nodes.py::Tuple.can_assign,function,can_assign,Tuple.can_assign,jinja2/nodes.py,637,641,False,True,False,,,abdb557efd61,0,1,
+jinja2/nodes.py::UnaryExpr,class,UnaryExpr,UnaryExpr,jinja2/nodes.py,515,536,False,,,,,af481bf5a349,7,2,Baseclass for all unary expressions.
+jinja2/nodes.py::UnaryExpr.as_const,function,as_const,UnaryExpr.as_const,jinja2/nodes.py,523,536,False,True,False,,,0d119c80cd74,0,4,
+jinja2/nodes.py::With,class,With,With,jinja2/nodes.py,380,390,False,,,,,462d300d355f,5,3,Specific node for with statements.  In older versions of Jinja the
+jinja2/nodes.py::_FilterTestCommon,class,_FilterTestCommon,_FilterTestCommon,jinja2/nodes.py,739,784,False,,,,,7f5024c8a663,4,3,
+jinja2/nodes.py::_FilterTestCommon.as_const,function,as_const,_FilterTestCommon.as_const,jinja2/nodes.py,750,784,False,True,False,,,d9ecd8c5d192,1,6,
+jinja2/nodes.py::_failing_new,function,_failing_new,_failing_new,jinja2/nodes.py,1201,1202,False,False,False,,,dda6b8cb292e,1,0,
+jinja2/nodes.py::args_as_const,function,args_as_const,args_as_const,jinja2/nodes.py,718,736,False,False,False,,,f90fe68c6c6b,1,2,
+jinja2/nodes.py::get_eval_context,function,get_eval_context,get_eval_context,jinja2/nodes.py,94,102,False,False,False,,,8aaeaef40246,19,4,
+jinja2/optimizer.py,file,optimizer.py,,jinja2/optimizer.py,1,48,False,,,,,9d8182766f53,0,2,
+jinja2/optimizer.py::Optimizer,class,Optimizer,Optimizer,jinja2/optimizer.py,27,48,False,,,,,63d2418d05cc,4,2,
+jinja2/optimizer.py::Optimizer.__init__,function,__init__,Optimizer.__init__,jinja2/optimizer.py,28,29,False,True,False,,,a623e37fc53a,2,1,
+jinja2/optimizer.py::Optimizer.generic_visit,function,generic_visit,Optimizer.generic_visit,jinja2/optimizer.py,31,48,False,True,False,,,612966384e70,0,5,
+jinja2/optimizer.py::optimize,function,optimize,optimize,jinja2/optimizer.py,20,24,False,False,False,,,336de34212c2,0,5,The context hint can be used to perform an static optimization
+jinja2/parser.py,file,parser.py,,jinja2/parser.py,1,1049,False,,,,,a2dec10dae42,0,16,
+jinja2/parser.py::Parser,class,Parser,Parser,jinja2/parser.py,48,1049,False,,,,,8b89cb31f1bc,11,0,This is the central parsing class Jinja uses.  It's passed to
+jinja2/parser.py::Parser.__init__,function,__init__,Parser.__init__,jinja2/parser.py,53,74,False,True,False,,,bba6c70aeffa,2,6,
+jinja2/parser.py::Parser._fail_ut_eof,function,_fail_ut_eof,Parser._fail_ut_eof,jinja2/parser.py,90,128,False,True,False,,,eae4177d26fe,2,2,
+jinja2/parser.py::Parser.fail,function,fail,Parser.fail,jinja2/parser.py,76,88,False,True,False,,,01f3a4e32869,14,3,"Convenience method that raises `exc` with the message, passed"
+jinja2/parser.py::Parser.fail_eof,function,fail_eof,Parser.fail_eof,jinja2/parser.py,139,148,False,True,False,,,b92ec0dabe20,1,1,Like fail_unknown_tag but for end of template situations.
+jinja2/parser.py::Parser.fail_unknown_tag,function,fail_unknown_tag,Parser.fail_unknown_tag,jinja2/parser.py,130,137,False,True,False,,,9f611a47449f,1,1,Called if the parser encounters an unknown tag.  Tries to fail
+jinja2/parser.py::Parser.free_identifier,function,free_identifier,Parser.free_identifier,jinja2/parser.py,160,165,False,True,False,,,770e61ceca3b,0,2,Return a new free identifier as :class:`~jinja2.nodes.InternalName`.
+jinja2/parser.py::Parser.is_tuple_end,function,is_tuple_end,Parser.is_tuple_end,jinja2/parser.py,150,158,False,True,False,,,5bc7e827dd84,1,0,Are we at the end of a tuple?
+jinja2/parser.py::Parser.parse,function,parse,Parser.parse,jinja2/parser.py,1045,1049,False,True,False,,,b3ee8a8b8696,1,5,Parse the whole template into a `Template` node.
+jinja2/parser.py::Parser.parse_and,function,parse_and,Parser.parse_and,jinja2/parser.py,545,552,False,True,False,,,5aed31c450ad,1,5,
+jinja2/parser.py::Parser.parse_assign_target,function,parse_assign_target,Parser.parse_assign_target,jinja2/parser.py,460,510,False,True,False,typing.overload,,222ebaeabdf7,7,10,
+jinja2/parser.py::Parser.parse_autoescape,function,parse_autoescape,Parser.parse_autoescape,jinja2/parser.py,290,294,False,True,False,,,edab4a40b067,0,8,
+jinja2/parser.py::Parser.parse_block,function,parse_block,Parser.parse_block,jinja2/parser.py,296,326,False,True,False,,,fbb36d30ca47,0,10,
+jinja2/parser.py::Parser.parse_call,function,parse_call,Parser.parse_call,jinja2/parser.py,928,933,False,True,False,,,d7ec03e93a9e,2,5,
+jinja2/parser.py::Parser.parse_call_args,function,parse_call_args,Parser.parse_call_args,jinja2/parser.py,872,926,False,True,False,,,d1ad186e8ddb,3,10,
+jinja2/parser.py::Parser.parse_call_block,function,parse_call_block,Parser.parse_call_block,jinja2/parser.py,422,435,False,True,False,,,7b67118158b5,1,9,
+jinja2/parser.py::Parser.parse_compare,function,parse_compare,Parser.parse_compare,jinja2/parser.py,560,581,False,True,False,,,478e9ebe2ba8,1,10,
+jinja2/parser.py::Parser.parse_concat,function,parse_concat,Parser.parse_concat,jinja2/parser.py,594,602,False,True,False,,,bef3f20fbbb0,1,5,
+jinja2/parser.py::Parser.parse_condexpr,function,parse_condexpr,Parser.parse_condexpr,jinja2/parser.py,521,534,False,True,False,,,da879cf2ef47,1,5,
+jinja2/parser.py::Parser.parse_dict,function,parse_dict,Parser.parse_dict,jinja2/parser.py,766,779,False,True,False,,,6f296e9b59ef,1,7,
+jinja2/parser.py::Parser.parse_expression,function,parse_expression,Parser.parse_expression,jinja2/parser.py,512,519,False,True,False,,,7780cda8de5b,17,3,"Parse an expression.  Per default all expressions are parsed, if"
+jinja2/parser.py::Parser.parse_extends,function,parse_extends,Parser.parse_extends,jinja2/parser.py,328,331,False,True,False,,,9b51560923ec,0,5,
+jinja2/parser.py::Parser.parse_filter,function,parse_filter,Parser.parse_filter,jinja2/parser.py,935,956,False,True,False,,,5c2a489ceb4c,3,6,
+jinja2/parser.py::Parser.parse_filter_block,function,parse_filter_block,Parser.parse_filter_block,jinja2/parser.py,437,441,False,True,False,,,6b67a4c6f6c2,1,6,
+jinja2/parser.py::Parser.parse_filter_expr,function,parse_filter_expr,Parser.parse_filter_expr,jinja2/parser.py,794,807,False,True,False,,,c769036fbd24,1,4,
+jinja2/parser.py::Parser.parse_for,function,parse_for,Parser.parse_for,jinja2/parser.py,236,253,False,True,False,,,20197cca5531,0,10,Parse a for loop.
+jinja2/parser.py::Parser.parse_from,function,parse_from,Parser.parse_from,jinja2/parser.py,364,404,False,True,False,,,c72ce4b582e4,0,13,
+jinja2/parser.py::Parser.parse_if,function,parse_if,Parser.parse_if,jinja2/parser.py,255,271,False,True,False,,,7f005d7a1456,0,7,Parse an if construct.
+jinja2/parser.py::Parser.parse_import,function,parse_import,Parser.parse_import,jinja2/parser.py,357,362,False,True,False,,,0660f54db708,0,8,
+jinja2/parser.py::Parser.parse_import_context,function,parse_import_context,Parser.parse_import_context,jinja2/parser.py,333,343,False,True,False,,,9b8c8547587a,2,4,
+jinja2/parser.py::Parser.parse_include,function,parse_include,Parser.parse_include,jinja2/parser.py,345,355,False,True,False,,,a31801ad802a,0,9,
+jinja2/parser.py::Parser.parse_list,function,parse_list,Parser.parse_list,jinja2/parser.py,754,764,False,True,False,,,d5bd4dae90b2,1,6,
+jinja2/parser.py::Parser.parse_macro,function,parse_macro,Parser.parse_macro,jinja2/parser.py,443,448,False,True,False,,,e69db28e4ef6,0,7,
+jinja2/parser.py::Parser.parse_math1,function,parse_math1,Parser.parse_math1,jinja2/parser.py,583,592,False,True,False,,,5cb9f7c68700,1,3,
+jinja2/parser.py::Parser.parse_math2,function,parse_math2,Parser.parse_math2,jinja2/parser.py,604,613,False,True,False,,,73b24ea11b21,1,3,
+jinja2/parser.py::Parser.parse_not,function,parse_not,Parser.parse_not,jinja2/parser.py,554,558,False,True,False,,,6e9401e73318,1,5,
+jinja2/parser.py::Parser.parse_or,function,parse_or,Parser.parse_or,jinja2/parser.py,536,543,False,True,False,,,5f850c0924b1,2,5,
+jinja2/parser.py::Parser.parse_postfix,function,parse_postfix,Parser.parse_postfix,jinja2/parser.py,781,792,False,True,False,,,f19ece51e360,2,3,
+jinja2/parser.py::Parser.parse_pow,function,parse_pow,Parser.parse_pow,jinja2/parser.py,615,623,False,True,False,,,927bfb351020,1,5,
+jinja2/parser.py::Parser.parse_primary,function,parse_primary,Parser.parse_primary,jinja2/parser.py,643,683,False,True,False,,,98c66e967f97,4,12,"Parse a name or literal value. If ``with_namespace`` is enabled, also"
+jinja2/parser.py::Parser.parse_print,function,parse_print,Parser.parse_print,jinja2/parser.py,450,457,False,True,False,,,2ee4a9d8004c,0,6,
+jinja2/parser.py::Parser.parse_set,function,parse_set,Parser.parse_set,jinja2/parser.py,225,234,False,True,False,,,f8c9c0741b90,0,11,Parse an assign statement.
+jinja2/parser.py::Parser.parse_signature,function,parse_signature,Parser.parse_signature,jinja2/parser.py,406,420,False,True,False,,,2cf69169ae94,2,5,
+jinja2/parser.py::Parser.parse_statement,function,parse_statement,Parser.parse_statement,jinja2/parser.py,167,194,False,True,False,,,76da0848a484,1,5,Parse a single statement.
+jinja2/parser.py::Parser.parse_statements,function,parse_statements,Parser.parse_statements,jinja2/parser.py,196,223,False,True,False,,,015e3f734e96,9,6,Parse multiple statements into a list until one of the end tokens
+jinja2/parser.py::Parser.parse_subscribed,function,parse_subscribed,Parser.parse_subscribed,jinja2/parser.py,840,870,False,True,False,,,a9f75182ce9b,1,5,
+jinja2/parser.py::Parser.parse_subscript,function,parse_subscript,Parser.parse_subscript,jinja2/parser.py,809,838,False,True,False,,,d689e282c75f,1,12,
+jinja2/parser.py::Parser.parse_test,function,parse_test,Parser.parse_test,jinja2/parser.py,958,994,False,True,False,,,833f45117650,1,11,
+jinja2/parser.py::Parser.parse_tuple,function,parse_tuple,Parser.parse_tuple,jinja2/parser.py,685,752,False,True,False,,,72c4dc9634c8,7,10,Works like `parse_expression` but if multiple expressions are
+jinja2/parser.py::Parser.parse_unary,function,parse_unary,Parser.parse_unary,jinja2/parser.py,625,641,False,True,False,,,337b913b48d0,1,8,
+jinja2/parser.py::Parser.parse_with,function,parse_with,Parser.parse_with,jinja2/parser.py,273,288,False,True,False,,,874bc211a06f,0,9,
+jinja2/parser.py::Parser.subparse,function,subparse,Parser.subparse,jinja2/parser.py,996,1043,False,True,False,,,264833c6f095,2,8,
+jinja2/runtime.py,file,runtime.py,,jinja2/runtime.py,1,1062,False,,,,,3cef3905608d,0,12,
+jinja2/runtime.py::AsyncLoopContext,class,AsyncLoopContext,AsyncLoopContext,jinja2/runtime.py,591,659,False,,,,,df49402aa651,1,2,
+jinja2/runtime.py::AsyncLoopContext.__aiter__,function,__aiter__,AsyncLoopContext.__aiter__,jinja2/runtime.py,646,647,False,True,False,,,0350dac83253,0,1,
+jinja2/runtime.py::AsyncLoopContext.__anext__,function,__anext__,AsyncLoopContext.__anext__,jinja2/runtime.py,649,659,False,True,True,,,09b93f19c164,0,0,
+jinja2/runtime.py::AsyncLoopContext._peek_next,function,_peek_next,AsyncLoopContext._peek_next,jinja2/runtime.py,622,631,False,True,True,,,c87ea6bcceb8,2,0,
+jinja2/runtime.py::AsyncLoopContext._to_iterator,function,_to_iterator,AsyncLoopContext._to_iterator,jinja2/runtime.py,595,598,False,True,False,staticmethod,,ecb5566775c7,1,1,
+jinja2/runtime.py::AsyncLoopContext.last,function,last,AsyncLoopContext.last,jinja2/runtime.py,634,635,False,True,True,property,,26e338298e4b,0,1,
+jinja2/runtime.py::AsyncLoopContext.length,function,length,AsyncLoopContext.length,jinja2/runtime.py,601,612,False,True,True,property,,3fc427107772,2,2,
+jinja2/runtime.py::AsyncLoopContext.nextitem,function,nextitem,AsyncLoopContext.nextitem,jinja2/runtime.py,638,644,False,True,True,property,,961535b277be,0,3,
+jinja2/runtime.py::AsyncLoopContext.revindex,function,revindex,AsyncLoopContext.revindex,jinja2/runtime.py,619,620,False,True,True,property,,950fc1cf0686,0,1,
+jinja2/runtime.py::AsyncLoopContext.revindex0,function,revindex0,AsyncLoopContext.revindex0,jinja2/runtime.py,615,616,False,True,True,property,,4c361b2d6408,0,2,
+jinja2/runtime.py::BlockReference,class,BlockReference,BlockReference,jinja2/runtime.py,344,391,False,,,,,3863f6597d3a,3,0,One block on a template reference.
+jinja2/runtime.py::BlockReference.__call__,function,__call__,BlockReference.__call__,jinja2/runtime.py,380,391,False,True,False,internalcode,,fea2b82e2a9b,0,2,
+jinja2/runtime.py::BlockReference.__init__,function,__init__,BlockReference.__init__,jinja2/runtime.py,347,357,False,True,False,,,afd190f53999,3,1,
+jinja2/runtime.py::BlockReference._async_call,function,_async_call,BlockReference._async_call,jinja2/runtime.py,369,377,False,True,True,internalcode,,5c2c28ac43a4,1,1,
+jinja2/runtime.py::BlockReference.super,function,super,BlockReference.super,jinja2/runtime.py,360,366,False,True,False,property,,c6e525165eb1,0,4,Super the block.
+jinja2/runtime.py::ChainableUndefined,class,ChainableUndefined,ChainableUndefined,jinja2/runtime.py,970,1004,False,,,,,ba121b411983,3,2,"An undefined that is chainable, where both ``__getattr__`` and"
+jinja2/runtime.py::ChainableUndefined.__getattr__,function,__getattr__,ChainableUndefined.__getattr__,jinja2/runtime.py,991,1001,False,True,False,,,975f631da1b5,0,1,
+jinja2/runtime.py::ChainableUndefined.__getitem__,function,__getitem__,ChainableUndefined.__getitem__,jinja2/runtime.py,1003,1004,False,True,False,,,b1636f348418,0,1,
+jinja2/runtime.py::ChainableUndefined.__html__,function,__html__,ChainableUndefined.__html__,jinja2/runtime.py,988,989,False,True,False,,,63672f865099,0,1,
+jinja2/runtime.py::Context,class,Context,Context,jinja2/runtime.py,145,341,False,,,abc.Mapping.register,,7b239a0927b8,45,1,The template context holds the variables of a template.  It stores the
+jinja2/runtime.py::Context.__contains__,function,__contains__,Context.__contains__,jinja2/runtime.py,326,327,False,True,False,,,56262aa5ef8f,0,0,
+jinja2/runtime.py::Context.__getitem__,function,__getitem__,Context.__getitem__,jinja2/runtime.py,329,338,False,True,False,,,aaef0398730f,1,1,"Look up a variable by name with ``[]`` syntax, or raise a"
+jinja2/runtime.py::Context.__init__,function,__init__,Context.__init__,jinja2/runtime.py,165,184,False,True,False,,,c463abe68c25,1,3,
+jinja2/runtime.py::Context.__repr__,function,__repr__,Context.__repr__,jinja2/runtime.py,340,341,False,True,False,,,710a67e95e08,0,1,
+jinja2/runtime.py::Context.call,function,call,Context.call,jinja2/runtime.py,263,308,False,True,False,internalcode,,819b8515306b,2,2,Call the callable with the arguments and keyword arguments
+jinja2/runtime.py::Context.derived,function,derived,Context.derived,jinja2/runtime.py,310,320,False,True,False,,,d45ba3440a1c,0,3,Internal helper function to create a derived context.  This is
+jinja2/runtime.py::Context.get,function,get,Context.get,jinja2/runtime.py,200,210,False,True,False,,,ff132f08f070,0,1,"Look up a variable by name, or return a default if the key is"
+jinja2/runtime.py::Context.get_all,function,get_all,Context.get_all,jinja2/runtime.py,251,260,False,True,False,,,646e1a73207c,4,0,Return the complete context as dict including the exported
+jinja2/runtime.py::Context.get_exported,function,get_exported,Context.get_exported,jinja2/runtime.py,247,249,False,True,False,,,f0f308f663ab,1,0,Get a new dict with the exported variables.
+jinja2/runtime.py::Context.resolve,function,resolve,Context.resolve,jinja2/runtime.py,212,227,False,True,False,,,85c8dd8a0c5c,1,3,"Look up a variable by name, or return an :class:`Undefined`"
+jinja2/runtime.py::Context.resolve_or_missing,function,resolve_or_missing,Context.resolve_or_missing,jinja2/runtime.py,229,245,False,True,False,,,4300d6e5a85f,2,0,"Look up a variable by name, or return a ``missing`` sentinel"
+jinja2/runtime.py::Context.super,function,super,Context.super,jinja2/runtime.py,186,198,False,True,False,,,41b9f359630f,0,4,Render a parent block.
+jinja2/runtime.py::DebugUndefined,class,DebugUndefined,DebugUndefined,jinja2/runtime.py,1007,1036,False,,,,,881fbe3deb38,1,2,An undefined that returns the debug info when printed.
+jinja2/runtime.py::DebugUndefined.__str__,function,__str__,DebugUndefined.__str__,jinja2/runtime.py,1023,1036,False,True,False,,,7c7463516c77,0,1,
+jinja2/runtime.py::LoopContext,class,LoopContext,LoopContext,jinja2/runtime.py,394,588,False,,,,,539380038e09,3,0,"A wrapper iterable for dynamic ``for`` loops, with information"
+jinja2/runtime.py::LoopContext.__call__,function,__call__,LoopContext.__call__,jinja2/runtime.py,574,585,False,True,False,internalcode,,6198731088e3,0,3,"When iterating over nested data, render the body of the loop"
+jinja2/runtime.py::LoopContext.__init__,function,__init__,LoopContext.__init__,jinja2/runtime.py,408,428,False,True,False,,,6fdc35ed9e7c,0,2,:param iterable: Iterable to wrap.
+jinja2/runtime.py::LoopContext.__iter__,function,__iter__,LoopContext.__iter__,jinja2/runtime.py,558,559,False,True,False,,,5aa9baacbbde,0,1,
+jinja2/runtime.py::LoopContext.__len__,function,__len__,LoopContext.__len__,jinja2/runtime.py,453,454,False,True,False,,,ae452233297f,0,1,
+jinja2/runtime.py::LoopContext.__next__,function,__next__,LoopContext.__next__,jinja2/runtime.py,561,571,False,True,False,,,ee362679ecdb,0,0,
+jinja2/runtime.py::LoopContext.__repr__,function,__repr__,LoopContext.__repr__,jinja2/runtime.py,587,588,False,True,False,,,280873206dde,0,2,
+jinja2/runtime.py::LoopContext._peek_next,function,_peek_next,LoopContext._peek_next,jinja2/runtime.py,487,497,False,True,False,,,21e3a299bc68,2,0,"Return the next element in the iterable, or :data:`missing`"
+jinja2/runtime.py::LoopContext._to_iterator,function,_to_iterator,LoopContext._to_iterator,jinja2/runtime.py,431,432,False,True,False,staticmethod,,b7bd9114cbda,2,0,
+jinja2/runtime.py::LoopContext.changed,function,changed,LoopContext.changed,jinja2/runtime.py,546,556,False,True,False,,,f6e084276fab,0,0,Return ``True`` if previously called with a different value
+jinja2/runtime.py::LoopContext.cycle,function,cycle,LoopContext.cycle,jinja2/runtime.py,535,544,False,True,False,,,01cfab1b3bc7,0,0,"Return a value from the given args, cycling through based on"
+jinja2/runtime.py::LoopContext.depth,function,depth,LoopContext.depth,jinja2/runtime.py,457,459,False,True,False,property,,9710a10e18c4,1,0,"How many levels deep a recursive loop currently is, starting at 1."
+jinja2/runtime.py::LoopContext.first,function,first,LoopContext.first,jinja2/runtime.py,483,485,False,True,False,property,,5b09ac13534c,1,0,Whether this is the first iteration of the loop.
+jinja2/runtime.py::LoopContext.index,function,index,LoopContext.index,jinja2/runtime.py,462,464,False,True,False,property,,a21306d00863,5,0,"Current iteration of the loop, starting at 1."
+jinja2/runtime.py::LoopContext.last,function,last,LoopContext.last,jinja2/runtime.py,500,507,False,True,False,property,,ef29bcc4cdf3,0,1,Whether this is the last iteration of the loop.
+jinja2/runtime.py::LoopContext.length,function,length,LoopContext.length,jinja2/runtime.py,435,451,False,True,False,property,,38b9472e4834,4,2,Length of the iterable.
+jinja2/runtime.py::LoopContext.nextitem,function,nextitem,LoopContext.nextitem,jinja2/runtime.py,520,533,False,True,False,property,,c8d23e5a880e,0,3,The item in the next iteration. Undefined during the last
+jinja2/runtime.py::LoopContext.previtem,function,previtem,LoopContext.previtem,jinja2/runtime.py,510,517,False,True,False,property,,8dd33bed68f5,0,3,The item in the previous iteration. Undefined during the
+jinja2/runtime.py::LoopContext.revindex,function,revindex,LoopContext.revindex,jinja2/runtime.py,475,480,False,True,False,property,,9b8687c1a4be,0,1,"Number of iterations from the end of the loop, ending at 1."
+jinja2/runtime.py::LoopContext.revindex0,function,revindex0,LoopContext.revindex0,jinja2/runtime.py,467,472,False,True,False,property,,f02f363acb45,0,2,"Number of iterations from the end of the loop, ending at 0."
+jinja2/runtime.py::LoopRenderFunc,class,LoopRenderFunc,LoopRenderFunc,jinja2/runtime.py,37,43,False,,,,te.Protocol,57123f529bab,1,0,
+jinja2/runtime.py::LoopRenderFunc.__call__,function,__call__,LoopRenderFunc.__call__,jinja2/runtime.py,38,43,False,True,False,,,448c0cce4db8,1,1,
+jinja2/runtime.py::Macro,class,Macro,Macro,jinja2/runtime.py,662,793,False,,,,,262d7f7015b2,0,0,Wraps a macro function.
+jinja2/runtime.py::Macro.__call__,function,__call__,Macro.__call__,jinja2/runtime.py,696,770,False,True,False,internalcode;pass_eval_context,,544fbaca40c3,0,6,
+jinja2/runtime.py::Macro.__init__,function,__init__,Macro.__init__,jinja2/runtime.py,665,692,False,True,False,,,9567878218d0,0,1,
+jinja2/runtime.py::Macro.__repr__,function,__repr__,Macro.__repr__,jinja2/runtime.py,791,793,False,True,False,,,0c714d7e6958,0,0,
+jinja2/runtime.py::Macro._async_invoke,function,_async_invoke,Macro._async_invoke,jinja2/runtime.py,772,778,False,True,True,,,4bc0e0f47226,1,0,
+jinja2/runtime.py::Macro._invoke,function,_invoke,Macro._invoke,jinja2/runtime.py,780,789,False,True,False,,,958cf6b5ad41,1,1,
+jinja2/runtime.py::StrictUndefined,class,StrictUndefined,StrictUndefined,jinja2/runtime.py,1039,1062,False,,,,,cf838fb3d487,1,3,An undefined that barks on print and iteration as well as boolean
+jinja2/runtime.py::TemplateReference,class,TemplateReference,TemplateReference,jinja2/runtime.py,122,133,False,,,,,50dfc80ef449,0,0,The `self` in templates.
+jinja2/runtime.py::TemplateReference.__getitem__,function,__getitem__,TemplateReference.__getitem__,jinja2/runtime.py,128,130,False,True,False,,,7910b34ca792,0,2,
+jinja2/runtime.py::TemplateReference.__init__,function,__init__,TemplateReference.__init__,jinja2/runtime.py,125,126,False,True,False,,,a955744e3d1d,0,1,
+jinja2/runtime.py::TemplateReference.__repr__,function,__repr__,TemplateReference.__repr__,jinja2/runtime.py,132,133,False,True,False,,,da76bf1f1568,0,0,
+jinja2/runtime.py::Undefined,class,Undefined,Undefined,jinja2/runtime.py,796,909,False,,,,,32782ae95c82,64,1,"The default undefined type. This can be printed, iterated, and treated as"
+jinja2/runtime.py::Undefined.__aiter__,function,__aiter__,Undefined.__aiter__,jinja2/runtime.py,901,903,False,True,True,,,64bae1a64638,0,0,
+jinja2/runtime.py::Undefined.__bool__,function,__bool__,Undefined.__bool__,jinja2/runtime.py,905,906,False,True,False,,,8d80e69b32b1,0,0,
+jinja2/runtime.py::Undefined.__eq__,function,__eq__,Undefined.__eq__,jinja2/runtime.py,883,884,False,True,False,,,6bd23f1b9db9,1,0,
+jinja2/runtime.py::Undefined.__getattr__,function,__getattr__,Undefined.__getattr__,jinja2/runtime.py,862,870,False,True,False,internalcode,,c4daf5affdd5,0,2,
+jinja2/runtime.py::Undefined.__hash__,function,__hash__,Undefined.__hash__,jinja2/runtime.py,889,890,False,True,False,,,f6be6a7d7858,0,0,
+jinja2/runtime.py::Undefined.__init__,function,__init__,Undefined.__init__,jinja2/runtime.py,818,828,False,True,False,,,151520147413,18,2,
+jinja2/runtime.py::Undefined.__iter__,function,__iter__,Undefined.__iter__,jinja2/runtime.py,898,899,False,True,False,,,bb46d796ac0d,0,0,
+jinja2/runtime.py::Undefined.__len__,function,__len__,Undefined.__len__,jinja2/runtime.py,895,896,False,True,False,,,39a8c58395b4,0,0,
+jinja2/runtime.py::Undefined.__ne__,function,__ne__,Undefined.__ne__,jinja2/runtime.py,886,887,False,True,False,,,5e85b1502ea1,0,1,
+jinja2/runtime.py::Undefined.__repr__,function,__repr__,Undefined.__repr__,jinja2/runtime.py,908,909,False,True,False,,,0d338be84f02,0,0,
+jinja2/runtime.py::Undefined.__str__,function,__str__,Undefined.__str__,jinja2/runtime.py,892,893,False,True,False,,,b8cf4467c4a5,1,0,
+jinja2/runtime.py::Undefined._fail_with_undefined_error,function,_fail_with_undefined_error,Undefined._fail_with_undefined_error,jinja2/runtime.py,853,859,False,True,False,internalcode,,664c5beb4707,3,4,Raise an :exc:`UndefinedError` when operations are performed
+jinja2/runtime.py::Undefined._undefined_message,function,_undefined_message,Undefined._undefined_message,jinja2/runtime.py,831,850,False,True,False,property,,cfe7879c199c,1,1,Build a message about the undefined value based on how it was
+jinja2/runtime.py::_dict_method_all,function,_dict_method_all,_dict_method_all,jinja2/runtime.py,136,141,False,False,False,,,2b6735ebbbfd,1,1,
+jinja2/runtime.py::identity,function,identity,identity,jinja2/runtime.py,70,74,False,False,False,,,2d37ee3e0d28,0,0,Returns its argument. Useful for certain things in the
+jinja2/runtime.py::make_logging_undefined,function,make_logging_undefined,make_logging_undefined,jinja2/runtime.py,912,967,False,False,False,,,11357baa0539,1,1,Given a logger object this returns a new undefined class that will
+jinja2/runtime.py::markup_join,function,markup_join,markup_join,jinja2/runtime.py,77,85,False,False,False,,,5d62a0466462,0,0,Concatenation that escapes if necessary and converts to string.
+jinja2/runtime.py::new_context,function,new_context,new_context,jinja2/runtime.py,93,119,False,False,False,,,b648ac61c339,3,4,Internal helper for context creation.
+jinja2/runtime.py::str_join,function,str_join,str_join,jinja2/runtime.py,88,90,False,False,False,,,ee5b368a16fe,0,0,Simple args to string conversion and concatenation.
+jinja2/sandbox.py,file,sandbox.py,,jinja2/sandbox.py,1,436,False,,,,,40e9149d70eb,0,4,
+jinja2/sandbox.py::ImmutableSandboxedEnvironment,class,ImmutableSandboxedEnvironment,ImmutableSandboxedEnvironment,jinja2/sandbox.py,404,414,False,,,,,6d23cb9fe709,0,2,Works exactly like the regular `SandboxedEnvironment` but does not
+jinja2/sandbox.py::ImmutableSandboxedEnvironment.is_safe_attribute,function,is_safe_attribute,ImmutableSandboxedEnvironment.is_safe_attribute,jinja2/sandbox.py,410,414,False,True,False,,,f3cb49624048,0,2,
+jinja2/sandbox.py::SandboxedEnvironment,class,SandboxedEnvironment,SandboxedEnvironment,jinja2/sandbox.py,177,401,False,,,,,d28365068aef,3,2,The sandboxed environment.  It works like the regular environment but
+jinja2/sandbox.py::SandboxedEnvironment.__init__,function,__init__,SandboxedEnvironment.__init__,jinja2/sandbox.py,242,246,False,True,False,,,383fa5421332,0,2,
+jinja2/sandbox.py::SandboxedEnvironment.call,function,call,SandboxedEnvironment.call,jinja2/sandbox.py,388,401,False,True,False,,,3f2b02013ee4,0,5,Call an object from sandboxed code.
+jinja2/sandbox.py::SandboxedEnvironment.call_binop,function,call_binop,SandboxedEnvironment.call_binop,jinja2/sandbox.py,268,277,False,True,False,,,48b3ab98f309,0,1,For intercepted binary operator calls (:meth:`intercepted_binops`)
+jinja2/sandbox.py::SandboxedEnvironment.call_unop,function,call_unop,SandboxedEnvironment.call_unop,jinja2/sandbox.py,279,286,False,True,False,,,ff36e7685661,0,1,For intercepted unary operator calls (:meth:`intercepted_unops`)
+jinja2/sandbox.py::SandboxedEnvironment.getattr,function,getattr,SandboxedEnvironment.getattr,jinja2/sandbox.py,314,332,False,True,False,,,23293538bf74,0,6,Subscribe an object from sandboxed code and prefer the
+jinja2/sandbox.py::SandboxedEnvironment.getitem,function,getitem,SandboxedEnvironment.getitem,jinja2/sandbox.py,288,312,False,True,False,,,eaf03c70246b,0,6,Subscribe an object from sandboxed code.
+jinja2/sandbox.py::SandboxedEnvironment.is_safe_attribute,function,is_safe_attribute,SandboxedEnvironment.is_safe_attribute,jinja2/sandbox.py,248,255,False,True,False,,,af38d81942c3,3,1,The sandboxed environment will call this method to check if the
+jinja2/sandbox.py::SandboxedEnvironment.is_safe_callable,function,is_safe_callable,SandboxedEnvironment.is_safe_callable,jinja2/sandbox.py,257,266,False,True,False,,,97b8177b83d1,1,0,Check if an object is safely callable. By default callables
+jinja2/sandbox.py::SandboxedEnvironment.unsafe_undefined,function,unsafe_undefined,SandboxedEnvironment.unsafe_undefined,jinja2/sandbox.py,334,342,False,True,False,,,1995051e3565,2,4,Return an undefined object for unsafe attributes.
+jinja2/sandbox.py::SandboxedEnvironment.wrap_str_format,function,wrap_str_format,SandboxedEnvironment.wrap_str_format,jinja2/sandbox.py,344,386,False,True,False,,,5a0277196219,2,4,"If the given value is a ``str.format`` or ``str.format_map`` method,"
+jinja2/sandbox.py::SandboxedEscapeFormatter,class,SandboxedEscapeFormatter,SandboxedEscapeFormatter,jinja2/sandbox.py,435,436,False,,,,EscapeFormatter,c76e830b23bb,1,2,
+jinja2/sandbox.py::SandboxedFormatter,class,SandboxedFormatter,SandboxedFormatter,jinja2/sandbox.py,417,432,False,,,,Formatter,242095682c8f,4,0,
+jinja2/sandbox.py::SandboxedFormatter.__init__,function,__init__,SandboxedFormatter.__init__,jinja2/sandbox.py,418,420,False,True,False,,,d27f047f0ba2,1,1,
+jinja2/sandbox.py::SandboxedFormatter.get_field,function,get_field,SandboxedFormatter.get_field,jinja2/sandbox.py,422,432,False,True,False,,,59536b08e1a4,0,2,
+jinja2/sandbox.py::is_internal_attribute,function,is_internal_attribute,is_internal_attribute,jinja2/sandbox.py,115,149,False,False,False,,,595056f34e01,1,0,Test if the attribute given is an internal python attribute.  For
+jinja2/sandbox.py::modifies_known_mutable,function,modifies_known_mutable,modifies_known_mutable,jinja2/sandbox.py,152,174,False,False,False,,,7d1f88942374,1,0,This function checks if an attribute on a builtin mutable object
+jinja2/sandbox.py::safe_range,function,safe_range,safe_range,jinja2/sandbox.py,87,99,False,False,False,,,4b36b0c0893a,1,0,A range that can't generate ranges with a length of more than
+jinja2/sandbox.py::unsafe,function,unsafe,unsafe,jinja2/sandbox.py,102,112,False,False,False,,,e4461a1e7772,0,0,Marks a function or method as unsafe.
+jinja2/tests.py,file,tests.py,,jinja2/tests.py,1,256,False,,,,,cc9cfd9778fb,0,26,
+jinja2/tests.py::test_boolean,function,test_boolean,test_boolean,jinja2/tests.py,97,102,False,False,False,,,ed1607fe4d3c,1,0,Return true if the object is a boolean value.
+jinja2/tests.py::test_defined,function,test_defined,test_defined,jinja2/tests.py,30,44,False,False,False,,,48a24e9b9d35,1,1,Return true if the variable is defined:
+jinja2/tests.py::test_divisibleby,function,test_divisibleby,test_divisibleby,jinja2/tests.py,25,27,False,False,False,,,03bfa3ac7e15,1,0,Check if a variable is divisible by a number.
+jinja2/tests.py::test_escaped,function,test_escaped,test_escaped,jinja2/tests.py,203,205,False,False,False,,,eaaa83e1f2e5,1,0,Check if the value is escaped.
+jinja2/tests.py::test_even,function,test_even,test_even,jinja2/tests.py,20,22,False,False,False,,,26ea8fa092a3,1,0,Return true if the variable is even.
+jinja2/tests.py::test_false,function,test_false,test_false,jinja2/tests.py,105,110,False,False,False,,,866a2313fb19,1,0,Return true if the object is False.
+jinja2/tests.py::test_filter,function,test_filter,test_filter,jinja2/tests.py,53,67,False,False,False,pass_environment,,5ae73d9e0aa5,1,2,Check if a filter exists by name. Useful if a filter may be
+jinja2/tests.py::test_float,function,test_float,test_float,jinja2/tests.py,131,136,False,False,False,,,a74fff4b5b0f,1,0,Return true if the object is a float.
+jinja2/tests.py::test_in,function,test_in,test_in,jinja2/tests.py,208,213,False,False,False,,,020304bdfb9e,1,0,Check if value is in seq.
+jinja2/tests.py::test_integer,function,test_integer,test_integer,jinja2/tests.py,122,127,False,False,False,,,e3336806ef6f,1,0,Return true if the object is an integer.
+jinja2/tests.py::test_iterable,function,test_iterable,test_iterable,jinja2/tests.py,193,200,False,False,False,,,842bfe1df1ed,1,0,Check if it's possible to iterate over an object.
+jinja2/tests.py::test_lower,function,test_lower,test_lower,jinja2/tests.py,139,141,False,False,False,,,42c7b461d65a,1,0,Return true if the variable is lowercased.
+jinja2/tests.py::test_mapping,function,test_mapping,test_mapping,jinja2/tests.py,154,159,False,False,False,,,6335929eb6c1,1,0,Return true if the object is a mapping (dict etc.).
+jinja2/tests.py::test_none,function,test_none,test_none,jinja2/tests.py,92,94,False,False,False,,,152f9a7060b5,1,0,Return true if the variable is none.
+jinja2/tests.py::test_number,function,test_number,test_number,jinja2/tests.py,162,164,False,False,False,,,9897f8844961,1,0,Return true if the variable is a number.
+jinja2/tests.py::test_odd,function,test_odd,test_odd,jinja2/tests.py,15,17,False,False,False,,,471a3cbcd3d9,1,0,Return true if the variable is odd.
+jinja2/tests.py::test_sameas,function,test_sameas,test_sameas,jinja2/tests.py,180,190,False,False,False,,,8195562c63c3,1,0,Check if an object points to the same memory address than another
+jinja2/tests.py::test_sequence,function,test_sequence,test_sequence,jinja2/tests.py,167,177,False,False,False,,,90cc3e6d2384,1,0,Return true if the variable is a sequence. Sequences are variables
+jinja2/tests.py::test_string,function,test_string,test_string,jinja2/tests.py,149,151,False,False,False,,,0010471e9eba,1,0,Return true if the object is a string.
+jinja2/tests.py::test_test,function,test_test,test_test,jinja2/tests.py,71,89,False,False,False,pass_environment,,3b98fd875e79,1,2,Check if a test exists by name. Useful if a test may be
+jinja2/tests.py::test_true,function,test_true,test_true,jinja2/tests.py,113,118,False,False,False,,,9f5331b3aeb1,1,0,Return true if the object is True.
+jinja2/tests.py::test_undefined,function,test_undefined,test_undefined,jinja2/tests.py,47,49,False,False,False,,,b9fae7a255d0,1,1,Like :func:`defined` but the other way round.
+jinja2/tests.py::test_upper,function,test_upper,test_upper,jinja2/tests.py,144,146,False,False,False,,,c70f4e1342cc,1,0,Return true if the variable is uppercased.
+jinja2/utils.py,file,utils.py,,jinja2/utils.py,1,766,False,,,,,299758301091,0,3,
+jinja2/utils.py::Cycler,class,Cycler,Cycler,jinja2/utils.py,677,728,False,,,,,d95382bbacb2,1,1,"Cycle through values by yield them one at a time, then restarting"
+jinja2/utils.py::Cycler.__init__,function,__init__,Cycler.__init__,jinja2/utils.py,703,707,False,True,False,,,866dde78f9bf,0,0,
+jinja2/utils.py::Cycler.current,function,current,Cycler.current,jinja2/utils.py,714,718,False,True,False,property,,86e78ef2effd,1,0,Return the current item. Equivalent to the item that will be
+jinja2/utils.py::Cycler.next,function,next,Cycler.next,jinja2/utils.py,720,726,False,True,False,,,7d9214ab0745,1,1,"Return the current item, then advance :attr:`current` to the"
+jinja2/utils.py::Cycler.reset,function,reset,Cycler.reset,jinja2/utils.py,709,711,False,True,False,,,239d22d8daa5,0,0,Resets the current item to the first item.
+jinja2/utils.py::Joiner,class,Joiner,Joiner,jinja2/utils.py,731,742,False,,,,,23a315aacf47,1,0,A joining helper for templates.
+jinja2/utils.py::Joiner.__call__,function,__call__,Joiner.__call__,jinja2/utils.py,738,742,False,True,False,,,68353479be5d,0,0,
+jinja2/utils.py::Joiner.__init__,function,__init__,Joiner.__init__,jinja2/utils.py,734,736,False,True,False,,,ffbaec059fae,0,0,
+jinja2/utils.py::LRUCache,class,LRUCache,LRUCache,jinja2/utils.py,432,578,False,,,abc.MutableMapping.register,,6b0332c44bd7,6,1,A simple LRU Cache implementation.
+jinja2/utils.py::LRUCache.__contains__,function,__contains__,LRUCache.__contains__,jinja2/utils.py,497,499,False,True,False,,,9e24f2e1b5ba,0,0,Check if a key exists in this cache.
+jinja2/utils.py::LRUCache.__delitem__,function,__delitem__,LRUCache.__delitem__,jinja2/utils.py,543,553,False,True,False,,,1baa50f931c4,0,0,Remove an item from the cache dict.
+jinja2/utils.py::LRUCache.__getitem__,function,__getitem__,LRUCache.__getitem__,jinja2/utils.py,508,528,False,True,False,,,53543688723d,2,0,Get an item from the cache. Moves the item up so that it has the
+jinja2/utils.py::LRUCache.__getnewargs__,function,__getnewargs__,LRUCache.__getnewargs__,jinja2/utils.py,464,465,False,True,False,,,913858230894,0,0,
+jinja2/utils.py::LRUCache.__getstate__,function,__getstate__,LRUCache.__getstate__,jinja2/utils.py,453,458,False,True,False,,,fc17808f03d2,0,0,
+jinja2/utils.py::LRUCache.__init__,function,__init__,LRUCache.__init__,jinja2/utils.py,439,443,False,True,False,,,8a0d71a0469f,4,1,
+jinja2/utils.py::LRUCache.__iter__,function,__iter__,LRUCache.__iter__,jinja2/utils.py,569,570,False,True,False,,,866006f7ecfc,1,0,
+jinja2/utils.py::LRUCache.__len__,function,__len__,LRUCache.__len__,jinja2/utils.py,501,503,False,True,False,,,e81cfb718c23,1,0,Return the current size of the cache.
+jinja2/utils.py::LRUCache.__repr__,function,__repr__,LRUCache.__repr__,jinja2/utils.py,505,506,False,True,False,,,881fe8ffa49a,0,0,
+jinja2/utils.py::LRUCache.__reversed__,function,__reversed__,LRUCache.__reversed__,jinja2/utils.py,572,576,False,True,False,,,181b5ffd5b4c,0,0,"Iterate over the keys in the cache dict, oldest items"
+jinja2/utils.py::LRUCache.__setitem__,function,__setitem__,LRUCache.__setitem__,jinja2/utils.py,530,541,False,True,False,,,6af774ab1458,1,0,Sets the value for an item. Moves the item up so that it
+jinja2/utils.py::LRUCache.__setstate__,function,__setstate__,LRUCache.__setstate__,jinja2/utils.py,460,462,False,True,False,,,efd2d3c49291,0,1,
+jinja2/utils.py::LRUCache._postinit,function,_postinit,LRUCache._postinit,jinja2/utils.py,445,451,False,True,False,,,81fbf632f0b2,2,0,
+jinja2/utils.py::LRUCache.clear,function,clear,LRUCache.clear,jinja2/utils.py,491,495,False,True,False,,,2f5b13e85b18,0,0,Clear the cache.
+jinja2/utils.py::LRUCache.copy,function,copy,LRUCache.copy,jinja2/utils.py,467,472,False,True,False,,,d14f30294c34,1,2,Return a shallow copy of the instance.
+jinja2/utils.py::LRUCache.get,function,get,LRUCache.get,jinja2/utils.py,474,479,False,True,False,,,eda977dae796,0,1,Return an item from the cache dict or `default`
+jinja2/utils.py::LRUCache.items,function,items,LRUCache.items,jinja2/utils.py,555,559,False,True,False,,,88cee67d810d,1,0,Return a list of items.
+jinja2/utils.py::LRUCache.keys,function,keys,LRUCache.keys,jinja2/utils.py,565,567,False,True,False,,,5085ff8c156e,0,2,Return a list of all keys ordered by most recent usage.
+jinja2/utils.py::LRUCache.setdefault,function,setdefault,LRUCache.setdefault,jinja2/utils.py,481,489,False,True,False,,,d27a53647120,0,2,Set `default` if the key is not in the cache otherwise
+jinja2/utils.py::LRUCache.values,function,values,LRUCache.values,jinja2/utils.py,561,563,False,True,False,,,77e20e97a720,0,1,Return a list of all values.
+jinja2/utils.py::Namespace,class,Namespace,Namespace,jinja2/utils.py,745,766,False,,,,,891c589b5183,2,0,A namespace object that can hold arbitrary attributes.  It may be
+jinja2/utils.py::Namespace.__getattribute__,function,__getattribute__,Namespace.__getattribute__,jinja2/utils.py,753,760,False,True,False,,,16c1363255df,0,0,
+jinja2/utils.py::Namespace.__init__,function,__init__,Namespace.__init__,jinja2/utils.py,749,751,False,True,False,,,7d4a0c8a588c,0,0,
+jinja2/utils.py::Namespace.__repr__,function,__repr__,Namespace.__repr__,jinja2/utils.py,765,766,False,True,False,,,cd4fa24f0ca8,0,0,
+jinja2/utils.py::Namespace.__setitem__,function,__setitem__,Namespace.__setitem__,jinja2/utils.py,762,763,False,True,False,,,777ee30abee7,0,0,
+jinja2/utils.py::_MissingType,class,_MissingType,_MissingType,jinja2/utils.py,22,27,False,,,,,19e1da81aeb7,1,0,
+jinja2/utils.py::_MissingType.__reduce__,function,__reduce__,_MissingType.__reduce__,jinja2/utils.py,26,27,False,True,False,,,f3e38668aa1a,0,0,
+jinja2/utils.py::_MissingType.__repr__,function,__repr__,_MissingType.__repr__,jinja2/utils.py,23,24,False,True,False,,,8b5eb286af98,0,0,
+jinja2/utils.py::_PassArg,class,_PassArg,_PassArg,jinja2/utils.py,85,95,False,,,,enum.Enum,8f026711b917,5,0,
+jinja2/utils.py::_PassArg.from_obj,function,from_obj,_PassArg.from_obj,jinja2/utils.py,91,95,False,True,False,classmethod,,824ba8198db1,6,0,
+jinja2/utils.py::clear_caches,function,clear_caches,clear_caches,jinja2/utils.py,127,137,False,False,False,,,8b7088978e86,1,0,Jinja keeps internal caches for environments and lexers.  These are
+jinja2/utils.py::consume,function,consume,consume,jinja2/utils.py,121,124,False,False,False,,,d18b0018c402,2,0,Consumes an iterable without doing anything with it.
+jinja2/utils.py::generate_lorem_ipsum,function,generate_lorem_ipsum,generate_lorem_ipsum,jinja2/utils.py,353,405,False,False,False,,,6a96e7fa3b69,1,0,Generate some lorem ipsum for the template.
+jinja2/utils.py::htmlsafe_json_dumps,function,htmlsafe_json_dumps,htmlsafe_json_dumps,jinja2/utils.py,637,674,False,False,False,,,00b0cef50162,2,0,"Serialize an object to a string of JSON with :func:`json.dumps`,"
+jinja2/utils.py::import_string,function,import_string,import_string,jinja2/utils.py,140,161,False,False,False,,,f122bebe892e,4,0,Imports an object based on a string.  This is useful if you want to
+jinja2/utils.py::internalcode,function,internalcode,internalcode,jinja2/utils.py,98,101,False,False,False,,,68f0f9ba6e42,21,0,Marks the function as internally used
+jinja2/utils.py::is_undefined,function,is_undefined,is_undefined,jinja2/utils.py,104,118,False,False,False,,,93b1bc35d89f,1,1,Check if the object passed is undefined.  This does nothing more than
+jinja2/utils.py::object_type_repr,function,object_type_repr,object_type_repr,jinja2/utils.py,174,189,False,False,False,,,1e14f4c4aba0,3,0,Returns the name of the object's type.  For some recognized
+jinja2/utils.py::open_if_exists,function,open_if_exists,open_if_exists,jinja2/utils.py,164,171,False,False,False,,,2c68e03f4d7a,0,0,"Returns a file descriptor for the filename if that file exists,"
+jinja2/utils.py::pass_context,function,pass_context,pass_context,jinja2/utils.py,38,52,False,False,False,,,7ffc3860f4bd,14,0,Pass the :class:`~jinja2.runtime.Context` as the first argument
+jinja2/utils.py::pass_environment,function,pass_environment,pass_environment,jinja2/utils.py,72,82,False,False,False,,,d7fa43341f13,16,0,Pass the :class:`~jinja2.Environment` as the first argument to
+jinja2/utils.py::pass_eval_context,function,pass_eval_context,pass_eval_context,jinja2/utils.py,55,69,False,False,False,,,45c101d32c76,11,0,Pass the :class:`~jinja2.nodes.EvalContext` as the first argument
+jinja2/utils.py::pformat,function,pformat,pformat,jinja2/utils.py,192,196,False,False,False,,,bd4bc36bcf9f,2,0,Format an object using :func:`pprint.pformat`.
+jinja2/utils.py::select_autoescape,function,select_autoescape,select_autoescape,jinja2/utils.py,581,634,False,False,False,,,72689bed0f84,1,0,Intelligently sets the initial value of autoescaping based on the
+jinja2/utils.py::url_quote,function,url_quote,url_quote,jinja2/utils.py,408,428,False,False,False,,,26da1c180a28,2,0,Quote a string for use in a URL using the given charset.
+jinja2/utils.py::urlize,function,urlize,urlize,jinja2/utils.py,230,350,False,False,False,,,a17057720f7f,2,0,Convert URLs in text into clickable links.
+jinja2/visitor.py,file,visitor.py,,jinja2/visitor.py,1,92,False,,,,,5f77dec07cd3,0,1,
+jinja2/visitor.py::NodeTransformer,class,NodeTransformer,NodeTransformer,jinja2/visitor.py,50,92,False,,,,,ffa2483b5f45,3,2,Walks the abstract syntax tree and allows modifications of nodes.
+jinja2/visitor.py::NodeTransformer.generic_visit,function,generic_visit,NodeTransformer.generic_visit,jinja2/visitor.py,61,81,False,True,False,,,0a407915724b,1,3,
+jinja2/visitor.py::NodeTransformer.visit_list,function,visit_list,NodeTransformer.visit_list,jinja2/visitor.py,83,92,False,True,False,,,bc589791cee5,0,2,As transformers may return lists in some places this method
+jinja2/visitor.py::NodeVisitor,class,NodeVisitor,NodeVisitor,jinja2/visitor.py,16,47,False,,,,,4642d23470eb,14,0,Walks the abstract syntax tree and call visitor functions for every
+jinja2/visitor.py::NodeVisitor.generic_visit,function,generic_visit,NodeVisitor.generic_visit,jinja2/visitor.py,44,47,False,True,False,,,a247fbdeed51,5,3,Called if no explicit visitor function exists for a node.
+jinja2/visitor.py::NodeVisitor.get_visitor,function,get_visitor,NodeVisitor.get_visitor,jinja2/visitor.py,28,33,False,True,False,,,6c172fe15ed4,1,2,Return the visitor function for this node or `None` if no visitor
+jinja2/visitor.py::NodeVisitor.visit,function,visit,NodeVisitor.visit,jinja2/visitor.py,35,42,False,True,False,,,7f624785155b,55,4,Visit a node.
+jinja2/visitor.py::VisitCallable,class,VisitCallable,VisitCallable,jinja2/visitor.py,12,13,False,,,,te.Protocol,e3ef88557b0c,1,0,
+jinja2/visitor.py::VisitCallable.__call__,function,__call__,VisitCallable.__call__,jinja2/visitor.py,13,13,False,True,False,,,e9e244188213,1,1,

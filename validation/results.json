@@ -1,0 +1,543 @@
+{
+ "requests": {
+  "dynamic_edges": 150,
+  "recall_strict": 0.88,
+  "recall_with_dispatch": 0.88,
+  "recall_with_maybe": 0.8866666666666667,
+  "recall_with_refs": 0.8866666666666667,
+  "calls_precision_executed": 0.9865771812080537,
+  "calls_decided": 149,
+  "maybe_precision_executed": 1.0,
+  "maybe_decided": 1,
+  "static_calls": 277,
+  "static_maybe": 7,
+  "miss_reasons": {
+   "nolog:-": 6,
+   "unresolved:untyped_param": 5,
+   "resolved:None": 2,
+   "unresolved:loop_var": 1,
+   "unresolved:unpack": 1,
+   "unresolved:cycle": 1,
+   "unresolved:call_result_unknown": 1,
+   "unresolved:attr_unknown": 1
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "requests/utils.py::should_bypass_proxies",
+    803,
+    "requests/utils.py::proxy_bypass",
+    "calls"
+   ],
+   [
+    "requests/sessions.py::SessionRedirectMixin.rebuild_auth",
+    291,
+    "requests/sessions.py::SessionRedirectMixin.should_strip_auth",
+    "calls"
+   ]
+  ],
+  "deferred_undecidable": 1,
+  "workload_error": null
+ },
+ "click": {
+  "dynamic_edges": 260,
+  "recall_strict": 0.7961538461538461,
+  "recall_with_dispatch": 0.8846153846153846,
+  "recall_with_maybe": 0.9076923076923077,
+  "recall_with_refs": 0.9076923076923077,
+  "calls_precision_executed": 0.9956331877729258,
+  "calls_decided": 229,
+  "maybe_precision_executed": 0.7,
+  "maybe_decided": 10,
+  "static_calls": 567,
+  "static_maybe": 19,
+  "miss_reasons": {
+   "nolog:-": 5,
+   "unresolved:callable_param": 5,
+   "external:None": 4,
+   "unresolved:conflict": 3,
+   "unresolved:unpack": 3,
+   "unresolved:call_result_unknown": 3,
+   "local:None": 2,
+   "unresolved:annotation": 2,
+   "unresolved:nested_param": 2,
+   "resolved:None": 1
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "click/utils.py::echo",
+    313,
+    "click/_compat.py::should_strip_ansi",
+    "calls"
+   ],
+   [
+    "click/core.py::Command.main",
+    1423,
+    "click/exceptions.py::NoArgsIsHelpError.show",
+    "maybe_calls"
+   ],
+   [
+    "click/core.py::Group.invoke",
+    1873,
+    "click/testing.py::CliRunner.invoke",
+    "maybe_calls"
+   ],
+   [
+    "click/parser.py::_OptionParser._process_args_for_args",
+    318,
+    "click/parser.py::_Option.process",
+    "maybe_calls"
+   ]
+  ],
+  "deferred_undecidable": 9,
+  "workload_error": null
+ },
+ "flask": {
+  "dynamic_edges": 168,
+  "recall_strict": 0.7083333333333334,
+  "recall_with_dispatch": 0.8333333333333334,
+  "recall_with_maybe": 0.8392857142857143,
+  "recall_with_refs": 0.8392857142857143,
+  "calls_precision_executed": 0.9929577464788732,
+  "calls_decided": 142,
+  "maybe_precision_executed": 1.0,
+  "maybe_decided": 1,
+  "static_calls": 351,
+  "static_maybe": 7,
+  "miss_reasons": {
+   "unresolved:annotation": 10,
+   "nolog:-": 5,
+   "resolved:None": 4,
+   "external:None": 2,
+   "unresolved:nested_param": 2,
+   "unresolved:callable_param": 1,
+   "unresolved:unpack": 1,
+   "unresolved:conflict": 1,
+   "unresolved:lambda_param": 1,
+   "unresolved:loop_var": 1
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "flask/json/tag.py::TaggedJSONSerializer.tag",
+    293,
+    "flask/json/tag.py::JSONTag.tag",
+    "calls"
+   ]
+  ],
+  "deferred_undecidable": 7,
+  "workload_error": null
+ },
+ "jinja2": {
+  "dynamic_edges": 635,
+  "recall_strict": 0.7023622047244095,
+  "recall_with_dispatch": 0.8078740157480315,
+  "recall_with_maybe": 0.8377952755905512,
+  "recall_with_refs": 0.8377952755905512,
+  "calls_precision_executed": 0.9896265560165975,
+  "calls_decided": 482,
+  "maybe_precision_executed": 0.9166666666666666,
+  "maybe_decided": 24,
+  "static_calls": 1251,
+  "static_maybe": 35,
+  "miss_reasons": {
+   "resolved:None": 33,
+   "external:None": 26,
+   "unresolved:call_result_unknown": 10,
+   "unresolved:conflict": 10,
+   "unresolved:annotation": 8,
+   "nolog:-": 8,
+   "unresolved:attr_unknown": 8,
+   "unresolved:callable_param": 6,
+   "unresolved:untyped_param": 5,
+   "unresolved:nested_param": 4,
+   "unresolved:loop_var": 2,
+   "unresolved:lambda_param": 1
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "jinja2/sandbox.py::SandboxedEnvironment.is_safe_attribute",
+    255,
+    "jinja2/sandbox.py::is_internal_attribute",
+    "calls"
+   ],
+   [
+    "jinja2/parser.py::Parser.parse_compare",
+    571,
+    "jinja2/lexer.py::TokenStream.look",
+    "calls"
+   ],
+   [
+    "jinja2/visitor.py::NodeVisitor.visit",
+    40,
+    "jinja2/visitor.py::VisitCallable.__call__",
+    "calls"
+   ],
+   [
+    "jinja2/nodes.py::Getattr.as_const",
+    872,
+    "jinja2/environment.py::Environment.getattr",
+    "calls"
+   ],
+   [
+    "jinja2/parser.py::Parser.parse_include",
+    348,
+    "jinja2/lexer.py::TokenStream.look",
+    "calls"
+   ],
+   [
+    "jinja2/parser.py::Parser.parse_assign_target",
+    505,
+    "jinja2/nodes.py::NSRef.can_assign",
+    "maybe_calls"
+   ],
+   [
+    "jinja2/parser.py::Parser.parse_assign_target",
+    505,
+    "jinja2/nodes.py::Tuple.can_assign",
+    "maybe_calls"
+   ]
+  ],
+  "deferred_undecidable": 3,
+  "workload_error": null
+ },
+ "markdown": {
+  "dynamic_edges": 385,
+  "recall_strict": 0.7012987012987013,
+  "recall_with_dispatch": 0.7350649350649351,
+  "recall_with_maybe": 0.7896103896103897,
+  "recall_with_refs": 0.7896103896103897,
+  "calls_precision_executed": 1.0,
+  "calls_decided": 304,
+  "maybe_precision_executed": 0.9545454545454546,
+  "maybe_decided": 22,
+  "static_calls": 557,
+  "static_maybe": 32,
+  "miss_reasons": {
+   "unresolved:loop_var": 65,
+   "unresolved:untyped_param": 21,
+   "external:None": 11,
+   "unresolved:attr_unknown": 4,
+   "unresolved:subscript": 1
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "markdown/treeprocessors.py::UnescapeTreeprocessor.run",
+    476,
+    "markdown/blockparser.py::State.set",
+    "maybe_calls"
+   ]
+  ],
+  "deferred_undecidable": 0,
+  "workload_error": null
+ },
+ "werkzeug": {
+  "dynamic_edges": 237,
+  "recall_strict": 0.7172995780590717,
+  "recall_with_dispatch": 0.7552742616033755,
+  "recall_with_maybe": 0.7679324894514767,
+  "recall_with_refs": 0.7721518987341772,
+  "calls_precision_executed": 1.0,
+  "calls_decided": 192,
+  "maybe_precision_executed": 0.75,
+  "maybe_decided": 4,
+  "static_calls": 1263,
+  "static_maybe": 56,
+  "miss_reasons": {
+   "nolog:-": 20,
+   "external:None": 17,
+   "unresolved:conflict": 10,
+   "unresolved:call_result_unknown": 4,
+   "unresolved:subscript": 2,
+   "resolved:None": 2,
+   "unresolved:loop_var": 1,
+   "unresolved:annotation": 1,
+   "local:None": 1
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "werkzeug/routing/matcher.py::StateMachineMatcher.match",
+    190,
+    "werkzeug/routing/converters.py::UUIDConverter.to_python",
+    "maybe_calls"
+   ]
+  ],
+  "deferred_undecidable": 4,
+  "workload_error": null
+ },
+ "networkx": {
+  "dynamic_edges": 967,
+  "recall_strict": 0.12926577042399173,
+  "recall_with_dispatch": 0.6907962771458118,
+  "recall_with_maybe": 0.7538779731127198,
+  "recall_with_refs": 0.7538779731127198,
+  "calls_precision_executed": 1.0,
+  "calls_decided": 145,
+  "maybe_precision_executed": 0.35294117647058826,
+  "maybe_decided": 187,
+  "static_calls": 22361,
+  "static_maybe": 8710,
+  "miss_reasons": {
+   "unresolved:untyped_param": 96,
+   "nolog:-": 60,
+   "external:None": 49,
+   "unresolved:attr_unknown": 49,
+   "resolved:None": 18,
+   "unresolved:call_result_unknown": 11,
+   "unresolved:subscript": 5,
+   "unresolved:unpack": 4,
+   "unresolved:nested_param": 3,
+   "unresolved:conflict": 2,
+   "local:None": 2
+  },
+  "miss_examples": [],
+  "contradicted_examples": [
+   [
+    "networkx/classes/function.py::all_neighbors",
+    1012,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/shortest_paths/dense.py::floyd_warshall_predecessor_and_distance",
+    152,
+    "networkx/algorithms/planarity.py::PlanarEmbedding.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/utils/misc.py::check_create_using",
+    689,
+    "networkx/classes/multigraph.py::MultiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert_matrix.py::to_numpy_array",
+    1114,
+    "networkx/classes/multigraph.py::MultiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/relabel.py::_relabel_copy",
+    197,
+    "networkx/classes/digraph.py::DiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/classes/function.py::selfloop_edges",
+    1319,
+    "networkx/classes/multigraph.py::MultiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/shortest_paths/weighted.py::bidirectional_dijkstra",
+    2415,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/cluster.py::clustering",
+    472,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/dag.py::is_directed_acyclic_graph",
+    162,
+    "networkx/algorithms/planarity.py::PlanarEmbedding.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/readwrite/json_graph/node_link.py::node_link_data",
+    128,
+    "networkx/classes/multigraph.py::MultiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/relabel.py::_relabel_copy",
+    195,
+    "networkx/classes/digraph.py::DiGraph.add_nodes_from",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert_matrix.py::to_scipy_sparse_array",
+    693,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/community/modularity_max.py::_greedy_modularity_communities_generator",
+    74,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/relabel.py::_relabel_copy",
+    197,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/dag.py::topological_generations",
+    217,
+    "networkx/classes/multigraph.py::MultiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/shortest_paths/dense.py::floyd_warshall_predecessor_and_distance",
+    152,
+    "networkx/classes/multigraph.py::MultiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert_matrix.py::to_numpy_array",
+    1078,
+    "networkx/classes/digraph.py::DiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/readwrite/json_graph/node_link.py::node_link_data",
+    121,
+    "networkx/classes/digraph.py::DiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/operators/all.py::union_all",
+    89,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/utils/misc.py::check_create_using",
+    690,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert_matrix.py::to_numpy_array",
+    1078,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/classes/graphviews.py::subgraph_view",
+    228,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/dag.py::is_directed_acyclic_graph",
+    162,
+    "networkx/classes/multigraph.py::MultiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/readwrite/json_graph/node_link.py::node_link_data",
+    121,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/utils/misc.py::check_create_using",
+    690,
+    "networkx/classes/multigraph.py::MultiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert_matrix.py::to_numpy_array",
+    1078,
+    "networkx/classes/multigraph.py::MultiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/classes/function.py::number_of_edges",
+    103,
+    "networkx/classes/multigraph.py::MultiGraph.number_of_edges",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/tree/mst.py::minimum_spanning_tree",
+    611,
+    "networkx/classes/digraph.py::DiGraph.add_nodes_from",
+    "maybe_calls"
+   ],
+   [
+    "networkx/classes/function.py::density",
+    136,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/bipartite/basic.py::color",
+    57,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/flow/utils.py::build_residual_network",
+    139,
+    "networkx/classes/multigraph.py::MultiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert_matrix.py::to_scipy_sparse_array",
+    693,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/bipartite/basic.py::color",
+    57,
+    "networkx/algorithms/planarity.py::PlanarEmbedding.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/dag.py::topological_generations",
+    214,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/operators/all.py::union_all",
+    89,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/dag.py::topological_generations",
+    214,
+    "networkx/algorithms/planarity.py::PlanarEmbedding.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/shortest_paths/unweighted.py::_bidirectional_pred_succ",
+    304,
+    "networkx/algorithms/planarity.py::PlanarEmbedding.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/centrality/betweenness.py::betweenness_centrality",
+    237,
+    "networkx/classes/digraph.py::DiGraph.is_directed",
+    "maybe_calls"
+   ],
+   [
+    "networkx/algorithms/flow/utils.py::build_residual_network",
+    106,
+    "networkx/classes/multidigraph.py::MultiDiGraph.is_multigraph",
+    "maybe_calls"
+   ],
+   [
+    "networkx/convert.py::to_dict_of_lists",
+    208,
+    "networkx/algorithms/approximation/kcomponents.py::_AntiGraph.neighbors",
+    "maybe_calls"
+   ]
+  ],
+  "deferred_undecidable": 94,
+  "workload_error": null
+ }
+}
